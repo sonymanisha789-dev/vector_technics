@@ -1,0 +1,5 @@
+.DS_Store
+.venv/
+.playwright-mcp/
+__pycache__/
+*.pyc

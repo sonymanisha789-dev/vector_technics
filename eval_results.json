@@ -1,0 +1,297 @@
+{
+  "chunk_strategies": [
+    "fixed_size_chunks_doc1",
+    "sentence_chunks_langchain_doc1",
+    "recursive_character_chunks_doc1",
+    "semantic_chunks_doc1",
+    "semantic_bge_chunks_doc1",
+    "contextualized_chunks_doc1"
+  ],
+  "models": [
+    "all-MiniLM-L6-v2",
+    "intfloat/e5-base-v2",
+    "BAAI/bge-m3"
+  ],
+  "dense": {
+    "fixed_size_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8928571428571429,
+        "precision@k": 0.39285714285714285,
+        "mrr": 0.7261904761904762,
+        "ndcg@k": 0.7711482899218384
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4761904761904762,
+        "mrr": 0.7976190476190476,
+        "ndcg@k": 0.8333404258732156
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4880952380952382,
+        "mrr": 0.886904761904762,
+        "ndcg@k": 0.9056151478250848
+      }
+    },
+    "sentence_chunks_langchain_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.6428571428571429,
+        "precision@k": 0.24999999999999997,
+        "mrr": 0.4880952380952381,
+        "ndcg@k": 0.5274212843079552
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.8214285714285714,
+        "precision@k": 0.3571428571428571,
+        "mrr": 0.6726190476190477,
+        "ndcg@k": 0.7098216678538705
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.39285714285714285,
+        "mrr": 0.7976190476190476,
+        "ndcg@k": 0.831627804336741
+      }
+    },
+    "recursive_character_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8214285714285714,
+        "precision@k": 0.38095238095238093,
+        "mrr": 0.6666666666666667,
+        "ndcg@k": 0.7059927128793838
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.42857142857142866,
+        "mrr": 0.7797619047619048,
+        "ndcg@k": 0.8120774033032349
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4880952380952381,
+        "mrr": 0.8392857142857143,
+        "ndcg@k": 0.8699008621107991
+      }
+    },
+    "semantic_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.6071428571428571,
+        "precision@k": 0.32142857142857134,
+        "mrr": 0.4166666666666667,
+        "ndcg@k": 0.46917379310897456
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.44047619047619035,
+        "mrr": 0.5357142857142858,
+        "ndcg@k": 0.612357684809968
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.4523809523809524,
+        "mrr": 0.5833333333333334,
+        "ndcg@k": 0.6570973469355073
+      }
+    },
+    "semantic_bge_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.6071428571428571,
+        "precision@k": 0.2619047619047618,
+        "mrr": 0.4523809523809524,
+        "ndcg@k": 0.4886278677246822
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.3809523809523808,
+        "mrr": 0.5535714285714286,
+        "ndcg@k": 0.6270209641499812
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.8214285714285714,
+        "precision@k": 0.36904761904761896,
+        "mrr": 0.5892857142857144,
+        "ndcg@k": 0.6397789691179232
+      }
+    },
+    "contextualized_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.75,
+        "precision@k": 0.32142857142857145,
+        "mrr": 0.5357142857142857,
+        "ndcg@k": 0.5925768613504099
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.4523809523809525,
+        "mrr": 0.75,
+        "ndcg@k": 0.799742473596942
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 1.0,
+        "precision@k": 0.5119047619047619,
+        "mrr": 0.8690476190476192,
+        "ndcg@k": 0.8966870549613971
+      }
+    }
+  },
+  "sparse": {
+    "fixed_size_chunks_doc1": {
+      "recall@k": 0.9285714285714286,
+      "precision@k": 0.4761904761904763,
+      "mrr": 0.8095238095238095,
+      "ndcg@k": 0.8366306158081436
+    },
+    "sentence_chunks_langchain_doc1": {
+      "recall@k": 0.8571428571428571,
+      "precision@k": 0.3809523809523809,
+      "mrr": 0.738095238095238,
+      "ndcg@k": 0.7652020443795722
+    },
+    "recursive_character_chunks_doc1": {
+      "recall@k": 0.9642857142857143,
+      "precision@k": 0.4761904761904763,
+      "mrr": 0.8511904761904762,
+      "ndcg@k": 0.8684196201301442
+    },
+    "semantic_chunks_doc1": {
+      "recall@k": 0.8571428571428571,
+      "precision@k": 0.44047619047619035,
+      "mrr": 0.6250000000000001,
+      "ndcg@k": 0.6856915306106108
+    },
+    "semantic_bge_chunks_doc1": {
+      "recall@k": 0.8928571428571429,
+      "precision@k": 0.3809523809523808,
+      "mrr": 0.7202380952380952,
+      "ndcg@k": 0.7620081808624425
+    },
+    "contextualized_chunks_doc1": {
+      "recall@k": 0.9285714285714286,
+      "precision@k": 0.4404761904761905,
+      "mrr": 0.8214285714285714,
+      "ndcg@k": 0.8482147642791694
+    }
+  },
+  "hybrid": {
+    "fixed_size_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.46428571428571436,
+        "mrr": 0.8511904761904762,
+        "ndcg@k": 0.856200380201761
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.5,
+        "mrr": 0.875,
+        "ndcg@k": 0.8999772448963251
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.48809523809523814,
+        "mrr": 0.886904761904762,
+        "ndcg@k": 0.9033831246091629
+      }
+    },
+    "sentence_chunks_langchain_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.3571428571428571,
+        "mrr": 0.6726190476190476,
+        "ndcg@k": 0.7220409077822536
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.40476190476190466,
+        "mrr": 0.7440476190476192,
+        "ndcg@k": 0.785503226648345
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.4047619047619047,
+        "mrr": 0.8035714285714286,
+        "ndcg@k": 0.8376887825271495
+      }
+    },
+    "recursive_character_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4404761904761906,
+        "mrr": 0.8095238095238094,
+        "ndcg@k": 0.8510818789524485
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4761904761904762,
+        "mrr": 0.8333333333333333,
+        "ndcg@k": 0.8660719071363123
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 1.0,
+        "precision@k": 0.4880952380952382,
+        "mrr": 0.857142857142857,
+        "ndcg@k": 0.881600700359735
+      }
+    },
+    "semantic_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.7142857142857143,
+        "precision@k": 0.35714285714285704,
+        "mrr": 0.5476190476190477,
+        "ndcg@k": 0.5846106087879299
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.42857142857142844,
+        "mrr": 0.5416666666666667,
+        "ndcg@k": 0.6236150844371435
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.8214285714285714,
+        "precision@k": 0.4285714285714285,
+        "mrr": 0.5892857142857143,
+        "ndcg@k": 0.6530563757653124
+      }
+    },
+    "semantic_bge_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.36904761904761896,
+        "mrr": 0.5773809523809526,
+        "ndcg@k": 0.6448781070071241
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.40476190476190466,
+        "mrr": 0.6011904761904763,
+        "ndcg@k": 0.6814395003744752
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.40476190476190466,
+        "mrr": 0.6428571428571429,
+        "ndcg@k": 0.707378585572008
+      }
+    },
+    "contextualized_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.4404761904761904,
+        "mrr": 0.755952380952381,
+        "ndcg@k": 0.793585168988735
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4761904761904762,
+        "mrr": 0.8571428571428571,
+        "ndcg@k": 0.8810619353201761
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4761904761904762,
+        "mrr": 0.8928571428571429,
+        "ndcg@k": 0.9023249578901569
+      }
+    }
+  }
+}

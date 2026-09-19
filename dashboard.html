@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RAG Retrieval Evaluation Dashboard</title>
+<style>
+  :root {
+    --dense: #3b82f6;   /* blue   */
+    --sparse: #f59e0b;  /* amber  */
+    --hybrid: #10b981;  /* green  */
+    --bg: #0f172a;
+    --panel: #1e293b;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px 32px 60px;
+  }
+  h1 { font-size: 1.4rem; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); margin-top: 0; margin-bottom: 24px; font-size: 0.9rem; }
+
+  /* Top row: one "best" card per retrieval engine */
+  .top-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+  .card {
+    flex: 1 1 260px;
+    background: var(--panel);
+    border-radius: 10px;
+    padding: 16px 18px;
+    border-top: 4px solid var(--accent);
+  }
+  .card h2 { margin: 0 0 4px; font-size: 1rem; }
+  .card .combo { color: var(--muted); font-size: 0.8rem; margin-bottom: 10px; }
+  .card .metric-line { display: flex; justify-content: space-between; font-size: 0.85rem; margin: 3px 0; }
+  .card .metric-line b { font-variant-numeric: tabular-nums; }
+
+  /* Main layout: sidebar + detail panel */
+  .layout { display: flex; gap: 24px; align-items: flex-start; }
+  .sidebar {
+    background: var(--panel);
+    border-radius: 10px;
+    padding: 18px;
+    width: 240px;
+    flex-shrink: 0;
+  }
+  .sidebar label { display: block; font-size: 0.8rem; color: var(--muted); margin: 14px 0 4px; }
+  .sidebar label:first-child { margin-top: 0; }
+  select {
+    width: 100%;
+    padding: 8px;
+    background: #0f172a;
+    color: var(--text);
+    border: 1px solid #334155;
+    border-radius: 6px;
+    font-size: 0.85rem;
+  }
+  select:disabled { opacity: 0.4; }
+
+  .detail {
+    background: var(--panel);
+    border-radius: 10px;
+    padding: 20px 24px;
+    flex: 1;
+    min-width: 320px;
+  }
+  .detail h2 { margin-top: 0; font-size: 1.05rem; }
+  .bar-row { margin: 16px 0; }
+  .bar-label { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 4px; }
+  .bar-track { background: #0f172a; border-radius: 5px; height: 14px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 5px; transition: width 0.25s ease; }
+  .note { color: var(--muted); font-size: 0.8rem; margin-top: 16px; }
+</style>
+</head>
+<body>
+  <h1>RAG Retrieval Evaluation Dashboard</h1>
+  <p class="subtitle">Dense vs. sparse vs. hybrid (RRF) retrieval scores across every chunking strategy + model combo, from eval_results.json</p>
+
+  <div class="top-row" id="topRow"><!-- best-of cards injected by JS --></div>
+
+  <div class="layout">
+    <div class="sidebar">
+      <label for="chunkSelect">Chunk strategy</label>
+      <select id="chunkSelect"></select>
+
+      <label for="engineSelect">Retrieval engine</label>
+      <select id="engineSelect">
+        <option value="dense">Dense</option>
+        <option value="sparse">Sparse</option>
+        <option value="hybrid">Hybrid (dense+sparse)</option>
+      </select>
+
+      <label for="modelSelect">Model</label>
+      <select id="modelSelect"></select>
+    </div>
+
+    <div class="detail">
+      <h2 id="detailTitle">Select a combo</h2>
+      <div id="bars"></div>
+      <p class="note" id="detailNote"></p>
+    </div>
+  </div>
+
+<script>
+const METRICS = ["recall@k", "precision@k", "mrr", "ndcg@k"];
+const ENGINE_COLOR = { dense: "var(--dense)", sparse: "var(--sparse)", hybrid: "var(--hybrid)" };
+const ENGINE_LABEL = { dense: "Dense", sparse: "Sparse", hybrid: "Hybrid (dense+sparse)" };
+
+let data = null;
+
+fetch("eval_results.json")
+  .then(r => r.json())
+  .then(json => {
+    data = json;
+    initSelects();
+    renderTopCards();
+    renderDetail();
+  })
+  .catch(err => {
+    document.getElementById("topRow").innerHTML =
+      `<p style="color:#f87171">Couldn't load eval_results.json (${err}). ` +
+      `Run this from a local server, e.g. <code>python3 -m http.server</code>, not by opening the file directly.</p>`;
+  });
+
+function metricsFor(engine, chunk, model) {
+  if (engine === "sparse") return data.sparse[chunk] || null;
+  return (data[engine][chunk] || {})[model] || null;
+}
+
+// Best combo per engine, ranked by ndcg@k (rewards getting the hit near the
+// top of the ranking, not just present somewhere in the top-k, so it's a
+// better single "which combo is best" signal than recall@k alone).
+function bestFor(engine) {
+  let best = null;
+  for (const chunk of data.chunk_strategies) {
+    const models = engine === "sparse" ? [null] : data.models;
+    for (const model of models) {
+      const m = metricsFor(engine, chunk, model);
+      if (m && (!best || m["ndcg@k"] > best.metrics["ndcg@k"])) {
+        best = { chunk, model, metrics: m };
+      }
+    }
+  }
+  return best;
+}
+
+function initSelects() {
+  const chunkSelect = document.getElementById("chunkSelect");
+  chunkSelect.innerHTML = data.chunk_strategies.map(c => `<option value="${c}">${c}</option>`).join("");
+
+  const modelSelect = document.getElementById("modelSelect");
+  modelSelect.innerHTML = data.models.map(m => `<option value="${m}">${m}</option>`).join("");
+
+  document.getElementById("engineSelect").addEventListener("change", onEngineChange);
+  chunkSelect.addEventListener("change", renderDetail);
+  modelSelect.addEventListener("change", renderDetail);
+  onEngineChange();
+}
+
+function onEngineChange() {
+  const engine = document.getElementById("engineSelect").value;
+  document.getElementById("modelSelect").disabled = engine === "sparse";
+  renderDetail();
+}
+
+function renderTopCards() {
+  const engines = ["dense", "sparse", "hybrid"];
+  document.getElementById("topRow").innerHTML = engines.map(engine => {
+    const best = bestFor(engine);
+    if (!best) return "";
+    const comboLabel = best.model ? `${best.chunk} + ${best.model}` : best.chunk;
+    const lines = METRICS.map(m =>
+      `<div class="metric-line"><span>${m}</span><b>${best.metrics[m].toFixed(3)}</b></div>`
+    ).join("");
+    return `
+      <div class="card" style="--accent:${ENGINE_COLOR[engine]}">
+        <h2>Best ${ENGINE_LABEL[engine]}</h2>
+        <div class="combo">${comboLabel}</div>
+        ${lines}
+      </div>`;
+  }).join("");
+}
+
+function renderDetail() {
+  const chunk = document.getElementById("chunkSelect").value;
+  const engine = document.getElementById("engineSelect").value;
+  const model = document.getElementById("modelSelect").value;
+
+  const metrics = metricsFor(engine, chunk, model);
+  const title = engine === "sparse" ? `${chunk} — Sparse (BGE-m3)` : `${chunk} — ${ENGINE_LABEL[engine]} (${model})`;
+  document.getElementById("detailTitle").textContent = title;
+  document.getElementById("detailNote").textContent =
+    engine === "sparse" ? "Sparse has no dense model choice — it's always BGE-m3 lexical matching." : "";
+
+  const barsEl = document.getElementById("bars");
+  if (!metrics) {
+    barsEl.innerHTML = `<p class="note">No result for this combo.</p>`;
+    return;
+  }
+  barsEl.innerHTML = METRICS.map(m => {
+    const value = metrics[m];
+    const pct = Math.round(value * 100);
+    return `
+      <div class="bar-row">
+        <div class="bar-label"><span>${m}</span><span>${value.toFixed(3)}</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:${pct}%; background:${ENGINE_COLOR[engine]}"></div></div>
+      </div>`;
+  }).join("");
+}
+</script>
+</body>
+</html>
