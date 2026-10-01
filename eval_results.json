@@ -1,0 +1,230 @@
+{
+  "chunk_strategies": [
+    "fixed_size_chunks_doc1",
+    "sentence_chunks_langchain_doc1",
+    "recursive_character_chunks_doc1",
+    "chunk_by_title_doc1",
+    "contextualized_chunks_doc1"
+  ],
+  "models": [
+    "all-MiniLM-L6-v2",
+    "intfloat/e5-base-v2",
+    "BAAI/bge-m3"
+  ],
+  "dense": {
+    "fixed_size_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8928571428571429,
+        "precision@k": 0.39285714285714285,
+        "mrr": 0.7261904761904762,
+        "ndcg@k": 0.7711482899218384
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4761904761904762,
+        "mrr": 0.7976190476190476,
+        "ndcg@k": 0.8333404258732156
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.4880952380952382,
+        "mrr": 0.886904761904762,
+        "ndcg@k": 0.9056151478250848
+      }
+    },
+    "sentence_chunks_langchain_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.6428571428571429,
+        "precision@k": 0.24999999999999997,
+        "mrr": 0.4880952380952381,
+        "ndcg@k": 0.5274212843079552
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.8214285714285714,
+        "precision@k": 0.3571428571428571,
+        "mrr": 0.6726190476190477,
+        "ndcg@k": 0.7098216678538705
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.39285714285714285,
+        "mrr": 0.7976190476190476,
+        "ndcg@k": 0.831627804336741
+      }
+    },
+    "recursive_character_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.75,
+        "precision@k": 0.2738095238095237,
+        "mrr": 0.5773809523809524,
+        "ndcg@k": 0.6211710450255133
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.369047619047619,
+        "mrr": 0.6904761904761906,
+        "ndcg@k": 0.7243886207760853
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.8928571428571429,
+        "precision@k": 0.39285714285714285,
+        "mrr": 0.8392857142857143,
+        "ndcg@k": 0.8475796728218123
+      }
+    },
+    "contextualized_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8214285714285714,
+        "precision@k": 0.3571428571428571,
+        "mrr": 0.5892857142857143,
+        "ndcg@k": 0.6536914672226695
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.4642857142857143,
+        "mrr": 0.7321428571428571,
+        "ndcg@k": 0.772860911458313
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 1.0,
+        "precision@k": 0.48809523809523814,
+        "mrr": 0.875,
+        "ndcg@k": 0.9070973469355073
+      }
+    }
+  },
+  "sparse": {
+    "fixed_size_chunks_doc1": {
+      "recall@k": 0.9285714285714286,
+      "precision@k": 0.4761904761904763,
+      "mrr": 0.8095238095238095,
+      "ndcg@k": 0.8366306158081436
+    },
+    "sentence_chunks_langchain_doc1": {
+      "recall@k": 0.8571428571428571,
+      "precision@k": 0.3809523809523809,
+      "mrr": 0.738095238095238,
+      "ndcg@k": 0.7652020443795722
+    },
+    "recursive_character_chunks_doc1": {
+      "recall@k": 0.8571428571428571,
+      "precision@k": 0.3452380952380952,
+      "mrr": 0.7857142857142857,
+      "ndcg@k": 0.8066505594404159
+    },
+    "chunk_by_title_doc1": {
+      "recall@k": 0.9642857142857143,
+      "precision@k": 0.40476190476190477,
+      "mrr": 0.863095238095238,
+      "ndcg@k": 0.87755972918954
+    },
+    "contextualized_chunks_doc1": {
+      "recall@k": 0.8928571428571429,
+      "precision@k": 0.46428571428571425,
+      "mrr": 0.7976190476190477,
+      "ndcg@k": 0.8159063582777215
+    }
+  },
+  "hybrid": {
+    "fixed_size_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.46428571428571436,
+        "mrr": 0.8511904761904762,
+        "ndcg@k": 0.856200380201761
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.5,
+        "mrr": 0.875,
+        "ndcg@k": 0.8999772448963251
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.48809523809523814,
+        "mrr": 0.886904761904762,
+        "ndcg@k": 0.9033831246091629
+      }
+    },
+    "sentence_chunks_langchain_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.3571428571428571,
+        "mrr": 0.6726190476190476,
+        "ndcg@k": 0.7220409077822536
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.40476190476190466,
+        "mrr": 0.7440476190476192,
+        "ndcg@k": 0.785503226648345
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.4047619047619047,
+        "mrr": 0.8035714285714286,
+        "ndcg@k": 0.8376887825271495
+      }
+    },
+    "recursive_character_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8214285714285714,
+        "precision@k": 0.3333333333333333,
+        "mrr": 0.6726190476190477,
+        "ndcg@k": 0.7106687755069359
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.8214285714285714,
+        "precision@k": 0.3571428571428571,
+        "mrr": 0.738095238095238,
+        "ndcg@k": 0.7501156897779099
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.8571428571428571,
+        "precision@k": 0.369047619047619,
+        "mrr": 0.7976190476190477,
+        "ndcg@k": 0.8071893244799746
+      }
+    },
+    "chunk_by_title_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.8928571428571429,
+        "precision@k": 0.35714285714285715,
+        "mrr": 0.619047619047619,
+        "ndcg@k": 0.6942938317602154
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.40476190476190477,
+        "mrr": 0.7916666666666666,
+        "ndcg@k": 0.8177153062319947
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 0.9642857142857143,
+        "precision@k": 0.39285714285714296,
+        "mrr": 0.8392857142857143,
+        "ndcg@k": 0.8676688388948772
+      }
+    },
+    "contextualized_chunks_doc1": {
+      "all-MiniLM-L6-v2": {
+        "recall@k": 0.9285714285714286,
+        "precision@k": 0.41666666666666663,
+        "mrr": 0.7857142857142857,
+        "ndcg@k": 0.822487695277345
+      },
+      "intfloat/e5-base-v2": {
+        "recall@k": 1.0,
+        "precision@k": 0.4761904761904762,
+        "mrr": 0.8511904761904762,
+        "ndcg@k": 0.8857379979477283
+      },
+      "BAAI/bge-m3": {
+        "recall@k": 1.0,
+        "precision@k": 0.46428571428571425,
+        "mrr": 0.869047619047619,
+        "ndcg@k": 0.9024212843079552
+      }
+    }
+  }
+}

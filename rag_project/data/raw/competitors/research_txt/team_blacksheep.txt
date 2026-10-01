@@ -1,0 +1,111 @@
+# TEAM BLACKSHEEP (TBS) — RESEARCH REPORT
+Compiled 2026-09-24.
+
+## 0. CORRECTION TO BRIEF
+
+"Founder Michael 'Fishpepper'/Raphael Pirker" conflates two unrelated people. Raphael Pirker ("Trappy") is the actual founder/CEO. "fishpepper" = Simon Schulz, an independent German open-source hardware developer (tinyFISH FC, tinyPEPPER ESC, OpenSky firmware) with no relationship to TBS. Also: Tracxn's "Blacksheep" profile is an unrelated Chennai media production company (180 employees) — a false-positive trap for retrieval.
+
+## 1. COMPANY OVERVIEW
+
+Origin: early-2000s Swiss FPV scene. Raphael Pirker, a University of Zurich student, began FPV flying ~2003 in the Swiss mountains with a foam-wing aircraft and hacked baby-monitor electronics, eventually setting an 89km long-range FPV record. Name/team origin dated 2007 by the company itself. Early collaborators: Christoph Dunkel and Remo Masina.
+
+Founding date is contested across sources: 2007 (brand origin), 2009 (fpv24.com), 2010 (Crunchbase), 2013 (BlackSheep Avionics HK incorporation). Best reading: informal team from ~2007, commercial entity from ~2010, current HK manufacturing entity from 2013.
+
+Current corporate structure — three entities, three jurisdictions:
+- **BlackSheep IP Holdings Pte Ltd** (Singapore) — HQ, R&D, support; Pirker is CEO here.
+- **BlackSheep Avionics Co. Ltd** (Hong Kong/Kowloon) — factory/logistics, also filed as TBS Avionics Limited on FCC grants.
+- **Conceptos Pirker GmbH** (Austria, St. Anton am Arlberg) — EU office/returns.
+
+Size: 14 employees at the HK entity per Bounce Watch (likely HK-only, not group-wide). Self-reported: "10+ Years of Experience," "2M+ Systems installed," 1M+ flight hours across the Tracer ecosystem. Engineers described as spanning USA, Europe, Asia.
+
+Mission/positioning: storefront tagline "Serious Toys." About page: "redefine the FPV hobby one flight at a time," in an industry "dominated by imitation." Singapore holdco frames itself more corporately: "a defining R&D company in advanced radio control, telemetry, and IoT hardware" — signaling ambitions beyond hobby FPV. 10+ years of free, continuous firmware updates as a durable commercial promise.
+
+### The FAA case — defining public episode
+Pirker became famous flying a fixed-wing FPV aircraft over Lower Manhattan/Statue of Liberty (posted to YouTube), and TBS filmed similar stunts in the Taj Mahal, Dubai, Miami, Rio, London, Hong Kong. Labeled "aerial anarchists" by Australian media. Legal chain:
+- 2011: FAA proposes $10,000 penalty against Pirker for a commercial shoot over University of Virginia, calling the flight "careless or reckless."
+- Oct 2013: motion to dismiss filed, arguing FAA had no enforceable rule covering model aircraft.
+- 6 Mar 2014: NTSB Administrative Law Judge dismisses the penalty — widely treated as the foundational US drone-regulation precedent (Huerta v. Pirker). Gave FPV pilots ~8 months of relatively unrestricted flying before rules tightened again.
+- TBS publicly stated it reinvests considerable revenue into R&D for safer, more reliable civilian drones.
+
+## 2. FINANCIALS
+
+No public financials exist anywhere — privately held, founder-controlled, apparently bootstrapped. Crunchbase, Craft.co, ZoomInfo all show a profile exists but no revenue/valuation disclosed (and blocked automated retrieval). Bounce Watch: "Revenue: not disclosed." No filings, no equity listing, no reported valuation, never reported acquired or as an acquirer.
+
+Unverified inference only: "2M+ systems installed" self-claim + catalog price points ($3.95–$208.95, most volume SKUs under $150) sold direct plus through a dealer network (NewBeeDrone, Pyrodrone, BuildYourOwnDrone, FPV24, etc.) — a 14-person manufacturing entity at that footprint plausibly sits in the low-to-mid eight figures USD annually at peak. Treat as pure estimate.
+
+## 3. FUNDING HISTORY
+
+No funding rounds, no investors, no VC — ever, in any accessible database. Bounce Watch states flatly "No funding data available... yet." Crunchbase carries no funding rounds. Consistent with the company's own narrative: grew from a hobby team funded off product margin, later restructured into Singapore/HK/Austria entities for tax/logistics reasons rather than investor-driven structuring.
+
+## 4. LEADERSHIP AND PEOPLE
+
+**Raphael "Trappy" Pirker — Founder & CEO.** Swiss-Austrian, studied at University of Zurich, ties to St. Anton am Arlberg, Austria. Titles: "Founder and CEO" (Crunchbase), "Technology Pioneer, CEO" of BlackSheep IP Holdings (Singapore site). Notably says outright in a Bard Center interview: "I don't have any technical background... It developed as a hobby and I learned quickly." Began making drone videos in 2008. Respondent in Huerta v. Pirker, the first FAA enforcement action of its kind in the US. Also an officer of Conceptos Pirker GmbH (Austria).
+
+**Co-founders:** Christoph Dunkel and Remo Masina — early FPV experimenters who joined at formation; current involvement unconfirmed, don't appear in any current corporate listing.
+
+Organizational notes: historically had a dedicated video editor distinct from pilots. Engineering distributed across USA/Europe/Asia. No CTO, CFO, COO, or board member named anywhere publicly — unusually flat, founder-centric public face. Currently hiring (live signal): Embedded Software Engineer, Electronics Engineer, RF Engineer, Production Manager, Customer Support Manager — the RF+embedded+production mix indicates continued in-house hardware development.
+
+Adjacent ecosystem names (not TBS employees): Simon Schulz "fishpepper" (independent); BrainFPV and Achilles (partners on TBS Fusion goggle module — image processing and OSD/UI respectively); "Mr Steele" (Steele Davis, signature motor line); ETHIX (co-produced sub-brand).
+
+## 5. PRODUCTS — FULL CATALOG
+
+Store organized into ~18 categories: Ready to Fly, Frames, Electronics, FPV Equipment, RC Link, TBS Crossfire, TBS Tracer, Props, Battery, Motors, Wings, Hardware and Tools, Software, Swag, Clearance, ETHIX, HNY Tech, Lessons. FPV24 counts 102 TBS catalog items.
+
+**TBS CROSSFIRE (flagship long-range RC link, 868/915MHz):** -130dB receiver sensitivity, full RF diversity, self-healing DSSS/FHSS frequency hopping, proprietary CRSF protocol (now a de facto industry standard beyond TBS hardware), range 60mi+/100km+, framerate 50-150Hz, latency 6.5ms, 4-8 simultaneous pilots, RF output 10mW-2W, MAVLink tunneling, receiver beacon mode for crash location, OTA firmware updates, CRSF/SBUS/PPM/PWM outputs, compatible with Betaflight/KISS/Raceflight/ArduPilot/OpenTX.
+Transmitters: TX full-size $208.95 (out of stock), TX LITE $149.95 (out of stock), Micro TX V2 $69.95 (out of stock), Nano TX $69.95 (in stock, current focus).
+Receivers: Nano RX $24.95 (volume seller), Nano RX SE $29.95, Nano RX Pro $34.95, Micro RX V2 $34.95, Diversity Nano RX $49.95, 8Ch Diversity RX $123.95, 6ch PWM Nano RX $32.95, Sixty9 (integrated RX+VTX) $49.95.
+Plus antenna/accessory line ($2.95-$24.95 range).
+
+**TBS TRACER (2.4GHz low-latency link, "Crossfire's little brother"):** 250Hz update rate, 3ms end-to-end latency, 12-channel digital stream, range 25km+/15mi+, up to 20 simultaneous pilots, antenna diversity. Lineup: Micro TX/Nano TX $69.95 each, Starter Sets $129.95, Nano RX $29.95 (0.5g), 6CH PWM Nano RX $32.95, Sixty9 $49.95, Fusion Packs $229.95 each.
+
+Shared ecosystem across both links: OTA wireless firmware updates, auto-bind/multi-bind, LUA scripts for FC PID config from the radio, TBS Cloud for device sync/telemetry sharing — all claimed as industry firsts. Configuration software: TBS Agent M (browser), Agent X (desktop), Agent Lite (radio-side).
+
+**Radios:** TBS Tango 2 $159.95 (smallest RC remote available, built-in Crossfire, FreedomTX open-source OpenTX fork, 565g); Tango 2 Pro $199.95 (foldable gimbal sticks); TBS Mambo $139.95 (first radio with Tracer built in + JR bay for Crossfire modules); Ethix Mambo $189.95 (co-branded).
+
+**FPV video:** TBS does NOT make complete goggles — only modules that go inside other goggles. TBS Fusion $134.95: analog video receiver module using active video fusion (merging two signals) to cut breakup/extend range, -96dBm sensitivity, built-in OSD, integrates with Crossfire, fits Fatshark Dominator/HD1-3/HDO/HDO2. Built with BrainFPV + Achilles. Audio omitted due to global filter-component shortage.
+Video transmitters: Unify Pro 5G8 HV line ($24.95-$50.95) plus legacy Unify/Unify Pro/Race/Nano/Evo. Video receivers: Groundstation 2G4, Fusion Diversity Receiver System. Antennas: Triumph, Triumph Pro, Triumph Stab, Airscrew RHCP, patch/micro antennas. Cameras: Kamera 59, Kamera 69, Tiny Kamera, ZeroZero, ChipChip.
+
+**Flight controllers/ESCs/power — TBS Lucid line (current):** Lucid H7 FC $59.95, Lucid 8S 4in1 ESC $59.95, Lucid 16S 200A ESC $149.95 (high-voltage/heavy-lift, notable for a hobby brand), Lucid PDB 500A $14.95. Legacy: TBS PowerCube family, Bulletproof 25A ESC, Caipirinha 2 ESC+PDB. GPS: TBS M10 GPS Glonass $15.95 (top FPV24 seller by volume), M10N Mini GPS.
+
+**Airframes/wings:** TBS Discovery (the quad that made TBS a hardware name), Discovery Pro, Oblivion, Vendetta, Gemini, Source One (open-source frame), Source Two, Chupito (gated behind "Secret Project" login), X-Class frames. RTF categories: Race, Freestyle, Long Range, Cinematic, Whoops. Wing line: Chupito, Mojito (current generation), Caipirinha/Caipirinha 2 (long-running flying wing, full parts ecosystem still sold).
+
+**Motors/props/batteries/tools:** TBS Master Pilot, Micro Brushless, Mr Steele signature line, Endurance line; third-party MAD heavy-lift motors (Taurus, Swift, Polar, up to 6-12S) point at a push into larger/industrial airframes; props 2"-17"; battery accessories; soldering/hardware tools.
+
+**ETHIX sub-brand:** heated LiPo bags, Ethix Mambo radio, power straps, goggle straps, equipment bags.
+
+**Software/services/lifestyle:** Velocidrone license resale; FreedomTX (OpenTX fork); paid Lessons category; Swag including FPV Chair, Love Seat, FPV Table.
+
+**B2B services** ("Hire us" page): video capture services (real estate to full events) and aerial-video-system consulting for companies building UAV products/fleets. Media exposure cited: ~30M viewers/year. No OEM/white-label or IP-licensing offering advertised despite the "IP Holdings" corporate name.
+
+**FLARM for drones** (July 2017): collision-avoidance/electronic-conspicuity system — TBS's clearest excursion into safety/regulatory-facing avionics, aligning with its post-FAA-case positioning.
+
+## 6. PATENTS
+
+No patents attributable to Team BlackSheep, TBS Avionics, BlackSheep Avionics, or BlackSheep IP Holdings were found; none naming Raphael Pirker as inventor. Patent-title searches surfaced only unrelated documents (Parrot, other RF/antenna patents). Google Patents and Justia both blocked automated retrieval (503/403) — the negative result is partially search-limited, not conclusive.
+
+TBS's actual regulatory paper trail is equipment authorization, not patents: FCC ID QOS-TX2W (TBS Crossfire, applicant TBS Avionics Limited, registered 2016-11-08), FCC ID QOS-TANGO2, EU Declarations of Conformity for TBS Avionics Co Ltd products.
+
+Assessment: TBS's moat is protocol lock-in (CRSF), firmware/cloud ecosystem, brand/community, and RF type-approval engineering — not patents. Company has historically operated in an open/community-adjacent way (open-source Source One frame, FreedomTX as an OpenTX fork, free perpetual firmware). "IP Holdings" in the corporate name most likely refers to trademarks/copyrighted firmware, not patents.
+
+## 7. LATEST NEWS
+
+TBS runs no press operation — no dated blog, no press-release page; announces via Facebook/Discord/store. No new Crossfire or Tracer hardware platform launch found for 2025-2026.
+
+**Live catalog signals (Sept 2026):**
+- Full-size Crossfire TX, TX LITE, and entire Micro TX V2 line out of stock; Nano TX/RX generation in stock — consolidation onto Nano form factor.
+- Tango 2 and Tango 2 Pro out of stock (new orders ship in 2-3 weeks); Mambo/Ethix Mambo in stock — radio business shifting to Mambo/Tracer platform.
+- Tracer Sixty9, Nano RX, Fusion Packs, and the TBS Fusion module itself all out of stock, with Fusion's audio feature permanently removed due to a global filter-component shortage — a visible supply-chain scar.
+- Lucid electronics family (H7 FC, 8S/16S ESCs, PDB) is the current active development line; the 16S 200A ESC plus MAD heavy-lift motors indicate a deliberate move toward larger, higher-voltage, industrial/cinelifter-class airframes, away from pure 5-inch hobby racing.
+- Chupito/Mojito are the current wing push; Chupito gated behind a "Secret Project" login, indicating unreleased/partner-restricted development.
+- Store increasingly carries third-party inventory (Axis Flying, MAD, FpvCycle, HQ Props, Velocidrone) — evolving into a full-line retailer, not just a house brand.
+- Active hiring for an RF Engineer is the strongest signal a next-gen link product is in development.
+
+**Competitive context — ExpressLRS:** the single most consequential development in TBS's market is external. ExpressLRS (open-source, GPLv3, LoRa/FSK on Semtech transceivers) began 2018 at 900MHz/200Hz, added 2.4GHz plus cheap commercial hardware in 2020 driving mass adoption, now supports up to 1000Hz packet rates and 100km+ range. FPV pilots have gravitated to ExpressLRS over Crossfire/FrSky due to lower cost and better latency; it's near de facto standard status in the FPV community by the mid-2020s. Since 2022, ExpressLRS has also become dominant in Ukraine-conflict FPV strike drones (EW resistance, open-source adaptability). TBS pioneered long-range-link/telemetry/OTA-update/cloud-sync features and has since watched an open-source project commoditize the category — the Tracer's speed/latency positioning, CRSF's ubiquity (ELRS itself speaks CRSF), and the Lucid high-voltage push all read as responses to that squeeze.
+
+**Historical timeline:** 2011 FAA penalty proposed; Oct 2013 motion to dismiss; 6 Mar 2014 NTSB dismisses penalty; Jul 2017 FLARM collision-avoidance released; Oct 2017 Oscar Liang reviews PowerCube Elite; 21 Jun 2018 TBS-associated pilot races Marc Márquez's F1 car with an FPV drone; Mar 2020 "Quarantine Masters" Velocidrone racing series (pandemic-era); Feb 2022 TBS Agent Lite released; 14 Feb 2023 Oscar Liang's consolidated Crossfire/Tracer setup guide.
+
+## 8. ASSESSMENT
+
+TBS is a founder-controlled, bootstrapped, three-jurisdiction (Singapore IP holdco / Hong Kong manufacturing / Austria EU office) FPV hardware company built on a YouTube-famous origin and a landmark FAA legal case (Huerta v. Pirker). No public financials, no funding history, no patents (moat is protocol lock-in via CRSF, firmware/cloud ecosystem, and brand). Currently consolidating hardware onto Nano-form-factor links and the Mambo/Tracer radio platform, pushing into higher-voltage/industrial airframe support (Lucid 16S ESC, MAD motors), and facing real competitive pressure from the open-source ExpressLRS project that has commoditized much of what TBS pioneered.
+
+Sources: team-blacksheep.com, blacksheep.com.sg, dronecenter.bard.edu, suasnews.com, fccid.io, oscarliang.com, en.wikipedia.org/wiki/ExpressLRS, fpv24.com, buildyourowndrone.co.uk, bouncewatch.com.

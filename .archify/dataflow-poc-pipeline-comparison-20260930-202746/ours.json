@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Vector Technics POC Pipeline",
+    "output": ".archify/dataflow-poc-pipeline-comparison-20260930-202746/pipeline-ours.html",
+    "quality_profile": "showcase",
+    "viewBox": [1080, 400]
+  },
+  "stages": [
+    { "label": "Source" },
+    { "label": "Parse" },
+    { "label": "Chunk" },
+    { "label": "Embed" },
+    { "label": "Evaluate" }
+  ],
+  "nodes": [
+    { "id": "pdf", "type": "external", "label": "PDF Document", "stage": 0, "row": 0 },
+    { "id": "parse", "type": "backend", "label": "partition_pdf()", "stage": 1, "row": 0 },
+    { "id": "chunk", "type": "backend", "label": "6 chunkers", "stage": 2, "row": 0 },
+    { "id": "embed", "type": "backend", "label": "Dense+Sparse+RRF", "sublabel": "MiniLM/E5/BGE-m3", "stage": 3, "row": 0 },
+    { "id": "eval", "type": "database", "label": "Eval+Generate", "sublabel": "4 metrics, pgvector", "stage": 4, "row": 0 }
+  ],
+  "flows": [
+    { "id": "f1", "from": "pdf", "to": "parse", "label": "raw PDF" },
+    { "id": "f2", "from": "parse", "to": "chunk", "label": "elements" },
+    { "id": "f3", "from": "chunk", "to": "embed", "label": "chunks" },
+    { "id": "f4", "from": "embed", "to": "eval", "label": "rankings" }
+  ]
+}

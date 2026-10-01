@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "694e2473-58d3-4f0a-bdb1-4c425e5d6626",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/architecture-rag-poc-20260929-194254/candidate.json",
+  "output": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/architecture-rag-poc-20260929-194254/rag-poc.html",
+  "specification": {
+    "sha256": "a89d9fdba9892df79ff2024afac2b7e4bdbad9a350e1f21407b1cc4f3a688e8a",
+    "bytes": 3167
+  },
+  "artifact": {
+    "sha256": "b43c488e406f4c2e9479228da2f0a829e4fb6fe14587cc4d304b7e09abe2d394",
+    "bytes": 757703
+  }
+}

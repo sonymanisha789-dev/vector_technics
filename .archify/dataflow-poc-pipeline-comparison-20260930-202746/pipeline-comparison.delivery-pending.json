@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "command": "deliver",
+  "status": "pending",
+  "receiptId": "8e84bdcd-d49a-4c11-8d8f-7aa69c922c53",
+  "input": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/candidate.json",
+  "output": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/pipeline-comparison.html"
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Vector Technics RAG POC",
+    "output": ".archify/architecture-rag-poc-20260929-194254/rag-poc.html",
+    "quality_profile": "showcase"
+  },
+  "components": [
+    { "id": "user", "type": "external", "label": "Client / Analyst", "sublabel": "CLI user", "pos": [40, 30], "size": [130, 60] },
+    { "id": "cli", "type": "backend", "label": "run_rag.py", "sublabel": "store / query / score", "pos": [340, 30], "size": [160, 64] },
+    { "id": "answer_generator", "type": "backend", "label": "Answer Generator", "sublabel": "generate_answer_pgvector()", "pos": [680, 30], "size": [160, 64] },
+    { "id": "anthropic_api", "type": "external", "label": "Anthropic API", "sublabel": "claude-haiku-4-5", "pos": [1020, 30], "size": [150, 64] },
+    { "id": "ingestion", "type": "backend", "label": "Ingestion Pipeline", "sublabel": "parse → chunk → embed", "pos": [340, 190], "size": [160, 64] },
+    { "id": "hybrid_retriever", "type": "backend", "label": "Hybrid Retriever", "sublabel": "dense + sparse → RRF", "pos": [680, 190], "size": [160, 64] },
+    { "id": "pgvector_db", "type": "database", "label": "pgvector Store", "sublabel": "Postgres 17 :5432", "pos": [680, 340], "size": [160, 64] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Local process — run_rag.py", "wraps": ["cli", "ingestion", "answer_generator", "hybrid_retriever"] },
+    { "kind": "region", "label": "Docker — docker-compose.yml", "wraps": ["pgvector_db"] }
+  ],
+  "connections": [
+    { "id": "user-to-cli", "from": "user", "to": "cli", "label": "ask question", "variant": "emphasis" },
+    { "id": "cli-to-ingestion", "from": "cli", "to": "ingestion", "label": "store command", "variant": "dashed" },
+    { "id": "ingestion-to-db", "from": "ingestion", "to": "pgvector_db", "label": "store chunks + embeddings (SQL)", "variant": "dashed", "fromSide": "right", "toSide": "left", "via": [[600, 222], [600, 372]] },
+    { "id": "cli-to-answer", "from": "cli", "to": "answer_generator", "label": "generate_answer_pgvector()" },
+    { "id": "answer-to-retriever", "from": "answer_generator", "to": "hybrid_retriever", "label": "retrieve_hybrid_pgvector()" },
+    { "id": "retriever-to-db", "from": "hybrid_retriever", "to": "pgvector_db", "label": "fetch dense + sparse rankings (SQL)" },
+    { "id": "answer-to-anthropic", "from": "answer_generator", "to": "anthropic_api", "label": "claude-haiku-4-5 completion" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Retrieval", "items": ["BGE-m3 dense embeddings fused with BGE-m3 sparse (lexical) weights via Reciprocal Rank Fusion", "Best-scoring combo per rag-strategy.md's eval: recall@k=1.0, ndcg@k=0.88"] },
+    { "dot": "emerald", "title": "Optional", "items": ["--contextualize prepends a Claude Haiku context blurb to each chunk before embedding (contextual_chunking.py, Anthropic's Contextual Retrieval technique)"] },
+    { "dot": "rose", "title": "Evaluation", "items": ["score / score-ragas commands measure recall@k, precision@k, mrr, ndcg@k (or LLM-judged ragas metrics) via this same retrieval path against eval_set.py"] }
+  ]
+}

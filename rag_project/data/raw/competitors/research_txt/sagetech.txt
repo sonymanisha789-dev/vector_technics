@@ -1,0 +1,549 @@
+# SAGETECH AVIONICS — RESEARCH REPORT
+*Compiled 2026-09-24 from public web sources. All figures as reported by the cited source.*
+
+---
+
+## 0. CORRECTION TO THE PREMISE
+
+The task described Sagetech Avionics as "based in Sandpoint/Sun Valley Idaho." **That is incorrect.** Every primary and secondary source checked places the company in the Columbia River Gorge, Washington State:
+
+- Company's own site footer and contact block: **317 W Steuben Street, Bingen, WA 98605** (https://sagetech.com/about-us/who-we-are/, https://sagetech.com/about-us/careers/)
+- USAspending.gov recipient record (UEI T4UNAUKXMZM3): `317 W STEUBEN ST, BINGEN, WA 98605-9006`, congressional district WA-04
+- HigherGov awardee profile: Bingen, WA (https://www.highergov.com/awardee/sagetech-avionics-inc-10280151/)
+- Older press releases datelined **White Salmon, WA** (the adjacent town, across from Bingen); some databases (CB Insights, ZoomInfo) still list a White Salmon address at 1000 E Jewett Blvd
+- Careers page explicitly: *"We're located in Bingen, WA, in the Columbia River Gorge, which is about an hour east of Portland."*
+
+No evidence of any Idaho office, relocation, or satellite facility was found. The likely source of confusion is **Quest Aircraft Company / Kodiak Aircraft**, an unrelated aircraft manufacturer in Sandpoint, Idaho (acquired by Daher in 2019). Treat the Idaho attribution as a false premise; the rest of this report uses the verified Washington facts.
+
+---
+
+## 1. COMPANY OVERVIEW
+
+### 1.1 Identity and legal structure
+
+| Field | Value | Source |
+|---|---|---|
+| Legal name | Sagetech Avionics, Inc. | HigherGov |
+| HQ | 317 W Steuben Street, Bingen, WA 98605 | sagetech.com |
+| Incorporated | Delaware | HigherGov |
+| Founded (this entity) | **October 24, 2019**; federally registered Nov 14, 2019 | HigherGov |
+| UEI | T4UNAUKXMZM3 | USAspending / HigherGov |
+| CAGE code | 8FG94 | HigherGov |
+| DUNS (legacy) | 117302803 | USAspending |
+| Primary NAICS | 334511 — Search, Detection, Navigation, Guidance, Aeronautical & Nautical System and Instrument Manufacturing | HigherGov |
+| Secondary NAICS | 334515, 336413, 488190, 541715 | HigherGov |
+| Small-business status | Small business; **HUBZone certified Feb 12, 2021**; historically-underutilized-business firm; manufacturer of goods; US-owned | HigherGov / USAspending business_types |
+| Quality cert | ISO-9000 series | HigherGov |
+| GSA Schedule | MAS **47QSWA23D00A5**, PoP 9/28/2023 – 9/27/2028 | HigherGov / USAspending |
+
+Note the confusing "founded" dates across databases: PitchBook lists **1978** (inheriting the predecessor's lineage), CB Insights/others cite **1998** for "miniature surveillance avionics" activity, the Gorge Technology Alliance says **2019** (the carve-out), and HigherGov's federal registration says **Oct 24, 2019**. All are defensible depending on whether you mean the technology lineage or the current legal entity.
+
+### 1.2 Origin story and corporate history
+
+The lineage runs through a predecessor, **Sagetech Corporation** (separate UEI N3GCB5FTDN79, DUNS 030467026), an engineering services firm in the Gorge that supported Boeing's Insitu — doing engine dynamometer testing, electronics, microelectronics, software and firmware work.
+
+Key milestones:
+
+- **~2004–2006** — Sagetech Corporation wins early federal R&D contracts including two DARPA contracts (HR0011-04-C-0119, ~$396.9K, Sept 2004; HR0011-06-C-0008, ~$397.0K, Oct 2005) and an Army AMCOM contract (W31P4Q-05-C-R174, ~$399.1K, April 2005). Source: USAspending.gov.
+- **~2009** — Boeing/Insitu needed a transponder for small drones that were invisible to radar; existing transponders were too big and heavy. Sagetech Corporation built what it calls **the world's first micro transponder** — initially a circuit card for the ScanEagle, later productized into a business-card-sized unit. (https://www.auvsi.org/news/oem-leader-how-sagetech-avionics-builds-layers-of-aviation-safety-for-dual-use-bvlos-capabilities/, https://sagetech.com/about-us/who-we-are/)
+- **2012–2019** — XP-series transponders ship broadly; NASA, NOAA, Navy and Army purchase orders appear in USAspending under Sagetech Corporation (e.g., NND12AE16P Mode C transponders 2012; NND14AB72P "Mode transponder with mini ADS-B" 2014; N68335-14-C-0407 Navy SBIR Phase I Topic N142-102, ~$79.8K, Sept 2014; DOC RA133R15SU0276 NOAA AirCore sampling system transponders 2015; 80NSSC17P1164 NASA "two MX-MP-03 Sagetech ADS-B transponders" 2017; N66001-18-P-0182 "engineering services in support of the ScanEagle UAV transponder system" 2018).
+- **November 2019** — **Columbia River Partners** (a Seattle/Portland/San Francisco private investment firm specializing in "corporate divestitures, recapitalizations, carve-outs and other complex situations in the lower middle market") executes a carve-out of the avionics division / acquisition of the transponder IP from Sagetech Corporation, forming **Sagetech Avionics, Inc.** Tom Furey, who had been COO of Sagetech Corporation for five years, leads the acquisition "with a few like-minded individuals" and becomes CEO. (https://crgta.org/spotlight/sagetech-avionics-inc, https://www.columbiariverpartners.com/)
+- **2020–2021** — Company adds military IFF functionality and develops the MX12B Mode 5 platform; receives DoD AIMS certification for the Mode 5 micro IFF transponder; wins AFWERX contract; wins 2021 AUVSI XCELLENCE Award for Technology for the MX12B; demonstrates Mode 5 Level 2B Out at Bold Quest 2021.
+- **June 2021** — $12M investment from Due West Partners.
+- **February 2023** — FAA certifies the **MXS**, described as the first FAA-certified small transponder with integrated ADS-B In.
+- **April 2026** — $248.5M, 10-year Army IDIQ for the AN/APX-128.
+
+### 1.3 Mission, vision, values
+
+- **Vision:** "Safe skies through advancing technology."
+- **Mission:** "To deliver low-SWaP certified avionics solutions that enable safe airspace integration and protect our warfighters."
+- **Core values (six):** Integrity, Quality, Safety, Customer Focused, High Performance, Stewardship.
+(https://sagetech.com/about-us/who-we-are/)
+
+Self-reported track-record metrics repeated across the site: **1.5 million flight hours**, **500+ uncrewed aircraft platforms**, **40+ countries**, **10+ years experience**. Company says its products are standard equipment on many **Group 2 and Group 3** UAV programs and fly on **Class/Group 2, 3, 4 and 5** aircraft.
+
+### 1.4 Size
+
+Employee counts vary by source and date — the company is small:
+
+- PitchBook: 36 total employees (older snapshot)
+- CB Insights / LinkedIn-derived: ~68 employees as of April 2026
+- Another 2026 profile: ~69 employees across North America and Asia as of June 2026
+- HigherGov: "<500" (SBA size bucket, not a headcount)
+
+Open roles listed on the careers page at time of research: Quality Technician, Supply Chain Manager, Inventory and Logistics Specialist — consistent with a company scaling up **manufacturing/production** capacity, which matches the APX-128 full-rate production ramp.
+
+Named non-executive staff surfaced in public content: **Rudy Johnson** (Director, Business Development), **Ashley McKinney** (Sr. Director of Marketing), **Frank Wu** (Sr. Embedded Software Engineer), **Cole Hunter** (IT Director), **Megan Furey** (LinkedIn, Sagetech Corporation).
+
+### 1.5 Standards bodies and industry participation
+
+Sagetech personnel sit on the **AIMS Configuration Control Board (CCB)** and the **ASTM F38 UAS Committee**, plus "dozens of others." The company is active in **AUVSI**, the **Commercial Drone Alliance**, **Women and Drones** (corporate member), **NUAIR**, the **Drone Logistics Ecosystem**, and was selected for **NSIN Propel EDI**. It publishes commentary on RTCA standards including DO-365B (DAA MOPS), DO-386 (ACAS Xu MOPS), and DO-398a (eVFR OSED).
+
+---
+
+## 2. FINANCIALS
+
+**Sagetech Avionics is privately held.** There is no public revenue disclosure, no SEC filings (no Form D, 10-K, or S-1 surfaced), and no audited statements available. What follows is the hard public data plus third-party estimates.
+
+### 2.1 Verified federal award data (USAspending.gov, UEI T4UNAUKXMZM3)
+
+**Total federal transaction amount to date: $8,659,602.96 across 18 transactions** (per the USAspending recipient endpoint). Obligations by fiscal year:
+
+| Fiscal Year | Obligated |
+|---|---|
+| FY2021 | $150,000.00 |
+| FY2023 | $44,071.20 |
+| FY2024 | $1,895,033.48 |
+| FY2025 | $139,962.00 |
+| FY2026 | $8,659,602.96 |
+
+The FY2026 jump is the APX-128 production ramp. Note USAspending's recipient "total_transaction_amount" appears to reflect the current-year rollup; the year-by-year series is the more useful signal — **federal revenue grew roughly 60x from FY2025 to FY2026.**
+
+**Individual definitive contracts (prime, Sagetech Avionics Inc.):**
+
+| Award ID | Amount | Agency | Period | Description |
+|---|---|---|---|---|
+| W15P7T26FA009 | $3,602,297.44 | Dept. of the Army | 2026-06-15 → 2027-06-14 | Full rate production delivery order for AN/APX-128 transponders |
+| W15P7T26FA007 | $2,160,892.48 | Dept. of the Army | 2026-04-30 → 2027-01-29 | APX-128 transponders + crypto application KIV-79 services + cyber services |
+| W15P7T26FA004 | $1,523,243.00 | Dept. of the Army | 2026-04-16 → 2027-04-16 | AN/APX-128 with government-provided KIV-79 and engineering services |
+| W15P7T26FA005 | $1,273,183.04 | Dept. of the Army | 2026-04-16 → 2027-04-16 | AN/APX-128 transponders and KIV-79 services |
+| 697DCK24C00305 | $998,426.37 | FAA | 2024-09-27 → 2025-09-26 | BAA Call 005 — non-system-specific tech to integrate UAS into the NAS |
+| 697DCK24C00369 | $865,457.11 | FAA | 2024-09-23 → 2025-09-26 | BAA Call 005 — same program, second award |
+| N6833525C0258 | $239,949.00 | Dept. of the Navy | 2025-07-07 → 2026-09-09 | (SBIR-style; kick-off briefing materials & FWA cert) |
+| FA864921P0083 | $150,000.00 | Dept. of the Air Force | 2020-12-17 → 2021-06-17 | **Low SWaP ACAS-Xu based Detect and Avoid** (the AFWERX award) |
+| N0042123P0269 | $44,071.20 | Dept. of the Navy | 2023-05-11 → 2023-07-06 | P/N: 10-0000 (hardware buy) |
+| FA491324P0026 | $31,150.00 | Dept. of the Air Force | 2024-09-27 → 2024-10-18 | IFF transponders and antennas |
+
+**Indefinite delivery vehicles (IDVs):**
+
+| Award ID | Agency | Start | Notes |
+|---|---|---|---|
+| **W15P7T26DA001** | Dept. of the Army | 2026-04-03 | Full rate production contract for AN/APX-128 transponders — this is the **$248.5M ceiling, 10-year IDIQ** announced in the press release as W15P7T-26-D-A001 |
+| 47QSWA23D00A5 | GSA Federal Acquisition Service | 2023-09-28 | Federal Supply Schedule (MAS) contract, through 9/27/2028 |
+
+**Predecessor entity (Sagetech Corporation, UEI N3GCB5FTDN79) federal history** — useful for lineage but not current revenue: 12 awards totaling roughly $1.39M, led by W31P4Q05CR174 ($399,065, Army AMCOM, 2005), HR001106C0008 ($397,038, DARPA, 2005), HR001104C0119 ($396,860, DARPA via DCMA, 2004), N6833514C0407 ($79,820, Navy SBIR Phase I, 2014), N6600118P0182 ($40,000, Navy ScanEagle transponder engineering services, 2018), and a tail of small NASA/NOAA/Army/Navy hardware buys.
+
+**No federal grants** were found for Sagetech Avionics (grant award-type query returned zero records). The BIRD Foundation money (see §3) is a binational grant, not a US federal assistance award, which is why it does not appear.
+
+### 2.2 Third-party revenue and valuation estimates
+
+- **No valuation has ever been publicly disclosed.** PitchBook and Preqin maintain profiles but gate valuation behind subscription; no post-money figure surfaced for either the 2019 acquisition or the 2021 Due West round.
+- Revenue estimate aggregators (ZoomInfo, Growjo, LeadIQ) carry Sagetech profiles but their figures were not retrievable in this session (403-blocked). Treat any such number as a model-derived estimate, not a disclosure.
+- **Practical revenue framing:** with ~68–69 employees, small-hardware ASPs, and $8.7M of FY2026 federal prime obligations plus substantial non-federal revenue (international resellers in 17 countries, OEM sales to Textron, Insitu, UAV Factory, Primoco, High Eye, Kraus Hamdani, PAE ISR, A-TechSYN, etc.), total revenue is plausibly in the low-to-mid eight figures. **This is an inference, not a sourced figure — flag it as such.**
+- **Risk concentration note:** one analyst summary surfaced in search flagged that "Army contract concentration is extreme, with APX-128 execution now driving 2026 revenue and credibility — procurement delays or field failures would freeze adoption across helicopters and FMS."
+
+### 2.3 Ownership
+
+Sagetech Avionics is majority-owned/controlled by **Columbia River Partners** (acquirer, Nov 2019), with **Due West Partners** holding a significant minority position following the June 2021 investment. Both firms hold board seats (see §4). Columbia River Partners reports firm-level stats of **$200M+ deployed capital, 7 platform companies, 15 transactions, 1,000+ portfolio employees** (https://www.columbiariverpartners.com/).
+
+---
+
+## 3. FUNDING HISTORY
+
+Sagetech is **not a venture-backed startup in the conventional sense** — it is a private-equity carve-out with one subsequent growth-equity injection. Total disclosed capital is modest.
+
+### 3.1 Round-by-round
+
+| Date | Event | Amount | Investor(s) | Notes |
+|---|---|---|---|---|
+| **Nov 2019** | Acquisition / carve-out | Undisclosed | **Columbia River Partners** | CRP acquires the avionics/transponder IP and assets of Sagetech Corporation, creating Sagetech Avionics, Inc. Structured as a corporate divestiture/carve-out, CRP's stated specialty. Tom Furey led the buyer group. |
+| **June 29, 2021** | Growth investment | **$12,000,000** | **Due West Partners** (lead) | Announced from White Salmon, WA. Terms not disclosed. Use of funds: accelerate product development, specifically **UAS Detect and Avoid (DAA) capability and related technologies**; expand engineering and go-to-market teams. |
+| **Dec 17, 2020** | AFWERX / USAF contract (non-dilutive) | $150,000 | U.S. Air Force (AFWERX) | FA8649-21-P-0083, "Low SWaP ACAS-Xu based Detect and Avoid." Frequently miscounted by databases as a "funding round." |
+| **Nov 4, 2021** | Grant / prize | Undisclosed | **BIRD Foundation** (US–Israel Binational Industrial R&D Foundation), with **U.S. Dept. of Homeland Security** participation | Won jointly with **Ciconia Ltd.** (Israel) for a collision avoidance system. Tracxn records this as the company's most recent "round." |
+| **~2025** | HSWERX award (non-dilutive) | Undisclosed | **DHS** (HSWERX) | Won jointly with **MatrixSpace** for advanced air detection supporting UAS operations; potential CBP applications. |
+
+### 3.2 Aggregator totals (they disagree)
+
+| Source | Total raised | Rounds | Investors |
+|---|---|---|---|
+| CB Insights | ~$13M | — | — |
+| PitchBook | $15M | — | — |
+| Tracxn | $12M | 2 | 3 |
+
+The discrepancies stem from whether the AFWERX/BIRD non-dilutive money is rolled into "funding." **The only confirmed equity event with a public dollar figure is the $12M Due West round.**
+
+### 3.3 Investor profiles
+
+**Due West Partners (DWP)** — Seattle-based private investment firm focused on aerospace and defense. Tagline used in the Sagetech release: *"Due West is Different"* — patient, long-term capital for established companies pursuing sustained growth. Managing partners quoted: **Nick Wellmon** ("Proven technologies and customer credibility plus significant market potential...") and **Robert Dickinson** ("Situational awareness products are required technology for safe integration...").
+
+**Columbia River Partners (CRP)** — "A private investment firm investing in the 'Picks and Shovels' of technology." Offices in Portland, San Francisco, Seattle; HQ 400 Union St, Suite 400, Seattle, WA 98101. Focus: corporate divestitures, recapitalizations, carve-outs, complex lower-middle-market situations. Other portfolio companies named publicly include TRP Laboratories, TiniFiber, CCS, and Business Solution Partners. CRP publicly promoted the Sagetech APX-128 win on its own news page (https://www.columbiariverpartners.com/news/sagetech-avionics-awarded-2485m-army-contract-for-apx-128-advanced-iff-production).
+
+**Others listed by databases:** Preqin associates **EMV Capital** with Sagetech; **U.S. Department of Homeland Security** appears as an "investor" in Tracxn/CB Insights because of the BIRD/HSWERX grants. **Green Span Ventures** (Prabhu Goel) is represented on the board, implying an investment position.
+
+---
+
+## 4. LEADERSHIP AND PEOPLE
+
+Source for this entire section unless noted: https://sagetech.com/about-us/leadership-team/
+
+### 4.1 Executive team
+
+**Tom Furey — Chief Executive Officer and Board Member**
+Has led Sagetech since its late-2019 launch, following the carve-out of the avionics division of Sagetech Corporation, where he had served as **COO for five years**. He led the acquisition of the critical assets from Sagetech Corporation together with a small group of like-minded individuals. Roughly 20 years of management experience across aerospace, automotive, chemical, and printing industries. Military background: **U.S. Navy Naval Flight Officer flying the A-6 Intruder**, including service in the Persian Gulf during the first Gulf War. Education: **B.S. Mathematics, U.S. Naval Academy**; master's degrees in engineering from **Cal State** and **MIT**; **MBA from MIT (Sloan)**. Personal: enjoys outdoor activities with his dog. He is the company's principal public voice — appearing at Xponential 2024, on the *Dawn of Drones* podcast, on *Autonomy Global Defense Tech* (June 2026), and in multiple video features.
+
+**Matthew (Matt) Hamilton — Chief Technology Officer**
+Oversees technology development for the company's uncrewed aircraft avionics products. **With the company since 2015.** Previously built his expertise at **ACSS** (Aviation Communication & Surveillance Systems), the L3Harris/Thales joint venture — a direct pedigree in TCAS/ACAS and surveillance systems. **B.S. Electrical Engineering, Embry-Riddle Aeronautical University.** Personal: family time and flying his own aircraft. Quoted on the APX-128 award crediting "the deep technical skills of Sagetech's engineering team, our partnership with the Department of War, and the robust collaboration between Sagetech, the Army, and our partners at R Cubed Engineering."
+
+**Dan Kinsfogel — Chief Financial Officer**
+Manages accounting, planning, and capital functions. **25+ years of financial leadership.** Prior roles: **CFO at Dakine**; finance positions at **SC Johnson, Nike, and Qualcomm**. Education: business degree from the **University of Arizona**; **MBA from ASU's W. P. Carey School of Business**. Personal: coaches youth soccer.
+
+**David Day — Chief Compliance Officer**
+Responsible for ensuring products meet government and industry compliance standards — a critical role given the AIMS/TSO/FCC certification-heavy product line. **30+ years** spanning **L3Harris-ACSS, Honeywell, and Motorola**, covering surveillance engineering and FAA certification. **B.S. Electrical Engineering, Arizona State University.** Personal: outdoor recreation in the Columbia River Gorge.
+
+Note the pattern: Hamilton and Day both come from **ACSS/L3Harris-Thales**, the incumbent TCAS/ACAS house — Sagetech essentially recruited surveillance-certification DNA and miniaturized it.
+
+### 4.2 Board of Directors
+
+**Pooneet Goel** — Columbia River Partners (Chief Strategy Officer). 20+ years of startup and strategic expertise; earlier advised Fortune 500 executives at **Booz & Company**. **B.S. Computer Science, Stanford**; **MBA, Kellogg**. Personal: home coffee roasting.
+
+**Nathan Chandrasekaran** — Columbia River Partners (Chief Financial Officer). 15+ years across finance, strategy, and technology, plus private equity and multiple board seats. Background includes **Merrill Lynch, inCode Wireless, and Deloitte Consulting**. **B.A. Neuroscience, Bowdoin**; **MBA, Kellogg**. Stated philosophy: "having impact on Day 1."
+
+**Prabhu Goel** — Green Span Ventures (Board Member **and** Advisor). Active private-company investor serving on multiple boards, including renewable energy ventures in Europe and India. Public-company board experience at **Synopsys** and **Cadence Design Systems**. Previously led **Gateway Design Automation** before its **1989 acquisition by Cadence** — a notable EDA-industry figure (the "Goel" of the PODEM algorithm lineage).
+
+**Nick Wellmon** — Due West Partners (Board Member). Founder and manager of Due West Partners, an aerospace/defense-focused investment firm. Previously **Director of Finance at Exotic Metals**, where he led the company's **2019 sale to Parker Hannifin**. Earlier: corporate development and investment banking. **Finance degree, Wake Forest.**
+
+### 4.3 Advisors
+
+**Douglas Kirkpatrick** — Currently **CEO of Eridan** (5G RF technology). Formerly a venture capitalist and **DARPA Chief Scientist**, overseeing programs including rapid DNA synthesis. Earlier: R&D leadership at Fusion Lighting; scientific and VP roles at **SAIC**. **B.S. Physics, College of William & Mary**; **Ph.D. Physics, MIT (1988)**. **Fellow of the American Physical Society**, 30+ journal articles and **60+ patents** to his name (his own, not Sagetech's).
+
+**Prabhu Goel** — also listed as Advisor.
+
+### 4.4 External figures associated with Sagetech
+
+- **Rudy Johnson**, Director of Business Development — quoted in the MatrixSpace release.
+- **Dawn Zoldi**, CEO of P3 Tech Consulting, 25-year Air Force veteran — provided the headline industry endorsement of the MX12B: *"The ability to make the call on hostile intent under the Rules of Engagement is critical… This is a game-changer."*
+- **Lori DeMatteis**, Chief Revenue Officer, MatrixSpace — partner-side quote.
+
+---
+
+## 5. PRODUCTS
+
+Sagetech organizes its catalog into three go-to-market verticals (Government–Defense, Government–Civil, Commercial) over three product families: **transponders**, **ACAS/DAA solutions**, and **systems integration services**. There is also an interrogator line (MXR) and a newer OEM/military line (ACX-3000M, AN/APX-128).
+
+### 5.1 MX Series — current-generation transponders
+
+The MX Series is marketed as "transponders and interrogators [delivering] ADS-B In and Out, IFF Mode 5, detect and avoid, omni-directional surveillance, and other advanced functionality." **MXS and MX12B share a common hardware platform**, which is the line's key commercial argument: OEMs can swap between military and civil configurations **without additional integration, software changes, or aircraft changes.**
+
+#### MX12B — Mode 5 IFF Micro Transponder (defense)
+*(https://sagetech.com/transponders/mx12b/)*
+
+Positioning: **"the world's first AIMS-certified micro Mode 5 IFF transponder"**; the smallest full-function Mode 5 IFF transponder available; **the only micro Mode 5 IFF transponder fully compliant with the DoD AIMS Mk XIIB specification**; the **first Mode 5 Level 2B Out transponder certified**.
+
+Consolidates into one enclosure: ADS-B In/Out, pressure altitude encoder, antenna diversity, Ethernet — eliminating discrete components at integration.
+
+Claimed advantage vs. traditional Mode 5 transponders: **93% smaller, 6x lighter, 5x less expensive.**
+
+| Spec | Value |
+|---|---|
+| Weight | **190 g** (with KIV) |
+| Dimensions | **3.4" H × 2.5" W × 1.0" D** |
+| Operating temp | **−40 °C to +71 °C** |
+| Environmental | MIL-STD-810G, RTCA DO-160G, MIL-STD-461F |
+| Military modes | **Modes 1, 2, 3, 5 (Levels 1 & 2)** |
+| Civil mode | Mode S per RTCA/DO-181 |
+| ADS-B In | 1090 MHz (ADS-B, ADS-R, TIS-B); growth path to Mode 5 Level 2 broadcast-in |
+| ADS-B Out | RTCA/DO-260B compliant |
+| Interfaces | Ethernet 10BaseT/100BaseT, RS-422, RS-232 |
+| Antenna | Configurable diversity or single-antenna |
+| Transmit power | Per AIMS 17-1000 |
+| Applications | ISR; Aircraft Groups 2, 3, 4, 5 |
+
+Supporting documents published: datasheet, FAQ sheet, FCC report, "Why Choose the MX12B?" value-proposition doc, MX12B accessories datasheet. Received a **product upgrade announced July 11, 2023**. Won the **2021 AUVSI XCELLENCE Award for Technology**. Demonstrated **Mode 5 Level 2B Out at Bold Quest 2021**.
+
+#### MXS — Mode S Micro Transponder with ADS-B In/Out (civil/commercial)
+*(https://sagetech.com/transponders/mxs-transponder/)*
+
+Positioning: **FAA-certified (TSO Authorized)**, described as **the first FAA-certified small transponder with an integrated ADS-B In receiver** and "the world's first FAA-certified micro ADS-B receiver." It is the **cornerstone of Sagetech's DAA architecture** — its integrated ADS-B In is the critical cooperative-traffic sensor feeding the ACAS X logic.
+
+| Spec | Value |
+|---|---|
+| Dimensions | **3.4" × 2.5" × 1"** |
+| Weight | **190 g** |
+| Modes | **A, C, S** |
+| ADS-B | **1090 MHz In and Out** |
+| Antenna | Full diversity |
+| Altitude encoding | to **100,000 ft** |
+| I/O | RS-232, RS-422, Ethernet |
+| Certification | FAA TSO |
+| Feature branding | **"SafeMission+ Technology"** |
+
+Key marketing claims: unprecedented micro-SWaP; **full output power, no deviations**; no additional integration needed; integrates with major autopilots. Documentation includes the *MXS System Description and Installation Manual*, MXS accessories datasheet, and "MXS Micro Transponder Mode" sheet.
+
+#### MXR — Micro Interrogator
+Referenced in partnership coverage rather than on a dedicated product page at time of research. The MXR is an **active-surveillance micro interrogator** used alongside the transponders. In the **Hover, Inc.** partnership, the MXR + MXS combined with Hover's embedded computing lets a UAV **actively interrogate nearby aircraft, validate ADS-B In tracks, and resolve threats** — described as compliant with **ACAS-Xu and ACAS-Xr** and aimed at UAVs flying **above 400 ft BVLOS in the National Airspace System**. Sagetech has publicly argued that "transponders and interrogators will serve as core technology enablers for future DAA systems required on autonomous aircraft as Urban Air Mobility integrates into manned airspace."
+
+#### ACX-3000M
+Named in the APX-128 press release as one of the two existing transponder lines the AN/APX-128 extends (alongside MX12B). A military transponder line; no dedicated public product page found.
+
+#### AN/APX-128 — Advanced IFF Transponder (newest)
+The subject of the April 2026 Army award. Fully **MOSA (Modular Open Systems Architecture) compliant**, includes **ADS-B In** aligned with anticipated **ALERT Act** requirements, and is **upgradeable to ACAS Xr** collision avoidance. Extends the MX12B and ACX-3000M lines. Low SWaP-C replacement for legacy Army IFF hardware. Rapidly developed under a separate SBIR contract with partner **R Cubed Engineering**. Fields with government-provided **KIV-79** crypto appliqué (per the USAspending delivery-order descriptions). Target platforms: **Army helicopters, other DoW assets, and Foreign Military Sales.**
+
+### 5.2 XP Series — legacy transponders
+
+The XP family has amassed **over 1.5 million flight hours** in combat, high-altitude, and other demanding environments, and is "standard equipment in most Group 2 and Group 3 UAV programs." All XP-family units share **FCC ID: YT5XP-TR**. All are "designed to FAA TSO standards" and "can be seen by TCAS."
+
+#### XPS — Mode S Legacy Transponder with ADS-B Out
+*(https://sagetech.com/transponders/xps-with-ads-b-out/)*
+
+| Spec | Value |
+|---|---|
+| Modes | **3/A, C, S** |
+| ADS-B | **Out (extended squitter) to RTCA DO-260B** |
+| Size | **3.5" × 1.8" × 0.7"** |
+| Weight | **3.53 oz (100 g)** |
+| Power | **< 1 W standby; 8 W typical; 14 W max** |
+| Altitude encoder | integrated, to **85,000 ft** per SAE AS392c / SAE AS8003 |
+| Performance | RTCA **DO-181E** |
+| Serial comms | Proprietary protocol RS-232 up to **460.8 kbps**; Accord NexNav; NMEA RS-232, adjustable data rate |
+| FCC | YT5XP-TR |
+
+Applications listed: delivery, gliders, inspection, high-altitude aircraft, commercial agriculture, fire agencies, police + border patrol, risk management, first responders. Notable deployment: **Primoco UAV Model One 150 endurance record** used the XPS; also used in a documented DJI A2 + BeagleBone ATC-visibility integration (XPS-TR).
+
+#### XPG — Mode S Legacy Transponder, ADS-B Out + integrated GPS
+*(https://sagetech.com/transponders/xpg-with-ads-b-out-and-gps/)*
+
+All-in-one with **built-in GPS** for 24/7 location awareness; Modes A, C, S plus ADS-B Out. Marketed as **"the only transponder available in its class that can be seen by TCAS."** Operation at full power over full temperature range. *(Caution: the live XPG page's spec block appears to reuse MX12B/Mode 5 copy — listing "just over 1 lb with KIV," 3.4″×2.5″×1.0″, −40 °C to +71 °C, MIL-STD-810G/DO-160G/MIL-STD-461F, and "Military Modes 1, 2, 3, 5 (Levels 1&2)." This looks like a CMS content error on Sagetech's site; verify against the datasheet before relying on XPG numbers.)*
+
+#### XPC — Mode C Legacy Transponder (two variants)
+
+**XPC commercial/civil** *(https://sagetech.com/transponders/xpc/)*: "ultra-reliable performance at a cost-effective price" for basic situational awareness on UAS.
+
+| Spec | Value |
+|---|---|
+| Modes | **3/A, C** |
+| Size | **3.5" × 1.8" × 0.7"** |
+| Weight | **3.5 oz (100 g)** |
+| Power | **< 1 W standby; 4 W typical; 11 W max** |
+| Altitude encoder | to **85,000 ft** per SAE AS392c / SAE AS8003 |
+| Performance | RTCA **DO-144A** |
+| FCC | YT5XP-TR |
+
+**XPC Mode C Defense** *(https://sagetech.com/transponders/xpc-mode-c-transponder/)*: same physical/electrical specs, but **certified to DoD AIMS Mark XA for guaranteed NATO interoperability**. "Used worldwide, for no-fail missions." Tailored for Group 2 and Group 3 programs; ISR applications. Customer named explicitly: **Textron**. An "XPC Toolkit" is offered alongside the datasheet.
+
+### 5.3 ACAS Solutions / Detect and Avoid
+*(https://sagetech.com/acas-solutions/)*
+
+Architecture: an **onboard ACAS DAA computer** paired with **SafeMission+ Software**, fed by the MX-series transponder's integrated ADS-B In (cooperative traffic) and plug-and-play third-party **non-cooperative sensors** (radar, EO, acoustic). Built on **ACAS X**, which "uses advanced algorithmic techniques and probabilistic models to provide collision avoidance for all classes of piloted and unpiloted aircraft." Sagetech integrated ACAS X algorithms onto its own DAA computer.
+
+Three variants, segmented by aircraft class and airspace:
+
+| Variant | Aircraft class | Envelope | Description |
+|---|---|---|---|
+| **ACAS Xu** | Fixed wing | **>55 lbs, >400 ft AGL** | Certifiable system with an **integrated cooperative traffic interrogator**; plug-and-play compatible with common non-cooperative sensors; for BVLOS across airspace types |
+| **ACAS sXu** | Small uncrewed | **<55 lbs, <400 ft AGL** | Compact, low-SWaP; integrates with autopilots and non-cooperative sensors; **dual-band ADS-B receiver** for cooperative traffic; supports fixed- and rotary-wing sUAS |
+| **ACAS Xr** | Rotary wing | **>55 lbs, >400 ft AGL** | Targets UAM/AAM and crewed rotorcraft; supports in-corridor and non-corridor routes; certified low-SWaP hardware |
+
+Marketing collateral includes a "Why Choose ACAS X" flyer. Sagetech provided flight test data to **FAA researchers evaluating ACAS Xr logic** for crewed and uncrewed rotorcraft. Sagetech has published explainers on the **ACAS Xu MOPS (RTCA DO-386)** and on **DO-365B**.
+
+### 5.4 Systems Integration Services
+*(https://sagetech.com/integration-services/)*
+
+Three named service offerings aimed at OEMs, defense departments, civil governments, and commercial operators:
+
+1. **Aircraft Integration & Testing** — Sagetech's own team performs the integration ("Save Time").
+2. **Product Success Training** — hands-on instruction on Sagetech hardware and software ("Get There Faster").
+3. **BVLOS Advisory Services** — access to Sagetech's partner/vendor network to support BVLOS goals ("Unlock Expertise").
+
+A "Systems Integration Services" datasheet is published.
+
+### 5.5 Accessories and support products
+MX12B accessories, MXS accessories, XPC Toolkit, antennas (the FA491324P0026 Air Force award covers "IFF transponders **and antennas**"), and published **Service Bulletins** (https://sagetech.com/service-bulletins/).
+
+### 5.6 Integrations, platforms, and named deployments
+
+Autopilot/flight-control and avionics integrations: **ArduPilot** (via Kraus & Hamdani Aerospace), **Embention**, **UAV Navigation**, **Elsight** (connectivity), **Iris Automation** (non-cooperative detection, integrated into UAV Navigation's flight control system), **MatrixSpace** (AI radar/non-cooperative sensing), **Becker Avionics** (European market), **Hover, Inc.** (interrogator-based DAA).
+
+Aircraft/platform deployments named publicly: **Insitu ScanEagle** (origin platform), **UAV Factory Penguin C** (and the broader Penguin family), **PAE ISR Resolute Eagle**, **Primoco UAV Model One 150**, **High Eye Airboxer**, **A-TechSYN CGT50 VTOL**, **American Aerospace AiRanger**, **Joby Aviation eVTOL**, and NASA research aircraft.
+
+### 5.7 Certifications and regulatory approvals summary
+- **FAA TSO Authorization** — MXS
+- **DoD AIMS certification** — Mode 5 micro IFF (MX12B), Mk XIIB compliant, Mode 5 Level 2B Out
+- **DoD AIMS Mark XA** — XPC Defense (NATO interoperability)
+- **FCC ID YT5XP-TR** — XP family
+- **ANATEL certification** (Brazil) — MXS, obtained via partner Advanced Technologies, Security & Defense
+- Environmental/EMI: **RTCA DO-160G, MIL-STD-810G, MIL-STD-461F**
+- Performance standards referenced: **RTCA DO-181E, DO-181, DO-144A, DO-260B**; **SAE AS392c, AS8003**; **AIMS 17-1000**
+
+### 5.8 International reseller network
+*(https://sagetech.com/international-resellers/)* — 17 countries:
+
+Australia (The AMS Group; Capital Aircraft Services/CAPAIR) · Brazil (RWK; Advanced Technologies, Security & Defense) · Egypt (Makville Business Consulting Agency) · Hungary (MILTECH) · India (Apollo Micro Systems Limited; Aero SoluStax) · Ireland (A-TechSYN) · Israel (FMS Aerospace) · Italy (Eurolink Systems) · Japan (Cornes Technologies) · Mexico (Descef Sistemas) · Romania (MarcTel) · Singapore (Oriens Group) · South Africa (SSASS Holdings) · South Korea (WI Engineering Co., Ltd.; Pan West; AccessWe) · Spain (Aerogenix; Embention; UAV Navigation) · Turkey (BSM Innovative Technologies)
+
+---
+
+## 6. PATENTS
+
+### 6.1 Methodological caveat — READ THIS
+
+**I was unable to retrieve authoritative patent records in this session.** Every patent database attempted was blocked at the network layer:
+
+- `patents.google.com` — HTTP 503 via WebFetch; anti-bot block via direct request
+- `patents.justia.com` — Cloudflare challenge
+- `api.patentsview.org` / `search.patentsview.org` — 301/empty (legacy API retired; current API requires a key)
+- `assignment-api.uspto.gov` — empty response
+- `freepatentsonline.com` — connection reset
+- `patentguru.com` — HTTP 468
+- `worldwide.espacenet.com` — HTTP 403
+- `uspto.report` — HTTP 403
+- `fccid.io` — HTTP 403
+- `sbir.gov` public API — `{"message":"Forbidden"}`
+- DuckDuckGo HTML/Lite fallbacks — bot challenge
+
+Web search budget for the session was also exhausted (200/200 calls) before patent-specific queries could be run against an indexable source. **No patent numbers or titles should be attributed to Sagetech on the basis of this report.** What follows is what is defensible from non-patent sources.
+
+### 6.2 What is known about Sagetech's IP position
+
+**The 2019 transaction was explicitly an IP acquisition.** The Gorge Technology Alliance profile states Sagetech Avionics "was founded in 2019 through the acquisition of **intellectual property** from Sagetech Corporation." This means:
+- Any patents filed before ~2019 would be assigned to **Sagetech Corporation** (UEI N3GCB5FTDN79), not Sagetech Avionics, Inc.
+- Ownership would have transferred via the carve-out, which would show as an **assignment record** in the USPTO Patent Assignment Database — the right place to look when a search tool is available.
+- Searching only "Sagetech Avionics" as assignee will under-count the portfolio.
+
+**Search strings to use when a patent database is reachable:**
+- Assignee: `"Sagetech Corporation"`, `"Sagetech Avionics, Inc."`, `"Sagetech Avionics Inc"`, `"Sagetech Holdings"`
+- Inventor: `Furey`, `Hamilton` (Matthew), `Day` (David) — note that Hamilton and Day both came from ACSS/L3Harris and Honeywell, so their earlier patents would be assigned to those firms, not Sagetech
+- CPC classes: **G01S 13/78** (secondary radar / IFF transponder systems), **G01S 13/76**, **G08G 5/04** (aircraft collision avoidance), **G08G 5/0021**, **H04B 7/185**
+
+**Likely subject matter, inferred from product claims** (these are technology areas, NOT confirmed patents):
+- Miniaturization of a full-function Mode A/C/S transponder into a ~100 g / 3.5″×1.8″×0.7″ package — the "world's first micro transponder" claim
+- Integration of Mode 5 IFF (Levels 1 & 2), Mode S, ADS-B In and ADS-B Out, pressure altitude encoder, and antenna diversity into a single 190 g enclosure at full AIMS 17-1000 transmit power "with no deviations"
+- The **"SafeMission+"** software/technology branding, applied to both the MXS transponder and the ACAS DAA computer — a named, likely-trademarked technology block
+- Combining a micro **interrogator** (MXR) with ADS-B In track validation for cooperative DAA, per the Hover, Inc. architecture
+- MOSA-compliant, field-upgradeable IFF architecture (APX-128) supporting later insertion of ACAS Xr
+
+**Countervailing evidence that the portfolio may be modest:** Sagetech's public positioning leans overwhelmingly on **certifications** (AIMS Mk XIIB, AIMS Mk XA, FAA TSO, FCC, ANATEL) and **flight-hour track record** (1.5M hours) rather than on patents. Its marketing materials, leadership bios, and press releases contain **zero patent claims** — notable, because the company does loudly claim "world's first" repeatedly. The one place patents are mentioned on the whole site is advisor **Douglas Kirkpatrick's** bio ("60+ patents"), and those are his personal patents from Fusion Lighting/SAIC/DARPA work, not Sagetech assets. In a certification-gated market like IFF/ADS-B, the **AIMS and TSO certificates are the real moat** — they take years and millions to obtain and are far harder for a competitor to replicate than a patent is to design around.
+
+**Trademarks** are a more likely IP register to yield hits: "Sagetech," "SafeMission+," "MX12B," "MXS" are all candidate marks worth checking in USPTO TESS.
+
+**Recommendation for follow-up:** run USPTO Patent Public Search (ppubs.uspto.gov) with `AN/"Sagetech"` and `AANM/"Sagetech"`, plus the USPTO Patent Assignment Search for assignments **from** Sagetech Corporation **to** Sagetech Avionics dated late 2019. Also check whether **R Cubed Engineering** holds co-invented APX-128 IP from the SBIR — SBIR data rights (not patents) are often the operative IP mechanism in Phase III sole-source awards like W15P7T-26-D-A001.
+
+---
+
+## 7. LATEST NEWS (2024 – SEPTEMBER 2026)
+
+Sourced from Sagetech's own post sitemap (dated) plus press coverage. Listed newest-first.
+
+### 2026
+
+**September 22, 2026 — OpEd: "The Midair Collision Warning Systems Miss, and How to Close the Gap"** (Blog)
+*(https://sagetech.com/news-and-events/oped-the-midair-collision-warning-systems-miss-and-how-to-close-the-gap/)*
+Prompted by an **August 2026 midair collision between two firefighting helicopters in Greece** with loss of life. Argues that current collision avoidance tech "does little to protect aircraft flying in close coordination at low altitude." Key data cited: TCAS II and ACAS X only work well when both aircraft are **cooperative** (working transponder or ADS-B); non-cooperative detection via radar/cameras/acoustics is "much less reliable and only works at short range." Statistics presented: **36 midair collisions since 2020**, of which only **11 (just over 30%)** had both aircraft broadcasting position; **18 of the 36 occurred in U.S. airspace**, and only **7 of those 18 (39%)** involved two broadcasting aircraft — against an FAA baseline where **>80% of U.S.-registered aircraft carry the equipment** and **85–95% of crewed aircraft airborne at any moment** are using it. Conclusion: the more aircraft broadcast, the fewer midairs; the gap is aircraft flying in close coordination at low altitude, and closing it "requires a new way for aircraft to talk to each other in real time." This is Sagetech positioning for a low-altitude, close-formation cooperative link — read it as a product-roadmap signal.
+
+**June 29, 2026 — CEO discusses ACAS on the *Autonomy Global Defense Tech* podcast** (Blog)
+Tom Furey on ACAS and airspace safety. *(https://sagetech.com/news-and-events/sagetech-avionics-ceo-discusses-acas-on-autonomy-global-defense-tech-episode/)*
+
+**June 15, 2026 — Full-rate production delivery order, $3,602,297.44** (USAspending W15P7T26FA009)
+Largest single APX-128 delivery order to date, PoP through 2027-06-14. Also the "most recent award date" shown on HigherGov.
+
+**April 30, 2026 — APX-128 delivery order, $2,160,892.48** (W15P7T26FA007) — transponders + KIV-79 crypto appliqué services + cyber services.
+
+**April 23, 2026 — Sagetech Awarded $248.5M Army Contract for APX-128 Advanced IFF Production** (Press Release, PRNewswire/PRWeb, datelined Bingen, WA)
+*(https://sagetech.com/news-and-events/sagetech-avionics-awarded-248-5m-army-contract-for-apx-128-advanced-iff-production/ · https://www.prweb.com/releases/sagetech-avionics-awarded-248-5m-army-contract-for-apx-128-advanced-iff-production-302751352.html · https://www.streetinsider.com/Press+Releases/... · https://www.defenseadvancement.com/news/sagetech-avionics-secures-contract-for-advanced-iff-transponder-production/ · https://www.columbiariverpartners.com/news/sagetech-avionics-awarded-2485m-army-contract-for-apx-128-advanced-iff-production)*
+
+**The single most consequential event in company history.** Details:
+- **SBIR Phase 3 contract W15P7T-26-D-A001**, U.S. Army
+- **10-year, $248,500,000 IDIQ**; base vehicle recorded in USAspending as W15P7T26DA001, start 2026-04-03
+- Scope: integration and deployment of the AN/APX-128 across **Army helicopters, other Department of War assets, and Foreign Military Sales**
+- Technical: **MOSA compliant** (improving lifecycle and configuration management vs. legacy); **ADS-B In** aligned with anticipated **ALERT Act** requirements now before Congress; **upgradeable to ACAS Xr**
+- Lineage: extension of the **MX12B and ACX-3000M** lines; rapidly developed under a separate SBIR with partner **R Cubed Engineering**
+- Furey: *"The APX-128 is a MOSA-compliant, upgradeable solution which will enhance airspace safety in training missions and protect our warfighters in combat. With a flexible architecture and modular design, this platform can be upgraded and customized for legacy and future aircraft platforms alike."*
+- Hamilton: *"The rapid development of the APX-128 was a testament to the deep technical skills of Sagetech's engineering team, our partnership with the Department of War, and the robust collaboration between Sagetech, the Army, and our partners at R Cubed Engineering… The Army's need to quickly replace an obsolete IFF in their aircraft…"*
+
+**April 16, 2026 — Two further APX-128 delivery orders**, $1,523,243.00 (W15P7T26FA004) and $1,273,183.04 (W15P7T26FA005), both PoP through 2027-04-16.
+
+**April 2026 — FAA DAA data-collection flights**, conducted under the FAA's Broad Agency Announcement program in collaboration with **Virginia Tech's Mid-Atlantic Aviation Partnership**, with integration partners **Sagetech, Collins Aerospace, and uAvionix**. This is the flying-out of the two FY2024 FAA BAA Call 005 contracts (697DCK24C00305, $998,426.37; 697DCK24C00369, $865,457.11) for "development of non-system-specific technology to integrate UAS into the NAS."
+
+**March 13, 2026 — "Safety on the Edge of the New Airspace: Layered Collision Avoidance for BVLOS Drone Operations"** (Blog)
+*(https://sagetech.com/news-and-events/safety-on-the-edge-of-the-new-airspace-layered-collision-avoidance-for-bvlos-drone-operations/)*
+
+### 2025
+
+**July 7, 2025 — Navy contract N6833525C0258, $239,949.00**, PoP through 2026-09-09 (NAVAIR/NAWCAD Patuxent River contracting office).
+
+**May 28, 2025 (announced May 20, 2025) — Sagetech Avionics and MatrixSpace Collaborate to Enable Advanced Detect and Avoid Solutions**
+*(https://sagetech.com/news-and-events/sagetech-avionics-and-matrix-space-collaborate-to-enable-advanced-detect-and-avoid-solutions/)*
+Subhead: "Expanding the compatibility of Sagetech's ACAS X with market-leading noncooperative sensors." Sagetech selected AI-sensing innovator **MatrixSpace** to support its advanced airspace solutions. The two had already **partnered to win an HSWERX award from DHS** for advanced air detection supporting UAS operations, with potential applications across **DHS Customs and Border Protection**. The DHS project sought to identify sUAS with onboard sensors meeting FAA guidelines for safe BVLOS.
+- **Rudy Johnson**, Director of Business Development, Sagetech: *"Our mission is to deliver low-SWaP certified avionics solutions that enable safe, scalable airspace integration. To achieve this requires a sophisticated level of airspace awareness informed by high-performance sensors. MatrixSpace is meeting the challenge, setting new standards in precision detection, making them key to meeting our customers' demanding requirements."*
+- **Lori DeMatteis**, CRO, MatrixSpace: *"As autonomous aviation becomes ubiquitous, the need to integrate it safely into the National Airspace is key. Working with Sagetech Avionics has demonstrated their commitment not only to high customer standards but also reaching for the most advanced, innovative solutions possible to achieve this."*
+
+**May 21, 2025 — CAPAIR named Australian reseller** (per press coverage; the site's own CAPAIR post is dated July 15, 2024 — the two dates likely reflect an initial announcement and a re-promotion). CAPAIR brings Sagetech's DAA software and IFF transponders to the Australian market.
+
+### 2024
+
+**September 18, 2024 — "How Sagetech Avionics Is Making the Skies Safer: An Inside Look with CEO Tom Furey"** (Podcast/video feature)
+
+**September 9, 2024 — "Discover Sagetech Avionics' Groundbreaking Collision Avoidance Technology: New Video Explains It All"**
+
+**September 27, 2024 — Air Force purchase FA491324P0026, $31,150.00**, IFF transponders and antennas.
+
+**September 23 & 27, 2024 — Two FAA BAA Call 005 contracts** totaling **$1,863,883.48** (697DCK24C00369 and 697DCK24C00305) for non-system-specific UAS-into-NAS integration technology. These two awards are essentially all of FY2024 federal revenue.
+
+**July 17, 2024 — Aero SoluStax named official reseller to the India avionics market**
+
+**July 15, 2024 — Capital Aircraft Services (CAPAIR) named reseller for Australia**
+
+**May 23, 2024 — American Aerospace AiRanger, equipped with Sagetech technology, receives groundbreaking FAA approval for BVLOS flight**
+*(https://sagetech.com/news-and-events/american-aerospace-airanger-equipped-with-sagetech-avionics-technology-receives-groundbreaking-faa-approval-for-bvlos-flight/)* — a significant regulatory proof point for the DAA stack.
+
+**May 16, 2024 — "Transforming Airspace Safety: Insights from Sagetech Avionics CEO Tom Furey at Xponential 2024"**
+*(https://insideunmannedsystems.com/transforming-airspace-safety-insights-from-sagetech-ceo-tom-furey-at-xponential-2024/)*
+
+**April 2, 2024 — Joby and Sagetech Collaborate to Demonstrate Onboard-Piloted Detect and Avoid Capabilities**
+*(https://sagetech.com/news-and-events/joby-and-sagetech-collaborate-to-demonstrate-onboard-piloted-detect-and-avoid-capabilities/)*
+Partnership began in **2022**, studying onboard-piloted DAA supporting Joby's proposed **enhanced Visual Flight Rules (eVFR)** operations — described in **RTCA DO-398a OSED** as an extension to special VFR. eVFR would provide earlier warnings of impending close encounters plus maneuver guidance even when the pilot cannot see the neighboring aircraft; later implementations would lower visibility and cloud-clearance requirements. The core enabler is the **FAA's ACAS Xr**; Sagetech's ACAS Xr-based DAA system builds on its **TSO-authorized MXS transponder**. Joby continues flight and lab evaluation of the prototype. Goal: certify a DAA solution meeting **Part 135 eVTOL** needs and supporting any aircraft benefiting from eVFR. *(Note: this post carries an April 2, 2024 published date but a May 28, 2025 sitemap lastmod — it was likely re-surfaced/updated in 2025.)*
+
+**April 2, 2024 — "We Need to Protect Our Troops Against Drones — Now" (AUVSI opinion piece)**
+
+**March 2024 — Event calendar:** SOF Week, AUVSI Xponential, Industry Day at Fort Novosel (AL), AUVSI Pathfinder Huntsville (AL).
+
+**February 23, 2024 — Successful BVLOS flight of Primoco UAV with Sagetech's Mode S micro transponder on board**
+
+### Slightly earlier, for continuity (2023)
+
+- **Nov 2, 2023** — "The MX12B Transponder Challenge: Enhancing Military Operations and Civilian Safety"
+- **Nov 1, 2023** — "Enhancing Airborne Safety with Sagetech's ACAS X Solutions"; "Get Your Program Off the Ground with Sagetech's MXS Transponder"
+- **Sept 28, 2023** — GSA MAS schedule 47QSWA23D00A5 awarded
+- **July 11, 2023** — New upgrade announced to the Mode 5 MX12B IFF transponder
+- **May 25, 2023** — Sagetech + Elsight integration "takes the industry one step closer to routine BVLOS flight"
+- **April 11, 2023** — Partner Advanced Technologies, Security & Defense obtains **ANATEL certification** for the MXS (Brazil)
+- **March 29, 2023** — Sagetech + A-TechSYN partner to offer the MX product family on the **CGT50 VTOL UAV**
+- **Feb 24, 2023** — **FAA certifies new Sagetech Mode S micro transponder with integrated ADS-B In/Out** (the MXS milestone)
+- **Jan 17, 2023** — "Sagetech Avionics Takes Lead on a Maturing Detect and Avoid Ecosystem"
+
+---
+
+## 8. SYNTHESIS AND ANALYTICAL NOTES
+
+**What Sagetech actually is:** a ~68-person, PE-backed, HUBZone-certified small manufacturer in rural Washington that occupies a narrow but strategically valuable niche — the smallest certified cooperative-surveillance radios in aviation. Its defensibility is regulatory, not patent-based: AIMS Mk XIIB, AIMS Mk XA, FAA TSO, and FCC certifications on a sub-200-gram package that competitors have not matched.
+
+**The inflection point is April 2026.** Before the APX-128 award, Sagetech's federal prime business was under $2M/year and lumpy — a $150K AFWERX award, some $30–45K hardware buys, and two FAA research contracts. The Army IDIQ changes the company's category: a $248.5M ceiling over ten years, with **$8.56M already obligated in four delivery orders within three months of award**. The sitemap shows the company hiring a Quality Technician, Supply Chain Manager, and Inventory & Logistics Specialist — the signature of a design shop becoming a production house.
+
+**Strategic thesis (the "layered" story):** Sagetech's three published blog/op-ed pieces in 2026 all argue the same line — cooperative broadcast (transponder/ADS-B) is the reliable layer, non-cooperative sensing is the unreliable layer, and the gap is low-altitude close-coordination flight. The commercial expression of that thesis is: sell the certified transponder (MXS/MX12B/APX-128), make it the cooperative sensor for the ACAS X DAA computer, and plug in third-party non-cooperative sensors (MatrixSpace, Iris Automation) rather than building them. That is a deliberately asset-light, integration-centric architecture.
+
+**Dual-use hedge:** the MXS/MX12B shared hardware platform lets an OEM flip between civil and military configurations with no aircraft change. That single design decision is why Sagetech can simultaneously serve Joby's Part 135 eVTOL certification path and the U.S. Army's helicopter IFF refresh from one production line.
+
+**Key risks visible in the public record:**
+1. **Customer concentration** — FY2026 federal revenue is essentially one program (APX-128) with one customer (Army PEO/PM at Aberdeen, contracting office W15P7T).
+2. **Regulatory dependency** — ACAS Xu/Xr/sXu revenue is gated on FAA MOPS maturation (DO-365B, DO-386) and on BVLOS rulemaking; the ALERT Act, cited as justifying APX-128's ADS-B In, was still "currently in Congress" as of April 2026.
+3. **Supply chain / crypto** — APX-128 fielding depends on government-furnished **KIV-79** crypto appliqués (explicit in three of four delivery orders), a dependency Sagetech does not control.
+4. **Scale mismatch** — executing a $248.5M ten-year production program with ~69 people is a real operational stretch; the hiring pattern suggests management knows it.
+5. **Site data hygiene** — the XPG product page appears to display MX12B specs, and the "Active Contracts and Past Performance" page is a live placeholder marked `[need content]` in its source. Minor, but worth knowing if you are ingesting sagetech.com into a RAG corpus: **the site contains at least one internally inconsistent spec block.**
+
+---
+
+## 9. SOURCE INDEX
+
+**Primary (company):**
+https://sagetech.com/ · /about-us/ · /about-us/who-we-are/ · /about-us/leadership-team/ · /about-us/careers/ · /transponders/ · /transponders/mx12b/ · /transponders/mx12b/mx12b-faqs/ · /transponders/mxs-transponder/ · /transponders/xps-with-ads-b-out/ · /transponders/xpg-with-ads-b-out-and-gps/ · /transponders/xpc/ · /transponders/xpc-mode-c-transponder/ · /acas-solutions/ · /integration-services/ · /international-resellers/ · /government-solutions/ · /government-solutions/defense-solutions/ · /government-solutions/civil-solutions/ · /government-solutions/active-contracts-and-past-performance/ · /commercial-solutions/ · /service-bulletins/ · /resources/product-sheets/mx-series/ · /news-and-events/ (full post index via /post-sitemap.xml) · /wp-content/uploads/2021/02/UAS-Transponder-Requirements-and-Guidelines-Sagetech-Avionics-2021-Update.pdf
+
+**Government / structured data:**
+https://api.usaspending.gov (recipient, spending_by_award, spending_over_time; UEIs T4UNAUKXMZM3 and N3GCB5FTDN79) · https://www.highergov.com/awardee/sagetech-avionics-inc-10280151/
+
+**Press / trade:**
+https://www.prweb.com/releases/sagetech-avionics-awarded-248-5m-army-contract-for-apx-128-advanced-iff-production-302751352.html · https://www.streetinsider.com/Press+Releases/Sagetech+Avionics+Awarded+$248.5M+Army+Contract+for+APX-128+Advanced+IFF+Production/26356978.html · https://www.defenseadvancement.com/news/sagetech-avionics-secures-contract-for-advanced-iff-transponder-production/ · https://www.defenseadvancement.com/company/sagetech/ · https://www.prnewswire.com/news/sagetech-avionics-inc./ · https://www.prnewswire.com/news-releases/sagetech-avionics-receives-afwerx-contract-from-the-us-air-force-301207072.html · https://insideunmannedsystems.com/transforming-airspace-safety-insights-from-sagetech-ceo-tom-furey-at-xponential-2024/ · https://www.auvsi.org/news/oem-leader-how-sagetech-avionics-builds-layers-of-aviation-safety-for-dual-use-bvlos-capabilities/ · https://verticalmag.com/press-releases/sagetech-avionics-demonstrates-true-detect-and-avoid/ · https://www.unmannedsystemstechnology.com/company/sagetech-corporation/
+
+**Investors / databases:**
+https://www.columbiariverpartners.com/ · https://www.columbiariverpartners.com/news/sagetech-avionics-awarded-2485m-army-contract-for-apx-128-advanced-iff-production · https://pitchbook.com/profiles/company/125125-75 · https://www.cbinsights.com/company/sagetech-avionics · https://tracxn.com/d/companies/sagetech/__W1xpfbZrUjOJGcs53KmpBnmxTiz0E3YAyhWB35y80ys · https://www.preqin.com/data/profile/asset/sagetech-avionics-inc-/434543 · https://www.zoominfo.com/c/sagetech-corp/347884610 · https://craft.co/sagetech-avionics/locations · https://crgta.org/spotlight/sagetech-avionics-inc · https://www.linkedin.com/company/sagetech-avionics-inc · https://www.linkedin.com/in/tom-furey-584b1/ · https://www.airframer.com/direct_detail.html?company=152932
+
+---
+
+**Known gaps for follow-up:** (1) patent portfolio — all databases blocked, needs USPTO Patent Public Search + Assignment Search on both "Sagetech Corporation" and "Sagetech Avionics"; (2) revenue — no disclosure exists, only federal obligations are verifiable; (3) valuation — never disclosed for either 2019 or 2021 transaction; (4) MXR interrogator and ACX-3000M — no public product pages, specs unavailable; (5) exact current headcount — sources range 36 to 69 depending on snapshot date.

@@ -1,0 +1,341 @@
+# RESEARCH REPORT: "ZERODRAG" (drone/UAS)
+
+## 0. DISAMBIGUATION — read first
+
+Three distinct things carry the "Zerodrag" / "zero drag" name. Only one is a drone/UAS company:
+
+1. **ZeroDrag Technologies Private Limited (India)** — the subject of this report. An Indian deep-tech UAV avionics and drone-electronics manufacturer, founded 2022, registered in Nagpur, Maharashtra, operating from IIT Delhi's Research & Innovation Park and a Noida office. Web: [zerodrag.in](https://zerodrag.in/). This is the only entity plausibly a competitor to Vector Technics.
+2. **ZeroDrag™ (inline skate bearings, US)** — [zerodrag.com](https://zerodrag.com/) is a completely unrelated sports-bearing brand that says it has "been in the sports bearing business for over 20 years," selling bearings for fitness skating, roller hockey and marathon racing. No aerospace connection whatsoever. Note the trap: the .com is NOT the drone company; the drone company is the .in.
+3. **"zero drag" as an aerodynamics marketing phrase** — appears in UAV copy from unrelated firms (e.g. PteroDynamics' Transwing VTOL marketing around low-drag configurations, [pterodynamics.com](https://pterodynamics.com/)). Not a company name.
+
+No US or European defence contractor named "Zerodrag" was found in any source. Everything below concerns entity #1.
+
+Note also the company's **former name/brand: "DroneAdda."** CB Insights still files the company under that name ([cbinsights.com/company/droneadda](https://www.cbinsights.com/company/droneadda)), and TheCompanyCheck lists two associated brands for the same CIN: "DroneAdda" and "Zerodrag." If you are deduplicating a database, DroneAdda and Zerodrag are the same legal entity.
+
+---
+
+## 1. COMPANY OVERVIEW
+
+**Legal entity:** ZERODRAG TECHNOLOGIES PRIVATE LIMITED
+**CIN:** U29100MH2022PTC388953
+**Incorporated:** 22 August 2022
+**Registrar of Companies:** Nagpur (Maharashtra)
+**Company type:** Private, non-government, limited by shares
+**Status:** Active / "Active Compliant"
+**DPIIT status:** Recognised Startup
+(Source: [thecompanycheck.com](https://www.thecompanycheck.com/company/zerodrag-technologies-private-limited/U29100MH2022PTC388953), [tofler.in](https://www.tofler.in/zerodrag-technologies-private-limited/company/U29100MH2022PTC388953), [tracxn.com](https://tracxn.com/d/companies/zerodrag/__COdrEKeVnxdEHzo5bHDaRINM9Mn6wwR69RSWDJVq4W4))
+
+**Addresses (three, and they conflict across sources — all appear legitimate):**
+- **Registered office (MCA of record):** H. No. 3150-A, Diamond Nagar, Nagpur, Maharashtra 440022
+- **Operations/office listed on company website:** A-27, 2nd Floor, Sector-3, Gautam Buddha Nagar, Noida, Uttar Pradesh 201301 ([zerodrag.in about page](https://zerodrag.in/pages/about-us-made-in-india-flight-controller-esc-elrs-vtx))
+- **Incubator address / LinkedIn HQ:** Research and Innovation Park, Block-A, Hauz Khas, IIT Delhi, New Delhi 110016 ([in.linkedin.com/company/zerodrag](https://in.linkedin.com/company/zerodrag), [CB Insights](https://www.cbinsights.com/company/droneadda))
+
+This explains why press coverage variously calls it "Nagpur-based" (YourStory, Drone Federation India, Entrepreneur India) and "Delhi-based" (Tracxn, CB Insights). The correct framing: **incorporated and registered in Nagpur, incubated and originally headquartered at IIT Delhi's R&I Park, with an NCR/Noida commercial address.** YourStory's July 2026 feature states plainly that the company "began at the IIT Delhi research park, where it was incubated, and now operates out of Nagpur" ([yourstory.com/2026/07/zerodrag-indian-drone-hardware](https://yourstory.com/2026/07/zerodrag-indian-drone-hardware)).
+
+**Industry classification (MCA):** Main Activity Group C (Manufacturing); Business Activity Code C10 — "Electrical equipment, General Purpose and Special purpose Machinery & equipment, Transport equipment"; described as "Electronic Components & Equipment Manufacturing."
+
+**Incubation and government support:**
+- Incubated at **FITT, IIT Delhi** (Foundation for Innovation and Technology Transfer)
+- Pre-incubated at **NSRCEL, IIM Bangalore** (Launchpad program)
+- Support cited via **Startup India**, **NIDHI**, and **MeitY**-supported programs
+(Sources: [zerodrag.in about](https://zerodrag.in/pages/about-us-made-in-india-flight-controller-esc-elrs-vtx), [CB Insights](https://www.cbinsights.com/company/droneadda), [startupsamadhan.com](https://startupsamadhan.com/zerodrag-raises-6-5-crore-seed-transition-vc-drone-avionics-india/))
+
+**Headcount (conflicting, all small):**
+- Inc42: **15 employees**, +25% over the trailing 90 days ([inc42.com/company/zerodrag](https://inc42.com/company/zerodrag/))
+- Tracxn: **16 employees** as of 31 July 2026
+- LinkedIn: self-declared size band "2–10 employees," but **17 people** listed as employees on the platform; 5,649 followers
+- EPFO (via TheCompanyCheck): 1 active EPFO establishment, "0 employees as of Apr 08, 2024" — clearly a stale/underreported filing
+
+**Mission and positioning.** ZeroDrag does not build drones. It builds the avionics and core electronics layer that drones run on — flight controllers/autopilots, ESCs (motor controllers), GNSS/navigation, telemetry and radio links, and payload-integration hardware — and sells them B2B to drone OEMs on an explicitly OEM-agnostic, cross-platform basis. The founder's formulation, quoted repeatedly in coverage: **"We're not building drones. We're building what every drone needs."** ([startupsamadhan.com](https://startupsamadhan.com/zerodrag-raises-6-5-crore-seed-transition-vc-drone-avionics-india/))
+
+The strategic pitch is import substitution and supply-chain sovereignty: India has scaled domestic airframe manufacturing under PLI and related schemes, but the avionics inside those airframes remain overwhelmingly Chinese-sourced (DJI, Holybro, SpeedyBee and similar). ZeroDrag positions itself as the indigenous alternative for that layer, serving defence, agriculture, logistics, industrial inspection, and the FPV/racing community. Coverage consistently notes rising inbound interest from **US and European** manufacturers and governments seeking non-Chinese component sources ([yourstory.com](https://yourstory.com/2026/07/zerodrag-indian-drone-hardware), [dronefederation.in](https://www.dronefederation.in/media-hub/zero-drag-raise-funds-to-build-drone-avionics-layer)).
+
+**Go-to-market.** Direct D2C via a Shopify storefront at zerodrag.in, plus six named **Authorised Channel Partners** in India: ZBOTIC, Vega Drones, TujoRC, Robu.in, drkstore.in, and Quadkart. Also resold by UAVGarage ([uavgarage.com/product-brand/zerodrag](https://uavgarage.com/product-brand/zerodrag/)). B2B/OEM sales are direct, with **custom design and white-labelling offered for bulk orders**. Warranty is 6–12 months depending on product line (12 months on the core boards).
+
+**Contact:** support@thezerodrag.com; technical support/WhatsApp +91 98217 34544; sales +91 92112 25855; MCA-registered email zerodragtech@gmail.com.
+
+---
+
+## 2. FINANCIALS
+
+ZeroDrag is a private Indian company; financials come from MCA/ROC filings surfaced by Tofler and TheCompanyCheck. It is small and currently loss-making.
+
+**Revenue:**
+- **FY2025 (year ended 31 March 2025): ₹27.61 lakh** (~USD 33K) — TheCompanyCheck
+- **FY2024: ~₹42.1 lakh** (implied)
+- **YoY change: −34.4%** (Inc42 states "decrease of 34.4% from FY24"; Tofler shows −34.44%; TheCompanyCheck shows "▼ 34.00% YoY")
+- Tofler revenue bracket: **"< ₹1 crore"**
+- Tracxn revenue band: **₹0–10 Cr as of 31 Mar 2025**
+(Sources: [inc42.com/company/zerodrag](https://inc42.com/company/zerodrag/), [thecompanycheck.com](https://www.thecompanycheck.com/company/zerodrag-technologies-private-limited/U29100MH2022PTC388953), [tofler.in](https://www.tofler.in/zerodrag-technologies-private-limited/company/U29100MH2022PTC388953))
+
+A revenue *decline* in FY25 alongside heavy product launches is worth flagging — it most plausibly reflects a pivot from the earlier DroneAdda reseller/service model toward own-manufactured hardware, but no source states this explicitly.
+
+**Profitability and balance-sheet ratios (FY2025, Tofler; absolute rupee figures are paywalled):**
+- Net Profit Margin: **−133.96**
+- Return on Equity: **−84.78**
+- ROCE: **−43.29**
+- Debt-to-Equity: **0.17**
+- Networth change YoY: **−58.19%**
+- Total Assets change YoY: **−52.22%**
+- Borrowings change YoY: **0.0%**
+
+Read together: the company burned roughly half its net worth and assets in FY25 while running a loss materially larger than its revenue — normal for a pre-scale hardware startup between rounds, and consistent with the ₹6.5 Cr raise that followed in May 2026.
+
+**Capital structure (note the source conflict, which is a filing-lag artefact):**
+- TheCompanyCheck (more recent): **Authorised capital ₹66 lakh; paid-up (issued & subscribed) ₹51.2 lakh**
+- Tofler (stale snapshot): Authorised ₹15.0 lakh; paid-up ₹1.2 lakh
+
+**Debt / charges:** **None.** Both Tofler and TheCompanyCheck state the company has **no registered charges** with the RoC — i.e., no secured borrowing. Equity-funded only.
+
+**Compliance:**
+- Balance sheet date: **31 March 2025**
+- Last AGM: **10 September 2025** (TheCompanyCheck); Tofler's stale record shows 27 December 2023
+- Auditor: **J.S. Uberoi & Co** (FY2023 appointment)
+
+**Valuation:** Not disclosed. Tracxn redacts it ("$*****") as of the 4 May 2026 round. No press report gives a post-money. The only adjacent datapoint: Tracxn estimates the **founders' collective net worth at ₹28.9 Cr as of 4 May 2026**, which — given a founder stake of 61.11% — implies an equity valuation loosely in the **₹45–50 Cr (~USD 5–6M)** range if taken at face value. Treat that as inference, not a reported figure.
+
+**Cap table (Tracxn):**
+| Holder class | % |
+|---|---|
+| Founders | 61.11% |
+| Funds (institutional) | 21.72% |
+| ESOP pool | 9.92% |
+| Angels | 6.01% |
+| Enterprise | 1.24% |
+
+**No public filings beyond MCA.** No IPO, no SEC/Companies House presence, no bond or debt issuance.
+
+---
+
+## 3. FUNDING HISTORY
+
+Totals differ by database because of how sub-rounds and grants are counted:
+- **Inc42: $828.92K across 2 rounds**, last funding 4 May 2026 (page also renders it as 03/05/2026)
+- **CB Insights: $830K total**, last raise $680K (Seed, led by Transition VC)
+- **Tracxn: $1.23M across 7 rounds**, with **12 institutional + 16 angel investors (28 total)**
+
+**Round-by-round:**
+
+| Date | Round | Amount | Lead / investors | Source |
+|---|---|---|---|---|
+| 17 Sep 2022 | Seed (first, likely incubator/grant) | undisclosed | — | Tracxn |
+| 21 Nov 2023 | Seed | undisclosed | **Spring Star Capital** (lead), "NikkenHotelmgt +19 more" | Tracxn |
+| Sep 2023 | Pre-seed | **₹1.2 crore (~USD 145K)** | **Enrission India Capital** + angels | [Entrepreneur India](https://india.entrepreneur.com/business-news/zerodrag-veloce-aif-suncharge-motors-report-funding-and-investment-activity), [startupsamadhan](https://startupsamadhan.com/zerodrag-raises-6-5-crore-seed-transition-vc-drone-avionics-india/) |
+| 11 Dec 2025 | Seed | undisclosed/redacted | — | Tracxn |
+| 4 May 2026 (announced 27–28 May 2026) | **Seed** | **₹6.5 crore** (~USD 680K per CB Insights/startupsamadhan; ~USD 780K per Entrepreneur India) | **Transition VC** (lead); 2 investors participating | [BW Disrupt](https://www.bwdisrupt.com/article/nagpur-based-drone-startup-zerodrag-technologies-raises-rs-6-5-cr-from-transition-vc-608569), [Entrepreneur India](https://india.entrepreneur.com/business-news/zerodrag-veloce-aif-suncharge-motors-report-funding-and-investment-activity) |
+
+**Total raised to date: ≈ ₹7.7 crore (~USD 0.83M–1.23M depending on database).**
+
+**Named investors across all sources:** Transition VC, Enrission India Capital, Spring Star Capital, Pilani Innovation & Entrepreneurship Development Society (PIEDS, BITS Pilani), iCreate (Gujarat), NSRCEL IIM Bangalore Launchpad, Startup India, Ministry of Electronics and Information Technology (MeitY), plus undisclosed angels.
+
+**Use of proceeds from the May 2026 seed** (consistent across all outlets): expanding R&D; scaling manufacturing capacity; building **testing and quality infrastructure including EMI/EMC certification capability**; stabilising and localising the domestic supply chain; and funding entry into US and European markets.
+
+**About the lead investor — Transition VC.** Bengaluru-based, co-founded by **Raiyaan Shingati** (Managing Partner) and **Mohammed Shoeb Ali**, with **Shantanu Chaturvedi** as Partner; describes itself as "India's first energy-transition VC fund, investing in engineering-led climate tech and deep-tech startups" ([transitionventurecapital.com/about](https://www.transitionventurecapital.com/about)). **Fund I closed at ₹700 crore.** In **July 2026** the firm announced **Fund II at ~₹1,500 crore / USD 150–155M**, writing **$2M–$5M cheques into roughly 20–23 companies**. Shingati's framing of the ZeroDrag thesis, as reported: **"supply chains are weapons,"** India needs **"SovereignTech,"** and avionics is **"the intelligence layer of every drone"** ([startupsamadhan.com](https://startupsamadhan.com/zerodrag-raises-6-5-crore-seed-transition-vc-drone-avionics-india/)).
+
+The round was widely bucketed into a **defence-adjacent deep-tech funding wave in Indian startup activity in May 2026** ([news.ayen.in](https://news.ayen.in/zerodrag-drone-avionics-firm-closes-rs-65-crore/), citing StartupTalky's 28 May 2026 roundup).
+
+**M&A:** "Zerodrag has made no investments or acquisitions yet" (Tracxn). No acquisition offers or exit activity reported.
+
+---
+
+## 4. LEADERSHIP / PEOPLE
+
+Two founders, both directors since incorporation (22 Aug 2022), both still on the board at ~4 years tenure.
+
+**Shantanu Shivdas Bhede — Co-Founder & CEO**
+- DIN: **09710694**
+- Director since **22 August 2022**
+- Background: **mechanical engineer**; self-taught in embedded systems. His LinkedIn headline reads "Enabling intelligent drones with Zerodrag | Incubated @ IIT-Delhi," and his profile references prior drone-services work with clients including **Adani Power, ACC Cement, and Mahindra** ([in.linkedin.com/in/shantanu-bhede-380bab17a](https://in.linkedin.com/in/shantanu-bhede-380bab17a))
+- Also maintains an FPV-pilot public persona: Instagram **@shan_fpv** — bio "Building @zerodrag.in I build things that make cool things fly!"
+- Tracxn notes he has founded **one other company** besides ZeroDrag
+- Public appearances: featured in the NSRCEL Launchpad video series ([youtube.com/watch?v=0WvouxexDRU](https://www.youtube.com/watch?v=0WvouxexDRU)) and the "Made-in-India Drone Avionics | ZeroDRAG | E4" episode ([youtube.com/watch?v=OXl-Q7enQDE](https://www.youtube.com/watch?v=OXl-Q7enQDE))
+- Profiled on Inc42 at [inc42.com/person/shantanu-bhede](https://inc42.com/person/shantanu-bhede/)
+- Signature quotes: "We're not building drones. We're building what every drone needs." and framing ZeroDrag's output as the **"essential building block"** every drone requires, arguing India's UAV sector needs a domestically sourced, dependable electronics foundation ([yourstory.com](https://yourstory.com/2026/07/zerodrag-indian-drone-hardware))
+
+**Amit Ramesh Nimje — Co-Founder & COO**
+- DIN: **08104465**
+- Director since **22 August 2022**
+- His F6S profile describes the technical work directly: "At Zerodrag, we built a modular UAV avionics system featuring our **proprietary flight controller**," with emphasis on secure, power-efficient drone systems ([f6s.com/member/amit-nimje](https://www.f6s.com/member/amit-nimje))
+- Tracxn notes he has also founded **one other company**
+- Note: his DIN (08104465) predates the company by several years, indicating prior directorship experience elsewhere
+
+**Board:** Only the two founders are listed as directors on MCA records. **No investor-nominated director is on record**, and no independent directors — normal at this round size.
+
+**Named executives beyond the founders:** none disclosed in any public source. No CTO, CFO, VP Engineering, or advisory board is publicly named — a genuine gap in the record rather than an omission in this research.
+
+**Hiring signal (as of mid/late 2026, via LinkedIn):** actively recruiting a **Senior Accounts Executive** and a **Senior Hardware Design Engineer** — consistent with the stated plan to grow the engineering team post-seed.
+
+**Key external person:** Raiyaan Shingati, Managing Partner, Transition VC — the lead investor voice in all May 2026 coverage (see §3).
+
+---
+
+## 5. PRODUCTS
+
+ZeroDrag's catalogue is **26 live SKUs** across roughly 10 categories, all branded Zerodrag except the motors (QPT) and a handful of sourced accessories. Core boards are designed and manufactured in India ("Country of origin: India" in product metadata); passive accessories are sourced from China and flagged as such. Firmware compatibility spans **ArduPilot, Betaflight, INAV, and Pixhawk**, with **AM32** on the ESCs. The recurring design claim is **"fully solder-less"** modular construction. Warranty **6–12 months**, 12 months on the core avionics.
+
+(Full catalogue extracted from [zerodrag.in/collections/all](https://zerodrag.in/collections/all), [zerodrag.in/products.json](https://zerodrag.in/products.json?limit=250), and [the product sitemap](https://zerodrag.in/sitemap_products_1.xml). Prices are INR, sale/list.)
+
+### 5.1 Flight Controllers
+| Product | Price (sale / list) | First published |
+|---|---|---|
+| **Zerodrag Nova F4 Flight Controller** — fully solder-less design, 12-mo warranty | ₹4,499 / ₹8,499 | 30 Jun 2025 |
+| **Zerodrag Warp F7 Flight Controller** — fully solder-less design, 12-mo warranty | ₹4,999 / ₹10,999 | 10 Jul 2024 |
+| **Zerodrag Strix H7 Flight Controller** — fully solder-less, 12-mo warranty; flagship H7-class board | ₹7,999 / ₹12,999 | 30 Sep 2025 |
+
+UAVGarage lists the Nova F4 at ₹4,799 excl. GST (SKU FC-109-3586). A separate reseller listing references the Nova as "F4 FC – ICM42688P," indicating the **InvenSense/TDK ICM-42688-P IMU** on at least the Nova line. Detailed MCU/gyro/UART specs live in per-product PDF manuals linked from each page (e.g. "Zerodrag STRIX H7 Flight Controller User Manual") rather than in HTML, so they are not reproduced here.
+
+### 5.2 FPV Stacks (FC + ESC bundles)
+| Product | Price (sale / list) | First published |
+|---|---|---|
+| **Zerodrag Nova-Boost F4 FPV Stack** (Nova F4 + Boost AM32 55A ESC) | ₹7,499 / ₹12,049 | 30 Jun 2025 |
+| **Zerodrag Warp-Boost F7 FPV Stack** (Warp F7 + AM32 55A ESC) | ₹7,999 / ₹14,999 | 31 Dec 2024 |
+| **Zerodrag Strix-Boost H7 FPV Stack** (Strix H7 + Boost AM32 55A ESC) | ₹11,599 / ₹17,999 | 9 Jun 2026 |
+
+UAVGarage lists "Zerodrag NOVA – Boost Stack (F4 FC – ICM42688P + 55A 4-in-1 AM32 ESC)" at ₹7,399 excl. GST (SKU FC-109-3558).
+
+### 5.3 ESCs / Motor Controllers
+| Product | Price | First published |
+|---|---|---|
+| **Zerodrag Boost AM32 55A 4-in-1 ESC**, 12-mo warranty, Made in India | ₹5,499 / ₹8,499 | 31 Dec 2024 |
+| **Finch 55A AM32 Electronic Speed Controller** — a dedicated product page exists at [zerodrag.in/pages/finch-55a-am32-electronic-speed-controller](https://zerodrag.in/pages/finch-55a-am32-electronic-speed-controller) but the SKU is not in the live storefront; likely a rebrand of, or successor to, the Boost line | n/a | — |
+
+### 5.4 GNSS / Navigation — the "LOC8" family (launched 30 April 2026)
+| Product | Price | Notes |
+|---|---|---|
+| **Zerodrag LOC8 DroneCAN RTK GNSS System** | ₹25,999 / ₹35,999 | Flagship; RTK-capable, DroneCAN bus — targets survey/industrial and ArduPilot-class platforms, not FPV. Highest-ticket SKU in the catalogue. |
+| **Zerodrag LOC8 Lite GNSS System** | ₹20,999 / ₹29,999 | Mid-tier |
+| **Zerodrag LOC8-M10 GPS Module** | ₹2,099 / ₹4,999 | Entry module (naming implies a u-blox M10-class receiver); ships with user manual and 3D files |
+
+The LOC8 launch in April 2026 is strategically the most significant product event: it moves ZeroDrag out of the hobby/FPV price band (₹500–8,000) into enterprise/industrial avionics (₹21,000–36,000) and into DroneCAN/ArduPilot enterprise territory, which is where the seed-round roadmap (heavy-lift, eVTOL) points.
+
+### 5.5 Radio / Receivers
+| Product | Price | Notes |
+|---|---|---|
+| **Zerodrag Nexus 1 Express LRS 2.4 GHz Receiver**, 12-mo warranty, Made in India | ₹1,549 / ₹2,599 | Homepage claims **"Up to 15 km range"** |
+| **Zerodrag Nexus Duo** | not listed | Product page exists ([zerodrag.in/pages/zerodrag-nexus-duo](https://zerodrag.in/pages/zerodrag-nexus-duo)) with a 7-image gallery but no price or storefront SKU — a diversity/dual-receiver variant appearing to be pre-launch or newly launched |
+| **Zerodrag 2.4G U.FL T Antenna for Receivers** (SKU RD-109-3457) | ₹299 / ₹499 | Country of origin: China |
+
+**VTX note:** LinkedIn specialties and the site's own page slugs both list **VTX (video transmitters)** and **GCS (ground control station)** as product areas, and the about page URL literally reads "flight-controller-esc-elrs-vtx" — but **no VTX or GCS SKU is currently in the storefront.** Either a discontinued line or a not-yet-shipped one.
+
+### 5.6 Propulsion — QPT motors (OEM-partnered)
+Six brushless motors, all badged **QPT**, manufactured by **Quanteon Powertrain (QPT) Pvt. Ltd.** ([quanteonworld.com](https://quanteonworld.com)) and resold by Zerodrag — i.e. a partner-manufactured line, not in-house silicon:
+
+| Motor | Price | Published |
+|---|---|---|
+| QPT 1404-4500KV | ₹1,649 / ₹1,899 | Jan 2026 |
+| QPT 2807-1300KV | ₹1,999 / ₹2,599 | Jan 2026 |
+| QPT 3115-900KV | ₹3,149 / ₹3,999 | Jan 2026 |
+| QPT 4008-380KV | ₹4,599 / ₹5,499 | Jun 2026 |
+| QPT 4214-450KV | ₹3,899 / ₹4,499 | Jun 2026 |
+| QPT 4720-380KV | ₹4,499 / ₹5,499 | Jun 2026 |
+
+The June 2026 additions (4008/4214/4720) are large-diameter, low-KV motors — heavy-lift and long-endurance class, corroborating the stated heavy-lift roadmap.
+
+### 5.7 Lighting — "Aurora" LED line
+| Product | Price | Published |
+|---|---|---|
+| Zerodrag Aurora Race-X LED | ₹699 / ₹999 | 7 Mar 2024 |
+| Zerodrag Aurora 20×20 LED (20×20mm mounting) | ₹499 / ₹799 | 3 Oct 2024 |
+| Zerodrag Aurora Freestyle LED | ₹599 / ₹899 | 18 Oct 2024 |
+
+### 5.8 Wiring & accessories
+- **Zerodrag Catalyst Race Wires** — ₹349 / ₹799 (12 Mar 2024), Made in India
+- AMASS XT-60 12AWG 10 cm pigtail, male — ₹129 / ₹199 (China)
+- Rubycon 1000 µF 35 V 105 °C capacitor — ₹49 / ₹99 (China)
+- M3 silicone grommets 6.5 mm and 8 mm, packs of 10 — ₹199 each (China)
+
+### 5.9 Product-line observations
+- **Naming architecture is coherent and deliberate:** Nova (F4/entry) → Warp (F7/mid) → Strix (H7/flagship) for flight controllers; Boost for ESCs; LOC8 for GNSS; Nexus for receivers; Aurora for LEDs; Catalyst for wiring. This is a company thinking in product *lines*, not one-off SKUs.
+- **Near-total stockout at time of research.** Virtually every SKU on the storefront was flagged "Sold out" — including all flight controllers, stacks, motors, LEDs and two of three GNSS units. Read either as demand outstripping a constrained supply chain (consistent with "supply chain stability" being an explicit use of the seed proceeds) or as a production transition. Either way it is a material operational datapoint for a competitive assessment.
+- **Services:** custom design and **white-labelling for bulk/OEM orders**; firmware hosted and distributed via the site with ArduPilot/Betaflight/INAV builds.
+- **Roadmap products (stated, unlaunched):** enterprise-grade UAV avionics, **heavy-lift drone systems**, and **eVTOL platform hardware**, over a 12–24 month horizon from May 2026.
+
+---
+
+## 6. PATENTS AND INTELLECTUAL PROPERTY
+
+**Bottom line: no granted patents or published patent applications attributable to ZeroDrag Technologies Pvt. Ltd., Shantanu Bhede, or Amit Nimje could be located in any accessible public source.**
+
+Methodology and what was checked:
+- Google Patents keyword and XHR query endpoints for "zerodrag" — returned no retrievable results (the endpoint served 503/anti-automation responses on repeated attempts, so this is an inconclusive rather than confirmed-zero check).
+- General web searches explicitly combining "zerodrag" with patent / trademark / design registration returned **zero organic results** — the query surfaced only an unrelated LegalZoom advertisement, with the engine reporting "No more results found."
+- **Tracxn's company profile lists no patent or IP section** for ZeroDrag, and no IP is referenced in any of the ~15 news articles and database profiles reviewed.
+- MCA filings show no IP-related charges or licensing disclosures.
+
+What can be said about the IP posture:
+- The company describes its flight controller as **"proprietary"** (Amit Nimje, F6S profile) and markets a distinctive **"fully solder-less" modular mechanical/electrical interface** across the Nova, Warp and Strix boards. That solder-less interconnect is the most obviously patentable/design-registrable element of the portfolio, and an Indian design registration for it would be plausible — but nothing is findable in accessible sources.
+- The firmware layer is explicitly **open-source-derived** (Betaflight, INAV, ArduPilot, AM32), so the defensible IP is necessarily hardware/design and manufacturing know-how, not software.
+- **DPIIT "Recognised Startup"** status is confirmed, which in India confers patent-fee rebates and expedited examination — a mild indicator that filings may exist in the unpublished 18-month window, particularly around the April 2026 LOC8 GNSS launch and the H7 controller.
+- **Trademark:** the brand is used with a claim mark in commerce ("Zerodrag," "Nova," "Warp," "Strix," "LOC8," "Nexus," "Aurora," "Catalyst"). Indian trademark registry records were not retrievable through accessible sources; TrademarkElite's India search blocked automated access. Note the collision risk with the unrelated US **ZeroDrag™** skate-bearing brand, which is in a completely different Nice class, so likely non-conflicting.
+
+**Caveat for the record:** absence of evidence here is weak evidence of absence. Indian Patent Office records (ipindiaservices.gov.in public search) and WIPO Patentscope are not accessible to automated retrieval and were not checked directly; a manual IPO search against applicant name "ZERODRAG TECHNOLOGIES PRIVATE LIMITED" and inventor names Bhede/Nimje would be the correct follow-up. For a four-year-old, ₹7.7 Cr-funded hardware startup, having zero granted patents would nonetheless be entirely unremarkable.
+
+---
+
+## 7. LATEST NEWS AND DEVELOPMENTS (2024 – Q3 2026)
+
+**Q3 2026**
+- **22 July 2026 — YourStory feature:** "ZeroDrag is building the made-in-India electronics every drone needs" ([yourstory.com/2026/07/zerodrag-indian-drone-hardware](https://yourstory.com/2026/07/zerodrag-indian-drone-hardware)). The most substantive profile to date: confirms the IIT Delhi → Nagpur operational move, the B2B/OEM model, defence-agriculture-logistics-industrial customer mix, growing US/Europe inbound, and the ₹7.7 Cr cumulative raise. Syndicated to DailyHunt ([m.dailyhunt.in](https://m.dailyhunt.in/news/india/english/yourstory-epaper-yourstory/zerodrag+is+building+the+madeinindia+electronics+every+drone+needs-newsid-n720544851)).
+- **22 July 2026 — lead investor scales up:** Transition VC announced **Fund II at ₹1,500 Cr / ~$150–155M** for energy and industrial deep tech, with $2–5M cheques across 20–23 companies — meaningfully increasing the capital available to follow on into ZeroDrag ([thefinancialanalyst.net](https://thefinancialanalyst.net/2026/07/22/transition-vc-raises-155m-for-fund-ii-to-scale-deep-tech/), [esg-investing.com](https://esg-investing.com/2026/07/22/transition-vc-launches-150-million-venture-fund/)).
+- **31 July 2026 —** Tracxn headcount snapshot: 16 employees.
+
+**Q2 2026 — the pivotal quarter**
+- **30 April 2026 — LOC8 GNSS family launched:** LOC8 DroneCAN RTK GNSS System (₹25,999), LOC8 Lite (₹20,999), LOC8-M10 module (₹2,099). First move into enterprise-priced avionics.
+- **4 May 2026 —** round closes (Tracxn round date).
+- **27–28 May 2026 — ₹6.5 crore seed round announced, led by Transition VC.** Covered by BW Disrupt ([bwdisrupt.com](https://www.bwdisrupt.com/article/nagpur-based-drone-startup-zerodrag-technologies-raises-rs-6-5-cr-from-transition-vc-608569)), Entrepreneur India ([india.entrepreneur.com](https://india.entrepreneur.com/business-news/zerodrag-veloce-aif-suncharge-motors-report-funding-and-investment-activity)), Startup Samadhan ([startupsamadhan.com](https://startupsamadhan.com/zerodrag-raises-6-5-crore-seed-transition-vc-drone-avionics-india/)), Startup Magazine India ([startupmagazine.in](https://startupmagazine.in/zerodrag-seed-funding-defencetech-drone-avionics-india/)), Newskart ([newskart.com](https://www.newskart.com/zerodrag-raises-rs-6-5-crore-why-indigenous-drone-electronics-matter-for-india/)), World Startup News, IPO Platform ([ipoplatform.com](https://www.ipoplatform.com/Funding-news/zerodrag-raises-funding), 29 May), Indian Startup News (28 May), and aggregated by news.ayen.in (29 May) as part of a **defence-adjacent deep-tech funding wave dominating Indian startup activity in May 2026**. Underlying sources cited include ETEntrepreneur (Economic Times) and Dealroom.co.
+- **9 June 2026 — Strix-Boost H7 FPV Stack launched** (₹11,599), the flagship stack.
+- **June 2026 — heavy-lift motor line added:** QPT 4008-380KV, 4214-450KV, 4720-380KV.
+- **16 June 2026 — Drone Federation of India media-hub coverage:** "ZeroDrag Raises Rs 6.5 Crore to Build India's Drone Avionics Layer" ([dronefederation.in](https://www.dronefederation.in/media-hub/zero-drag-raise-funds-to-build-drone-avionics-layer)). Notable because DFI is the Indian industry body — the coverage frames ZeroDrag as filling the avionics gap left by India's frame-focused manufacturing push, and situates the raise in a trend of Indian investors funding "the less visible components of the drone industry — sensors, autopilot systems, and communications — rather than concentrating solely on airframe manufacturers."
+
+**Q1 2026**
+- **January 2026 — QPT motor line launched** (1404-4500KV, 2807-1300KV, 3115-900KV), adding propulsion to the portfolio via the Quanteon Powertrain partnership.
+- **11 December 2025 —** an additional seed tranche recorded by Tracxn.
+
+**Undated 2026 (via LinkedIn company updates)**
+- **"Interceptor Drone" flight tests reportedly exceeding 320 km/h using ZeroDrag's indigenous flight controller.** This is the single most defence-relevant technical claim the company has made publicly — counter-UAS interceptor work is a distinct market from FPV components — and it appears only on the company's own LinkedIn, not in third-party press ([in.linkedin.com/company/zerodrag](https://in.linkedin.com/company/zerodrag)). Worth independent verification.
+- Active hiring: Senior Hardware Design Engineer, Senior Accounts Executive.
+- Video coverage: "Made-in-India Drone Avionics | ZeroDRAG | E4" ([youtube.com/watch?v=OXl-Q7enQDE](https://www.youtube.com/watch?v=OXl-Q7enQDE)) and Transition VC's "Inside The Investments E1: ZeroDrag" ([youtube.com/watch?v=NxR7ALx5LSI](https://www.youtube.com/watch?v=NxR7ALx5LSI)).
+
+**2025**
+- **30 June 2025 — Nova F4 flight controller and Nova-Boost F4 stack launched.**
+- **30 September 2025 — Strix H7 flight controller launched** — the H7-class flagship, the technical step-change from F4/F7 hobby-grade to industrial-grade compute.
+- **10 September 2025 —** AGM held; FY25 accounts filed (revenue ₹27.61 lakh, down 34%).
+
+**2024**
+- **7 March 2024 —** Aurora Race-X LED; **12 March 2024 —** Catalyst Race Wires.
+- **10 July 2024 — Warp F7 flight controller launched.**
+- **3–18 October 2024 —** Aurora 20×20 and Aurora Freestyle LEDs, plus sourced accessories.
+- **31 December 2024 — Boost AM32 55A 4-in-1 ESC and Warp-Boost F7 stack launched** — completing the first full FC+ESC stack offering.
+
+---
+
+## 8. COMPETITIVE CONTEXT (relevant for the Vector Technics comparison)
+
+**Tracxn ranks ZeroDrag 2nd of 71 active competitors** in its UAV-avionics/components category by Tracxn Score (46/100), and **4th by total funding raised**:
+
+| Rank | Company | Score | Funding / status |
+|---|---|---|---|
+| 1 | uAvionix | 57 | $10M, acquired |
+| 2 | **Zerodrag** | 46 | $1.23M, Seed |
+| 3 | Sagetech Avionics | 42 | $12M, Series B |
+| 4 | ARK Electronics (Cottonwood Heights, UT) | 41 | Unfunded |
+| 5 | Defendron Technologies | 37 | $422K, Seed |
+| 6 | SpeedyBee | 36 | Unfunded |
+| 7 | Starlogic Intelligent Technology | 36 | $1.49M, Series A |
+| 8 | Team BlackSheep | 34 | Unfunded |
+| 9 | Skynetics | 33 | Unfunded |
+| 10 | Falcon Skyworks | 33 | Unfunded |
+
+CB Insights' comparison set differs, listing ASATRobo, ARA Robotics, Berry Avionics, Argo Aerospace (Prato, Italy), Hdrones (Paris), Zerosum Technologies (Delhi — also founded 2022, UAV subsystem integration), Mayan Robotics (Chula Vista, CA), and Vecros (New Delhi).
+
+The named incumbents ZeroDrag positions *against* in its own messaging are **DJI and Holybro** — i.e. the Chinese avionics supply chain, not Western avionics firms.
+
+---
+
+## 9. SUMMARY ASSESSMENT / DATA-QUALITY NOTES
+
+- ZeroDrag is a **very early-stage, sub-₹1 Cr-revenue, ~15–17 person Indian hardware startup** with ~₹7.7 Cr (~$0.83–1.23M) raised to date and no disclosed valuation. It is not a peer to a scaled avionics OEM on financial metrics; it is a peer on *product category* — flight controllers, ESCs, GNSS, radio links.
+- Its differentiation is **geopolitical and supply-chain, not technological**: Made-in-India, non-Chinese, cross-platform, open-firmware-compatible, white-labellable. The technology stack is largely open-source firmware on in-house-designed hardware.
+- **Trajectory is clearly upward-market**: FPV hobby components (2024) → prosumer H7 flight controllers (2025) → enterprise RTK GNSS and heavy-lift propulsion (2026) → stated intent toward heavy-lift and eVTOL avionics (2026–2028).
+- **Red flags for diligence:** FY25 revenue declined 34% to ₹27.6 lakh; ROE −84.78 and net margin −134 indicate meaningful losses against a tiny top line; the entire storefront was showing "Sold out" at the time of research; no executives beyond the two founders are publicly named; no verifiable patent estate; and the flagship defence claim (320+ km/h interceptor drone) appears only on the company's own LinkedIn.
+- **Source conflicts to be aware of if this feeds a RAG index:** HQ is variously Nagpur / New Delhi / Noida (all real, different functions); total funding is $828.92K (Inc42) vs $830K (CB Insights) vs $1.23M (Tracxn); round count is 2 vs 7; the ₹6.5 Cr seed converts to both "$680K" and "$780K" across outlets; authorised capital reads ₹66 lakh (current) vs ₹15 lakh (stale Tofler); and the company appears under the legacy name **DroneAdda** in CB Insights.

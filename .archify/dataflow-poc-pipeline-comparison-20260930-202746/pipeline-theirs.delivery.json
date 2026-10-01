@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "aec946e4-a926-46a3-89a0-6743e055986c",
+  "status": "current",
+  "command": "deliver",
+  "type": "dataflow",
+  "input": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/theirs.json",
+  "output": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/pipeline-theirs.html",
+  "specification": {
+    "sha256": "1af1f2ad3ffb5ef32709ba47e72eaa0103f6f3211421c22364866513e7dc7534",
+    "bytes": 2580
+  },
+  "artifact": {
+    "sha256": "ce13b0f4f3df9d99bba328835f97fdff7ff4b6dd3d06f0ab76dd71ff523c26f3",
+    "bytes": 752603
+  }
+}

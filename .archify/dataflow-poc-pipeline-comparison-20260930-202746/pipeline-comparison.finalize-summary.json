@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "dataflow",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/candidate.json",
+    "sha256": "f73865145371ff4590d4e9b44da8936dc155d4524612f3a265c89a1ccbb2e36c",
+    "bytes": 3614
+  },
+  "artifact": {
+    "path": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/pipeline-comparison.html"
+  },
+  "gates": {
+    "validate": "fail",
+    "deliver": "not-run",
+    "check": "not-run",
+    "browser-check": "not-run"
+  },
+  "failedStage": "validate",
+  "diagnostics": [
+    {
+      "code": "clean-flow/endpoint-side-direction",
+      "severity": "error",
+      "message": "[clean-flow/endpoint-side-direction] dataflow flows[3] id \"ours-chunk-embed\" \"ours-chunk\" -> \"ours-embed\" first segment 0 [650, 157] -> [630, 157] does not honor inferred fromSide \"right\" — it must run horizontal rightward; keep automatic routing, or choose fromSide/toSide and via points whose first and final segments cross node borders perpendicularly.",
+      "subject": {
+        "diagramType": "dataflow",
+        "collection": "flows",
+        "index": 3,
+        "id": "ours-chunk-embed",
+        "from": "ours-chunk",
+        "to": "ours-embed"
+      },
+      "evidence": {
+        "endpoint": "source",
+        "authoredField": "fromSide",
+        "sideOrigin": "inferred",
+        "side": "right",
+        "segmentIndex": 0,
+        "from": [
+          650,
+          157
+        ],
+        "to": [
+          630,
+          157
+        ],
+        "expectedAxis": "horizontal",
+        "expectedDirection": "rightward"
+      },
+      "supportedFixes": [
+        "keep automatic routing, or choose fromSide/toSide and via points whose first and final segments cross node borders perpendicularly"
+      ]
+    },
+    {
+      "code": "composition/micro-segment",
+      "severity": "error",
+      "message": "[composition/micro-segment] showcase dataflow flows[1] id \"parse-ours-chunk\" \"parse\" -> \"ours-chunk\" has a 5px source-stub segment 0 [400, 264] -> [405, 264] that is below the 8px micro-segment floor — adjust route/via or channelX/channelY so each turn uses a clear inter-stage corridor.",
+      "subject": {
+        "diagramType": "dataflow",
+        "collection": "flows",
+        "index": 1,
+        "id": "parse-ours-chunk",
+        "from": "parse",
+        "to": "ours-chunk"
+      },
+      "evidence": {
+        "segmentIndex": 0,
+        "position": "source-stub",
+        "lengthPx": 5,
+        "minimumPx": 8,
+        "from": [
+          400,
+          264
+        ],
+        "to": [
+          405,
+          264
+        ]
+      },
+      "supportedFixes": [
+        "adjust route/via or channelX/channelY so each turn uses a clear inter-stage corridor"
+      ]
+    },
+    {
+      "code": "layout/constraint",
+      "severity": "error",
+      "message": "Nodes \"ours-chunk\" and \"ours-embed\" are less than 10px apart — move one to another stage/row or adjust yOffset.",
+      "subject": {
+        "diagramType": "dataflow"
+      }
+    },
+    {
+      "code": "clean-flow/endpoint-side-direction",
+      "severity": "error",
+      "message": "[clean-flow/endpoint-side-direction] dataflow flows[5] id \"ours-embed-eval\" \"ours-embed\" -> \"ours-eval\" first segment 0 [860, 157] -> [845, 157] does not honor inferred fromSide \"right\" — it must run horizontal rightward; keep automatic routing, or choose fromSide/toSide and via points whose first and final segments cross node borders perpendicularly.",
+      "subject": {
+        "diagramType": "dataflow",
+        "collection": "flows",
+        "index": 5,
+        "id": "ours-embed-eval",
+        "from": "ours-embed",
+        "to": "ours-eval"
+      },
+      "evidence": {
+        "endpoint": "source",
+        "authoredField": "fromSide",
+        "sideOrigin": "inferred",
+        "side": "right",
+        "segmentIndex": 0,
+        "from": [
+          860,
+          157
+        ],
+        "to": [
+          845,
+          157
+        ],
+        "expectedAxis": "horizontal",
+        "expectedDirection": "rightward"
+      },
+      "supportedFixes": [
+        "keep automatic routing, or choose fromSide/toSide and via points whose first and final segments cross node borders perpendicularly"
+      ]
+    },
+    {
+      "code": "clean-flow/endpoint-side-direction",
+      "severity": "error",
+      "message": "[clean-flow/endpoint-side-direction] dataflow flows[3] id \"ours-chunk-embed\" \"ours-chunk\" -> \"ours-embed\" final segment 0 [650, 157] -> [630, 157] does not honor inferred toSide \"left\" — it must run horizontal rightward from the left; keep automatic routing, or choose fromSide/toSide and via points whose first and final segments cross node borders perpendicularly.",
+      "subject": {
+        "diagramType": "dataflow",
+        "collection": "flows",
+        "index": 3,
+        "id": "ours-chunk-embed",
+        "from": "ours-chunk",
+        "to": "ours-embed"
+      },
+      "evidence": {
+        "endpoint": "target",
+        "authoredField": "toSide",
+        "sideOrigin": "inferred",
+        "side": "left",
+        "segmentIndex": 0,
+        "from": [
+          650,
+          157
+        ],
+        "to": [
+          630,
+          157
+        ],
+        "expectedAxis": "horizontal",
+        "expectedDirection": "rightward from the left"
+      },
+      "supportedFixes": [
+        "keep automatic routing, or choose fromSide/toSide and via points whose first and final segments cross node borders perpendicularly"
+      ]
+    },
+    {
+      "code": "clean-flow/endpoint-side-direction",
+      "severity": "error",
+      "message": "[clean-flow/endpoint-side-direction] dataflow flows[5] id \"ours-embed-eval\" \"ours-embed\" -> \"ours-eval\" final segment 0 [860, 157] -> [845, 157] does not honor inferred toSide \"left\" — it must run horizontal rightward from the left; keep automatic routing, or choose fromSide/toSide and via points whose first and final segments cross node borders perpendicularly.",
+      "subject": {
+        "diagramType": "dataflow",
+        "collection": "flows",
+        "index": 5,
+        "id": "ours-embed-eval",
+        "from": "ours-embed",
+        "to": "ours-eval"
+      },
+      "evidence": {
+        "endpoint": "target",
+        "authoredField": "toSide",
+        "sideOrigin": "inferred",
+        "side": "left",
+        "segmentIndex": 0,
+        "from": [
+          860,
+          157
+        ],
+        "to": [
+          845,
+          157
+        ],
+        "expectedAxis": "horizontal",
+        "expectedDirection": "rightward from the left"
+      },
+      "supportedFixes": [
+        "keep automatic routing, or choose fromSide/toSide and via points whose first and final segments cross node borders perpendicularly"
+      ]
+    },
+    {
+      "code": "composition/micro-segment",
+      "severity": "error",
+      "message": "[composition/micro-segment] showcase dataflow flows[1] id \"parse-ours-chunk\" \"parse\" -> \"ours-chunk\" has a 5px target-stub segment 2 [405, 157] -> [410, 157] that is below the 8px micro-segment floor — adjust route/via or channelX/channelY so each turn uses a clear inter-stage corridor.",
+      "subject": {
+        "diagramType": "dataflow",
+        "collection": "flows",
+        "index": 1,
+        "id": "parse-ours-chunk",
+        "from": "parse",
+        "to": "ours-chunk"
+      },
+      "evidence": {
+        "segmentIndex": 2,
+        "position": "target-stub",
+        "lengthPx": 5,
+        "minimumPx": 8,
+        "from": [
+          405,
+          157
+        ],
+        "to": [
+          410,
+          157
+        ]
+      },
+      "supportedFixes": [
+        "adjust route/via or channelX/channelY so each turn uses a clear inter-stage corridor"
+      ]
+    },
+    {
+      "code": "layout/constraint",
+      "severity": "error",
+      "message": "Nodes \"ours-embed\" and \"ours-eval\" are less than 10px apart — move one to another stage/row or adjust yOffset.",
+      "subject": {
+        "diagramType": "dataflow"
+      }
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 20,
+    "shown": 8,
+    "truncated": true
+  },
+  "evidence": {
+    "receipt": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/pipeline-comparison.finalize.json",
+    "summaryReceipt": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/pipeline-comparison.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.0.1",
+    "availableVersion": "3.0.1",
+    "releaseNotes": null,
+    "checkedAt": "2026-09-30T12:28:52.179Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 271,
+  "nextAction": {
+    "action": "edit-in-place",
+    "candidate": "/Users/mjmacair15/Vector_Technics_RAG_POC/.archify/dataflow-poc-pipeline-comparison-20260930-202746/candidate.json",
+    "constraint": "Preserve unaffected semantics and geometry; do not replace the whole candidate.",
+    "then": "finalize-once"
+  }
+}

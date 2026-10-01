@@ -1,0 +1,106 @@
+# DEFENDRON TECHNOLOGIES — RESEARCH REPORT
+Compiled 24 September 2026. All findings sourced from public web material; gaps are flagged explicitly rather than filled in.
+
+## 0. IDENTIFICATION AND SCOPE NOTE
+
+The name "Defendron Technologies" resolves to exactly one real entity: **Defendron Technologies Private Limited**, an Indian defence-electronics startup in Pune, Maharashtra, trading as **DEFENDRON** at https://www.defendrontech.com.
+
+Two disambiguation points matter before anything else:
+
+1. This is **not** a counter-drone (C-UAS) company, despite the name suggesting "defend" + "drone". It builds **EO/IR (electro-optical / infrared) ISR payloads that mount onto drones** — the sensor turret, not the interceptor. Searches for "Defendron drone defense" surface unrelated counter-UAS firms (Dedrone/Axon, DroneShield, WhiteFox Defense, Drone Defence UK) which have no connection to it.
+2. It is frequently confused in search with the similarly-named Australian firm **DefendTex** (https://www.defendtex.com/air.html), which makes the Drone 40 loitering munition. Unrelated company.
+
+Coverage caveat: this is a company roughly 23 months old with essentially no press coverage, no analyst coverage, no filings beyond statutory Indian registry minimums, and no announced funding rounds.
+
+## 1. COMPANY OVERVIEW
+
+Legal name: DEFENDRON TECHNOLOGIES PRIVATE LIMITED. CIN U30300PN2024PTC235304. Incorporated 28 October 2024. Registered/operating office: Aundh, Pune, Maharashtra 411007 (operating address is inside a coworking space, "11 Cowork"). Status: Active.
+
+Mission (verbatim): "To design and deliver advanced security solutions that ensure reliability, resilience and continuous protection in critical environments." Vision: "To lead the evolution of intelligent security systems through innovation, adaptability and engineering excellence." Marketing tagline: "Precision. Sovereignty. Mission success." Positioning: "ISR Innovation for the Modern Aerial Ecosystem."
+
+Size: no verified headcount; website team page lists 6 named individuals; About page self-describes as "a small team of tinkerers and engineers." Working estimate 6–15 people.
+
+Target customers (stated, unverified): Indian Armed Forces, DRDO, Defence PSUs, UAV OEMs/integrators, loitering-munition developers. No named customer, contract, or order has ever been publicly disclosed.
+
+Competitive set (India): Tracxn lists Defendron among 31 Pune drone startups (DroneAcharya, NavStik Labs). Broader gimbal competitors: Tonbo Imaging, Paras Defence, IdeaForge payload arm.
+
+## 2. FINANCIALS
+
+Private, unlisted — no public revenue figure or valuation. Registry data: authorised capital ~₹5.19 lakh, paid-up capital ~₹1.19 lakh (~USD 1,400) — a nominal founding capitalisation. FY2024-25 revenue in Tracxn's "₹0–10 Cr" band (widest, least informative band); covers only 5 months of existence (incorporated Oct 2024). No registered secured charges/loans. First financial statements filed for year ended 31 March 2025; first AGM 24 December 2025. No valuation has ever been published; Tracxn tags the company "Unfunded" (likely a data-lag artifact — see Section 3).
+
+## 3. FUNDING HISTORY
+
+Company's own Investor page (defendrontech.com/investor) names three backers, no amounts or dates disclosed:
+1. **All In Capital** — India pre-seed/seed VC (founded by Kushal Bhagia). Implies a pre-seed/seed cheque in the ₹1–4 Cr range typical for this fund, but unconfirmed.
+2. **IIMA Ventures** — incubator/early-stage platform at IIM Ahmedabad (formerly CIIE.CO). Could be incubation, accelerator, grant, or small equity.
+3. **MeitY Startup Hub (MSH)** — Government of India programme, typically non-dilutive grant/incubation support.
+
+Third-party contradiction: Tracxn tags the company "Unfunded" — no round in Tracxn's database, and zero funding-round press coverage found (Inc42, Entrackr, YourStory, VCCircle, Business Standard all silent). Most likely explanation: small, unannounced early-stage support never press-released.
+
+Sector context: Indian defence-tech funding reached USD 247M in 2025 (~2x 2024's USD 125M) across 30 rounds, dominated by large rounds like Raphe mPhibr's Series B (General Catalyst). Defendron is far below this radar — a pre-seed micro-cap.
+
+## 4. LEADERSHIP AND PEOPLE
+
+**Board of directors (MCA):**
+- Omkar Ashok Lad (DIN 10822387) — Director, appointed 28 Oct 2024
+- Pratibha Agrawal (DIN 07971758) — Director, appointed 28 Oct 2024 (older DIN block ~2017-18, other directorships unknown, not on team page, role unresolved)
+
+**Founder & CEO: Omkar Ashok Lad**
+- BE (Hons.), BITS Pilani
+- Embedded engineer, 10+ years experience, UAV and embedded systems specialist
+- Prior: Managing Director at Enarr Unico Infrachem Solutions Pvt. Ltd.; earlier at Unico Engineering Solutions
+- Leads vision/technical direction and system architecture (hardware + software)
+- LinkedIn: linkedin.com/in/omkar-lad-b7057228/ (not directly fetchable)
+- Registered company email of record is his personal Gmail (omkar269@gmail.com)
+
+**Team (defendrontech.com/team), 6 people total including CEO:**
+- Omkar Lad — CEO & Founder — UAV/embedded systems, system architecture
+- Kiran P. — Embedded Firmware (Drive Systems) — motion/stabilisation control code
+- Hemanshu Kale — System Software — video pipelines, camera controls, operator interfaces
+- Abbaas Zaidi — Mechanical Design — enclosures/structures for field conditions
+- Manthan Jogi — Product & BD — roadmap, customer relationships, GTM
+- Nikhil Salunkhe — Customer Success & Operations — field deployment, integration, mission readiness
+
+No bios beyond 1-2 sentence descriptions; no prior employers/education for the five non-founder staff. Company has posted at least one job (UAV Integration Engineer, Pune, 1-3 yrs, now closed).
+
+## 5. PRODUCTS
+
+Single product category: EO/IR gimballed ISR payloads for UAVs, five current models (160g–1500g). Also a secondary custom-test-rig line for defence-systems validation (not listed as a catalogue product, mentioned only in press).
+
+Note: product line was renumbered — old DTX-250/DTX-500 URLs now 404, mapped to new DTX-350/DTX-750 HDIR naming. Preserved here as a known source-conflict.
+
+| Model | Weight | Mech. axes | EO optical zoom | IR resolution | Status |
+|---|---|---|---|---|---|
+| DTX Dual SO | 160 g | 0 (electronic stabilisation only) | 2x | 640×480 | Available |
+| DTX KZ | 220 g | 1 | 2x | 640×480 (or 320×240 cost-down) | Out of stock |
+| DTX-350 | 420 g | 2 | 20x | 640×480 | Available |
+| DTX-750 HDIR | 790 g | 2 (assumed) | 30x | 1280×720 HD | Available |
+| DTX-1500 | 1500 g | 2 | 40x | 1280×720 HD + 4x IR zoom | Available |
+
+All models: onboard edge AI target detection/lock/classification; 3-axis stabilisation (2 mechanical + 1 electronic, or all-electronic on the smallest); MAVLink compatible; H.264/H.265 RTP/RTSP over Ethernet; 12-24V power; -20°C to +55°C operating range; IP55 rated (homepage claims IP67 — inconsistent with per-product IP55 specs); onboard recording; digital zoom to 8x; customisable configurations on request.
+
+Stated use cases: border/perimeter surveillance, military reconnaissance, maritime patrol, counter-UAS ops, critical infrastructure protection, disaster response, loitering-munition/interceptor guidance (DTX Dual SO and DTX KZ descriptions explicitly reference "urban neutralisation," "interceptor swarm," and "terminal navigation" — i.e., munition seeker use).
+
+No pricing published for any product.
+
+## 6. PATENTS
+
+No patents, patent applications, or patent numbers attributable to Defendron Technologies or Omkar Ashok Lad were found in any publicly accessible source. Google Patents assignee query returned an error and remains unverified; Indian Patent Office full-text search was not reachable within the research session. Company makes no "patented" or "patent pending" claims anywhere on its site. Treat as having no verifiable patent portfolio — filings made after ~March 2025 would legitimately still be inside the 18-month pre-grant publication window and could exist unpublished.
+
+## 7. LATEST NEWS (2024–2026)
+
+- **28 Oct 2024** — Incorporated (RoC Pune), directors Omkar Lad and Pratibha Agrawal appointed day one.
+- **June 2025** — Featured in Inc42's "30 Startups To Watch" — the company's only substantive press coverage. Confirmed founder background, described payloads "starting at just 280g" with dual EO-IR, 30x zoom, thermal imaging, optional laser range finders (note: current site doesn't list an LRF option), and custom test rigs. Cited market context: global drone payload market projected to reach USD 22.95Bn by 2032; imaging/mapping segment from USD 2.6Bn (2024) to USD 7.2Bn (2029). No funding amount, revenue, or customers named.
+- **2025** — Posted and later closed a UAV Integration Engineer job listing.
+- **FY ending 31 Mar 2025** — First financial statements filed, revenue in ₹0-10 Cr band.
+- **24 Dec 2025** — First AGM held.
+- **2025-2026** — Product line renumbered (DTX-250→DTX-350, DTX-500→DTX-750 HDIR); DTX-1500 flagship added; DTX KZ currently out of stock.
+- **Current (Sept 2026)** — Investor page live naming All In Capital, IIMA Ventures, MeitY Startup Hub; no dates given.
+
+Conspicuously absent: no announced funding round, no named customers/contracts/trials, no iDEX/ADITI/TDF grant announcement, no confirmed trade-show presence, no certifications (MIL-STD/DGQA/CEMILAC/ISO) announced, no partnerships, no executive hires, no defence trade-press coverage.
+
+## 8. SUMMARY ASSESSMENT
+
+Defendron Technologies is a pre-revenue-or-near-pre-revenue, pre-seed-stage Indian defence hardware startup, roughly 23 months old, with a six-person team operating from a Pune coworking space, a five-model EO/IR payload catalogue that has already been renumbered once, three self-reported early-stage/government backers with undisclosed terms, no announced funding, no named customers, no verifiable patents, and exactly one piece of meaningful press coverage (Inc42, June 2025). Real and technically credible on paper, but at the very earliest stage of its public life.
+
+Sources: defendrontech.com (about/team/products/investor/contact + individual product pages), indiafilings.com, thecompanycheck.com, tracxn.com, falconebiz.com, zoominfo.com, inc42.com, business-standard.com.

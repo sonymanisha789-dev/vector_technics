@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "RAG POC Pipeline Comparison",
+    "subtitle": "Vector Technics POC vs. Kunal/Rithish 3-strategy benchmark",
+    "output": ".archify/dataflow-poc-pipeline-comparison-20260930-202746/pipeline-comparison.html",
+    "quality_profile": "showcase",
+    "viewBox": [2200, 560]
+  },
+  "stages": [
+    { "label": "Source" },
+    { "label": "Parse" },
+    { "label": "Chunk" },
+    { "label": "Embed" },
+    { "label": "Evaluate" }
+  ],
+  "nodes": [
+    { "id": "pdf", "type": "external", "label": "PDF Document", "stage": 0, "row": 1, "width": 150 },
+    { "id": "parse", "type": "backend", "label": "partition_pdf()", "sublabel": "shared parser", "stage": 1, "row": 1, "width": 170 },
+    { "id": "ours-chunk", "type": "backend", "label": "6 chunking strategies", "sublabel": "structure, semantic, LLM", "stage": 2, "row": 0, "tag": "ours", "width": 240 },
+    { "id": "theirs-chunk", "type": "backend", "label": "Rule-based chunking", "sublabel": "recursive + titles", "stage": 2, "row": 2, "tag": "theirs", "width": 200 },
+    { "id": "ours-embed", "type": "backend", "label": "Dense + Sparse", "sublabel": "MiniLM/E5/BGE-m3 + sparse", "stage": 3, "row": 0, "tag": "ours", "width": 230 },
+    { "id": "theirs-embed", "type": "backend", "label": "3 architectures", "sublabel": "hybrid, ColBERT, Jina", "stage": 3, "row": 2, "tag": "theirs", "width": 200 },
+    { "id": "ours-eval", "type": "database", "label": "18+ combos scored", "sublabel": "recall/MRR/NDCG + ragas", "stage": 4, "row": 0, "tag": "ours", "width": 230 },
+    { "id": "theirs-eval", "type": "database", "label": "1 combo scored", "sublabel": "ColBERT/Jina unfinished", "stage": 4, "row": 2, "tag": "theirs", "width": 210 }
+  ],
+  "flows": [
+    { "id": "pdf-parse", "from": "pdf", "to": "parse", "label": "raw PDF", "variant": "default" },
+    { "id": "parse-ours-chunk", "from": "parse", "to": "ours-chunk", "label": "elements", "variant": "emphasis" },
+    { "id": "parse-theirs-chunk", "from": "parse", "to": "theirs-chunk", "label": "elements", "variant": "default" },
+    { "id": "ours-chunk-embed", "from": "ours-chunk", "to": "ours-embed", "label": "chunks", "variant": "emphasis" },
+    { "id": "theirs-chunk-embed", "from": "theirs-chunk", "to": "theirs-embed", "label": "chunks", "variant": "default" },
+    { "id": "ours-embed-eval", "from": "ours-embed", "to": "ours-eval", "label": "RRF fusion", "variant": "emphasis" },
+    { "id": "theirs-embed-eval", "from": "theirs-embed", "to": "theirs-eval", "label": "alpha=0.7", "variant": "default" }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Shared foundation",
+      "items": [
+        "Both POCs parse PDFs with unstructured.partition_pdf()",
+        "Both include a title/structure-aware chunking option",
+        "Both grade retrieval with literal text matching, not semantic judging by default"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Vector Technics strengths",
+      "items": [
+        "6 chunking strategies swept vs. 1",
+        "Reciprocal Rank Fusion instead of an untuned weighted average",
+        "Only POC with a generation step, pgvector persistence, and a results dashboard"
+      ]
+    },
+    {
+      "dot": "orange",
+      "title": "Kunal/Rithish strengths",
+      "items": [
+        "3 distinct embedding architectures attempted, not just dense+sparse",
+        "Late-interaction (ColBERT) and asymmetric adapters (Jina) are not implemented in our codebase",
+        "Tested on 2 documents of very different size/difficulty vs. our 1"
+      ]
+    }
+  ]
+}

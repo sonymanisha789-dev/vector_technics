@@ -1,0 +1,584 @@
+# ARK Electronics, LLC — Research Report
+
+---
+
+## 0. DISAMBIGUATION (read first)
+
+This report covers **ARK Electronics, LLC** of Murray / Salt Lake City, Utah, USA — the open-source-focused designer and manufacturer of PX4/ArduPilot drone flight controllers, GNSS/RTK modules, and robotics electronics, trading as **arkelectron.com**, founded 2018 by Alex Klimaj.
+
+It is NOT about:
+
+- **Ark Electronics, Inc.** (Irvine, California) — an electronics manufacturing services (EMS) / contract manufacturer. Unrelated ownership, unrelated products, unrelated market.
+- **Suzhou Good-Ark Electronics Co., Ltd.** (Shenzhen Stock Exchange: 002079) — a Chinese discrete-semiconductor maker (diodes, rectifiers, power devices). Unrelated.
+- **Ark Invest / ARK ETFs**, **Ark Robotics**, or any similarly named entity.
+
+Distinguishing identifiers for the subject company: domain `arkelectron.com` (note: no "ics" in the domain), GitHub org `github.com/ARK-Electronics`, LinkedIn `linkedin.com/company/ark-electronics-llc`, Utah entity number 10997430-0160, X/Twitter handle `@ARK_Electr0nics`.
+
+---
+
+## 1. COMPANY OVERVIEW
+
+### 1.1 Identity and legal form
+
+ARK Electronics, LLC is a Utah limited liability company. Tracxn's registry-derived profile lists the legal entity as "ARK Electronics, LLC." with an incorporation date of **September 23, 2018** and a Utah corporate identification number of **10997430-0160** (https://tracxn.com/d/companies/ark-electronics/__9gqHMP198nl1qJHrWBz1gWivsWPoYbCao_DzAu0Ia6c). The company's own About page also gives the founding year as **2018** (https://arkelectron.com/about/). Alex Klimaj's LinkedIn record dates his tenure as CEO from **September 2018**, which corroborates the registry date.
+
+Being an LLC, the company files no public financial statements and is not subject to SEC reporting.
+
+### 1.2 Headquarters and facilities
+
+The most specific verified address comes from the **47G** Utah aerospace-and-defense industry association member directory:
+
+> **5882 S. 900 E., Suite 102, Murray, Utah 84121** (coordinates 40.642969, -111.866708)
+> (https://www.47g.org/members/ark-electronics/)
+
+Murray is a city inside the Salt Lake City metropolitan area, which is why most secondary databases and press releases simply say "Salt Lake City, UT" — e.g. the SiMa.ai press release datelines the company as "Salt Lake City, UT" (https://www.prnewswire.com/news-releases/simaai-and-ark-electronics-partner-to-accelerate-intelligent-autonomous-drones-302865336.html), as does the Mobilicom release (https://www.stocktitan.net/news/MOB/mobilicom-and-ark-electronics-partner-to-develop-and-launch-4gnappeno7re.html). The company's GitHub organization page also lists "Salt Lake City, Utah" (https://github.com/ARK-Electronics).
+
+The company completed a **facility expansion** to support high-volume production; trade press reported it as enabling manufacture of millions of drone and robotic components annually (https://www.defenseadvancement.com/news/ark-electronics-completes-facility-expansion-to-support-high-volume-drone-production/ — note: this URL returned HTTP 403 to automated fetching, so the detail here is drawn from the indexed summary rather than the full article text). An earlier expansion of the manufacturing network was reported around **April 2024** via Evertiq, per the Tracxn news log.
+
+All products are stated to be "designed, manufactured, and tested in the United States" (https://arkelectron.com/about/).
+
+### 1.3 Size
+
+Headcount figures vary by source and date, all pointing to a very small team:
+
+| Source | Figure | As of |
+|---|---|---|
+| Tracxn | 9 employees | June 30, 2026 |
+| Tracxn | 10 employees | August 31, 2026 |
+| 47G member directory | "2-10 Employees" band | current listing |
+| Explorium (data broker) | 4 employees | undated / likely stale |
+
+(https://tracxn.com/d/companies/ark-electronics/__9gqHMP198nl1qJHrWBz1gWivsWPoYbCao_DzAu0Ia6c ; https://www.47g.org/members/ark-electronics/)
+
+Best estimate: **roughly 10 people as of mid/late 2026.** Dronecode's own 2025 retrospective characterizes ARK as "a small hardware startup out of Salt Lake City, Utah" competing against much larger engineering organizations on open-source contribution volume (https://dronecode.org/the-2025-year-in-review/).
+
+Social reach as a rough proxy for market presence: ~1,282 LinkedIn followers, ~4,406 X followers, 178 GitHub org followers.
+
+### 1.4 Mission and positioning
+
+The homepage tagline is **"USA Made Drone and Robotics Electronics,"** with a hero line of **"Mission-Critical Drone Electronics."** The stated value proposition is "NDAA-compliant, Blue UAS listed flight controllers, GPS modules, and sensors" for "defense, commercial, and research applications" (https://arkelectron.com/).
+
+The About page frames the founding purpose as designing and building American-made electronics for drones and robotics that are "trusted for professional, commercial, and defense applications," emphasizing domestic supply chain, quality control, American manufacturing jobs, and continuous innovation (https://arkelectron.com/about/).
+
+Trust badges displayed on the homepage: Made in USA, NDAA Compliant, Blue Framework Listed, Dronecode Foundation Member, ArduPilot Partner, 47G Member.
+
+Strategically, ARK occupies a specific niche: **open-standard, open-source, US-manufactured autopilot hardware for the defense-adjacent drone market.** Its products are built to published open hardware standards (Pixhawk FMUv6X, Pixhawk Autopilot Bus / PAB) rather than proprietary form factors, which makes them drop-in alternatives to Chinese-manufactured boards (Holybro, CUAV) for buyers who need NDAA Section 848 compliance and Blue UAS Framework listing.
+
+### 1.5 Relationship to PX4 and the Dronecode Foundation
+
+This relationship is central to the company's identity and is unusually deep for a company of its size.
+
+**Membership.** ARK Electronics joined the **Dronecode Foundation as a Silver Member**, announced in a post dated **September 22, 2023** (https://dronecode.org/welcome-ark-electronics-as-a-silver-member/), with a corresponding company announcement "ARK Electronics Joins Dronecode" on **October 1, 2023** (https://arkelectron.com/news/page/3/). Dronecode's current member roster confirms Silver tier, alongside peers including CUAV, Holybro, ModalAI, Freefly Systems, NXP, SIYI, DroneBlocks, Neros, TII, and Firestorm. Platinum tier is held by Auterion, DeltaQuad, and UVify (https://dronecode.org/our-members/).
+
+**Code contribution.** Dronecode's *2025 Year in Review* places ARK Electronics as the **#2 contributing organization to PX4**, behind only Auterion:
+
+- Ecosystem totals for 2025: 651 contributors, 99 organizations, 17,979 commits.
+- Independent/unaffiliated contributors: 28% of contributions.
+- Auterion: 25%. **ARK Electronics: 11%** (2,945 total contributions, rank #2).
+- Note: the same page's badge/stat block shows a "22% of PX4 Contributions" figure for ARK that conflicts with the 11% in the narrative scorecard — treat the exact percentage as uncertain; the #2 rank is consistent.
+- **Jacob Dahl** of ARK broke into the **top 10 individual PX4 contributors**, credited with authoring the **bidirectional DShot** feature plus IMU drivers and sensor fixes.
+- ARK added **four new DroneCAN peripherals** to the PX4 ecosystem in 2025, extending PX4 beyond flight controllers into standardized CAN-bus sensor modules.
+- Non-code contribution is also noted: Discord support, GitHub issue triage, weekly PX4 developer call participation.
+
+(https://dronecode.org/the-2025-year-in-review/)
+
+**Upstream hardware support.** ARK boards are documented in the official PX4 user guide as **"manufacturer supported"** targets — see the ARKV6X page (https://docs.px4.io/main/en/flight_controller/ark_v6x) and the ARK FPV page (https://docs.px4.io/main/en/flight_controller/ark_fpv). PX4 explicitly notes it "does not manufacture this (or any) autopilot" and routes hardware/compliance questions to ARK.
+
+**Financial sponsorship.** The ARK GitHub organization sponsors two individual open-source developers: **julianoes** (Julian Oes, longtime PX4/MAVSDK maintainer) and **facontidavide** (Davide Faconti, author of PlotJuggler / BehaviorTree.CPP) (https://github.com/ARK-Electronics).
+
+**Multi-stack strategy.** The About page states ARK contributes to **PX4, ArduPilot, and Betaflight** to maintain cross-platform compatibility. It is a listed **ArduPilot Partner**. ARK also maintains forks of the **AM32** ESC firmware family (as `ARK32`, `ARK32-bootloader`, `ark32-configurator`) and of PX4's `flight_review`.
+
+**Education.** Klimaj collaborated with DroneBlocks, Bill Doyle of Momentum Drones, and Dronecode on the **DEXI PX4 Developer Kit**, a solder-free STEM education drone (https://droneblocks.io/px4-unveils-the-droneblocks-dexi-px4-developer-kit-a-collaborative-triumph-in-drone-education/).
+
+### 1.6 Certifications and government-market positioning
+
+- **NDAA compliant** across the product line (relevant to US federal procurement restrictions on Chinese drone components).
+- **DIU Blue UAS Framework listed** — as of the **May 2025** Mobilicom release, ARK held **11 autonomy and flight-computer hardware products** on the Blue UAS Framework list. By **August 14, 2025**, the addition of ARK Flow and ARK 4IN1 ESC CONS brought the total to **13** (https://arkelectron.com/news/page/2/). An April 28, 2025 post noted that the M.2 LTE additions gave ARK "the most listed products on the framework." Further additions followed (ARK SAM GPS, September 9, 2026), so the current count is likely **15+**.
+- Hardware described as aligned with DoD **Modular Open Systems Architecture** goals and built to **AUVSI cybersecurity** benchmarks (per the Mobilicom release).
+- **47G** member (Utah aerospace & defense association); Klimaj sits on its Board of Governors and Industry Advisory Board.
+
+---
+
+## 2. FINANCIALS
+
+**Summary: no reliable public financial data exists. ARK Electronics is a privately held LLC with no disclosure obligations.**
+
+| Metric | Status |
+|---|---|
+| Revenue | **Not disclosed.** Tracxn explicitly records "no data available." No credible third-party estimate was found. |
+| Valuation | **Not disclosed.** No priced round, no public comparables event. |
+| Profitability | Unknown. |
+| Public filings | **None.** No SEC registration, no 10-K/10-Q/S-1, no Reg D Form D filings surfaced. As a Utah LLC, the only public filing is the state business registration (entity 10997430-0160, registered Sept 23, 2018) and annual renewals, which do not contain financials. |
+| Debt / credit facilities | No public record found. |
+| Stock | Not publicly traded. Do not confuse with SZSE:002079 (Suzhou Good-Ark) — see disambiguation. |
+
+(https://tracxn.com/d/companies/ark-electronics/__9gqHMP198nl1qJHrWBz1gWivsWPoYbCao_DzAu0Ia6c)
+
+### 2.1 Indirect revenue inference (analytical, not sourced)
+
+The only way to bound revenue is from observable operating signals, which should be treated as inference rather than fact:
+
+- **58 SKUs** currently listed on the webstore, with unit prices from **$20** (adapters) to **$3,587.15** (top-configuration Jetson PAB V3 NDAA bundle). Average selling price for the core flight-controller and GNSS lines sits roughly in the **$150–$1,200** band.
+- **~10 employees**, US-based hardware engineering and manufacturing.
+- Self-funded facility expansion "to support high-volume drone production" with claimed capacity for "millions of components annually."
+- 13-15+ products on the DIU Blue UAS Framework, which is a procurement-gating list — this implies meaningful defense-program channel revenue rather than hobbyist-only sales.
+
+A ~10-person US hardware company with a mid-priced catalog and defense channel access is consistent with **low-to-mid single-digit millions USD in annual revenue**, but no source confirms this and it should be labeled as an estimate in any downstream use.
+
+### 2.2 Government contracting
+
+No federal prime-contract award records were retrieved in this research pass (USASpending and SAM.gov both require POST/API-key access not available here). Given Blue UAS Framework listing, ARK's federal exposure is more likely to be **indirect — as a component supplier to drone OEMs holding the prime contracts** — than as a direct prime awardee. This is a gap worth a dedicated USASpending/SAM.gov lookup.
+
+---
+
+## 3. FUNDING HISTORY
+
+**Summary: ARK Electronics has raised no disclosed outside capital. It appears to be entirely bootstrapped.**
+
+Tracxn classifies the company's stage as **"Unfunded"** with **"Total funding: None raised to date"** and **"Valuation: not disclosed / no data available."** No founders-round, pre-seed, seed, Series A, venture debt, or grant funding is recorded. No investors are listed. No acquisitions made by ARK, and no acquisition of ARK. (https://tracxn.com/d/companies/ark-electronics/__9gqHMP198nl1qJHrWBz1gWivsWPoYbCao_DzAu0Ia6c)
+
+**Data caveat:** the Tracxn profile contains contradictory boilerplate — one templated line references "a single undisclosed round" while the substantive structured fields record no funding. The structured fields, plus the absence of any funding announcement across the company's own eight-plus years of news posts, plus the absence of any press coverage of a raise, all point to **bootstrapped / no institutional capital** as the correct reading.
+
+### 3.1 Competitive funding context
+
+Tracxn ranks ARK **4th among 68 active competitors** in its category, and **6th by total funding** — i.e., ARK ranks high on activity/traction while ranking low on capital raised:
+
+| Competitor | Founded | Country | Disclosed funding |
+|---|---|---|---|
+| uAvionix | 2014 | US | $10M |
+| Sagetech | 1998 | US | $12M |
+| Zerodrag | 2022 | India | $1.23M |
+| **ARK Electronics** | **2018** | **US** | **$0 (unfunded)** |
+| Starlogic Intelligent Technology | 2017 | China | $1.49M |
+| Defendron Technologies | 2024 | India | $422K |
+| SpeedyBee | 2005 | China | Unfunded |
+| Team BlackSheep | 2013 | China | Unfunded |
+| ModalAI | 2021 (listed) | — | Unfunded (per Tracxn; ModalAI has in fact raised outside capital, so this row is unreliable) |
+| UavKart | 2024 | India | Unfunded |
+
+Note the Tracxn competitor table has visible data-quality problems (ModalAI's founding year, country, and funding status are all questionable), so treat the comparison set as indicative only.
+
+### 3.2 Capital strategy read
+
+The pattern that emerges is **growth financed by revenue and by partnerships rather than by equity**:
+
+- Facility expansion apparently funded organically.
+- Distribution and capability gaps filled through **partnerships** (SiMa.ai for AI compute, Mobilicom for cybersecurity, Doodle Labs / Silvus / Microhard / DTC for radio integration) rather than through acquisition or heavy R&D spend.
+- A **European expansion** effort staffed by hire rather than by subsidiary capitalization — Tracxn logs the appointment of **Thierry Basse to lead European expansion in June 2023**.
+
+Investment-thesis framing found in secondary analysis: full founder control and zero dilution make ARK an attractive target for a strategic acquirer or defense-focused growth-equity buyer, while the absence of disclosed funding and public revenue is a risk factor given that hardware manufacturing is capital intensive.
+
+---
+
+## 4. LEADERSHIP AND PEOPLE
+
+### 4.1 Alex Klimaj — Founder, CEO (and CTO)
+
+The company's founder and chief executive. Several data brokers list him as holding both **CEO and CTO** titles, consistent with a ~10-person founder-led hardware firm.
+
+**Tenure:** Founder/CEO since **September 2018**.
+
+**Education:** B.S. Electrical Engineering, **California Polytechnic State University, San Luis Obispo (Cal Poly SLO)**, 2010–2014.
+
+**Prior career:**
+- Electrical Engineer at **Teal Drones** (Utah-based small-UAS maker, later acquired by Red Cat Holdings) — directly relevant to his later founding of a Utah drone-electronics company.
+- Electrical Engineer at **Code Corporation** (barcode/data-capture hardware, Utah).
+- Embedded hardware/firmware at **Nebula Music Technologies**.
+
+**PX4 involvement:** Began working with PX4 Autopilot in **2017**, a year before founding ARK. He is a well-known figure in the PX4 developer community; Dronecode's membership announcement describes him as "recognized within the PX4 developer community for his contributions" and notes he would continue that involvement after ARK's Silver membership.
+
+**Community/industry roles:**
+- **Board of Governors, 47G** (Utah aerospace & defense association) — since December 2023.
+- **Industry Advisory Board, 47G.**
+- Sole listed public member of the ARK GitHub organization (`AlexKlimaj`).
+
+**Selected quotes:**
+
+On Dronecode membership (September 2023):
+> "Working with Dronecode and open source has been a huge benefit to ARK Electronics growth in the drone industry."
+
+> The relationship is "not merely a business arrangement but as a pivotal catalyst for innovation," creating "a culture of collaboration and transparency that has elevated our product development," and helping others "get to market quicker with open source technology."
+> (https://dronecode.org/welcome-ark-electronics-as-a-silver-member/)
+
+On the SiMa.ai partnership (August 31, 2026):
+> "Autonomous intelligence is the next frontier for drones across defense, agriculture, and commercial applications."
+> (https://www.prnewswire.com/news-releases/simaai-and-ark-electronics-partner-to-accelerate-intelligent-autonomous-drones-302865336.html)
+
+**Public profiles:** https://www.linkedin.com/in/alexklimaj/ | https://github.com/AlexKlimaj
+
+### 4.2 Ike Atkinson — Chief Operating Officer
+
+Identified as **COO of ARK Electronics** in the Mobilicom partnership press release of **May 20, 2025**, where he is quoted on the OS3 cybersecurity platform:
+
+> OS3 is "the first solution on the market to provide comprehensive security, safety and standard compliance."
+> (https://www.stocktitan.net/news/MOB/mobilicom-and-ark-electronics-partner-to-develop-and-launch-4gnappeno7re.html)
+
+This is the only senior non-founder executive named in press materials found.
+
+### 4.3 Jacob Dahl — Engineer (PX4 core contributor)
+
+Singled out by the Dronecode Foundation's 2025 Year in Review as ARK's standout individual contributor, having reached the **top 10 PX4 contributors list**. Credited with:
+- Authoring the **bidirectional DShot** feature in PX4 (ESC telemetry over the DShot protocol — a significant upstream capability, not a vendor-specific driver).
+- IMU drivers and sensor fixes.
+- Community support: Discord answers, GitHub issue triage, weekly developer calls.
+
+(https://dronecode.org/the-2025-year-in-review/)
+
+### 4.4 Thierry Basse — European expansion lead
+
+Appointed **June 2023** to lead the company's European expansion, per the Tracxn news log. No further public detail found.
+
+### 4.5 Organizational notes
+
+- No board of directors or advisory board is publicly listed (consistent with an unfunded, founder-controlled LLC — there is no investor board seat to fill).
+- Tracxn's "founders" field is unpopulated (unclaimed profile), but Klimaj is unambiguously the founder per multiple independent sources.
+- The company uses a shared `alex` byline on its news posts, reinforcing that Klimaj personally writes much of the technical marketing.
+- Contact points: sales@arkelectron.com, support@arkelectron.com.
+
+---
+
+## 5. PRODUCTS
+
+ARK's catalog comprises **58 SKUs** across roughly eleven categories, plus airframes documented but not listed in the webstore, plus **ARK-OS** software. Sources: the full webstore pagination (https://arkelectron.com/shop/, /page/2/, /page/3/) and the complete documentation sitemap (https://docs.arkelectron.com/sitemap.md).
+
+The architectural through-line: nearly everything is built to two open standards — **Pixhawk FMUv6X** (the flight-controller electrical/firmware spec) and the **Pixhawk Autopilot Bus (PAB)** (the connector/form-factor spec that lets a flight-controller module plug into any compliant carrier board). This makes ARK's flight controllers and carrier boards independently mixable with third-party hardware, and vice versa. Peripherals standardize on **DroneCAN** over CAN bus.
+
+### 5.1 Flight Controllers
+
+**ARKV6X Flight Controller — $400.00** (flagship)
+The company's core product, launched **January 25, 2023**. Built to the FMUv6X and PAB open standards, made in the USA, NDAA compliant, Blue UAS Framework listed (added February 14, 2025). PX4 lists it as a manufacturer-supported target.
+
+Full specs per PX4 documentation (https://docs.px4.io/main/en/flight_controller/ark_v6x):
+- MCU: **STM32H743IIK6**, 480 MHz, 2 MB flash, 1 MB RAM
+- IMUs: **triple synced** — two Invensense **ICM-42688-P** + one Invensense **IIM-42652** industrial IMU. The triple-synced arrangement enables data averaging, voting, and filtering (i.e. fault tolerance against a single bad sensor).
+- Barometer: **Bosch BMP390**
+- Magnetometer: **Bosch BMM150**
+- Storage: **FRAM** + MicroSD slot
+- **1W integrated heater** to hold sensors at temperature in extreme cold (a meaningful accuracy feature — IMU bias drifts hard with temperature)
+- Power: 5V input, 500 mA total (300 mA system + 200 mA heater)
+- Physical: **5.0 g**, 3.6 × 2.9 × 0.5 cm
+- 8 UARTs mapped to GPS, TELEM1–3, RC/PX4IO, debug console, secondary GPS. Firmware note: the ARKV6X bootloader enables only **UART7 (TELEM1)**, so serial firmware upload must use that port.
+- LED status indicators
+
+Variants and bundles:
+- **ARKV6X Flight Controller Extended Range — $450.00** (extended temperature/environmental range part selection)
+- **ARKV6X Bundle — $750.00**
+- **ARKV6X Extended Range Bundle — $800.00**
+- **ARKV6X-RT** — referenced in PX4 docs as a related board
+
+**ARKV6S Flight Controller — $340.00**
+Launched **June 2, 2026**. Explicitly a "cost-effective, single-IMU variant of the ARKV6X." STM32H743 @ 480 MHz, one industrial-grade IMU, 1W heater, FRAM + MicroSD, PAB form factor, USA-built, NDAA compliant. Ships with PX4 preloaded; ArduPilot supported. (https://arkelectron.com/arkv6s-flight-controller-launch/ ; https://www.unmannedsystemstechnology.com/2026/06/ark-electronics-unveils-arkv6s-ndaa-compliant-flight-controller-for-uav-robotics-applications/)
+
+The V6S is the strategically interesting SKU: it trades the triple-IMU redundancy for a ~15% lower price than the ARK FPV-class cost tier while retaining the same architecture, aimed at high-volume/attritable platforms where per-unit cost dominates over redundancy.
+
+**ARK FPV Flight Controller — $194.99**
+Derived from the ARKV6X but repackaged into the **30.5 mm standard FPV mounting pattern**. Specs (https://docs.px4.io/main/en/flight_controller/ark_fpv):
+- MCU: STM32H743IIK6, 480 MHz, 2 MB flash, 1 MB RAM
+- IMU: Invensense **IIM-42653** industrial IMU
+- Barometer: **Bosch BMP390**
+- Magnetometer: **ST IIS2MDC**
+- Power: **3–12S battery input**, with **regulated 12V 2A output** for video transmitters and payloads (the distinguishing feature — FPV builds normally need a separate VTX regulator)
+- Ships with PX4; optional ArduPilot flashing; **Betaflight support added February 2025** (https://www.unmannedsystemstechnology.com/2025/02/ark-fpv-flight-controller-now-supports-betaflight/)
+
+The triple-firmware support (PX4 / ArduPilot / Betaflight) on one board is unusual and is a deliberate wedge into the FPV/racing and attritable-drone market that Betaflight dominates.
+
+**ARK Pi6X — $665.00–$785.00** and **ARK Pi6X Flow — $915.00–$1,035.00**
+Integrated flight controller plus Raspberry Pi Compute Module companion computer on one board. The "Flow" variant adds integrated optical flow. Documentation covers block diagram, pinout, CM4 Lite/eMMC flashing guides, Wi-Fi/SSH setup, ARK services, QGroundControl connection, and flight-controller firmware updating (https://docs.arkelectron.com/sitemap.md).
+
+### 5.2 Carrier Boards (PAB)
+
+**ARK Pixhawk Autopilot Bus Carrier — $450.00**
+The reference PAB carrier: accepts any PAB-compliant flight-controller module (ARKV6X, ARKV6S, or third-party). Documented with pinout, PX4 instructions, 3D models and case files.
+
+**ARK Jetson PAB Carrier — $800.00**
+Combines an NVIDIA **Jetson Orin** module with a PAB flight-controller socket on a single board — i.e. autopilot plus AI companion computer, no inter-board cabling. Runs **ARK-OS**. Documented with full hardware reference: pinout, Mini DisplayPort, block diagram, 3D models and case files, GPIO control, camera overlays, USB port power cycling, flashing guide, micro-USB console.
+
+**ARK Jetson PAB V3 — $800.00** (launched **May 26, 2026**)
+Described as "our most advanced Pixhawk Autopilot Bus (PAB) carrier board yet." Key additions over prior generations:
+- Integrated **10/100 Ethernet switch** providing native, low-latency Ethernet between the Jetson and the flight controller (replacing serial/UART as the high-bandwidth link — this matters for ROS2/DDS workloads)
+- External Ethernet ports
+- "Swap-optimized form factor"
+- Jetson **Orin NX / Orin Nano** compatible; works with any PAB-compliant FC
+- Fully NDAA compliant, USA manufactured
+(https://arkelectron.com/ark-jetson-pab-v3-launch/)
+
+**ARK VOXL2 RTK PAB Carrier — $1,150.00**
+Carrier integrating ModalAI's VOXL2 compute platform with RTK GNSS and a PAB flight-controller socket. Documented with pinout, connectors and cables, 3D models, autopilot connections.
+
+### 5.3 Embedded / Companion Computers
+
+**ARK Just A Jetson — $680.00**
+A standalone NVIDIA Jetson carrier without the integrated flight-controller socket — for builders who already have an autopilot. Extensive documentation: connect/get-online setup, ARK-OS usage, flight-controller firmware updating, pinout, ports and serial, **ICM-42688P IMU guide**, **INA238 power monitor guide**, block diagram, 3D model, GPIO control, camera overlays, USB power cycling, flashing guide, USB-C console.
+
+**ARK Just A Pi — $335.00–$475.00** (launched **August 19, 2026**)
+A budget-friendly, NDAA-compliant Linux single-board computer for robotics, based on the **Raspberry Pi CM5** (both Lite + microSD and eMMC variants documented). Getting-started, flashing, Wi-Fi setup, SSH, pinout, block diagram, 3D model. This is the low-cost entry point into ARK's compute line.
+
+**Jetson module options.** As of **September 15, 2026**, ARK Jetson bundles offer both **Orin Nano and Orin NX** in multiple memory sizes, including **Orin NX 8GB** (https://arkelectron.com/news/).
+
+**Bundles:**
+- ARK Jetson PAB NDAA Bundle — $921.50–$3,587.15
+- ARK Jetson PAB V3 NDAA Bundle — $921.50–$3,587.15
+- ARK Just A Jetson NDAA Bundle — $801.50–$3,167.15
+- ARK Jetson PAB V3 with Modalix MLSoC Bundle — $1,897.20–$2,764.20
+- ARK Just A Jetson with Modalix MLSoC Bundle — $1,777.20–$2,344.20
+
+### 5.4 GPS / GNSS (the broadest product line — 11+ modules)
+
+ARK fields one of the widest GNSS ranges of any autopilot vendor, spanning three silicon suppliers (u-blox, STMicroelectronics, Septentrio) and both simple UART modules and full DroneCAN RTK units.
+
+**Entry / UART modules:**
+- **ARK SAM GPS — $75.00** — u-blox **SAM-M10Q**, 4 concurrent GNSS constellations, jamming/spoofing detection, ST **IIS2MDC** industrial magnetometer, Pixhawk-standard UART/I2C 6-pin JST GH, **36 × 36 × 8 mm, 11 g, 15 mA average**, USA-made, NDAA compliant. **Added to the Blue UAS Framework September 9, 2026** (https://arkelectron.com/ark-sam-gps-added-to-the-blue-uas-framework/). PX4/ArduPilot/Betaflight instructions documented.
+- **ARK SAM GPS MINI — $75.00** — compact variant.
+- **ARK DAN GPS — $145.00** — announced September 4, 2025. PX4/ArduPilot/Betaflight support.
+- **ARK GPS — $225.00** — the original module.
+- **ARK TESEO GPS — $215.00–$268.00** — built on the STMicroelectronics **TESEO LIV4F** receiver. A notable non-u-blox option, useful for supply-chain diversification.
+
+**RTK modules:**
+- **ARK RTK GPS — $615.00–$670.00** — USA-made, Blue UAS Framework listed (added July 8, 2024), open source, **DroneCAN L1/L2 RTK** using the u-blox **ZED-F9P**, with magnetometer, barometer, IMU, buzzer, and safety switch integrated.
+- **ARK RTK GPS L1 L5 — $615.00–$670.00** — L1/L5 band variant, same integrated sensor suite. (L5 improves multipath resistance in urban/canyon environments.)
+- **ARK X20 RTK GPS — $695.00–$780.00** — NDAA-compliant **all-band DroneCAN RTK** using the newer u-blox **X20** platform, with magnetometer, barometer, IMU, buzzer, safety switch. Latest published firmware: version **89-1.16.47e04790, dated 2025-11-17** (https://docs.arkelectron.com/products/gps/ark-x20-rtk-gps).
+- **ARK MOSAIC-X5 RTK GPS — $1,150.00–$1,230.00** — built on the **Septentrio mosaic-X5** module, the premium option, with PX4 and ArduPilot instructions plus a browser-based Web GUI for receiver configuration.
+- **ARK G5 RTK GPS — $745.00–$835.00**
+- **ARK G5H RTK Heading GPS — $820.00–$995.00** — dual-antenna **moving-baseline heading** solution, which delivers true heading without relying on a magnetometer (critical near large motors, steel structures, or in magnetically hostile environments).
+- **ARK RTK Base — $595.00** — the ground-side base station that broadcasts RTK corrections.
+
+Pricing caveat: some aggregator pages report different GNSS prices (e.g. ARK RTK GPS at $915–$1,035, X20 at $320–$768.50) that appear to be row-misalignment artifacts in the scraped table. The figures above are taken directly from the ARK webstore pagination and should be treated as authoritative as of this research date.
+
+### 5.5 Sensors
+
+- **ARK Flow — $250.00** — optical flow sensor with integrated distance sensing, DroneCAN. Added to the Blue UAS Framework August 14, 2025. Documented with ArduPilot/PX4 instructions, DroneCAN message definitions, 3D models and case files.
+- **ARK Flow MR — $350.00** — medium-range variant: **PAA3905 optical flow sensor with a 50 m distance sensor**. Announced February 6, 2025.
+- **ARK DIST SR — $180.00** — short-range distance sensor / rangefinder.
+- **ARK DIST MR — $280.00** — medium-range distance sensor. Announced August 14, 2025. Documented with pinout, firmware, UART/MAVLink interface, ArduPilot/PX4 instructions, 3D models and case files.
+- **ARK MAG — $175.00** — standalone external magnetometer module with pinout, ArduPilot/PX4 instructions, 3D models.
+- **ARK CANnode — $150.00** — a generic DroneCAN node board, letting integrators put arbitrary sensors/actuators onto the CAN bus. ArduPilot and PX4 instructions documented.
+
+### 5.6 IMUs (standalone, high-grade)
+
+- **ARK SCH16T — $160.00** and **ARK SCH16T-K10 IMU — $160.00** — based on the Murata **SCH16T** MEMS gyro/accelerometer, a high-stability automotive/industrial part.
+- **ARK ADIS16507 — $1,150.00** — based on the Analog Devices **ADIS16507** tactical-grade IMU. This is by a wide margin the highest-priced single component in the catalog and signals a navigation-grade / GPS-denied use case.
+
+Both are documented with PX4 and ArduPilot instructions and 3D models.
+
+### 5.7 ESCs (Electronic Speed Controllers)
+
+- **ARK 4IN1 ESC — $218.50** — four-in-one FPV-form-factor ESC, **NDAA compliant, AM32 firmware, made in the USA**. Blue UAS Framework listed (August 14, 2025, as the CONS variant). Documented with pinout, firmware flashing (ArduPilot ESC passthrough, flash ARK32, flash bootloader), **ARK32 configuration**, PWM calibration, motor spin direction, 3D models.
+- **ARK 4IN1 ESC CONS — $238.50** — conformal-coated / ruggedized variant.
+- **ARK 12S CAN ESC — $399.00** — single high-voltage (12S) ESC with **CAN bus** control rather than PWM/DShot, for larger airframes. Documented with pinout, mounting and power connections, firmware, 3D models.
+
+ARK maintains its own fork of the open-source **AM32** ESC firmware as **ARK32**, plus a fork of the AM32 bootloader and configurator.
+
+### 5.8 Power Modules
+
+- **ARK PAB Power Module — $100.00**
+- **ARK PAB Power Module No Connector — $100.00**
+- **ARK 12S PAB Power Module — $100.00**
+- **ARK 12S Payload Power Module — $195.00**
+
+Each documented with PX4 instructions, ArduPilot instructions, and 3D models.
+
+### 5.9 Radio / Connectivity
+
+- **ARK M.2 LTE — $250.00** — M.2 form-factor LTE modem for BVLOS/cellular command-and-control. **Three variants added to the Blue UAS Framework April 28, 2025.** Documented with OpenVPN configuration.
+- **ARK Microhard DDL Carrier — $320.00–$768.50** — carrier board for Microhard digital data link radios. 3D model documented.
+
+ARK also publishes **radio integration guides** for third-party datalinks it does not sell: **Doodle Labs Mesh Rider, DTC BluSDR, Mobilicom SkyHopper Pro, Silvus StreamCaster SL5200**, plus its own Microhard DDL carrier (https://docs.arkelectron.com/sitemap.md). This documentation-as-marketing approach positions ARK as the integration hub for whatever radio a defense customer is mandated to use.
+
+### 5.10 Accessories and Breakouts
+
+- ARK Primary Avionics Breakout — $79.99
+- ARK Secondary Avionics Breakout — $79.99
+- ARK Pixhawk Payload Bus Breakout — $89.99
+- ARK Servo Expander — $49.99
+- ARK Pixhawk Debug Adapter — $60.00
+- Servo Adapter — $20.00
+- Ethernet Adapter — $20.00
+- Gigabit Ethernet Adapter — $20.00
+- ARK USB Adapter — $20.00
+
+### 5.11 Airframes
+
+**ARK RIG5** and **ARK RIG7** appear in the documentation sitemap under an "Airframes" category but do not appear in the public webstore listing. These are likely reference/development airframes or channel-only products. Worth a follow-up check.
+
+### 5.12 Software — ARK-OS and open-source tooling
+
+**ARK-OS** is the company's Linux software stack for its compute products — "software for the ARK Jetson Carrier and ARK Pi6X Flow." Written primarily in Python, **MIT licensed**, 44 stars / 9 forks on GitHub, last updated September 1, 2026 (https://github.com/ARK-Electronics). Documentation covers ARK-OS services and apt package-pinning guidance ("Apt: Hold Back Risky Packages"). Functionality includes autopilot connection brokering (to QGroundControl / Mission Planner), flight-controller firmware updating, camera overlays, GPIO control, and USB port power cycling.
+
+**PointPerfect Flex integration (July 15, 2026).** ARK-OS gained an **NTRIP client** for **u-blox PointPerfect Flex**, enabling centimetre-level RTK positioning on PX4- and ArduPilot-based UAVs **without deploying a physical base station** — corrections stream from u-blox's network service instead (https://arkelectron.com/news/). This is operationally significant: it removes the logistical burden of hauling and surveying an RTK base for each flight, which is a real barrier for survey and inspection operators.
+
+**Other open-source repositories** (https://github.com/ARK-Electronics — 88 repos total):
+
+| Repo | Description | Language | Stars |
+|---|---|---|---|
+| ROS2_PX4_Offboard_Example | Controlling PX4 velocity setpoints via ROS2 teleop | Python | 208 |
+| ARK-OS | Software for ARK Jetson Carrier and ARK Pi6X Flow | Python | 44 |
+| isaac_ros-dev | ROS2 workspace for NVIDIA Isaac ROS on Jetson | Shell | 29 |
+| mavlink-to-lattice | Bridge between MAVLink and Anduril Lattice | Python | 28 |
+| ark_jetson_kernel | Kernel build scripts for ARK Jetson Carrier | Shell | 23 |
+| logloader | Automatic upload/download of PX4 flight logs | C++ | 23 |
+| ARK32 | Fork of AM32 ESC firmware | C | 11 |
+| ark-meta-simaai | Yocto layer for Jetson carrier on SiMa.ai Modalix SoM | Shell | 0 |
+| ark_jetson_yocto | Yocto Linux + CUDA BSP for Jetson carriers | Python | 0 |
+| ark-hardware | (no description — likely hardware design files) | — | 0 |
+| flight_review | Fork of PX4 flight-log web analyzer | JavaScript | 0 |
+| ark32-configurator | Fork of am32-configurator | TypeScript | 0 |
+| ARK32-bootloader | Fork of AM32-bootloader | C | 0 |
+
+The **`mavlink-to-lattice`** bridge deserves note: **Lattice is Anduril Industries' command-and-control platform.** Publishing a MAVLink-to-Lattice bridge (announced August 14, 2025) is an explicit play to make ARK-equipped, PX4-based drones interoperable with the defense C2 stack most likely to be deployed alongside them.
+
+### 5.13 Knowledge base
+
+ARK publishes an unusually thorough vendor-neutral engineering knowledge base: Microcontrollers, SWD Programming, Serial Communication (UART), CAN Bus, MAVLink, Connectors and Wiring, Power and Grounding, **GPS Placement**, Communication Buses (I2C, SPI), Recommended Tools, ST-LINK Flashing Guide, DroneCAN GUI Tool Guide, u-blox Firmware Update, **PX4 Log Encryption**, PX4 Setup, USB Peripherals. Plus ROS2 & PX4 tutorials: teleop example, precision landing, ArUco detection, custom modes hardware demo, custom modes with ROS2/QGC, simulated offboard mode.
+
+---
+
+## 6. PATENTS
+
+**Summary: no granted patents or published applications assigned to ARK Electronics, LLC, or naming Alex Klimaj as inventor, were located in this research pass. The evidence strongly suggests the company's IP strategy is deliberately not patent-based.**
+
+### 6.1 Search limitations (stated honestly)
+
+Direct patent-database queries were attempted and blocked:
+- **Google Patents** (`patents.google.com`, assignee and free-text queries, plus the XHR API endpoint) — returned HTTP 503 on every attempt.
+- **Justia Patents** (`patents.justia.com`) — returned HTTP 403.
+- **Espacenet** (`worldwide.espacenet.com`) — returned HTTP 403.
+- **FreePatentsOnline** — connection reset.
+- **USPTO Patent Public Search / PatentsView API** — requires POST or an API key, unavailable via the fetch tooling here.
+- Web-search budget for this session was exhausted before a patent-specific search could be issued.
+
+**Therefore "no patents found" here means "none surfaced across company materials, press releases, trade coverage, and investor-database profiles," not "a negative result from an exhaustive patent-database query."** A definitive answer requires a direct USPTO Patent Public Search or PatentsView API query on assignee "ARK Electronics" (Utah) and inventor "Klimaj, Alex."
+
+### 6.2 Affirmative evidence of a non-patent IP posture
+
+Several independent signals point the same direction:
+
+1. **Products are built to open standards ARK does not own.** FMUv6X and the Pixhawk Autopilot Bus are Dronecode/Pixhawk-project open hardware specifications. A company whose differentiation rests on *conforming to* someone else's published spec cannot patent the spec, and gains little from patenting around it.
+2. **ARK publishes its own designs as open source.** The webstore describes the ARK RTK GPS as "open source," and `ark-hardware` is a public repository. Open-publication is antithetical to a patent-first strategy (and, once published, starts the clock on any filing window).
+3. **Firmware is derived from GPL/permissive upstream projects.** ARK32 derives from AM32; flight controllers run PX4 (BSD-3) and ArduPilot (GPLv3). ARK contributes changes back upstream rather than holding them proprietary.
+4. **The Tracxn profile — which does report IP activity when it exists — records no patent data.**
+5. **No press release, product page, or datasheet uses "patented," "patent pending," or cites a patent number.** For a hardware company, patent marking is both legally advantageous and standard marketing practice; its total absence is informative.
+
+### 6.3 What ARK's actual defensible moat appears to be
+
+In lieu of patents, the company's competitive protection appears to rest on:
+
+- **Regulatory moat:** NDAA compliance plus **13-15+ DIU Blue UAS Framework listings**, reportedly the most of any component vendor on that list. Framework listing is expensive and slow to obtain and functions as a de facto barrier to entry for the US defense channel — arguably a stronger moat than a patent in this market.
+- **Domestic manufacturing:** US design, manufacture, and test, which competitors offshoring to China structurally cannot replicate.
+- **Upstream code position:** being the #2 contributor to PX4 means ARK's hardware is supported first and best in the firmware everyone else also uses.
+- **Trademark:** the "ARK" and "ARKV6X" marks are presumably protected, though no USPTO trademark registration was verified in this pass (a TSDR lookup would confirm).
+
+### 6.4 Recommended follow-up
+
+- USPTO Patent Public Search: assignee `ARK Electronics` AND state `UT`; inventor `Klimaj`.
+- USPTO TSDR / TESS trademark search for `ARK ELECTRONICS`, `ARKV6X`, `ARK-OS`, `ARK32`.
+- Google Patents at a later time (the 503s appeared to be transient rate limiting rather than a permanent block).
+
+---
+
+## 7. LATEST NEWS (reverse chronological, 2023–September 2026)
+
+Primary source for the company-published timeline: https://arkelectron.com/news/ (three pages).
+
+### 2026
+
+**September 15, 2026 — NVIDIA Jetson Orin NX 8GB now in ARK Jetson bundles.** Jetson NDAA bundles expanded to offer Orin Nano and Orin NX options across multiple memory configurations, including the 8GB NX. (https://arkelectron.com/news/)
+
+**September 9, 2026 — ARK SAM GPS added to the Blue UAS Framework.** The $75 u-blox SAM-M10Q-based GNSS + IIS2MDC magnetometer module (36 × 36 × 8 mm, 11 g, 15 mA) joins the DIU list. ARK notes it is NDAA compliant and will not impair a platform's eligibility for the Blue UAS Cleared List. Notable because it puts a genuinely low-cost, FPV/small-UAS-class GNSS module on the Framework — most Framework-listed GNSS is far more expensive. (https://arkelectron.com/ark-sam-gps-added-to-the-blue-uas-framework/)
+
+**August 31, 2026 — SiMa.ai partnership.** SiMa.ai (San Jose, "Physical AI" silicon company) and ARK announced the **ARK-SiMa.ai Modalix MLSoC Bundles**: bundled hardware/software kits combining SiMa.ai's **Modalix System-on-Module** (built on the Modalix MLSoC) and its **Palette Neat** AI development tooling with ARK's carrier hardware. Marketed as pin/layout-compatible with existing GPU-based edge platforms so drone OEMs can upgrade compute without redesigning the airframe electronics. Available immediately to qualifying manufacturers and integrators through a SiMa.ai portal.
+
+Quotes:
+- Durga Peddireddy (SiMa.ai): "winning programs will be built on platforms that pair globally trusted hardware with best-in-class AI compute"
+- Alex Klimaj: "Autonomous intelligence is the next frontier for drones across defense, agriculture, and commercial applications"
+
+(https://www.prnewswire.com/news-releases/simaai-and-ark-electronics-partner-to-accelerate-intelligent-autonomous-drones-302865336.html ; https://arkelectron.com/ark-and-sima-ai-partner-on-intelligent-autonomous-drones/)
+
+Two resulting SKUs shipped: ARK Jetson PAB V3 with Modalix MLSoC Bundle ($1,897.20–$2,764.20) and ARK Just A Jetson with Modalix MLSoC Bundle ($1,777.20–$2,344.20), plus a public Yocto layer (`ark-meta-simaai`).
+
+**August 19, 2026 — ARK Just A Pi launch.** A budget-friendly, NDAA-compliant Raspberry Pi CM5-based Linux compute board for robotics begins shipping at $335–$475. Extends ARK's compute line downward from Jetson pricing.
+
+**July 15, 2026 — RTK without a base station: u-blox PointPerfect Flex on ARK-OS.** ARK-OS gains an NTRIP client for streaming u-blox PointPerfect Flex corrections, giving PX4 and ArduPilot vehicles centimetre-level RTK without a physical base station.
+
+**July 9, 2026 — "How to Brick Your Flight Controller."** A technical deep-dive on a flash-memory fault that causes a hard fault on every boot. Notable as an example of the company's engineering-transparency marketing — publishing a failure-mode post-mortem rather than only product announcements.
+
+**June 2, 2026 — ARKV6S Flight Controller launch.** The single-IMU, lower-cost ($340) sibling to the ARKV6X ships. STM32H743 @ 480 MHz, industrial IMU, 1W heater, FRAM + MicroSD, PAB form factor, USA-built, NDAA compliant, PX4 preloaded with ArduPilot supported. Covered independently at https://www.unmannedsystemstechnology.com/2026/06/ark-electronics-unveils-arkv6s-ndaa-compliant-flight-controller-for-uav-robotics-applications/
+
+**May 26, 2026 — ARK Jetson PAB V3 launch.** The company's most advanced PAB carrier: Jetson Orin NX/Nano compatible, integrated 10/100 Ethernet switch for native low-latency Jetson↔FC Ethernet, external Ethernet ports, swap-optimized form factor, NDAA compliant, USA manufactured. $800 standalone; bundles to $3,587.15.
+
+**May 7, 2026 — ARK at XPONENTIAL 2026** (Detroit). Booth presence at the AUVSI autonomy/robotics trade show.
+
+**(Undated, 2026) — Facility expansion completed** to support high-volume drone production, reportedly enabling manufacture of millions of drone and robotic components annually (https://www.defenseadvancement.com/news/ark-electronics-completes-facility-expansion-to-support-high-volume-drone-production/).
+
+### 2025
+
+**November 19, 2025 — ARK November Update.** Roundup covering the new X20 and DAN GPS products and expanded social/community channels.
+
+**September 4, 2025 — ARK DAN GPS announcement.** New $145 GNSS module.
+
+**August 14, 2025 — MAVLink to Anduril Industries Lattice bridge.** Open-source tool streaming MAVLink telemetry into Anduril's Lattice C2 platform (`mavlink-to-lattice`, 28 stars).
+
+**August 14, 2025 — ARK Flow and ARK 4IN1 ESC CONS added to the Blue UAS Framework,** bringing ARK's Framework total to **13 products**.
+
+**August 14, 2025 — ARK DIST announcement.** Distance-sensor/rangefinder line release.
+
+**May 20, 2025 — Mobilicom (Nasdaq: MOB) strategic partnership.** Joint development of affordable, cybersecure technology for small drones and robotics, pairing Mobilicom's **OS3** platform (Operational Security, Safety, and Standards compliance — continuous monitoring, detection, alerting, threat prevention) with ARK's US-manufactured, NVIDIA-powered hardware. First co-developed offering targeted for **H2 2025**; both companies showcased at XPONENTIAL 2025 (billed at 7,500+ attendees). Market sizing cited: mini/small drone sector at **$5.8B (2023), growing at 8.6% CAGR to $10.4B by 2030**. ARK noted as holding **11 autonomy and flight-computer products** on the Blue UAS Framework, NDAA compliant, aligned with DoD Modular Open Systems Architecture, built to AUVSI cybersecurity benchmarks. ARK COO **Ike Atkinson** quoted. Mobilicom's stock moved **-5.08%** in the session following the announcement. A second Mobilicom partnership announcement followed in **July 2025**. (https://www.stocktitan.net/news/MOB/mobilicom-and-ark-electronics-partner-to-develop-and-launch-4gnappeno7re.html)
+
+**April 28, 2025 — ARK M.2 LTE added to the Blue UAS Framework.** Three LTE module variants listed; the post notes this gave ARK **the most listed products on the Framework** of any vendor.
+
+**February 14, 2025 — ARKV6X Flight Controller added to the Blue UAS Framework.** The flagship autopilot achieves DIU listing — arguably the single most commercially consequential event in the timeline, since it unlocks the defense procurement channel for ARK's core product.
+
+**February 2025 — ARK FPV Flight Controller adds Betaflight support,** giving the board three open-source firmware options (PX4, ArduPilot, Betaflight). (https://www.unmannedsystemstechnology.com/2025/02/ark-fpv-flight-controller-now-supports-betaflight/)
+
+**February 6, 2025 — NDAA Jetson Orin Nano and NX bundles introduced.**
+
+**February 6, 2025 — ARK SAM GPS announcement.**
+
+**February 6, 2025 — ARK Flow MR announcement.** PAA3905 optical flow with 50 m distance sensing.
+
+**(2025, ongoing) — Dronecode ecosystem standing.** ARK finishes the year as the **#2 contributing organization to PX4** with 2,945 contributions (~11% of the ecosystem), adds **four new DroneCAN peripherals** to PX4, and sees **Jacob Dahl** reach the top 10 individual PX4 contributors on the strength of the bidirectional DShot implementation. (https://dronecode.org/the-2025-year-in-review/)
+
+### 2024
+
+**July 8, 2024 — ARK RTK GPS added to the Blue UAS Framework.**
+
+**April 2024 — Manufacturing network expansion** reported via Evertiq (per Tracxn news log).
+
+### 2023
+
+**October 1, 2023 — "ARK Electronics Joins Dronecode"** (company announcement).
+
+**September 22, 2023 — Dronecode Foundation welcomes ARK Electronics as a Silver Member.** At the time, the company is described as five years old with hardware designed, manufactured, and tested in the USA. Featured products cited: the "NDAA compliant Pixhawk FMUv6X" and an "NDAA compliant Pixhawk Carrier board for Nvidia Jetson Orin." Klimaj's quotes frame the membership as "not merely a business arrangement but as a pivotal catalyst for innovation." (https://dronecode.org/welcome-ark-electronics-as-a-silver-member/)
+
+**June 2023 — Thierry Basse appointed to lead European expansion** (per Tracxn).
+
+**January 25, 2023 — ARKV6X announcement.** Launch of the ARKV6X Flight Controller and ARK PAB Carrier, both built to open Pixhawk standards. This is the product that established the company.
+
+---
+
+## 8. ANALYTICAL SUMMARY
+
+**What ARK Electronics is.** A roughly ten-person, founder-controlled, entirely bootstrapped Utah LLC that has, in eight years and with zero outside capital, become the **#2 code contributor to PX4** and the vendor with **the most products on the DIU Blue UAS Framework**. It sells ~58 SKUs spanning autopilots, GNSS/RTK, IMUs, optical flow, rangefinders, ESCs, power, LTE/radio carriers, and Jetson/Raspberry-Pi compute — all designed and built in the USA to open Pixhawk standards.
+
+**The strategy, stated plainly.** Do not invent a proprietary platform; instead implement the open standard better than anyone, manufacture it domestically, get it onto the DIU list, and become the default component supplier for every US drone OEM that needs to be NDAA compliant. Contribute heavily upstream so the firmware everyone uses supports your hardware first. Fill capability gaps with partnerships (SiMa.ai for AI silicon, Mobilicom for cyber, Anduril-Lattice interop for C2) rather than with capital.
+
+**Strengths.** Regulatory moat via Blue UAS listings that competitors cannot quickly replicate. Genuine technical credibility in the PX4 community. Zero dilution and full founder control. Breadth of catalog unusual for the headcount. Multi-firmware (PX4/ArduPilot/Betaflight) and multi-silicon (u-blox/ST/Septentrio; NVIDIA/SiMa.ai/Raspberry Pi) hedging.
+
+**Risks and open questions.** Hardware manufacturing is capital intensive and ARK has no disclosed funding buffer. Key-person concentration in Alex Klimaj is severe. No patent portfolio means no licensing revenue and no defensive IP if a larger player copies the (openly published) designs — the moat is regulatory and reputational, not legal. Revenue is entirely unverified. And as an unfunded, founder-controlled asset sitting on a scarce regulatory position in a hot defense market, ARK is an obvious acquisition target for a defense prime or a growth-equity buyer.
+
+**Gaps in this report requiring follow-up.** (a) Definitive USPTO patent and trademark queries — blocked here by database 403/503 responses. (b) Federal contract award history via USASpending/SAM.gov — requires POST/API access. (c) Current exact Blue UAS Framework product count — the trajectory is 11 (May 2025) → 13 (Aug 2025) → 15+ (Sept 2026), but the live DIU list should be checked. (d) The ARK RIG5 / RIG7 airframes, documented but not sold publicly. (e) Full text of the facility-expansion coverage (square footage, investment, capacity), blocked by a 403.
+
+---
+
+### Consolidated source list
+
+Company: https://arkelectron.com/ · https://arkelectron.com/about/ · https://arkelectron.com/shop/ · https://arkelectron.com/news/ · https://docs.arkelectron.com/sitemap.md · https://docs.arkelectron.com/products/gps/ark-x20-rtk-gps · https://arkelectron.com/arkv6s-flight-controller-launch/ · https://arkelectron.com/ark-jetson-pab-v3-launch/ · https://arkelectron.com/ark-sam-gps-added-to-the-blue-uas-framework/ · https://github.com/ARK-Electronics · https://github.com/AlexKlimaj
+
+PX4 / Dronecode: https://docs.px4.io/main/en/flight_controller/ark_v6x · https://docs.px4.io/main/en/flight_controller/ark_fpv · https://dronecode.org/welcome-ark-electronics-as-a-silver-member/ · https://dronecode.org/the-2025-year-in-review/ · https://dronecode.org/our-members/ · https://droneblocks.io/px4-unveils-the-droneblocks-dexi-px4-developer-kit-a-collaborative-triumph-in-drone-education/
+
+Press / third party: https://www.prnewswire.com/news-releases/simaai-and-ark-electronics-partner-to-accelerate-intelligent-autonomous-drones-302865336.html · https://www.stocktitan.net/news/MOB/mobilicom-and-ark-electronics-partner-to-develop-and-launch-4gnappeno7re.html · https://www.unmannedsystemstechnology.com/company/ark-electronics/ · https://www.unmannedsystemstechnology.com/2026/06/ark-electronics-unveils-arkv6s-ndaa-compliant-flight-controller-for-uav-robotics-applications/ · https://www.unmannedsystemstechnology.com/2025/02/ark-fpv-flight-controller-now-supports-betaflight/ · https://www.defenseadvancement.com/news/ark-electronics-completes-facility-expansion-to-support-high-volume-drone-production/
+
+Databases / directories: https://tracxn.com/d/companies/ark-electronics/__9gqHMP198nl1qJHrWBz1gWivsWPoYbCao_DzAu0Ia6c · https://www.47g.org/members/ark-electronics/ · https://www.linkedin.com/in/alexklimaj/ · https://www.linkedin.com/company/ark-electronics-llc · https://x.com/ARK_Electr0nics
+
+---
+
+Skipped: patent-database confirmation (Google Patents/Justia/Espacenet all returned 403/503, web-search budget exhausted) and federal contract history (USASpending needs POST). Add when a USPTO Patent Public Search and a SAM.gov/USASpending lookup can be run directly.

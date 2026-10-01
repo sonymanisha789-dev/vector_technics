@@ -1,0 +1,127 @@
+# SKYNETICS — COMPETITIVE RESEARCH REPORT
+Compiled 2026-09-24 from local cached research files plus live web supplementation.
+
+## 0. DISAMBIGUATION — READ FIRST
+
+"Skynetics" resolves to at least six distinct entities. This report covers exactly one:
+
+**SUBJECT: Skynetics Pvt. Ltd.** — Bengaluru, Karnataka, India. CIN U26109KA2023PTC174313. Website skynetics.net. Sector: Defense and Space Manufacturing — flight-qualified satellite subsystems, long-range RF transceivers, ground stations.
+
+CORRECTION TO PREMISE: this is not primarily a drone/UAS company. It's a space electronics/satellite subsystems company. UAV/drone is its smallest line (2 of 33 products), positioned as subsystem supply to drone builders, not drone OEM.
+
+EXCLUDED — not this company: Skynetics UK (Cheltenham, landing-gear engineering consultancy); Skynetics Group (Monrovia, Liberia, IT services); Skynetiks Technologies (IT services); Skynetic.store (consumer drone e-commerce); various unrelated "Skynet"-named drone firms (Singapore, Dehradun, Connecticut, Sky-Drones UK); and — critically — the cached Reddit dataset for "skynetics" is 100% Terminator/AI-doom meme contamination with zero signal on the real company; excluded entirely from this report.
+
+## 1. COMPANY OVERVIEW
+
+Legal name: SKYNETICS PRIVATE LIMITED. CIN U26109KA2023PTC174313. Incorporated 30 May 2023. Registered address: Sahakaranagar, Bangalore North, Karnataka 560092. HQ Bengaluru.
+
+Founded 2023 by engineers with satellite/space-electronics backgrounds from TU Delft, ETH Zurich, KIT, IISER, and ISRO. Founding story: "born out of the dreams of graduates from the Netherlands and Germany." Strategic thesis: Indian space-sector import-substitution — "The parts that stayed closed for decades are the parts we build."
+
+Mission: "to develop highly miniaturized and cost-effective embedded solutions... pushing technology beyond limits for extreme scenarios." Homepage tagline: "Space-Grade Technology. Made in India." — "50+ subsystems flown, ISRO-empanelled."
+
+Size: reported figures range 7 (Tracxn) to 9-12 (LinkedIn/Exa) employees, LinkedIn self-declared band 11-50. Realistic estimate: 7-12 people, grew from ~2 to ~9 over the prior year (+350% YoY). LinkedIn followers grew from 3,518 (Jun 2026) to 5,000 (Sep 2026).
+
+Footprint: 3 countries, 3 ground stations (Netherlands, Dubai, Bangalore), India as primary hub. 3 ISRO nanosatellites carrying its hardware, 2 complete satellites delivered.
+
+Certifications/posture: AS9100D in progress (NOT yet certified); SCOMET export-control compliant; DGFT IEC issued; IN-SPACe authorization issued; ISRO-empanelled (claimed). Notable gap: selling flight hardware before AS9100D certification completes.
+
+Flight heritage claimed: INS-1A, INS-1B, INS-1C (ISRO nanosatellites — subsystems), Gaganyaan 2024 (bio-sensor module), CubeSat-1U and CubeSat-3U delivered end-to-end. Aggregate claims: 50+ flight-qualified subsystems at TRL 9, 100% mission success across 50+ deployments, MTBF 12,500 hrs, 4 patents. CAUTION: INS-1A/1B/1C launched 2017-2018, years before the 2023 company existed — this is founder-team heritage carried from prior ISRO/TU Delft work, not company track record.
+
+Named clients/partners: ISRO, DRDO, ADA, URSC, ISTRAC, IN-SPACe (govt/agency); L&T, Bellatrix Aerospace, Kepler Aerospace, Shyena Tech Yantra, Aidin Technologies (industry); IIST, Dayananda Sagar University, Edutech4Space (academic). Also sells to universities for space-environment simulation platforms.
+
+## 2. FINANCIALS
+
+Pre-revenue-to-early-revenue private company, no public financials filed/accessible beyond one regulatory band.
+
+- Annual revenue: ₹0–10 crore (~USD $0-1.2M) as of 31 Mar 2025 (Tracxn) — widest, least informative MCA band; realistically low end given ~7 employees.
+- Valuation: not disclosed — no priced round has occurred.
+- MCA filings (MGT-7/AOC-4) exist but were not retrievable in this research (Zaubacorp 403, Tofler 404) — biggest open financial gap.
+- Board: Tracxn lists 5 active members — 2 founders + 3 others (one named: Vasanthi Ramaswamy Iyengar). A 5-person board at a 7-person unfunded company is atypical, suggesting possible undisclosed investors/advisors holding board seats.
+- Tracxn Score: 33/100, ranked 45th of 232 active competitors in its space-subsystem category — lowest score among the top-10 comparison peers shown (DcubeD Germany $4.8M raised, AAC Clyde Space Sweden public, uAvionix USA acquired, Aitech USA acquired, Ananth Technologies India funded).
+- Revenue model inference: subsystem unit sales, complete-satellite delivery, ground-station turnkey builds, custom/NRE engineering (likely dominant near-term line), education sales, DRDO defence programme work.
+
+## 3. FUNDING HISTORY
+
+No publicly recorded funding rounds — Tracxn states plainly "Skynetics has not raised any funding rounds yet." $0 total raised, no investors, no rounds, no acquisitions made or received.
+
+Data conflict: same Tracxn page contains a paywalled contradictory line suggesting a funded, undisclosed first round ranking 11th in funding among competitors — likely a generic templated upsell artifact, not reliable. The unfunded reading is more probable, though the atypical 5-person board (see Financials) keeps this unresolved without MCA shareholding filings.
+
+Non-dilutive/quasi-funding signals: IN-SPACe authorization, ISRO empanelment, DRDO Best Innovation Award (via Aeronautical Development Establishment), SCOMET+IEC export-ready posture. India's IN-SPACe seed fund / ISRO tech transfer / DRDO TDF are plausible funding sources, none confirmed specifically.
+
+Funding-readiness read: company shows classic pre-raise behavior in Q3 2026 — trade-show launch (BSX 2026), new flagship product (SKYSATCOM-7985), senior official visits (ISRO Chairman, IN-SPACe Director, DG Defence Space Agency), simultaneous 3-role hiring push. A first institutional round announcement within 6-12 months of Sept 2026 is plausible.
+
+## 4. LEADERSHIP AND PEOPLE
+
+Founders (per company's own Sept 2026 LinkedIn post, naming 3; Tracxn records only 2):
+
+**Dr. Sujay Narayana — Co-Founder, CEO & CTO.** PhD, TU Delft space-IoT/embedded systems research background. 3 international IEEE/ACM awards. Verified publication record: 30 papers, 416 citations (Semantic Scholar). Key papers map directly to product lines: "Hummingbird" GPS receiver for small satellites (→ CubeSat GNSS Module); "SOS" satellite health monitoring (→ telemetry subsystems); "SWANS" Space IoT sensor network (→ NTN-01); "Hermes" wind energy harvesting AoA/wind-speed sensing (→ Patent NL2028379B1); "LOCI"/PIR sensor localization (→ Patent NL2024953B1); "SFMAC" high-density LoRaWAN (→ Patent NL2031744B1, LORA-100/LORA-AI); "Heart Watch" ECG synthesis (→ Gaganyaan Bio-Sensor Module). This is an unusually tight research-to-product mapping — the company is essentially a commercialization vehicle for one founder's decade of TU Delft research, with extreme key-person risk.
+
+**Yasaswi Reddy Sunkara — Co-Founder & Chief Business Officer.** Commercial lead; team page's "BCG · ISB — operators" descriptor likely refers to this role (consulting/MBA background). Detailed bio not retrievable (LinkedIn blocked automated fetch).
+
+**Ajay Keshava — Co-Founder.** Named in company's own BSX 2026 post and present at the ISRO Chairman walkthrough; not listed as a founder in Tracxn's record. Bio not retrievable.
+
+Core team (self-described via badges, not named individuals — signal of very small team): 3x IEEE/ACM awards, TU Delft moon-rover programme, ISRO satellite subsystems, ETH Zurich, IISER, PhD-level space IoT expertise, BCG/ISB operators.
+
+Advisory board (unnamed): Strategic advisor — "senior DRDO leadership"; Academic advisor — "IEEE Distinguished Lecturers, 350+ publications, lunar engineering"; Industry advisor — "semiconductor C-suite, telecom operators/RF systems."
+
+Board of directors: 5 active members (Tracxn) — 2 founders + Vasanthi Ramaswamy Iyengar + 2 unnamed (paywalled).
+
+Hiring (Sept 2026): 3 open roles — Hardware Design Engineer, FPGA Design Engineer, RF PCB Design Engineer — post drew 174 reactions/56 comments, highest engagement of any captured post. All 3 roles are RF/FPGA/hardware, confirming a pivot toward RF payloads and signals intelligence.
+
+## 5. PRODUCTS
+
+33 products across 6 lines. Full datasheets gated behind "Request Capability Statement" contact forms; patented-tech briefs available only under NDA.
+
+**SKYCOM Series — Long-Range Communication (6 products).** Flagship, DRDO Best Innovation Award winner, "indigenous design replacing imported alternatives." Includes SKYCOM-1550 (sub-GHz, 100km, 5W), SKYCOM-4025 (100km, 5W industrial), SKYCOM-7092 (ISM band, 5W), SDR Communication Platform (1MHz-18GHz, >150Mbps full duplex — most technically ambitious item), X-Band Resilient Communication Module (coming soon), Resilient Communication Module (100MHz-6GHz frequency-hopping, drones) — the latter two tied to the pending 4th patent, the clearest anti-jam/contested-spectrum defence differentiator.
+
+**Satellite Systems (8 products).** Full vertically-integrated 1U CubeSat bus (1U-24U range claimed): 1U CubeSat platform (<1.33kg), SKYSATCOM-1500 (VHF/UHF comms, flight proven), CubeSat Power System (MPPT), CubeSat Battery System (Li-Ion/BMS), CubeSat OnBoard Computer (ARM Cortex-A53, rad-tolerant — a relatively high-performance choice implying edge-AI ambitions), CubeSat Solar Panel (GaAs, 30% efficiency, deployable), CubeSat GNSS Module, 1U CubeSat Structure. Very few 7-person companies can claim a full in-house bus stack.
+
+**Ground Stations (4 products).** VHF/UHF Ground Station ("highest gain yagi antennas installed in India," ISRO-supported), S-Band Ground Station (2Mbps, 2.4m dish), S/X-Band Dual Ground Station (100Mbps, 3.7m dish), Custom Ground Station. Sites: Netherlands, Dubai, Bangalore. End-to-end mission capability (bus + comms + ground) is a strategically stronger position than pure component vending.
+
+**Custom Electronics / Embedded (5 products, NRE line).** RF Range Extender (drone-based walkie-talkie relay), Underwater Robotics, Underwater Communication System (acoustic/optical), HAPs Communication System (high-altitude platform), RF GaN Power Amplifier (500W, DC-10GHz — a genuinely hard, high-value defence/EW component). Company deliberately spans seabed to orbit on one RF/signal-processing core competence.
+
+**IoT & Sensors (8 products, largest line).** NTN-01 (satellite IoT sensor node), SDC-01 (satellite-drone C2, BVLOS — the strongest bridge to the UAS market), TAG-WL (satellite wildlife/bird tracking), LORA-100 (>100km LoRa), GGY-BIO (ISRO Gaganyaan bio-monitoring — marquee credential, human spaceflight hardware), EDG-ML (ultra-low-power edge ML), LORA-AI (AI-powered LoRa sensor), FPGA-AI (FPGA+AI chip board).
+
+**UAV & Drone Technologies (2 products — smallest line).** Sky Sentinel and Sky Scout — both explicitly "reference stacks"/demonstrators for multi-rotor platforms (RF + edge AI), not saleable aircraft. Confirms Skynetics is a Tier-2 subsystem supplier to drone OEMs, not a drone OEM itself.
+
+Announced/roadmap: SKYSATCOM-7985 (X-band satcom module, launched Sept 2026 at Bengaluru Space Expo, not yet in web catalogue); ELINT/COMINT payloads (shown to ISRO Chairman as "upcoming launches" — major strategic move into signals intelligence); next-gen GNSS modules; next-gen receiver designed to a sensitivity target set by AVM Manu Midha, DG Defence Space Agency.
+
+## 6. PATENTS
+
+Four patents total — three granted (Netherlands only), one pending.
+
+1. **NL2028379B1** — "Method and apparatus for determining angle of attack and wind speed" — Granted, NL. Traces to Narayana's 2021 "Hermes" IEEE RA-L paper. Wind-energy-harvesting self-powered sensor; relevant to UAV flight control / HAPs.
+2. **NL2024953B1** — "Systems and methods for infrared sensing" — Granted, NL. Traces to "LOCI"/PIR papers (2015, 2020). Privacy-preserving passive-IR multi-person localization; applications in building automation, security, perimeter sensing.
+3. **NL2031744B1** — "Channel sensing circuit and apparatus comprising the circuit" — Granted, NL. Traces to LoRa/RF-harvesting MAC papers (2022, 2025). Enabling tech behind LORA-100 and high-density LoRaWAN scaling.
+4. **"Beyond Frequency Hopping — A True Resilient RF Communication"** — Filing in progress, no number/jurisdiction yet. IP behind the Resilient Communication Module and X-Band Resilient Communication Module. Strategically the most significant patent — aimed at defence procurement, aligned with current RF hiring push and the Defence Space Agency's receiver-sensitivity challenge.
+
+Portfolio assessment: small (4), young, geographically narrow (Netherlands-only — no US/EP/PCT/Indian grants found, a material weakness given the company's Indian defence/ISRO market and "Made in India" positioning). Research-derived, not product-derived — all granted patents cover TU Delft-era (2020-2022) sensing/channel-access research, not the satellite-bus subsystems that make up most of current sales. Assignment to Skynetics Pvt Ltd (vs. TU Delft or the inventor personally) is unverified since the patents predate the May 2023 incorporation.
+
+## 7. LATEST NEWS (2026)
+
+**Bengaluru Space Expo (BSX) 2026, 7-9 Sept 2026, Hall 1 Booth H7** — the company's coming-out event.
+- **ISRO Chairman Dr. V. Narayanan visit** (~8-9 Sept): all three founders walked him through the roadmap including ELINT/COMINT, GNSS modules, S/X-band comms. Highest-reaction post captured (182 reactions).
+- **IN-SPACe Director Dr. Vinod Kumar visit** (day 3): 91 reactions.
+- Day 2 coverage post: 73 reactions.
+
+**SKYSATCOM-7985 launch** (~mid-Aug 2026): new X-band satcom module, designed/built in Bengaluru, launched at BSX 2026 — pairs with the S/X-band 3.7m ground station for an end-to-end high-rate downlink chain.
+
+**Defence Space Agency engagement** (~mid-Sept 2026): AVM Manu Midha, DG Defence Space Agency, toured the company's resilient-communications work and set a receiver-sensitivity performance target — arguably the most strategically consequential item after the ISRO Chairman visit, potentially the seed of a shaped defence requirement.
+
+**Hiring expansion** (~mid-Sept 2026): 3 RF/FPGA/hardware roles posted, 174 reactions/56 comments — highest engagement of any post, confirming the RF/ELINT pivot.
+
+**Positioning post** (~June 2026): "Once you are in orbit, there is no second attempt... 50+ subsystems... delivered 2 satellites and hold 4 patents... India's space sector has opened to private industry for the first time."
+
+**Awards (undated, press page):** Best Innovation Award (Aeronautical Development Establishment, DRDO) for SKYCOM line; 3 international IEEE/ACM awards to CEO Dr. Sujay Narayana; recognition as indigenous alternative to imported products.
+
+Notable: zero third-party press coverage found anywhere — all public narrative is first-party (own website/LinkedIn). No trade-press, business-press, or analyst coverage located.
+
+## 8. SYNTHESIS
+
+Skynetics is a 3-year-old, 7-12-person, unfunded Bengaluru deep-tech hardware company commercializing a TU Delft space-IoT research programme, with genuine (largely founder-carried) ISRO/Gaganyaan flight heritage, a full in-house 1U CubeSat bus, an award-winning long-range RF transceiver line, and three Netherlands patents. Currently pivoting toward defence RF (resilient/anti-jam comms, ELINT/COMINT) with active senior engagement from ISRO, IN-SPACe, and the Defence Space Agency.
+
+Strengths: rare vertical integration for its size, real flight heritage, DRDO award, near-complete regulatory posture, tight research-to-product mapping, well-timed against India's space-sector liberalization, unusual 3-country footprint.
+
+Weaknesses: unfunded with tiny revenue while announcing an RF/ELINT roadmap that needs capital; extreme key-person risk (one founder's IP); patent estate is Netherlands-only and possibly not corporately assigned; AS9100D not yet certified while selling flight hardware; zero third-party press validation; flight-heritage claims predate the company by 5-6 years; 33 products across 6 lines at ~7-12 headcount implies most SKUs are reference designs/low-volume NRE rather than stocked inventory.
+
+Sources: skynetics.net (about/team/patents/press/careers/products + subpages), linkedin.com/company/skynetics-pvt-ltd, tracxn.com company + Bengaluru space-tech sector pages, Semantic Scholar author search (Sujay Narayana), facebook.com/Skynetics-Pvt-Ltd.

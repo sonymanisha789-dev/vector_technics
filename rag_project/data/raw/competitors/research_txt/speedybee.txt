@@ -1,0 +1,464 @@
+# SpeedyBee — Company Research Report
+
+**Prepared:** 24 September 2026
+**Research method:** Open-web search + direct page fetches. Where sources conflict, I flag it. Several requested categories (audited financials, funding rounds, itemized patents) genuinely do not exist in the public record for this company — I say so explicitly rather than guessing.
+
+---
+
+## 0. EXECUTIVE SUMMARY / KEY CORRECTIONS
+
+Three premises in the research brief need correcting before anything else:
+
+1. **SpeedyBee is not headquartered in Shenzhen.** Its operating legal entity is registered in **Zhuhai, Guangdong Province**, at 珠海市高新区港湾大道田馆路12号厂房四楼A区 (4th Floor, Area A, Building 4, No. 12 Tianguan Road, Gangwan Avenue, Gaoxin/High-Tech District, Zhuhai). Source: [水滴信用 registry record](https://m.shuidi.cn/company-91c66a46b7a78c6a34bf7fb14f7c1901.html), [爱查ICP registry record](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html), [Tracxn](https://tracxn.com/d/companies/speedybee/__tadsCzWnNqxzY6kybm9CSBAr75hDILWtlDm-IkDTNdM), [Crunchbase](https://www.crunchbase.com/organization/speedybee). The Shenzhen association is real but indirect — see the RunCam relationship in §1.3.
+
+2. **SpeedyBee has raised no venture funding, ever.** There is no round, no investor, no valuation, no filing. Tracxn states flatly: "Speedybee has not raised any funding yet," and records zero investments and zero acquisitions by the company. This is not a data gap — it is a private, founder-owned, cash-funded Chinese hardware business.
+
+3. **The "founded 2005" date circulating in Western databases is wrong.** [Tracxn](https://tracxn.com/d/companies/speedybee/__tadsCzWnNqxzY6kybm9CSBAr75hDILWtlDm-IkDTNdM) lists 2005, which is impossible — the consumer FPV market did not exist in a recognizable form then, and SpeedyBee's first reviewed product dates to 2018. The Chinese business registry gives the authoritative incorporation date of the current entity: **6 January 2021**. The brand itself predates that entity by roughly three years (first products mid-2018), which is explained by the RunCam relationship.
+
+---
+
+## 1. COMPANY OVERVIEW
+
+### 1.1 Legal identity and registration
+
+| Field | Value | Source |
+|---|---|---|
+| Chinese legal name | 珠海市快蜂科技有限公司 | [水滴信用](https://m.shuidi.cn/company-91c66a46b7a78c6a34bf7fb14f7c1901.html) |
+| English rendering | Zhuhai SpeedyBee Technology Co., Ltd. | ibid. |
+| Brand names | SpeedyBee / Speedy Bee / 快蜂 | [speedybee.com](https://www.speedybee.com/) |
+| Unified Social Credit Code | 91440402MA55TCGE8H | [水滴信用](https://m.shuidi.cn/company-91c66a46b7a78c6a34bf7fb14f7c1901.html) |
+| Business registration number | 440402000406919 | ibid. |
+| Organization code | MA55TCGE8 | ibid. |
+| Incorporation date | 2021-01-06 | ibid. |
+| Business term | 2021-01-06 to 无固定期限 (indefinite) | ibid. |
+| Registered capital | RMB 5,000,000 (**fully paid in** — 实缴资本 500万元) | ibid. |
+| Entity type | 有限责任公司(自然人投资或控股) — LLC, natural-person held | ibid. |
+| Status | 存续 (active / in operation) | ibid. |
+| Registering authority | 珠海市市场监督管理局 (Zhuhai Municipal Administration for Market Regulation) | ibid. |
+| Last approval/amendment date | 2026-06-03 | ibid. |
+| Registered industry classification | 软件和信息技术服务业 (Software & IT services) | [爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html) |
+| Headcount (社保参保人数, social-insurance enrollees) | **132** | ibid. |
+| Province/city | Guangdong / Zhuhai | ibid. |
+| Registered address | 珠海市高新区港湾大道田馆路12号厂房四楼A区 | ibid. |
+
+Note the industry classification quirk: the company is registered under **software and IT services**, not hardware manufacturing, despite being a hardware company. This is consistent with its origin story — SpeedyBee began as an *app* company (see §1.2) and the classification was never migrated. Its licensed business scope nonetheless explicitly covers hardware: 电子元器件制造 (electronic component manufacturing), 玩具制造 (toy manufacturing), 智能无人飞行器制造 (**intelligent unmanned aerial vehicle manufacturing**), plus technical services/development/consulting/transfer, network and information-security software development, computer systems services, electronic product and network equipment sales, and 货物进出口/技术进出口/进出口代理 (goods import-export, technology import-export, import-export agency).
+
+The 132-employee social-insurance figure is the single most reliable size indicator available, since neither Crunchbase nor Tracxn discloses headcount. Treat it as a floor for total staff — contract manufacturing labor and any Shenzhen/Hong Kong affiliated staff would not appear on this entity's Zhuhai social-insurance roll.
+
+The company is actively hiring: the registry aggregator shows **81 open job listings**, including an "AI应用工程师" (AI Application Engineer) role posted 2026-08-13 at RMB 10–15k/month via BOSS直聘 ([爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html)). That an FPV hardware maker is recruiting AI application engineers in 2026 is a meaningful forward signal about product direction.
+
+### 1.2 Brand history and origin
+
+SpeedyBee's real history is best reconstructed from the review record, because the company publishes almost nothing about itself. The most complete public chronology is Oscar Liang's archive ([oscarliang.com search](https://oscarliang.com/?s=speedybee)), which spans 10 pages of SpeedyBee coverage from 2018 to 2025.
+
+**Phase 0 — 2017/2018, OEM camera era.** The earliest SpeedyBee-labelled item reviewed is the "[Eachine SpeedyBee SEC FPV Camera](https://oscarliang.com/page/3/?s=speedybee)" (2 January 2018), sold under the Eachine banner and positioned as a budget racing camera against RunCam and Foxeer. SpeedyBee at this point was a design house, not a brand with its own retail presence.
+
+**Phase 1 — 2018, the Bluetooth insight.** The founding product idea was not a drone part at all; it was *removing the laptop from the field*. In June 2018 SpeedyBee shipped the **F4 AIO FC with Bluetooth**, described by Liang as "the first of its kind to have a built-in bluetooth module," allowing pilots to configure a quad from a phone. One month later (18 July 2018) came the **USB-to-Bluetooth Adapter**, solving the same problem for flight controllers that had no spare UART. Sources: [Oscar Liang, page 3](https://oscarliang.com/page/3/?s=speedybee).
+
+This is the company's actual strategic DNA and it explains everything since: SpeedyBee is a *configuration-experience* company that sells hardware, which is why its corporate registration says "software and IT services" and why the **SpeedyBee App** — not any single board — is the real moat.
+
+**Phase 2 — 2019, video transmission.** The **TX500 VTX** (24 January 2019), a 20x20mm-stack-fitting VTX with built-in mic and VTX control, and the **DVR VTX** (25 January 2019), a ~600mW transmitter with onboard DVR recording to survive signal breakup. Source: [Oscar Liang, page 3](https://oscarliang.com/page/3/?s=speedybee).
+
+**Phase 3 — 2020, the Adapter becomes a category.** The **WiFi Adapter 2** (7 August 2020) moved from Bluetooth to WiFi and let pilots run full Betaflight setup from a phone alone. Liang later called the Adapter 2 "the MUST HAVE tool" ([Adapter 3 review](https://oscarliang.com/speedybee-adapter-3/)). This product made the brand.
+
+**Phase 4 — 2021, incorporation and the flight-controller pivot.** The Zhuhai entity is incorporated 6 January 2021. In March 2021 the **F7 V2 FC stack** launched with integrated Bluetooth — "you don't need a computer" ([Oscar Liang, page 2](https://oscarliang.com/page/2/?s=speedybee)). The V2 used a dual-MCU design: STM32F722 for the FC plus a dedicated STM32F051 for ESC duties ([SoarSky lineup comparison](https://soarskyrc.com/blogs/technology-sharing/fpv-flight-controller-complete-guide-how-it-works-key-specs-amp-speedybee-full-lineup-comparison)).
+
+**Phase 5 — 2022, the value-stack breakout.** October 2022 was the company's decisive month: **F405 V3** (26 Oct, "the best value stack"), **F7 V3** (27 Oct, US$119.99 full stack), **Adapter 3** (21 Oct), and **TX800 VTX** (20 Oct) all landed within eight days, plus the **Flex25 whoop frame** in July ("possibly the smallest 2.5″ whoop ever existed"). Source: [Oscar Liang, page 2](https://oscarliang.com/page/2/?s=speedybee). The F405 V3 became, by common consensus in subsequent coverage, the default budget 5-inch stack of its generation.
+
+**Phase 6 — 2023, verticalization into complete aircraft.** SpeedyBee stopped selling only components and began selling flyable drones and frames: **Master 5 V2 BNF** (19 July 2023), **Goggles BEC** (31 May 2023), **F405 Mini stack** (15 Aug 2023), **F405 WING APP** (25 Dec 2023 — its first fixed-wing FC, "currently the cheapest wing FC you can get"), **Bee35 Cinewhoop** (27 Dec 2023), **Mario Fold 8** long-range folding drone (30 Dec 2023). Sources: [page 1](https://oscarliang.com/?s=speedybee), [page 2](https://oscarliang.com/page/2/?s=speedybee).
+
+**Phase 7 — 2024, platform breadth.** **TX1600 Ultra VTX** (19 Jan), **F405 Wing Mini** (18 Feb), **Mario 5 frame** (28 Feb, pitched against the TBS Source One), **F405 V4** (13 Apr), **Bee25 Cinewhoop** (21 Oct, built around DJI O3), **Mario 5 complete drone** (11 Nov), **F405 AIO** (18 Nov).
+
+**Phase 8 — 2025–2026, modularity and O4.** **F405 V5 OX32** (30 Aug 2025) and the current modular **Mario MiniX** / **Master 3X** / **Bee25** / **Bee35** families built around DJI O3 and O4 air units ([speedybee.com](https://www.speedybee.com/)).
+
+### 1.3 The RunCam relationship (important and under-reported)
+
+The US trademark **"SPEEDY BEE"** (Serial No. 88478719, Registration No. 6121981, filed 18 June 2019) is registered not to the Zhuhai entity but to **RunCam Technology (Shenzhen) Co., Ltd.** — covering downloadable software for controlling and analyzing flight-controller parameter settings, vehicle radios, and cases. Source: [Justia Trademarks](https://trademarks.justia.com/884/78/speedy-88478719.html).
+
+Corroborating evidence of the tie:
+- SpeedyBee's own storefront hosts RunCam product pages, e.g. [RunCam 5 Orange](https://www.speedybee.com/runcam-5-orange/) and [RunCam Thumb](https://www.speedybee.com/runcam-thumb/), under "PARTNER PRODUCTS" sections for [action cameras](https://www.speedybee.com/action-camera/) and [analog FPV systems](https://www.speedybee.com/analog-camera/).
+- SpeedyBee's own BNF drones ship with RunCam optics as standard: the Master 5 V2 uses a **RunCam Phoenix 2 SE** ([review](https://oscarliang.com/speedybee-master-5-v2-drone/)), and the Bee35 analog variant is sold at Pyrodrone explicitly as "(RunCam Phonix SE)" ([Pyrodrone](https://pyrodrone.com/collections/speedybee-products)).
+- The SpeedyBee App's camera firmware flasher lists RunCam hardware as its example targets — "RunCam Hybrid, Racer2 etc." ([SpeedyBee App page](https://www.speedybee.com/speedy-bee-app/)).
+- Product launches were historically synchronized — the SpeedyBee Adapter 2 launched alongside the RunCam Split 4 and RunCam Webcam.
+
+**Interpretation, stated as inference not fact:** SpeedyBee originated inside or immediately adjacent to RunCam's orbit as a software/accessory brand around 2018–2019 (hence RunCam holding the US mark for the *software* class), and was subsequently spun into its own Zhuhai operating company in January 2021 as the hardware business scaled. The two now operate as sister/partner brands with deliberately non-overlapping catalogs: RunCam owns cameras, SpeedyBee owns flight controllers, ESCs, VTX, frames, adapters and the app. Separate storefronts (shop.runcam.com vs speedybee.com) obscure this from most buyers.
+
+Caveat: the US mark's ownership has **not** been confirmed as reassigned to the Zhuhai entity. Meanwhile the Zhuhai entity is filing its own marks in China (see §6.2). A reader should not assume a current parent-subsidiary structure — only a documented shared-IP history.
+
+### 1.4 Mission and positioning
+
+The company's public mission statements are unusually terse:
+
+- Site tagline: **"Speedy Bee, Simplifying FPV."** ([about-us](https://www.speedybee.com/about-us/))
+- Homepage tagline: **"Simplify FPV drone racing!"** ([speedybee.com](https://www.speedybee.com/))
+- Full About Us text, in its entirety: *"We are the new choice for you, but always reliable. What you want is what we want to do."*
+
+That is the whole page. There is no published founding narrative, no leadership page, no investor relations, no press room. The English `about-us` page contains no founding year, no address, no team size, no founders, no contact details ([verified](https://www.speedybee.com/about-us/)). The Chinese-site equivalent at speedybee.cn/about-us.html is indexed by search engines but currently returns HTTP 404 on live fetch; a Wayback snapshot exists (timestamp 20260316085427) but web.archive.org was not fetchable from this environment.
+
+Positioning in one line: **SpeedyBee is the Xiaomi of FPV electronics** — aggressive price-performance, high release cadence, ecosystem lock-in via a first-party mobile app, and a deliberate strategy of making the *setup experience* the differentiator rather than raw specs.
+
+---
+
+## 2. FINANCIALS
+
+**Bottom line: there are no financials. SpeedyBee is private, unlisted, unfunded, and files nothing public.**
+
+What can be established:
+
+- **No public listing.** No stock exchange, no ticker, no prospectus, no IPO filing appears in any source consulted. SpeedyBee does not appear in any securities filing database.
+- **No revenue disclosure.** [Tracxn](https://tracxn.com/d/companies/speedybee/__tadsCzWnNqxzY6kybm9CSBAr75hDILWtlDm-IkDTNdM) records revenue as not disclosed. [Crunchbase](https://www.crunchbase.com/organization/speedybee) (403 on direct fetch; summarized via search index) likewise carries no revenue estimate.
+- **No valuation.** Never externally priced, because never externally funded.
+- **Registered capital: RMB 5,000,000, fully paid in** ([水滴信用](https://m.shuidi.cn/company-91c66a46b7a78c6a34bf7fb14f7c1901.html)). Note that in the PRC, registered capital is a legal ceiling on shareholder liability, **not** a measure of assets, revenue or enterprise value. A RMB 5M registered capital is small and typical of a bootstrapped founder-owned firm.
+- **No annual-report financial data published.** The registry aggregators expose shareholder and contribution data from the 2025 annual report (年报) but not P&L figures — Chinese LLCs of this size are not required to publish financial statements publicly.
+- **No bond issuance, no LEI**, no filings in the Legal Entity Identifier system under this name.
+
+### 2.1 Indirect financial indicators (the only quantitative proxies available)
+
+Since no statements exist, here are the defensible proxies:
+
+- **132 social-insurance enrollees** ([爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html)). For a Guangdong hardware SME with a design-and-outsource model, this is a mid-size operation, not a garage shop.
+- **81 concurrent open roles** (ibid.) — inconsistent with a contracting business; suggests active expansion as of mid-2026.
+- **Catalog breadth as revenue proxy:** at least 43 distinct SKUs at a single US retailer ([Pyrodrone](https://pyrodrone.com/collections/speedybee-products)), 15 at [NewBeeDrone](https://newbeedrone.com/collections/speedybee), 11 flight controllers alone on the first-party site ([speedybee.com/flight-controller](https://www.speedybee.com/flight-controller/)), spanning US$0.99 (a beeper) to US$611.99 (a Bee35 PRO HD complete drone).
+- **Price band:** components cluster US$30–140; complete drones US$249–612. The company plays the high-volume mid-market, not the premium niche.
+- **Distribution footprint:** first-party e-commerce (speedybee.com), AliExpress, Amazon, plus Western specialist retail — GetFPV, RaceDayQuads (RDQ), Pyrodrone, NewBeeDrone, KiwiQuads (NZ), SoarSky. Multi-channel global distribution across at least three continents.
+- **Paid-in capital equals registered capital** — both RMB 5M, contributed 19 January 2024 in cash (货币) per the 2025 annual report ([爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html)). A later-dated full cash paydown is a mild positive liquidity signal.
+
+### 2.2 Material financial risk disclosed on the company's own storefront
+
+SpeedyBee is currently collecting a **54% prepaid tax on orders shipped to US addresses**, refundable against an official duty receipt if customs assesses less. This notice appears on multiple product pages — e.g. [Mario MiniX](https://www.speedybee.com/speedybee-mario-minix-modular-o4-lite-o4-pro-hd-digital-vtx-fpv-drone/) and [Bee25](https://www.speedybee.com/speedybee-bee25-2-5-inch-drone-hd-o3-air-unit-fpv/) — and is corroborated by third-party coverage. This is the single largest identifiable threat to SpeedyBee's direct-to-consumer economics: the US is a core FPV market, and a 54% prepaid surcharge on a price-led brand is close to an existential pressure on the direct channel. It also creates a structural incentive to push volume through US-domiciled distributors instead.
+
+A second logistics constraint: batteries ship separately and only to nine countries (US, Germany, France, Switzerland, UK, Spain, Sweden, Italy, Australia), and standard postal air mail is unavailable on drone SKUs — express delivery is mandatory ([Bee25 product page](https://www.speedybee.com/speedybee-bee25-2-5-inch-drone-hd-o3-air-unit-fpv/)).
+
+---
+
+## 3. FUNDING HISTORY
+
+**There is none. This section is complete as written.**
+
+- **Rounds raised: zero.** [Tracxn](https://tracxn.com/d/companies/speedybee/__tadsCzWnNqxzY6kybm9CSBAr75hDILWtlDm-IkDTNdM): "Speedybee has not raised any funding yet." Status classified as **Unfunded**.
+- **Investors: none.** No angels, no seed, no venture, no strategic, no government fund, no state-backed vehicle. Note that many Guangdong drone firms take municipal or provincial industrial-fund money; SpeedyBee has not.
+- **Amounts: n/a. Dates: n/a. Post-money valuation: n/a.**
+- **Acquisitions by SpeedyBee: none.** Tracxn: "Speedybee has made no investments or acquisitions yet."
+- **SpeedyBee as an acquisition target: no recorded transaction.** No exit, no merger, no trade sale in any source consulted.
+- **Ownership is 100% natural-person held**, split between two individuals (see §4), per the 2025 annual report filing ([爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html), [水滴信用](https://m.shuidi.cn/company-91c66a46b7a78c6a34bf7fb14f7c1901.html)). There is no holding company, no VIE structure, no offshore Cayman/BVI vehicle visible in the registry — which is itself evidence that no foreign VC round was ever contemplated, since a China-based startup planning USD venture funding would typically have erected an offshore structure.
+
+**Competitive funding context** (for benchmarking, from [Tracxn](https://tracxn.com/d/companies/speedybee/__tadsCzWnNqxzY6kybm9CSBAr75hDILWtlDm-IkDTNdM)): Tracxn tracks 77 active competitors, of which only 5 are funded and 5 have exited. SpeedyBee ranks **6th of 77 by Tracxn score (36/100)** and 7th by total funding — i.e. it outranks most funded peers on the composite score despite raising nothing. Funded comparables cited: uAvionix (acquired, $10M raised), Sagetech (Series B, $12M), Zerodrag (Seed, $1.23M), Defendron Technologies (Seed, $422K), with ARK Electronics unfunded. Other listed competitors: Starlogic Intelligent Technology, Team BlackSheep, Skynetics, Falcon Skyworks. Note these comparables skew toward avionics/ADS-B rather than hobby FPV, so the competitor set is imperfect — SpeedyBee's real rivals are iFlight, HGLRC, JHEMCU, Foxeer, BetaFPV, Diatone, T-Motor and Holybro.
+
+---
+
+## 4. LEADERSHIP AND PEOPLE
+
+SpeedyBee publishes **no** leadership page, no executive bios, no founder interviews, and no named spokespeople. Everything below comes from the PRC corporate registry, which is the only authoritative source.
+
+### 4.1 Shareholders and officers
+
+| Name | Role | Stake | Subscribed / paid capital | Date |
+|---|---|---|---|---|
+| **杨宗元 (Yang Zongyuan)** | Legal Representative; Executive Director (执行董事) and Manager (经理) | **92%** | RMB 4,600,000, cash | 2024-01-19 |
+| **颜文军 (Yan Wenjun)** | Shareholder | **8%** | RMB 400,000, cash | 2024-01-19 |
+| **袁新星 (Yuan Xinxing)** | Finance Officer (财务负责人) | — | — | — |
+
+Sources: [水滴信用](https://m.shuidi.cn/company-91c66a46b7a78c6a34bf7fb14f7c1901.html), [爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html). A third listed key person exists in the registry record but was not detailed in the retrieved source.
+
+### 4.2 What this governance structure tells you
+
+- **Yang Zongyuan is effectively the company.** In a PRC LLC, the 法定代表人 (legal representative) holds binding signature authority; combining that with 执行董事 (sole executive director, i.e. a one-person board in lieu of a full board) *and* 经理 (general manager) concentrates all governance, board and operational authority in one individual. Functionally he is founder, chairman, CEO and controlling shareholder simultaneously. At 92% ownership he also cannot be outvoted on any matter.
+- **No board of directors exists.** The 执行董事 structure is the PRC alternative to a board, permitted for smaller LLCs. This confirms there is no investor board seat, no independent director, and no outside governance — consistent with the zero-funding finding.
+- **Yan Wenjun's 8% is most plausibly a co-founder or key-employee stake**, though the registry does not state a role or title. There is no public information tying him to any operational function.
+- **Yuan Xinxing (Finance Officer)** is the only named finance contact; no CFO title is used.
+- **No published bios exist for any of the three.** I found no interviews, conference appearances, LinkedIn profiles, academic backgrounds, or prior-employment records for Yang Zongyuan, Yan Wenjun or Yuan Xinxing in any English- or Chinese-language source consulted. This is normal for Chinese component-industry founders who market a brand rather than a personality — a deliberate contrast with DJI's Frank Wang (汪滔) or Fat Shark's Greg French, both of whom have substantial public profiles.
+- **No named CTO, COO, CMO or VP-level executives are public.** The engineering organization is anonymous.
+- **Community-facing presence is institutional, not personal.** The brand runs a [SpeedyBee FPV YouTube channel](https://www.youtube.com/@speedybeefpv1088) and communicates product changes through official statements (e.g. the image-only F405 V4 discontinuation notice reported by [Oscar Liang](https://oscarliang.com/speedybee-f405-v5/)), never through a named individual.
+
+### 4.3 Workforce
+
+- **132 employees** on the Zhuhai social-insurance roll ([爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html)).
+- **81 active job postings**, recruiting via BOSS直聘. Sample: AI Application Engineer, posted 2026-08-13, RMB 10–15k/month (ibid.).
+- Registered under a software/IT industry code with a licensed scope that includes UAV manufacturing, implying a mixed software-and-hardware staff profile.
+
+---
+
+## 5. PRODUCTS — FULL CATALOG
+
+SpeedyBee's catalog spans six lines: (A) flight controllers and stacks, (B) ESCs, (C) VTX, (D) configuration hardware and software, (E) complete drones and frames, (F) motors, power and accessories. There is one notable absence: **SpeedyBee does not make FPV goggles** — it makes goggle *accessories*. See §5.7.
+
+### 5.1 (A) Flight controllers and FC/ESC stacks — the core business
+
+The definitive comparison, compiled from SpeedyBee's own documentation by retailer SoarSky ([full lineup comparison, updated August 2026](https://soarskyrc.com/blogs/technology-sharing/fpv-flight-controller-complete-guide-how-it-works-key-specs-amp-speedybee-full-lineup-comparison)), covers 11 models:
+
+| Model | Type | MCU | Gyro/IMU | Size (mm) | ESC | UARTs | Blackbox | 9V BEC | Price |
+|---|---|---|---|---|---|---|---|---|---|
+| F405 AIO V2 | AIO | STM32F405 | ICM42688P | 25.5 | 40A Bluejay | 4 | 8MB | External | $80.99 |
+| F405 V3 | Stack | STM32F405 | BMI270 | 30.5 | 50A BLHeli_S | 4 | MicroSD | No | $65.99 |
+| F405 V4 | Stack | STM32F405 | ICM42688P | 30.5 | 55A BLHeli_S | 6 | MicroSD | 3A | $98.99 |
+| F405 V5 | Stack | STM32F405 | ICM42688P | 30.5 | 55A OX32 | 6 | 16MB | 2.5A | $115.99 |
+| F745 AIO | AIO | STM32F745 | MPU6000 | 25.5 | 35A BLHeli_S | 4 | 8MB | No | $139.99 |
+| F7 AIO | FC only | STM32F722 | ICM20689 | 25.5 | — | 5 | 32MB | Yes | $72.99 |
+| F7 Mini | Stack | STM32F722 | BMI270 | 20 | 35A Bluejay | 3 | 8MB | 2A | $115.99 |
+| F7 V2 | Stack | STM32F722 | MPU6000 | 30.5 | 45A BLHeli32 | 5 | 16MB | 2.5A | $129.99 |
+| F7 V3 | FC only | STM32F722 | BMI270 | 30.5 | — | 5 | **500MB** | 4A | $69.99 |
+| F405 WING APP | Wing FC | STM32F405 | ICM42688P | 30.5 | 90A PDB | 6 | MicroSD | 1.8A | $74.99 |
+| F405 WING MINI | Wing FC | STM32F405 | ICM42688P | 25.5 | — | 6 | MicroSD | Yes | $79.99 |
+
+Per-model notes (same source unless stated):
+
+- **F405 V4** — the volume champion. F405 MCU, built-in Bluetooth for wireless Betaflight config via the SpeedyBee app, WiFi, 6 full UARTs, ICM-42688-P gyro, plug-and-play connectors that eliminate most soldering, 5V 3A BEC, 55A continuous / 70A burst (10s), 6S capable. Reviewed [13 April 2024](https://oscarliang.com/speedybee-f405-v4/). **Now discontinued** — see §7.
+- **F405 V5 OX32** — the current flagship budget stack, US$74.99–$115.99 depending on configuration and retailer. Square board, relocated LED pads for soft-mount gummies, dedicated GPS and receiver connectors, **wireless firmware flashing** (V4 offered wireless config only), onboard 16MB flash replacing the microSD slot, DSHOT1200, SB-LED/ST-LED dual mode, PINIO remote on/off for the 9V rail, and **Ardupilot support added** alongside Betaflight and iNav. FC weight 8.1g (down from V4's 10.5g); ESC 19.1g (down from 23.5g). Trade-offs: **motor outputs cut from 8 to 4** (kills hexa/octo builds), servo outputs up from 1 to 2, and a **closed-source OX32 ESC firmware**. Source: [Oscar Liang, 30 Aug 2025](https://oscarliang.com/speedybee-f405-v5/).
+- **F7 V3** — premium/long-range/X8 board. Marketing claims 33% faster wireless firmware flashing via an upgraded Bluetooth/WiFi 2-in-1 chip, ~1-minute smartphone firmware updates, and **500MB onboard blackbox flash — roughly 16× a typical FC, about 100 complete flights**. Highest 9V BEC in the Betaflight lineup at 4A. Launched 27 Oct 2022 at US$119.99 for the full stack; now discounted to $45.99–$69.99. Sources: [Oscar Liang](https://oscarliang.com/speedybee-f7-v3/), [SpeedyBee](https://www.speedybee.com/speedybee-f7-v3-flight-controller/).
+- **F7 V2** — dual-MCU: STM32F722 for FC plus a separate STM32F051 dedicated to ESC; WiFi + Bluetooth onboard. Launched March 2021.
+- **F745 AIO** — the only board in the range with combined WiFi *and* Bluetooth; 10.1g; wireless firmware flashing and blackbox download over WiFi.
+- **F7 Mini** — 20×20mm stack, dual M2/M3 mounting compatibility, 5.7g board.
+- **F405 Mini BLS 35A 20×20** — budget micro stack, launched 15 Aug 2023, $31.99–$64.99.
+- **F405 AIO 40A Bluejay 25.5×25.5 3-6S** — STM32F405 + ICM-42688P + 40A Bluejay on a 25.5mm board for 2–3.5" cinewhoops and light builds. $55.99–$80.99 depending on channel.
+- **F405 WING APP** — first fixed-wing FC (25 Dec 2023), "the cheapest wing FC you can get," runs INAV or ArduPilot (not Betaflight), ships with a separate PDB rated 90A continuous, 8.9g.
+- **F405 WING MINI** — compact wing FC (18 Feb 2024), 5.6g, ArduPilot/INAV, targeted at sub-250g fixed-wing. Sold in China as a development board through distributors such as [Spotpear](https://spotpear.cn/shop/SpeedyBee-F405-WING-MINI-Flight-Controller-Driver-Board-FC-ArduPilot-INAV-DJI-RC-FPV-Fixed-Wing-Airplane-Drone-Quadcopter.html).
+- **F4 AIO with Bluetooth (2018)** — the historic first, "first of its kind to have a built-in bluetooth module." Discontinued.
+- **F435-OX32-25A-AIO** — AT32/Artery-based AIO used inside the Mario MiniX modular platform ([product page](https://www.speedybee.com/speedybee-mario-minix-modular-o4-lite-o4-pro-hd-digital-vtx-fpv-drone/)); note the shift to domestic AT32 MCUs, also seen in Chinese community build guides ([ChinaFlier forum build](https://uav.chinaflier.com/thread-34960-1-1.html)).
+
+Current first-party store pricing ([speedybee.com/flight-controller](https://www.speedybee.com/flight-controller/)) runs $31.99–$115.99, with F7 V3 discounted from $62.99 to $45.99 and F405 V3 from $40.99 to $34.99 — clearance pricing consistent with end-of-life on the older generation.
+
+### 5.2 (B) ESCs (sold standalone and in stacks)
+
+- **F7 V3 BL32 50A 30×30 4-in-1 ESC** (also sold as a full stack) — [speedybee.com](https://www.speedybee.com/)
+- **55A OX32 32-bit 4-in-1** (F405 V5) — closed-source OX32 firmware, ESC telemetry, 19.1g
+- **55A BLHeli_S 4-in-1** (F405 V4) — 55A continuous / 70A burst
+- **50A BLHeli_S 4-in-1** (F405 V3)
+- **45A BLHeli_32 4-in-1** (F7 V2)
+- **40A / 35A Bluejay 4-in-1** (AIO boards; Bluejay = open-source BLHeli_S derivative adding bidirectional DShot)
+- **35A BLHeli_S** (F7 Mini, F745, Bee25 AIO)
+- **25A** (Mario MiniX F435-OX32-25A AIO)
+
+Firmware positioning matters commercially here: SpeedyBee's historical advantage was shipping **open-source** Bluejay/BLHeli_S. The V5's move to closed-source OX32 reverses that and is the brand's live reputational issue (§7).
+
+### 5.3 (C) VTX — video transmitters
+
+- **TX1600 Ultra / "TX Ultra"** (Jan 2024) — 5.8GHz, 48 channels across 6 bands; power PIT / 25mW / 200mW / 800mW / 1600mW MAX; input 7–28V (up to 6S); output 5V @ 300mA max; 12V @ 90–560mA draw; MMCX connector; 75Ω video input impedance; 29×28×6mm, 20×20mm M2 mounting; 3.2g bare, 5.7g with heatsink, 7.0g with heatsink and antenna; removable heatsink; three status LEDs (blue/red/orange for channel, band, power); button control; **Betaflight VTX control via IRC Tramp only, not SmartAudio**; pit-mode switch; ships locked, requiring a 10-second button hold to unlock full channels and power. Liang estimated ~36% range gain over the TX800 and found the labelled power steps did not always match measured output. Note: **TX Ultra and TX1600 are the same product under two marketing names.** Source: [Oscar Liang review](https://oscarliang.com/speedybee-tx1600-ultra-vtx/).
+- **TX800** (Oct 2022) — 800mW analog VTX, "a budget VTX with decent performance," 5V input only. US$44.99 at [NewBeeDrone](https://newbeedrone.com/collections/speedybee). Ships as the stock VTX in the Master 5 V2 analog BNF. Source: [Oscar Liang](https://oscarliang.com/speedybee-tx800/).
+- **TX500** (Jan 2019) — 20×20mm stack-mountable VTX with built-in microphone and VTX control.
+- **DVR VTX** (Jan 2019) — ~600mW transmitter with integrated DVR recording.
+
+On the digital side, SpeedyBee does not manufacture its own HD link; it **integrates DJI O3 and O4 air units** into its airframes (O4 Lite, O4 WA, O4 Pro variants on the Mario MiniX; O3 Air Unit on Bee25/Bee35/Master 3X). This is a deliberate dependency on DJI's digital ecosystem.
+
+### 5.4 (D) Configuration hardware and the SpeedyBee App — the strategic core
+
+**Adapter line:**
+- **USB-to-Bluetooth Adapter** (Jul 2018) — the original.
+- **WiFi Adapter 2** (Aug 2020) — WiFi-based FC configuration from a phone; required manual WiFi network switching in phone settings.
+- **Adapter 3** (Oct 2022), US$35.99 — the mature product. Connects to Betaflight / EmuFlight / iNav over WiFi *and* Bluetooth; handles firmware flashing, ExpressLRS configuration, and BLHeli_S/BLHeli_32 ESC configuration (none of which Adapter 2 could do); doubles as a blackbox log viewer/downloader, a battery voltage checker with LED display, and a **30W USB fast charger**. Input 1–6S LiPo via XT60 or PH2.0; supports both USB-C and Micro-USB FC interfaces; Android 7.0+ / iOS 12.0+; max FC output 700mA @ 5V; fast charge to 30W/3.5A with QC3.0, AFC, FCP, SCP protocol support; 24.8 × 21.8 × 53.6mm; 35g; ABS+PC housing. Source: [Oscar Liang, 21 Oct 2022](https://oscarliang.com/speedybee-adapter-3/).
+
+**SpeedyBee App** (iOS and Android; [App Store listing](https://apps.apple.com/cn/app/speedybee/id1150315028); [product page](https://www.speedybee.com/speedy-bee-app/)). Tagline: "The FPV APP you must have" — configure quads "in the field, no need to bring the laptop." Connects via Bluetooth or OTG cable (Android only). Supports Betaflight, INAV and EMU firmware ecosystems. Features:
+- **FC Firmware Flasher** — flashes and downloads multiple FC firmware types. Boards without a built-in SpeedyBee chip need Adapter 2/3; boards with integrated Bluetooth/WiFi (F7 V2, F745, F405 V4/V5 etc.) flash directly.
+- **Blackbox Analyzer** — reviews blackbox logs on-phone for tuning; supports Betaflight/EMU formats.
+- **BLHeli_S ESC Firmware Flasher.**
+- **Camera Firmware Flasher** — for analog FPV cameras, e.g. RunCam Hybrid, Racer2.
+- **Full configuration tabs**: PID tuning, motor direction, OSD, VTX settings, setup, ports, configuration, power/battery, failsafe, receiver, flight modes, adjustments, GPS, motor test, blackbox, LED, and a CLI tab.
+
+Versions circulating publicly include 2.4.0 (Android, [安粉丝](https://www.anfensi.com/down/429782.html)) and 3.0.3 (iOS, [soft112 listing](https://speedybee-app-ios.soft112.com/)).
+
+### 5.5 (E) Complete drones and frames
+
+**Current flagship drones** ([speedybee.com](https://www.speedybee.com/)):
+- **Mario MiniX Modular O4 Lite / O4 Pro HD Digital VTX FPV Drone** — $2.90–$249.00 configurable; base listing US$119.00, SKU SB-MARIO-MINI25-PW-W. A full modular build-your-own system: PowerKits (Mario Mini25, Mini25 Pro, Mini3, Mini3 Pro, Mini35 Pro, Mini4 Pro in black/white/red/purple), VTX kits (O4 Lite, O4 WA, O4 Pro), motor protection parts, props (HQProp T4X2X3, HQProp T3X2.9X3, Gemfan 3630-3, HQ RT2.5X2.1X3), batteries (4S 880mAh, 4S 680mAh 150C), T700 arm kits, 7075 CNC frame colorways, F435-OX32-25A-AIO board, BeeStorm 1505 4000kv motors, illuminated shells, battery straps. AIO board is 36.5 × 36.5 × 7.0mm; recommended for 3.5"–5" cinewhoop/long-range or lightweight quads. [Product page](https://www.speedybee.com/speedybee-mario-minix-modular-o4-lite-o4-pro-hd-digital-vtx-fpv-drone/).
+- **Bee25 2.5" Drone HD O3 Air Unit FPV** — $11.99–$399.99; "just 249g, barely the size of your palm"; 122g±2g PNP / 124g±2g ELRS-TBS bare weight; 120mm wheelbase; STM32F405; 35A 8-bit Bluejay ESC; 1404-V2-4600KV motors; ICM-42688-P gyro; AT7456E OSD; 8MB blackbox; HQProp DT63mm tri-blade; XT30; 4S 16.8V (650–1100mAh recommended); dual air-intake cooling; optional aluminium-alloy head for crash resistance; "Meteor LED 2.0" status system signalling errors, RTH, low voltage and lost-drone alerts; wireless tuning via app; exclusive Bluetooth antenna; open-source 3D-printable parts. Variants: TBS / ELRS / PNP, plus upgraded O4P ELRS and O4P PNP, plus alloy head upgrade kits. [Product page](https://www.speedybee.com/speedybee-bee25-2-5-inch-drone-hd-o3-air-unit-fpv/); [review, 21 Oct 2024](https://oscarliang.com/speedybee-bee25-cinewhoop/).
+- **Master 3X Modular O3/O4 Pro HD Digital VTX FPV Drone** — $139.99–$429.99; modular 3–3.6" platform with individually replaceable top/middle/bottom plates and arms, a Type-C extension module, and a bundled 3-in-1 screwdriver ([Pyrodrone](https://pyrodrone.com/collections/speedybee-products)).
+- **Bee35 3.5" Drone HD O3 Air Unit FPV** — $169.99–$429.99; also sold as Bee35 Analog 6S CineWhoop with RunCam Phoenix SE camera ($377.99–$390.99) and Bee35 PRO HD O3 Air Unit 6S ($586.99–$611.99). [Review, 27 Dec 2023](https://oscarliang.com/speedybee-bee35-cinewhoop/).
+- **Master 5 V2 BNF** — 226mm wheelbase; 5mm arms, 2.5mm top/bottom plates; SpeedyBee F7 V3 FC (STM32F722, BMI270); 50A 4-in-1 BLHeli_32 (fw 32.9); Emax ECO2 2306 1900KV 6S motors; Gemfan MCK Hurricane 51466 tri-blade props; RunCam Phoenix 2 SE camera (analog version); SpeedyBee TX800 VTX; receiver options TBS Crossfire Nano / ExpressLRS / PNP 4-pin; 426g dry, 625g with a 6S 1050mAh pack; onboard WiFi/Bluetooth; 500MB blackbox; buzzer; LEDs; GPS holder (BZ-181 M10 GPS option added post-launch); ~4–5 min flight time; Betaflight 4.4.0, target SPEEDYBEEF7V3. DJI O3 variant costs $280 more than analog — which Liang judged poor value. [Review, 19 Jul 2023](https://oscarliang.com/speedybee-master-5-v2-drone/).
+- **Mario 5** — budget 5" BNF and frame; the frame was positioned against the TBS Source One. [Frame review, 28 Feb 2024](https://oscarliang.com/speedybee-mario-5-frame/); [drone review, 11 Nov 2024](https://oscarliang.com/speedybee-mario-5/).
+- **Mario Fold 8** — foldable 8" long-range platform, frame or BNF, US$127.99 for the frame kit. [Review, 30 Dec 2023](https://oscarliang.com/speedybee-mario-fold-8/).
+- **Flex25** — micro whoop frame, "possibly the smallest 2.5″ whoop ever existed." [Review, 24 Jul 2022](https://oscarliang.com/speedybee-flex25/).
+
+**Frames and frame parts** ([Pyrodrone catalog](https://pyrodrone.com/collections/speedybee-products)): Master 5 HD 5" Frame Kit w/ 200mm coaxial cable ($98.99); Master 5 V2 Frame ($79.99); Master3X Modular Frame 3–3.6" ($41.99–$51.99) with replacement bottom ($3.99), middle ($5.99), top ($4.99) plates, arms ($5.99) and Type-C extension module ($2.99); Mario 5 DC/XH frames in O4 Advanced ($50.99) and O4 Pro ($71.99) versions with individual arms ($7.99), plates ($5.99–$7.99) and Upgrade Kits A ($12.99) and B ($22.99); Bee25 Wireless Tuning Frame — Pro ($46.99) and Standard ($35.99); Bee35 3.5" Frame Kit ($48.99) and Bee35 PRO Kit ($50.99); Mario Fold 8 DC Long Range Frame Kit ($127.99).
+
+### 5.6 (F) Motors, power and accessories
+
+**Motors** ([Pyrodrone](https://pyrodrone.com/collections/speedybee-products), [speedybee.com](https://www.speedybee.com/)):
+- 1404 4600KV (Bee25 2.5"), 4-pack $63.99
+- 2006 1950KV (Bee35 3.5"), 4-pack $86.99
+- 2306.5 1800KV (Master 5 V2 5"), 4-pack $89.99, single $17.99
+- 2807 1050KV 6S (Mario Fold 8)
+- BeeStorm 1505 4000KV (Mario MiniX)
+
+**Power and field tools:**
+- **Goggles BEC** (May 2023), from $22.99 — external power solution addressing DJI Goggles 2 battery-life limits ([review](https://oscarliang.com/speedybee-goggles-bec/))
+- **Discharger for LiPo battery** (Feb 2024), $25.99 — a 60W USB-C unit that turns LiPo/Li-ion packs into portable power banks; Liang characterized it as "a power adapter" more than a discharger ([review](https://oscarliang.com/speedybee-discharger-60w/))
+- **Short-Circuit Protector Smart Power Tester** ([speedybee.com](https://www.speedybee.com/))
+- **JST-XH 2-6S LiPo balance / charging extension cable, 22AWG**
+- **Tie Down Strap for LiPo battery**, $6.99
+
+**RF and navigation:**
+- **5.8GHz Goggles Receiver Module**, $114.99–$140.99 — a receiver module for goggles, *not* a goggle
+- **5.8GHz Antenna V2 SMA**, $18.99
+- **BZGNSS BZ-181 GPS** — resold/bundled GPS module
+
+**Optics and lighting:**
+- **ND/UV/CPL Filter Set for O4 Air Unit Pro**, $25.99
+- **Bee35 Meteor LED V2**, $15.99–$20.99
+- **Master 5 V2 LED protection tube set** ($2.99), motor wire protection tubes ($2.99), screw kit ($3.99), beeper + cable ($0.99), CNC head part L+R ($20.99), DJI O3 Air Unit antenna base ($2.99)
+- **Bee25/Master 3X O4 Pro aluminium alloy head (new version)**
+- **Bee25 multi-color injection-molded parts**
+- **Master3X black 3-in-1 screwdriver**, $3.99
+- **PDB board for F405 Wing APP FC**, $19.99
+
+### 5.7 Products SpeedyBee does NOT make (worth stating explicitly)
+
+Contrary to the brief's framing, the public catalog shows **no SpeedyBee-branded FPV goggles and no SpeedyBee-branded radio transmitters.** What exists is:
+- a **Goggles BEC** (powers someone else's goggles),
+- a **5.8GHz Goggles Receiver Module** (a module that slots into someone else's goggles),
+- and RunCam cameras resold under "Partner Products."
+
+The homepage's own category navigation is limited to **FPV Drones, Frame, Stack, Motors, Accessories** ([speedybee.com](https://www.speedybee.com/)). The "Partner Products" category pages for [action cameras](https://www.speedybee.com/action-camera/) and [analog FPV systems](https://www.speedybee.com/analog-camera/) exist, though the [partner-pro page](https://www.speedybee.com/partner-pro/) currently returns "There are no products listed under this category" — suggesting the partner program is being wound down or restructured.
+
+---
+
+## 6. PATENTS AND INTELLECTUAL PROPERTY
+
+### 6.1 Patents — activity summary (individual documents not publicly retrievable)
+
+**Count:** The Chinese business-information aggregator 爱查ICP records **6 patents (专利)** under 珠海市快蜂科技有限公司 in its intellectual-property section ([source](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html)). The 水滴信用 record for the same entity does not display a patent section at all.
+
+**Individual patent numbers, titles and filing dates could not be retrieved.** Google Patents returns JavaScript-rendered results that do not resolve to text via fetch; its XHR query endpoint returned HTTP 503; Espacenet and PatentGuru both blocked automated retrieval (403 / 468). Retrieving the six documents requires a direct session on **CNIPA's 专利检索及分析系统** (pss-system.cnipa.gov.cn) or a paid database (企查查 / 天眼查 / 智慧芽 PatSnap / Lens.org) searching applicant `珠海市快蜂科技有限公司`. I am flagging this as an unresolved gap rather than fabricating numbers.
+
+**What can be said about the patent posture:**
+
+- **Six patents is a low count** for a 132-person hardware company with 60+ SKUs. For calibration, DJI holds patents in the thousands. This is characteristic of the FPV component sector generally, where product cycles are 6–18 months, designs are frequently open-hardware-adjacent, and enforcement against Shenzhen/Zhuhai clone manufacturers is impractical — so firms compete on cadence, price and ecosystem rather than IP exclusivity.
+- **Chinese filings of this profile are typically 实用新型 (utility models) and 外观设计 (design patents) rather than 发明专利 (invention patents).** Utility models in the PRC are granted without substantive examination in roughly 6–12 months, are cheap, and are the standard defensive instrument for mechanical hardware. SpeedyBee's likely filings are mechanical and layout claims, not algorithmic ones.
+- **Probable subject matter**, inferred from the product features SpeedyBee markets as proprietary:
+  1. **Wireless-configuration flight-controller architecture** — an integrated Bluetooth/WiFi 2-in-1 chip on the FC enabling app-based configuration *and* firmware flashing without a PC. This is the company's signature claim and the most likely invention-patent candidate. ([App page](https://www.speedybee.com/speedy-bee-app/), [F7 V3](https://www.speedybee.com/speedybee-f7-v3-flight-controller/))
+  2. **Anti-shock fixed stack mounting structure** — the Master 5 series' stack mounting designed to isolate motor-induced vibration from the FC gyro.
+  3. **Modular frame architecture** — the Master3X / Mario MiniX modular systems with independently replaceable plates, arms, PowerKits, VTX kits and Type-C extension modules. Design-patent territory.
+  4. **Aluminium-alloy head / crash-protection assemblies** for O3/O4 air units on Bee25 and Master 3X.
+  5. **Dual air-intake cooling** on the Bee25.
+  6. **Meteor LED status-signalling system** — LED-encoded error, RTH, low-voltage and lost-drone states.
+  7. **Multi-function adapter** combining FC configuration, ESC flashing, blackbox retrieval, voltage checking and 30W USB fast charging in one 35g device (Adapter 3).
+
+- **Licensing/litigation:** no patent litigation, licensing agreement, infringement action or opposition proceeding involving SpeedyBee surfaced in any source consulted.
+
+### 6.2 Trademarks — documented in detail
+
+**China (Zhuhai entity):** **26 trademark records** under 珠海市快蜂科技有限公司 ([爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html), [水滴信用](https://m.shuidi.cn/company-91c66a46b7a78c6a34bf7fb14f7c1901.html)). Two are itemized in the retrieved records:
+
+| Mark | Application No. | Filing date | Nice class | Status |
+|---|---|---|---|---|
+| SPEEDY BEE | 93927839 | 2026-09-09 | Class 28 — 健身器材 (sporting/fitness goods) | 商标其他情形 (other circumstances) |
+| 快蜂 | 92741296 | 2026-07-02 | Class 12 — 运输工具 (vehicles/transport) | 申请中 (pending) |
+
+Both filings are from **2026** — i.e. the company is actively expanding trademark coverage right now, into Class 12 (vehicles — the correct class for drones as aircraft) and Class 28 (sporting goods — the correct class for model aircraft/toys). This is a defensive brand-consolidation push, and notably it is the **Zhuhai entity** filing in its own name, distinct from the RunCam-held US mark.
+
+**United States:** **SPEEDY BEE**, Serial No. 88478719, Registration No. 6121981, filed **18 June 2019**, owned by **RunCam Technology (Shenzhen) Co., Ltd.** Goods/services: downloadable computer software for controlling and analyzing flight controller parameter settings; vehicle radios; cases. Source: [Justia Trademarks](https://trademarks.justia.com/884/78/speedy-88478719.html). The Justia owner-portfolio page for RunCam returned HTTP 403 and could not be enumerated.
+
+The US/China ownership split is the clearest documentary artifact of the RunCam relationship described in §1.3, and is a genuine IP-structure risk worth noting: the Zhuhai operating company does not appear to own its own brand in its largest export market.
+
+### 6.3 Other IP and domains
+
+- **ICP filing:** 粤ICP备2023067832号 for speedybee.cn / www.speedybee.cn, approved **2023-06-19** ([爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html)). Only one ICP record — so speedybee.com is hosted outside the PRC filing regime, consistent with an export-first business.
+- **Software copyrights (软件著作权):** not displayed in either registry record retrieved. Given the App's centrality, filings likely exist but are unconfirmed.
+- **Open-source posture:** SpeedyBee publishes **open-source 3D-printable TPU parts** for the Bee25 ([product page](https://www.speedybee.com/speedybee-bee25-2-5-inch-drone-hd-o3-air-unit-fpv/)) and builds on open-source firmware (Betaflight, INAV, ArduPilot, Bluejay, BLHeli_S). Its 2025 move to closed-source OX32 ESC firmware is a notable departure — see §7.
+
+---
+
+## 7. LATEST NEWS AND DEVELOPMENTS (2024–2026)
+
+### 7.1 The F405 V4 discontinuation and the OX32 closed-source controversy (August 2025 → ongoing)
+
+The biggest brand-level story of the period. On **30 August 2025**, SpeedyBee launched the **F405 V5 OX32** stack and issued an official statement (delivered as an image, not text) confirming the **discontinuation of the F405 V4** — until then arguably the single most widely deployed budget stack in 5" FPV. Price moved to **$74.99 from the V4's $65.99**. Source: [Oscar Liang](https://oscarliang.com/speedybee-f405-v5/).
+
+The controversy is the ESC firmware. The V5's 32-bit ESC runs **OX32, a closed-source firmware**. Liang, the sector's most-read reviewer, wrote that he was "not thrilled about this move," noting OX32 is "very new" and "still largely untested by the community," and drew an explicit parallel to the earlier **BLHeli_32 loss of open-source status**. He argued SpeedyBee could have stayed on 8-bit hardware with open-source Bluejay, since 32-bit ESCs deliver little practical benefit to most FPV pilots, and flagged as "unclear" whether OX32 hardware can be reflashed to **AM32**, the open-source alternative.
+
+Secondary complaints from the same coverage and its comment thread:
+- **Mandatory activation**: first connection via the SpeedyBee App requires activating the FC and supplying an **email address** — unprecedented for an FPV flight controller. (Not required if the user only ever uses Betaflight Configurator.) This is the closest thing to a data-collection story in SpeedyBee's history.
+- **Motor outputs cut from 8 to 4**, breaking hexa/octocopter builds. One commenter (Patrick) called the stack "unusable for my octocopter" and criticized the absence of an upgrade path.
+- **INAV support reported missing in practice** despite being advertised (commenter Chris Nugent).
+- **Conformal coating present but not waterproof**; hand-coating of solder joints still advised.
+- Competitive defection recommendations surfaced in comments (HGLRC F460, JHEMCU H7 at similar prices).
+
+This matters strategically: SpeedyBee's entire brand equity was built on *openness plus convenience*. The V5 keeps the convenience and trades away the openness, in a community that is unusually ideological about open-source firmware. Watch whether AM32 flashing becomes possible — that single technical outcome will likely determine whether this becomes a durable reputational problem or a passing complaint.
+
+### 7.2 The 54% US prepaid tariff surcharge (2025–2026, ongoing)
+
+SpeedyBee is collecting a **54% prepaid tax** on all orders shipped to US addresses, in response to new US tariff policy, refundable on presentation of an official duty receipt showing a lower actual assessment. This notice is live across product pages including the [Mario MiniX](https://www.speedybee.com/speedybee-mario-minix-modular-o4-lite-o4-pro-hd-digital-vtx-fpv-drone/) and [Bee25](https://www.speedybee.com/speedybee-bee25-2-5-inch-drone-hd-o3-air-unit-fpv/), and is corroborated by retailer commentary ([SoarSky](https://soarskyrc.com/blogs/technology-sharing/fpv-flight-controller-complete-guide-how-it-works-key-specs-amp-speedybee-full-lineup-comparison)). For a price-led brand this is the most consequential commercial development of the period and materially disadvantages SpeedyBee's direct channel versus US-stocked distributors.
+
+### 7.3 Move to DJI O4 and modular architecture (2025–2026)
+
+The current product generation is organized around **DJI O4 air units** (O4 Lite, O4 WA, O4 Pro) and around modularity as a design philosophy. The four "new"-tagged products on the homepage as of this research are all from this wave ([speedybee.com](https://www.speedybee.com/)):
+- **Mario MiniX Modular O4 Lite/O4 Pro** ($2.90–$249.00 configurable)
+- **Bee25 2.5" HD O3 Air Unit** ($11.99–$399.99)
+- **Master 3X Modular O3/O4 Pro** ($139.99–$429.99)
+- **Bee35 3.5" HD O3 Air Unit** ($169.99–$429.99)
+
+The modular approach — individually purchasable plates, arms, PowerKits, VTX kits, motor guards, shells, and colorways down to $0.99 spare beepers — is a recurring-revenue play: sell the platform once, sell crash replacements forever. It also neatly dodges the tariff problem on complete-aircraft imports by moving volume into low-value spare parts.
+
+### 7.4 Domestic silicon migration
+
+The Mario MiniX ships an **F435-OX32-25A-AIO** board, and Chinese community build guides explicitly highlight "国产AT32飞控" (domestic AT32 flight controller) SpeedyBee builds ([ChinaFlier forum](https://uav.chinaflier.com/thread-34960-1-1.html)). The shift from STMicroelectronics STM32 to Artery AT32 parts is a supply-chain and cost story with geopolitical undertones, and it is happening quietly across the Chinese FPV sector.
+
+### 7.5 Fixed-wing expansion matured
+
+Having entered fixed-wing in December 2023 with the [F405 WING APP](https://oscarliang.com/speedybee-f405-wing-app/) ("currently the cheapest wing FC you can get"), SpeedyBee now fields two wing FCs (WING APP and WING MINI) running INAV/ArduPilot, and the WING MINI is distributed in China as a development board ([Spotpear](https://spotpear.cn/shop/SpeedyBee-F405-WING-MINI-Flight-Controller-Driver-Board-FC-ArduPilot-INAV-DJI-RC-FPV-Fixed-Wing-Airplane-Drone-Quadcopter.html)). This diversifies the company beyond multirotor and into the ArduPilot community — a different, more technical, less price-sensitive audience.
+
+### 7.6 Hiring into AI
+
+The **AI Application Engineer** posting (2026-08-13, RMB 10–15k/month, [爱查ICP](https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html)) among 81 open roles is the clearest forward-looking signal in the dataset. For a company whose differentiator has always been software-mediated setup, the plausible read is AI-assisted tuning, automated blackbox diagnosis, or conversational configuration in the app — extending the original 2018 "leave the laptop at home" thesis.
+
+### 7.7 Component-level trend context
+
+The **ICM-42688-P** gyro (32kHz sampling, lower noise floor than MPU6000) has become the 2025–2026 standard, and SpeedyBee has adopted it across F405 AIO V2, F405 V4, F405 V5, WING APP and WING MINI ([SoarSky](https://soarskyrc.com/blogs/technology-sharing/fpv-flight-controller-complete-guide-how-it-works-key-specs-amp-speedybee-full-lineup-comparison), [UAVMODEL 2026 guide](https://blog.uavmodel.com/top-5-fpv-flight-controllers-in-2026-betaflight-vs-inav-vs-ardupilot/)). SpeedyBee remains a fast follower on silicon rather than a leader.
+
+### 7.8 Quality perception — the persistent counter-narrative
+
+Not all coverage is favorable, and it would be misleading to omit this. Reviewer comment threads contain repeated durability complaints: one commenter on the Master 5 V2 review alleged over **$1,500 in losses** from SpeedyBee electronics failures and advised buying other brands ([Oscar Liang](https://oscarliang.com/speedybee-master-5-v2-drone/)); another on the V5 piece cited receiver compatibility problems and frame quality ([Oscar Liang](https://oscarliang.com/speedybee-f405-v5/)). These are third-party comments, not reviewer assessments — the reviewers themselves have been broadly positive on value. The pattern is nonetheless a real brand risk for a company competing on price. Counterbalancing it: SpeedyBee demonstrably responds to feedback, e.g. adding a BZ-181 M10 GPS option to the Master 5 V2 after launch in response to a reader request (ibid.).
+
+---
+
+## 8. RESEARCH GAPS AND CONFIDENCE NOTES
+
+State these plainly rather than papering over them:
+
+1. **The six patent documents were not retrievable.** Count confirmed (6, via 爱查ICP); numbers, titles and dates require a CNIPA session or a paid database. Everything in §6.1 about subject matter is labelled inference.
+2. **The Chinese About Us page (speedybee.cn/about-us.html) is indexed but returns 404 live.** A Wayback snapshot exists (20260316085427) but web.archive.org was not reachable from this environment. The company's own self-told history remains unread.
+3. **Crunchbase and GetFPV returned HTTP 403**; their data is included only as summarized by the search index, not verified directly.
+4. **Tracxn's "founded 2005" is demonstrably wrong** and should not be propagated. Likewise its unnamed founders field.
+5. **The full 26-trademark Chinese portfolio was not enumerated** — only two examples were exposed by the aggregator.
+6. **The RunCam corporate relationship is documented but not fully characterized.** The shared trademark, shared components and shared launch cadence are facts; a formal parent/subsidiary/common-ownership structure is an inference and has not been confirmed in any registry.
+7. **Revenue, margin, unit volumes and channel mix are entirely unknown** and cannot be derived from available sources.
+8. **Web search quota was exhausted mid-research** (200/200 calls), so later gap-filling relied on direct fetches only. Remaining avenues if this needs extending: CNIPA patent search, 企查查/天眼查 paid records, Wayback via a reachable mirror, the SpeedyBee YouTube channel's announcement videos, and USPTO TSDR for the full RunCam mark file wrapper.
+
+---
+
+## 9. SOURCE INDEX
+
+Company-controlled:
+- https://www.speedybee.com/ — homepage, catalog, taglines
+- https://www.speedybee.com/about-us/ — mission statement (full text)
+- https://www.speedybee.com/flight-controller/ — FC lineup and pricing
+- https://www.speedybee.com/speedy-bee-app/ — app features
+- https://www.speedybee.com/speedybee-f7-v3-flight-controller/
+- https://www.speedybee.com/speedybee-bee25-2-5-inch-drone-hd-o3-air-unit-fpv/
+- https://www.speedybee.com/speedybee-mario-minix-modular-o4-lite-o4-pro-hd-digital-vtx-fpv-drone/
+- https://www.speedybee.com/partner-pro/ , /action-camera/ , /analog-camera/
+- https://www.speedybee.com/runcam-5-orange/ , /runcam-thumb/
+- https://www.speedybee.cn/ (ICP 粤ICP备2023067832号)
+- https://www.youtube.com/@speedybeefpv1088
+- https://apps.apple.com/cn/app/speedybee/id1150315028
+
+Registry and IP:
+- https://m.shuidi.cn/company-91c66a46b7a78c6a34bf7fb14f7c1901.html
+- https://www.aichaicp.com/cd-91c66a46b7a78c6a34bf7fb14f7c1901.html
+- https://trademarks.justia.com/884/78/speedy-88478719.html
+
+Databases:
+- https://tracxn.com/d/companies/speedybee/__tadsCzWnNqxzY6kybm9CSBAr75hDILWtlDm-IkDTNdM
+- https://www.crunchbase.com/organization/speedybee
+
+Independent reviews and retail:
+- https://oscarliang.com/?s=speedybee (and /page/2/, /page/3/) — plus individual reviews: speedybee-f405-v5, speedybee-f405-v4, speedybee-f405-v3, speedybee-f7-v3, speedybee-f7-v2, speedybee-f405-aio-fc, speedybee-f405-mini-fc-stack, speedybee-f405-wing-app, speedybee-f405-wing-mini-fc, speedybee-adapter-2, speedybee-adapter-3, speedybee-tx800, speedybee-tx1600-ultra-vtx, speedybee-goggles-bec, speedybee-discharger-60w, speedybee-master-5-v2-drone, speedybee-mario-5, speedybee-mario-5-frame, speedybee-mario-fold-8, speedybee-bee25-cinewhoop, speedybee-bee35-cinewhoop, speedybee-flex25, iflight-blitz-atf435-speedybee-f405-v4
+- https://soarskyrc.com/blogs/technology-sharing/fpv-flight-controller-complete-guide-how-it-works-key-specs-amp-speedybee-full-lineup-comparison
+- https://pyrodrone.com/collections/speedybee-products
+- https://newbeedrone.com/collections/speedybee
+- https://www.kiwiquads.co.nz/brand/speedybee/
+- https://blog.uavmodel.com/top-5-fpv-flight-controllers-in-2026-betaflight-vs-inav-vs-ardupilot/
+- https://uav.chinaflier.com/thread-34960-1-1.html
+- https://spotpear.cn/shop/SpeedyBee-F405-WING-MINI-Flight-Controller-Driver-Board-FC-ArduPilot-INAV-DJI-RC-FPV-Fixed-Wing-Airplane-Drone-Quadcopter.html
+
+---
+
+Three corrections carried through the whole report: HQ is **Zhuhai**, not Shenzhen; the company is **unfunded with zero rounds**, so §2 and §3 are short by necessity, not by omission; and SpeedyBee **does not make goggles** — only goggle power and receiver accessories.

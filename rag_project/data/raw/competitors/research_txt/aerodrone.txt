@@ -1,0 +1,570 @@
+Research complete. Here is the report.
+
+---
+
+# AeroDrone (Ukraine) — Company Research Report
+Compiled 24 September 2026. All figures as reported by cited sources; this is a private Ukrainian LLC with no audited public filings, so financial data is fragmentary and partly contradictory.
+
+---
+
+## 0. DISAMBIGUATION — READ FIRST
+
+This report covers **AeroDrone / ТОВ «Аеродрон» (Aerodron LLC)**, a Kyiv, Ukraine-based manufacturer of heavy-lift, long-range unmanned aircraft systems (UAS), founded by **Yuriy Pederiy** and co-owned by **Dmytro Shymkiv**. Its two flagship platforms are the **D-80 Discovery** and the **E-300 Enterprise**. Official site: https://aerodrone.ua/ (contact: info@aerodrone.ua).
+
+It is NOT any of the following, all of which pollute search results for this name:
+
+- **AeroDrone Robotics Pvt Ltd (India)** — unrelated Indian robotics/drone services firm. No connection.
+- **aerodrone.tech** — a parked domain currently listed for sale via GoDaddy (https://aerodrone.tech/ redirects to a GoDaddy "for sale" page). This is NOT the Ukrainian company's site; the correct domain is aerodrone.ua.
+- **AeroMotors** — a *separate* Ukrainian company (drone engines) that received Swedish investment from Front Ventures. CB Insights maintains a distinct profile at https://www.cbinsights.com/company/aeromotors/ which surfaces on "AeroDrone Ukraine" searches. Different entity.
+- **Aeros** — the Ukrainian light-aircraft/hang-glider manufacturer (https://en.wikipedia.org/wiki/Aeros). Related only in that AeroDrone's E-300 Enterprise is reportedly built on the **Aeros SkyRanger** airframe; Aeros is a supplier/airframe origin, not the same company.
+- **Escadrone**, **Aerorozvidka**, **Ukrspecsystems**, **Airlogix** — other Ukrainian drone makers with superficially similar names or adjacent coverage.
+- **"Aerodrone" as a generic precision-farming listing** — Crunchbase (https://www.crunchbase.com/organization/aerodrone) describes "Aerodrone" as "a precision farming company that protects crop from any kind of weeds, insects and diseases." This IS the same Ukrainian company, but the profile is badly stale (pre-2022 agricultural framing only).
+
+**Critical data-quality warning on aggregators.** The business-intelligence databases contain mutually contradictory records that should not be trusted:
+- **CB Insights** (https://www.cbinsights.com/company/aerodrone) lists founding year **2013** and HQ at **Franzstr. 10, Munich, 80802, Germany** — almost certainly a data error, possibly conflated with founder Pederiy's years at Microsoft's Munich office. The same profile's news feed simultaneously describes a "Kiev-based AeroDrone enterprise," contradicting its own HQ field.
+- **PitchBook** (https://pitchbook.com/profiles/company/99799-75) lists founding year **2012**, Kyiv, category "Other Hardware."
+- **Tracxn** (https://www.tracxn.com/d/companies/aerodrone) lists total funding of **$65.1K** across one round.
+- Ukrainian press variously reports founding in **2015**, **2018**, or company registration in **2007** and **2019** (two different legal entities).
+
+None of these reconcile. The Ukrainian corporate-registry evidence (Section 1) is the most reliable.
+
+One further naming note: the founder's surname is **Педерій / Pederiy** in the large majority of sources (Forbes Ukraine, Focus, Militarnyi). One outlet, dev.ua, renders it **«Передрій» / Peredriy** (https://dev.ua/news/ukrainskyi-aerodrone-ta-pidpryiemets-dmytro-shymkiv-otrymaly-dozvil-na-vykorystannia-droniv-v-zsu-shcho-tse-za-bpla). Treat "Peredriy" as a typo for the same person.
+
+---
+
+## 1. COMPANY OVERVIEW
+
+### 1.1 Identity and positioning
+
+AeroDrone describes itself as "a Ukrainian company specializing in the design, development, and manufacturing of unmanned aircraft systems," built around three stated attributes: **heavy payload, long range, high endurance** (https://aerodrone.ua/, https://drone.ua/en/blogs/news/aerodrone-at-the-ukrainian-pavilion-commercial-uav-expo-2025-in-las-vegas).
+
+The company's own site lists five target markets:
+1. Precision agriculture
+2. Oil, gas and power infrastructure inspection
+3. Logistics and emergency delivery
+4. Aerial photography
+5. Military
+
+Its differentiating technical approach is **converting manned light aircraft into unmanned platforms** rather than scaling up a multirotor or building a clean-sheet UAV. Co-owner Dmytro Shymkiv described the process to Ekonomichna Pravda as taking a two-seat aircraft and making multiple modifications while preserving the original aerodynamic characteristics, adding custom electronics and control systems, with programming done largely in-house and partially outsourced (as excerpted at https://texty.org.ua/fragments/111989/yak-pererobyty-dvomisnyj-litak-na-bezpilotnyk-dosvid-aerodrone/). The conversion technology is explicitly stated to be proprietary to AeroDrone.
+
+This places AeroDrone in an unusual niche: while most of Ukraine's ~500 wartime drone manufacturers build small FPV or tactical ISR quadcopters, AeroDrone builds aircraft with **6.3 m to 8.5 m wingspans** and payloads measured in hundreds of kilograms — closer to a light general-aviation aircraft than to a conventional drone.
+
+### 1.2 Founding and corporate history
+
+The founding date is genuinely disputed across sources:
+
+- **2007** — «Аеродрон-Сервіс» LLC (Aerodron-Service) registered. Per YouControl data cited by Forbes Ukraine and reproduced at https://borgexpert.com/news/dmytro-shymkiv-kupyv-50-vyrobnyka-droniv-aerodrone.
+- **2015** — The team began work with three types of small aircraft described as "flying laboratories"; dev.ua states the startup was "founded in 2015" (https://dev.ua/news/ukrainskyi-aerodrone-ta-pidpryiemets-dmytro-shymkiv-otrymaly-dozvil-na-vykorystannia-droniv-v-zsu-shcho-tse-za-bpla). HackYourMom also gives 2015.
+- **March 2016** — Pederiy leaves Microsoft specifically to launch a drone-technology startup (Forbes Ukraine: https://forbes.ua/innovations/dmitro-shimkiv-z-kiivstaru-pridbav-polovinu-aktsiy-ukrainskogo-virobnika-droniv-aerodrone-tse-persha-publichna-investitsiya-v-ukrainskiy-miltech-yak-vona-vlashtovana-26012023-11147).
+- **2017** — The DR-60 agricultural drone is developed.
+- **2018** — The date Forbes Ukraine and Militarnyi use for the company's launch (https://militarnyi.com/en/news/the-ministry-of-defense-of-ukraine-awards-aerodrone-a-uav-contract/).
+- **2019** — «Аеродрон» LLC (Aerodron) registered. This is the specific legal entity in which Shymkiv later acquired 50%.
+
+The most coherent reading: an R&D effort beginning around 2015–2016 under an older 2007 service company, formalized into a new operating LLC in 2019, with 2018 being when the product became commercially real. Forbes' "2018" and dev.ua's "2015" are describing different milestones of the same story.
+
+### 1.3 Business trajectory
+
+**Phase 1 — Agricultural (2016–Feb 2022).** The company sold crop-spraying UAS for applying fertilizers and plant-protection products, positioning the DR-60 as a challenger to conventional ground sprayers and manned crop-dusters. Pederiy told Forbes Ukraine that units were shipped to the **US and Canada in 2019**, with negotiations reported in 2020 with customers in **Brazil, India and Australia**. (These export claims are asserted by the company and have not been independently documented; see Section 7.4.)
+
+**Phase 2 — Military pivot (2022–present).** Following the February 2022 full-scale invasion, the company redirected its airframes to defense. Reuters, which visited the plant in late February 2023, described it as sitting on "an unassuming industrial estate in northern Ukraine" (https://www.reuters.com/world/europe/inside-ukraines-scramble-game-changer-drone-fleet-2023-03-24/, mirrored at https://mnews.world/en/news/inside-ukraines-scramble-for-game-changer-drone-fleet).
+
+**Phase 3 — Internationalization (2023–present).** A Thales UK memorandum of understanding in December 2023, appearance at Commercial UAV Expo in Las Vegas in August 2025, and a stated plan to build an R&D, manufacturing and testing facility in **Nevada, USA**.
+
+### 1.4 Headquarters, facilities and size
+
+- **HQ / registered base:** Kyiv, Ukraine. The armedconflicts.com technical entry lists the manufacturer as "AeroDrone, Kyiv, Ukraine" (https://www.armedconflicts.com/AeroDrone-E-300-Enterprise-t262580). Reuters places the production facility on an industrial estate in northern Ukraine.
+- **Munich listing (CB Insights):** disregard — see disambiguation.
+- **Planned US facility:** Nevada (R&D, manufacturing, testing), per DroneUA, August 2025.
+- **Poland:** In March 2023 the company was reported to be in talks with a foreign company about starting production lines in Poland (https://gagadget.com/en/uav/222223-aerodrone-in-ukraine-starts-mass-production-of-e-300-enterprise-and-d-80-discovery-drones-with-a-range-of-up-to-3100-/). No subsequent confirmation that this materialized.
+- **Headcount:** Never publicly disclosed in any source located. Given stated production of "only a few units per month," the operation is small — plausibly low tens of staff.
+- **Production rate:** Shymkiv stated in March 2024 that output is only a handful of aircraft per month. The 2020 Ukrainian Startup Fund grant was explicitly intended to scale to **4–6 aircraft per month**, which suggests that range is roughly the design ceiling of the current facility.
+
+### 1.5 Mission
+
+The company has no published formal mission statement. The operative mission, as expressed by its principals, has two strands:
+
+1. **Commercial:** replace manned agricultural aviation and manned light-aircraft logistics with autonomous equivalents — safer, cheaper, and able to operate without prepared runways.
+2. **Defense/humanitarian:** remove humans from high-risk resupply and reconnaissance flights. Shymkiv repeatedly framed the E-300 by reference to the manned helicopter resupply missions into besieged Mariupol in 2022, stating "У мене знайомий загинув в одному з цих гелікоптерів" — "A friend of mine died in one of those helicopters" (https://texty.org.ua/fragments/111989/yak-pererobyty-dvomisnyj-litak-na-bezpilotnyk-dosvid-aerodrone/).
+
+Pederiy's own stated motivation, per Forbes Ukraine, combines his father's career as a drone-building engineer at the **Antonov design bureau** with the **2017 death of a friend, a pilot, in an An-2 crop-duster crash**.
+
+---
+
+## 2. FINANCIALS
+
+AeroDrone is a private Ukrainian limited-liability company. There are **no public financial filings, no audited accounts, and no disclosed valuation**. What exists is Ukrainian state-registry data (surfaced via YouControl), a small number of press-sourced figures, and unit-price disclosures.
+
+### 2.1 Registry data (via YouControl, cited by Forbes Ukraine and BorgExpert)
+
+**«Аеродрон» LLC (Aerodron, registered 2019)** — the entity Shymkiv bought into:
+- Registered charter capital: **5,000 hryvnia** (roughly $130–180 at prevailing rates) — a nominal, minimum-style capitalization
+- Net loss for 2020: **100 hryvnia** (i.e., effectively a dormant shell in that year). Note: the hostile UKR LEAKS piece cites "500 hryvnia loss" for 2020 instead; the Forbes/BorgExpert figure of 100 UAH is better sourced.
+
+**«Аеродрон-Сервіс» LLC (Aerodron-Service, registered 2007)**:
+- 2020 revenue: **5,500 hryvnia** (approximately $200)
+- 2020 liabilities: **over 430,000 hryvnia**
+
+Source: https://borgexpert.com/news/dmytro-shymkiv-kupyv-50-vyrobnyka-droniv-aerodrone and https://forbes.ua/innovations/dmitro-shimkiv-z-kiivstaru-pridbav-polovinu-aktsiy-ukrainskogo-virobnika-droniv-aerodrone-tse-persha-publichna-investitsiya-v-ukrainskiy-miltech-yak-vona-vlashtovana-26012023-11147
+
+These figures make clear that as of 2020 the business had **essentially no commercial revenue**. R&D was being funded from the founder's own capital and grant money.
+
+### 2.2 Cumulative turnover
+
+An anonymous source told Forbes Ukraine (January 2023) that the company's **total historical turnover was approximately $200,000**. Given the registry figures above, this is credible for the pre-war period and implies the DR-60 sold in very low single-digit unit numbers, if at all.
+
+### 2.3 Post-contract financial position
+
+The decisive financial event was the **March 2023 Ministry of Defence contract**. Its value and unit quantity were never disclosed — Militarnyi noted explicitly that "the number of drones ordered from AeroDrone is not to be disclosed."
+
+A rough floor can be inferred from unit economics: at $250,000–$450,000 per system, even a modest order would represent one to two orders of magnitude more revenue than the company's entire prior history.
+
+However, **the company was not profitable as of March 2024**. Asked directly whether he had earned anything from the investment, Shymkiv answered: "Ні, нічого, тільки витрачаю. Багато." — "No, nothing, only spending. A lot."
+
+He also disclosed a severe working-capital problem:
+- Production **sat idle for roughly two and a half months** after the 2023 contract ended, with no replacement contract secured as of the interview.
+- Ukrainian law restricts most Ministry of Defence contracts to **single calendar years**, preventing multi-year production planning.
+- Six months of "capability surveys" by the ministry produced no contracts.
+- No accessible credit for working capital; state banks discouraging registration.
+- The state does not cover software licensing costs in contracts.
+
+Source: https://epravda.com.ua/publications/2024/03/13/711076/ (direct fetch blocked; content via https://texty.org.ua/fragments/111989/yak-pererobyty-dvomisnyj-litak-na-bezpilotnyk-dosvid-aerodrone/ and https://focus.ua/uk/digital/633195-bezpilotniki-aerodrone-za-sotni-tisyach-dolariv-yaki-zavdannya-zsu-vikonuyut-na-fronti-video)
+
+By 2025 this had not resolved. Shymkiv told the Kyiv Independent: **"While waiting for contracts, we are burning through our working capital"** (https://kyivindependent.com/global-acquisition-migration-or-death-ukraines-drone-companies-seek-opportunities-abroad-amid-defense-spending-shortfall/).
+
+### 2.4 Cost structure
+
+The single most important structural fact about AeroDrone's economics, per Shymkiv:
+
+> **"70% вартості – імпорт"** — "70% of the cost is imports."
+
+Ukraine no longer produces aviation-grade aluminium or aviation fabric, and produces no small internal-combustion aircraft engines. All engines are bought abroad. Shymkiv expressed doubt that domestic manufacturers such as Motor Sich would enter small piston-engine production, suggesting electric motors were the more realistic domestic path. This makes the company's margins hostage to FX rates, customs treatment of dual-use imports, and export-control friction.
+
+### 2.5 Unit pricing (the clearest available revenue signal)
+
+| Product / configuration | Price | Source |
+|---|---|---|
+| DR-60 agricultural drone | $75,000 | Forbes Ukraine (pre-war listing) |
+| E-300 Enterprise, bare airframe (no payload) | $300,000 | Shymkiv, March 2024 |
+| D-80 Discovery complex — **two aircraft** plus high-end cameras and communications | $450,000 | Shymkiv, March 2024 |
+| General range, "depending on modifications" | $250,000–$450,000 | Gagadget / dev.ua, March 2023 |
+| General range, "depending on model and configuration" | $150,000–$450,000 | Reuters, March 2023 |
+
+Note the important clarification Shymkiv made: the widely-quoted **$450,000 figure is for a two-aircraft D-80 system with expensive optics and comms**, not for a single airframe. Press repetition of "$450,000 per drone" is a misreading.
+
+Optional add-ons include an anti-jamming system to counter Russian electronic warfare (Reuters).
+
+### 2.6 Valuation
+
+**No valuation has ever been publicly disclosed.** Neither party disclosed the price of the September 2022 50% acquisition — Forbes Ukraine states plainly: "Суму інвестиції він не розголошує" ("He does not disclose the investment amount"). PitchBook maintains a profile page titled to include valuation data (https://pitchbook.com/profiles/company/99799-75) but the underlying figures are behind a paywall and the profile's basic facts (founding year 2012) are already demonstrably wrong.
+
+For sector context, Forbes Ukraine benchmarked the deal against Portuguese dual-use drone maker **Tekever**, which raised $23 million from Arab investors in February 2022 — implying the AeroDrone stake was far smaller.
+
+As of mid-2026, Shymkiv was publicly arguing that Ukrainian defense-tech firms "with real revenues, sustainable production" are **undervalued** (per https://thedefender.media/), consistent with a founder who has not achieved a mark-up event.
+
+### 2.7 Financial filings summary
+
+- No SEC, Companies House, or equivalent filings — the company is not listed anywhere.
+- Ukrainian state registry (ЄДР) records exist for both LLCs; accessible via YouControl (https://youcontrol.com.ua/), Clarity Project (https://clarity-project.info/), and Opendatabot (https://opendatabot.ua/). All three blocked automated retrieval during this research (HTTP 403). The EDRPOU registration codes for both entities were not obtainable from open press coverage and would need to be pulled manually from those registries.
+- Ukrainian defense contracts are exempted from Prozorro open-tender publication during martial law, so contract values are not retrievable from the public procurement portal.
+
+---
+
+## 3. FUNDING HISTORY
+
+AeroDrone has **never raised an institutional venture round**. Its capital history is: founder money, one government grant, one private 50% share purchase, and thereafter defense contract revenue.
+
+### Round-by-round
+
+**1. Founder capital — c. 2016–2019 — $200,000**
+Yuriy Pederiy invested $200,000 of his own money into product development. (Forbes Ukraine)
+
+**2. Ukrainian Startup Fund grant — 2020 — $50,000**
+A $50,000 non-dilutive grant from the **Ukrainian Startup Fund (USF)**, a Ukrainian government-backed grant programme (https://usf.com.ua/). The stated purpose was scaling manufacturing to **4–6 aircraft per month**. USF does not publish a per-grantee register on its public site; the fund reports aggregate figures of 764 startup teams supported and $22.7M+ deployed.
+
+**3. Dmytro Shymkiv — 50% acquisition — August/September 2022 — amount undisclosed**
+- **Date discrepancy:** YouControl registry records show the change of ownership in **September 2022** (Forbes Ukraine, Focus.ua, BorgExpert). Shymkiv's own LinkedIn profile (https://www.linkedin.com/in/dmitryshymkiv) states **"In August 2022 Dmytro became an investor at Ukrainian startup AeroDrone."** August is likely the deal date, September the registry filing date.
+- **Structure:** acquisition of **50% of the shares of «Аеродрон» LLC**. Pederiy retains the other 50%.
+- **Amount / valuation:** not disclosed by either party.
+- **Significance:** widely described as the **first publicly disclosed private investment into a Ukrainian military-technology startup**. Forbes Ukraine ran it as a cover story on that basis.
+- **Shymkiv's own characterization** of his decision was famously terse: **«Максимально зайшов»** — roughly, "It completely got me" / "I'm all the way in."
+- He framed his contribution as commercial rather than technical: the scaling of a business requires "досвід і розуміння, як перетворити технологію на бізнес" — experience and understanding of how to turn technology into a business.
+
+**4. Mark M. Erjavec — unconfirmed, pre-2022**
+Forbes Ukraine reported, citing US outlet UAS Magazine, that **Mark M. Erjavec** — founder of the US-based **Agro Fund** and **Aero Fleet One** — may have been an earlier investor in AeroDrone. Erjavec did not respond to Forbes' request for comment and the stake was never confirmed. Treat as unverified.
+
+**5. Defense contract revenue — March 2023 onward**
+Not funding in the equity sense, but the company's primary capital source since 2023. Value undisclosed.
+
+### What is NOT true
+
+- **Tracxn's "$65.1K raised"** — this appears to be a partial capture of the USF grant or a conversion artifact; it does not reflect the $200K founder capital or the undisclosed Shymkiv purchase.
+- **CB Insights' "Angel round on Jan 27, 2023"** — the date corresponds to the *publication date of the Forbes Ukraine article* about the Shymkiv deal (26 January 2023), not to the deal itself, which closed in August/September 2022. Classic aggregator scraping artifact.
+
+### Notable absence
+
+Despite Ukraine's defense-tech funding boom (Brave1 cluster, Diia City tax regime, foreign VC entry), **no evidence was found of AeroDrone raising any round after 2022**. This is consistent with Shymkiv's public statements about burning working capital and with the Kyiv Independent's framing of the sector's funding squeeze.
+
+---
+
+## 4. LEADERSHIP AND PEOPLE
+
+### 4.1 Yuriy Pederiy (Юрій Педерій) — Founder, 50% owner
+
+- **Education:** Graduate of the **National Aviation University** (Kyiv).
+- **Career:**
+  - **2000–2006 (approx. 6 years):** Kyivstar, Ukraine's largest mobile operator.
+  - **c. 2006–2016 (approx. 10 years):** Microsoft. Responsible for a major department in the Kyiv office; **transferred to Microsoft's Munich office in 2011**.
+  - **March 2016:** Resigned from Microsoft to launch a drone-technology startup.
+- **Family/motivation:** His father was a drone-building engineer at the **Antonov design bureau**. Pederiy also cited the **2017 death of a friend, a pilot, in an An-2 crop-duster crash** as a driver for pursuing unmanned agricultural aviation.
+- **Role today:** Retains 50% of Aerodron LLC. Reuters described the company as "run by Dmytro Shymkiv and Yuriy Pederiy." He is the technical/product principal; Shymkiv is the public-facing and commercial principal.
+- **Media presence:** Low. Pederiy gave agricultural-press interviews in 2020 (AgroPortal) but has been largely absent from the record since the military pivot, with Shymkiv handling nearly all public communication.
+- **Name variants:** Pederiy / Педерій (correct); Peredriy / Передрій (dev.ua typo); "Yuri Pederiy," "Yuriy Pederii" in transliteration.
+
+### 4.2 Dmytro Shymkiv (Дмитро Шимків) — Co-owner (50%), Investor/Partner
+
+By far the highest-profile figure associated with the company, and one of the best-known technology executives in Ukraine.
+
+- **Microsoft Ukraine:** Rose to become **General Manager / Country Manager of Microsoft Ukraine**. He and Pederiy met at Microsoft's Kyiv offices.
+- **Government:** Served as **Deputy Head of the Presidential Administration of Ukraine** under President Petro Poroshenko, with responsibility for administrative and social reform. (Noted by Focus.ua and by the UKR LEAKS piece.)
+- **Darnitsa Group:** **Executive Chairman of the Board of Directors** of Darnitsa, one of Ukraine's largest pharmaceutical manufacturers.
+- **Kyivstar:** Member of the **supervisory board**.
+- **AeroDrone:** Acquired 50% in August/September 2022. His own framing varies by venue — he is described in Ukrainian press as "partner" and "co-owner," while the **Commercial UAV Expo speaker listing describes him as "Co-Founder and an Investor in AeroDrone"** (https://www.expouav.com/speaker/dmytro-shymkiv/). "Co-founder" is a post-hoc characterization; he was not present at founding.
+- **LinkedIn:** https://www.linkedin.com/in/dmitryshymkiv
+- **Other deals:** Was involved in Kyivstar's 2022 acquisition of the medtech startup **Helsi**.
+
+**Selected Shymkiv quotes (useful for retrieval testing):**
+
+On the December 2022 certification (Facebook, via Ukrinform):
+> "Команда AeroDrone пройшла сертифікацію та отримала дозвіл на експлуатацію в ЗСУ наших двох типів безпілотних авіаційних комплексів" — "The AeroDrone team passed certification and received permission to operate our two types of unmanned aviation complexes in the Armed Forces of Ukraine." He added that the next step would be "підконтрольна експлуатація та серійне виробництво" — "controlled operation and serial production," and credited the team of **Oleksandr Liiev** at the Ministry of Defence with having achieved "a revolution in processes." (https://www.ukrinform.ua/rubric-ato/3630551-aerodrone-otrimav-dozvil-na-ekspluataciu-v-zsu-dvoh-novih-bezpilotnikiv.html, https://interfax.com.ua/news/telecom/877161.html)
+
+On the March 2023 contract:
+> "We made a deal with the Ministry of Defense. Now we have serial production." (https://militarnyi.com/en/news/the-ministry-of-defense-of-ukraine-awards-aerodrone-a-uav-contract/)
+
+On the defense industry:
+> "Тепер розумію, чому до великої війни ніхто в 'тверезому стані' не заходив у ВПК" — "Now I understand why before the big war nobody in a sober state of mind went into the military-industrial complex." (Headline of his March 2024 Ekonomichna Pravda interview.)
+
+On operational security, declining to describe the E-300's weapons role:
+> "більше не скажу, бо вас москалі читають" — "I won't say more, because the Russians are reading you."
+
+On the coming industry shakeout (Kyiv Independent):
+> "First, we will see the death of small companies, because the government cannot contract them." … "Second, we will see acquisitions or movement of Ukrainian companies internationally. And third, there will be consolidation in the Ukrainian market."
+
+On the E-300's payload bay:
+> Pointing to where the pilot's cockpit had been — "Now, it'll be the payload." And on performance: **"It can carry 200 kg for 1200 km."** (Reuters, March 2023)
+
+### 4.3 Valeriy Otkidach — alleged business partner (UNVERIFIED)
+
+Named by the UKR LEAKS Substack piece as Pederiy's business partner and the owner of **Aerodron-Servis** and of a second drone company, **VSSA**. This claim appears in **no mainstream source** and comes from an outlet with a declared adversarial orientation (see Section 7.4). Flagged for completeness only; should not be treated as established.
+
+### 4.4 Other personnel
+
+No CTO, COO, CFO, chief engineer, or board members have been publicly identified in any source located. The company does not publish a team page. DroneUA's coverage of its Commercial UAV Expo 2025 appearance named no AeroDrone representatives.
+
+---
+
+## 5. PRODUCTS
+
+AeroDrone's product family is small — essentially one agricultural airframe and two military-certified derivatives — but each is unusually large for a "drone."
+
+### 5.1 DR-60 / Discovery DR-60 (agricultural, 2017)
+
+The company's original product and the genetic ancestor of the military line.
+
+- **Developed:** 2017
+- **Concept:** Pederiy described it as multi-purpose with "a magic six" — up to **60 kg payload, 6 hours flight time, up to 600 km of automatic flight**
+- **Price:** $75,000
+- **Cruising speed:** 100 km/h
+- **Take-off weight:** 170 kg
+- **Fuel tank:** 30 litres
+- **Range, visual line of sight:** up to 3 km
+- **Range, beyond visual line of sight:** over 30 km
+- **Dimensions:** 6.3 m wingspan × 3.6 m length
+- **Role:** aerial application of fertilizers and plant-protection products; pitched as a challenger to both ground sprayers and manned crop-dusters
+- **Claimed exports:** units to the US and Canada in 2019; talks with Brazil, India, Australia in 2020 (company claim, unverified)
+
+Sources: https://militarnyi.com/en/news/ukraine-s-military-to-receive-d-80-discovery-and-e-300-enterprise-uavs/, https://agroportal.ua/ua/publishing/lichnyi-vzglyad/ukrainskii-startap-aerodrone-brosaet-vyzov-traditsionnomu-opryskivatelyu/
+
+### 5.2 D-80 Discovery (certified for AFU, December 2022)
+
+The 80 kg-class platform. Originally a survey and ordnance-detection aircraft, adapted for military ISR.
+
+**Payload and performance:**
+- **Payload:** up to **80 kg** (DroneUA specifies this figure is *including fuel*)
+- **Maximum speed:** 120 km/h
+- **Cruising speed:** 100 km/h
+- **Total/gross weight:** approximately 200 kg
+- **Service ceiling:** up to 2 km
+- **Range:** 100–800 km (some sources give "up to 800 km depending on configuration and fuel system")
+- **Endurance:** up to **23 hours** airborne (Shymkiv, describing the platform family)
+- **Wingspan:** ~6.3 m (from the DR-60 lineage)
+
+**Sensors and mission equipment:**
+- Research sensor and **magnetometer** in the original survey configuration
+- Designed for **aerial surveying of large territories** where ground survey is impractical
+- Original/adapted military role: **mine and unexploded-ordnance detection**, both on land and underwater
+- Later reported as a multi-role platform for **reconnaissance, target acquisition, and strike**
+- Payload capacity supports high-end optics — Shymkiv cited **40× optical zoom** cameras, and noted the airframe's stability is what makes that zoom usable
+- Capable of carrying heavy radio-technical reconnaissance equipment, including, per Shymkiv, gear "якого ще навіть немає в ЗСУ" — "that the Armed Forces don't even have yet"
+
+**Pricing:** A complete complex of **two D-80 aircraft** with premium cameras and communications systems: **$450,000**.
+
+**Positioning:** Shymkiv explicitly differentiated the D-80 from cheaper Ukrainian tactical ISR drones such as the **Leleka-100** and **Ukrspecsystems Shark** on the basis of endurance and payload.
+
+### 5.3 E-300 Enterprise (certified for AFU, December 2022)
+
+The flagship and the aircraft that has generated the most attention. A converted **Aeros SkyRanger** light aircraft.
+
+**Airframe:**
+- Base airframe: **Aeros SkyRanger** (per H I Sutton, https://www.hisutton.com/Ukraine-OWA-UAVs.html, and South Front). The former pilot's cockpit volume becomes the payload bay.
+- **Wingspan:** 8.50 m (27 ft 10⅝ in)
+- **Length:** 5.72 m (18 ft 9¼ in)
+- **Wing area:** 14.10 m² (151.77 ft²)
+- **Maximum take-off weight:** 540 kg (1,190 lb)
+- **Configuration:** conventional monoplane, CTOL, fixed wheeled undercarriage
+- **Powerplant:** single **piston** engine (specific type not published; sourced abroad)
+
+(Technical table: https://www.armedconflicts.com/AeroDrone-E-300-Enterprise-t262580)
+
+**Performance:**
+- **Maximum speed:** 150 km/h (93 mph)
+- **Cruise speed:** 135 km/h (84 mph)
+- **Service ceiling:** 5,000 m (16,404 ft)
+- **Baseline maximum range:** 675 km (419 mi) in standard configuration
+- **Extended range:** up to **3,000–3,100 km** with an auxiliary fuel tank of up to **350 litres**
+- **Endurance:** up to 23 hours (platform family figure)
+- **Payload:** up to **300 kg** (DroneUA notes this figure is *inclusive of fuel* — an important caveat)
+
+**The payload/range tradeoff.** This is the single most misreported aspect of the E-300. The headline figures of "300 kg payload" and "3,100 km range" are **mutually exclusive**. Militarnyi's analysis states that when the 350-litre auxiliary tank is fitted to reach 3,100 km, usable payload falls to roughly **20–30 kg**. Shymkiv's own intermediate data point — **"It can carry 200 kg for 1,200 km"** (Reuters) — is probably the most useful single characterization of the aircraft's real operating envelope.
+
+**Features:**
+- **Fully automated mission execution from takeoff to landing**, with real-time manual override and control
+- **No runway required** — can launch and land from any flat surface
+- **Emergency parachute recovery system** allowing slow descent to the ground
+- **Optical navigation** under development — the aircraft orients itself by comparing live camera footage against satellite imagery, providing GNSS-independent navigation in jammed environments
+- **Optional anti-jamming system** to counter Russian EW
+
+**Original civil role:** Cargo and courier aircraft. armedconflicts.com records the original design purpose as "the transport of mail"; Militarnyi describes it as marketed "as a courier drone for delivering parcels at a speed of 150 km/h."
+
+**Military roles, in order of emergence:**
+1. **Cargo resupply to frontline positions** — the originally advertised military use, framed by Shymkiv against the Mariupol helicopter resupply losses.
+2. **Heavy ISR platform** — carrying radio-technical reconnaissance equipment beyond what smaller drones can lift.
+3. **Weapons platform** — Shymkiv described the E-300 as adaptable for equipment "яке раніше ніхто і не думав ставити на БПЛА" ("that nobody previously thought of mounting on a UAV"), declining to elaborate. The company was reported in 2024 to be testing a weaponization project intended to support ground-forces aviation.
+4. **Long-range bomber / one-way attack** — the role it has actually become known for. See Section 7.
+
+**On kamikaze use:** Shymkiv argued in March 2024 that the airframe's **$300,000 cost makes expendable one-way use impractical**, though technically possible if the military customer requested it. Subsequent events (Section 7.2) show it being used in exactly that manner, and in reusable bombing sorties.
+
+### 5.4 Product summary table
+
+| Model | Payload | Range | Speed | Span | Role | Price |
+|---|---|---|---|---|---|---|
+| DR-60 Discovery | 60 kg | 600 km auto | 100 km/h cruise | 6.3 m | Agricultural spraying | $75,000 |
+| D-80 Discovery | 80 kg (incl. fuel) | 100–800 km | 120 km/h max | ~6.3 m | ISR, magnetometry, mine/UXO detection | $450k per 2-aircraft complex |
+| E-300 Enterprise | 300 kg (incl. fuel) | 675 km std / 3,100 km extended | 150 km/h max, 135 cruise | 8.50 m | Cargo, heavy ISR, weapons platform, deep strike | $300,000 airframe |
+
+### 5.5 Shared technology stack
+
+- Proprietary manned-to-unmanned conversion process preserving original aerodynamics
+- In-house electronics, flight-control systems, and flight software (partially outsourced)
+- Full automation with manual override
+- Parachute recovery
+- Optical/visual navigation under development
+- Aviation-standard (GOST) inspection and certification of each airframe
+- ~70% imported bill of materials
+
+---
+
+## 6. PATENTS
+
+### 6.1 Summary finding
+
+**No granted patents could be located that are attributable to AeroDrone, ТОВ «Аеродрон», ТОВ «Аеродрон-Сервіс», or inventor Yuriy Pederiy.**
+
+Searches attempted:
+- Google Patents assignee and free-text queries for "aerodrone," "Pederiy" (https://patents.google.com/) — the service returned HTTP 503 to automated retrieval and could not be queried reliably.
+- UAPATENTS.COM (Ukrainian patent database mirror, https://uapatents.com/) — the query for "Педерій" returned only the IPC classification index, not inventor results; the query for "аеродрон" was blocked at the network layer.
+- Ukrainian state IP office (Ukrpatent / NIPO, https://sis.nipo.gov.ua) — requires interactive session, not retrievable.
+- No patent references appear in any of the ~25 press articles, company pages, or database profiles reviewed.
+
+**This is a negative result under imperfect search conditions, not proof of zero patents.** A definitive answer requires manual searches of: (a) Ukrainian state register ІВ/Ukrpatent by applicant name in Cyrillic, (b) Espacenet worldwide by applicant "AERODRONE" and inventor "PEDERII/PEDERIY," (c) WIPO PATENTSCOPE, and (d) the US/EP registers for any filings associated with the planned Nevada entity.
+
+### 6.2 Why the absence is plausible
+
+Three independent signals suggest AeroDrone's IP strategy is **trade-secret-based rather than patent-based**:
+
+1. **Explicit statement of proprietary know-how.** Shymkiv said the conversion technology "є власною розробкою AeroDrone" — is AeroDrone's own development — while giving no indication it is patented. He described the method in only general terms (modifications preserving aerodynamics, custom electronics, in-house programming).
+
+2. **Operational security.** For a company whose primary customer is a wartime ministry of defence and whose products are actively striking Russian territory, publishing patent specifications would disclose capability. Shymkiv's repeated refusals to describe payload integration ("because the Russians are reading you") are inconsistent with a patent-publication strategy. He separately flagged, as an unresolved concern, the security risk posed by publicly accessible data on Ukrainian defense companies in state registries.
+
+3. **Capital constraints.** A company with ~$200K lifetime turnover through 2022 and acute working-capital problems through 2024–2026 is unlikely to have funded an international patent portfolio, which typically costs tens of thousands of dollars per family per jurisdiction.
+
+### 6.3 Related IP-adjacent assets
+
+- **Certification as a moat.** The Ukrainian MoD operational-use certification for the D-80 and E-300 (December 2022) functions as a practical barrier to entry. Ukraine's Cabinet of Ministers resolution of September 2022 (effective November 2022) compressed the approval process from roughly **one year to three weeks**; AeroDrone was among the first beneficiaries, with only **13 drones approved for AFU use out of 50+ applications** at the time Forbes reported in January 2023.
+- **Airframe dependency.** The E-300's reliance on the Aeros SkyRanger means a meaningful portion of the underlying aircraft IP is not AeroDrone's.
+- **Optical navigation.** The satellite-image-matching navigation system described in 2024 would be the most patentable asset in the portfolio, if filings exist. None were found.
+
+---
+
+## 7. LATEST NEWS AND DEVELOPMENTS
+
+Presented chronologically, with the most consequential recent items in 7.2 and 7.3.
+
+### 7.1 Foundational milestones (for context)
+
+**8–9 December 2022 — Military certification.** AeroDrone passed certification and received permission to operate two unmanned aviation complexes — **E-300 Enterprise** and **D-80 Discovery** — within the Armed Forces of Ukraine. Announced by Shymkiv on Facebook. He thanked the Ministry of Defence, the Special Operations Forces (SSO) command, and the General Staff. Ukraine had approved seven domestically-produced drone models in the preceding 30 days, with 19 further applications pending.
+Sources: https://www.ukrinform.ua/rubric-ato/3630551-aerodrone-otrimav-dozvil-na-ekspluataciu-v-zsu-dvoh-novih-bezpilotnikiv.html | https://interfax.com.ua/news/telecom/877161.html | https://militarnyi.com/en/news/ukraine-s-military-to-receive-d-80-discovery-and-e-300-enterprise-uavs/ | https://forbes.ua/news/ukrainskiy-virobnik-bezpilotnikiv-aerodrone-otrimav-dozvil-na-ekspluatatsiyu-v-zsu-ranishe-vin-vigotovlyav-agrarni-droni-08122022-10357
+
+**26 January 2023 — Forbes Ukraine reveals the Shymkiv deal.** Cover treatment of the 50% acquisition as the first public investment in Ukrainian miltech.
+
+**7–10 March 2023 — MoD contract and serial production.** Contract signed; serial production launched; quantities and value undisclosed; first units to undergo trial use with pre-selected operating units before a formal adoption decision. Reported alongside the $250,000–$450,000 price band and the Poland production-line talks.
+Sources: https://militarnyi.com/en/news/the-ministry-of-defense-of-ukraine-awards-aerodrone-a-uav-contract/ | https://gagadget.com/en/uav/222223-aerodrone-in-ukraine-starts-mass-production-of-e-300-enterprise-and-d-80-discovery-drones-with-a-range-of-up-to-3100-/
+
+**24 March 2023 — Reuters plant visit.** Major international profile placing AeroDrone among 80+ Ukrainian drone manufacturers working with the government. https://www.reuters.com/world/europe/inside-ukraines-scramble-game-changer-drone-fleet-2023-03-24/
+
+**13–14 December 2023 — Thales UK Memorandum of Understanding.** During the first UK–Ukraine defence trade mission, led by the UK Department for Business and Trade and Ministry of Defence, **Thales UK signed an MOU with AeroDrone**. Other UK participants included BAE Systems, Babcock, Thales, AMS Global and KBR; AeroDrone was the Ukrainian counterparty specifically for the Thales agreement. Discussions had begun at DSEI in London. This is the company's most significant Western industrial partnership on record. No subsequent public reporting of what the MOU produced.
+Source: https://militarnyi.com/en/news/uk-government-and-uk-defense-industry-conduct-their-first-trade-mission-to-ukraine/
+
+**13 March 2024 — Ekonomichna Pravda interview.** The most substantive on-record disclosure of the company's condition: unprofitable, 2.5-month production gap, 70% import dependency, single-year contracting problem, no working capital credit. Also the first mention of the optical navigation project and of weaponization testing.
+Source: https://epravda.com.ua/publications/2024/03/13/711076/ | summarized: https://texty.org.ua/fragments/111989/yak-pererobyty-dvomisnyj-litak-na-bezpilotnyk-dosvid-aerodrone/ | https://focus.ua/uk/digital/633195-bezpilotniki-aerodrone-za-sotni-tisyach-dolariv-yaki-zavdannya-zsu-vikonuyut-na-fronti-video
+
+### 7.2 The E-300 becomes a strategic strike aircraft (2025–2026) — the most significant development
+
+The E-300 has migrated from "cargo drone" to one of Ukraine's most-discussed deep-strike platforms, apparently without the company ever announcing it.
+
+**30 January 2025 — E-300s downed over Bryansk carrying aerial bombs.** Wreckage recovered in Russia's Bryansk region showed E-300 airframes carrying a **Soviet-era FAB-250M-54 aerial bomb paired with a 120 mm mortar shell**; a second downed airframe carried an **OFAB-100-120**. One bomb bore the handwritten inscription "For Mykolaiv." The aircraft were attributed to the **14th Unmanned Aerial Vehicle Regiment of Ukraine's Special Operations Forces**. Reported by Defense Express and Militarnyi.
+Source: https://united24media.com/latest-news/ukrainian-e-300-drones-carrying-fab-250-bombs-spotted-in-strikes-on-russias-bryansk-5483
+
+This is a notable capability: a **reusable, returnable bomber drone** delivering standard 250 kg aerial ordnance, as distinct from the one-way Shahed-style attack drones that dominate the theatre. Reporting elsewhere describes "repeated bombing missions using the reusable E-300, built on commercial sport plane airframes."
+
+**17 March 2025 — Zelensky's 3,000 km drone announcement.** President Zelensky announced after a Staff (Stavka) meeting: "There's good news on long-range drones. Our drone tested at 3,000 kilometres." The model and manufacturer were not identified. Militarnyi noted the E-300's 3,100 km figure as a candidate but **explicitly stated no confirmed link**. Context: a 3,000 km radius would bring the Omsk Refinery — Russia's largest — into range; the longest confirmed prior strike (Olenya airbase, Murmansk) was ~1,800 km.
+Source: https://militarnyi.com/uk/news/ukrayina-stvoryla-dron-z-dalnistyu-diyi-3000-km/
+
+**1 July 2025 — US special forces interest.** Intelligence Online reported that "the E-300 Enterprise drone produced by Ukrainian company AeroDrone" had drawn the interest of US special operations forces following its performance in Ukraine.
+Source: https://www.intelligenceonline.com/americas/2025/07/01/e-300-drone-s-success-in-ukraine-draws-interest-of-us-special-forces,110471283-art (paywalled; headline and lede only)
+
+**Reported deep penetration.** Forum-sourced material on armedconflicts.com references 2024 imagery purportedly showing the drone over the **Shahed production plant in Tatarstan** (Alabuga) — a distance consistent with the extended-range configuration. Unverified.
+
+**Downed near Moscow.** South Front reported Russian air defences downing a "large bomber drone" during an attack on Moscow, identified as the E-300 "developed by AeroDrone from the Aeros SkyRanger light aircraft."
+Source: https://southfront.press/russian-air-defenses-downed-large-bomber-drone-during-recent-attack-on-moscow-video/
+
+**2026 — HUR operation.** An Aviation Safety Network wikibase entry (https://aviation-safety.net/wikibase/572595) documents a 2026 incident involving an E-300 (Aeros SkyRanger) operated by **HUR** (Ukraine's Main Directorate of Intelligence), downed by interceptor drones. If accurate, this indicates the type is in service with at least two separate Ukrainian special-operations/intelligence formations (SSO 14th Regiment and HUR).
+
+**Analytical caution.** H I Sutton's guide to Ukraine's long-range attack drones (updated 25 July 2026) still lists the E-300 and D-80 in an "also of note" section, stating that "currently neither has been confirmed being used in strategic strikes" — a more conservative position than the Bryansk wreckage reporting supports. https://www.hisutton.com/Ukraine-OWA-UAVs.html
+
+### 7.3 Commercial and international developments (2025–2026)
+
+**20 August 2025 — Commercial UAV Expo, Las Vegas.** AeroDrone exhibited in the **Ukrainian Pavilion**, showing heavy UAS with payloads up to 300 kg. Dmytro Shymkiv appeared as a listed speaker (https://www.expouav.com/speaker/dmytro-shymkiv/). Most significantly, the company disclosed a plan to **build an R&D, manufacturing and testing facility in Nevada, USA** as part of an international growth strategy.
+Source: https://drone.ua/en/blogs/news/aerodrone-at-the-ukrainian-pavilion-commercial-uav-expo-2025-in-las-vegas | https://aeronaut.media/news-en/uavs-drones-news-en/en-ukrainian-drone-tech-at-commercial-uav-expo-2025/
+
+**3 September 2025 — Focus.ua video feature** on AeroDrone's frontline missions, reiterating the $450k/$300k pricing and the 23-hour endurance figures.
+
+**2025–2026 — The funding squeeze and predicted consolidation.** The Kyiv Independent's feature "Ukraine's drone companies face 'death, migration, or global acquisition'" positioned AeroDrone as a relative success story — it secured funding when many peers could not — while quoting Shymkiv on burning working capital and forecasting a three-stage shakeout.
+Source: https://kyivindependent.com/global-acquisition-migration-or-death-ukraines-drone-companies-seek-opportunities-abroad-amid-defense-spending-shortfall/
+
+**19 December 2025 — AERONAUT.media long-form on the E-300**, describing it as one of the heaviest drones in its class. https://aeronaut.media/articles-en/en-e-300-enterprise-drone-ukraine/ (direct fetch blocked; indexed summary only)
+
+**July 2026 — Shymkiv on valuation.** Reported as arguing that Ukrainian defense-tech companies "with real revenues, sustainable production" are undervalued (https://thedefender.media/). Consistent with a principal positioning for an exit or external raise.
+
+**April 2026 — Market position assessment.** An industry overview of Ukraine's 2026 drone production lists AeroDrone only among the **pre-war** small manufacturers ("Ukrspecsystems, Byrd, AeroDrone") producing ISR platforms in small quantities, and **omits it entirely** from its list of key 2026 producers (which names Ukrspecsystems, Terminal Autonomy, ISTA Aerospace, Quantum Systems, Saker Scout, Ukroboronprom subsidiaries). Industry context from the same source: Ukraine produces roughly 1–1.5 million drone systems per quarter across all categories; ~200–250 active companies in the Brave1 ecosystem with only 30–40 at meaningful industrial scale.
+Source: https://ukraine-war-analytics.com/technology/ukraine-drone-production-2026.html
+
+This is an important signal: **AeroDrone's aircraft are strategically significant but numerically marginal.** It is not a volume producer and does not appear on 2026 "top manufacturer" lists — e.g., it is absent from the Dignitas Fund's top-10 Ukrainian manufacturers for 2025 (https://dignitas.fund/blog/drone-warfare-top-10-ukrainian-manufacturers-in-2025-dignitas/).
+
+### 7.4 Contested and unverified claims — handle with care
+
+Two items circulating in 2025–2026 originate from Russian-aligned sources and should not be treated as factual:
+
+**a) UKR LEAKS piece alleging a procurement scheme (10 June 2026).** A Substack article titled "'Birds' from the Fields: How AeroDrone Makes Money by Converting Agricultural Drones to the Needs of the AFU" (https://ukrleakseng.substack.com/p/birds-from-the-fields-how-aerodrone) characterizes AeroDrone as "a classic example of a failed startup" and insinuates a corruption scheme in UAV procurement. It names Pederiy, Shymkiv, and an otherwise unreported "Valeriy Otkidach."
+
+**Assessment:** The outlet is self-described as run by **Vasily Prozorov, a former officer of the Ukrainian special services** who defected and now publishes anti-Kyiv material. The piece offers **no contracts, invoices, court records, or audited filings** — it rests entirely on recycled open-source financial figures (the same $200K turnover, $50K USF grant, and 2020 loss figures reported by Forbes), career-timeline juxtaposition, and the observation that the company's website is a static logo image and its Facebook page has not been updated since December 2022. Its financial claims that can be checked against Forbes are broadly accurate; its interpretive claims of corruption are unsupported. Treat as **hostile information operation content with some factually correct underlying data**.
+
+Worth noting independently: the observation that **aerodrone.ua is effectively a static placeholder** and that social media is dormant is verifiable and true. The site contains only a logo, three capability words, five market categories, and an email address — no products, specifications, team, or news. For a company with active US expansion plans, this is unusual, and is most plausibly explained by wartime operational security.
+
+**b) Claimed Russian strike on AeroDrone's Kyiv facility (July 2026).** CB Insights' news feed surfaces a **Sputnik International** item dated **11 July 2026** asserting that a Russian strike hit "the Kiev-based AeroDrone enterprise," naming the E-300 Enterprise and D-80 Discovery as its products. A related French-language item (La Nouvelle Tribune, 8 August 2025) covers a Russian counter-strike on a Kyiv drone plant.
+
+**Assessment:** This originates from Russian state media reporting Russian Ministry of Defence strike claims, which routinely overstate damage and name targets for propaganda effect. **No independent or Ukrainian confirmation of a strike on AeroDrone's facility was found.** For contrast, a genuinely confirmed and independently reported strike on a Kyiv drone facility in the same period targeted **Terminal Autonomy** (maker of the AQ-400 Scythe and AQ-100 Bayonet), reported by The Guardian on 31 July 2026 (https://www.theguardian.com/world/2026/jul/30/us-firm-drone-factory-terminal-autonomy-ukraine-russia) — a different company. It is possible the AeroDrone claim is a conflation. Treat as **unverified**.
+
+### 7.5 Items sometimes wrongly attributed to AeroDrone
+
+- **Forbes, "Ukraine's Heavy Lift Drones For Casualty Evacuation" (9 April 2026, David Hambling)** — https://www.forbes.com/sites/davidhambling/2026/04/09/ukraines-heavy-lift-drones-for-casualty-evacuation-and-air-assaults/ — surfaces on AeroDrone searches but concerns the **"Vampire" from SkyFall**, a heavy-lift multirotor. Not AeroDrone.
+- **US Army CASEVAC drone programmes (2026)** — Flowcopter demonstrations at Sabre Strike 2026, Defense News "last mile" medevac robot solicitations. Unrelated.
+- **AeroMotors / Front Ventures Swedish investment** — a different Ukrainian company (drone engines). Front Ventures' stated plan to invest $2–4M in defense startups in 2026 (Kyiv Post) does not concern AeroDrone.
+
+---
+
+## 8. OVERALL ASSESSMENT AND OPEN QUESTIONS
+
+**What AeroDrone is:** A small, technically distinctive Ukrainian manufacturer that occupies a genuine capability niche — the conversion of certified light aircraft into large, long-endurance, heavy-payload unmanned systems. It is one of very few companies anywhere fielding an autonomous aircraft that can carry 200 kg for 1,200 km, land on unprepared surfaces, and be reused. Its aircraft have been documented conducting deep bombing sorties into Russian territory with standard aerial ordnance, and have attracted interest from US special operations forces.
+
+**What AeroDrone is not:** A scaled business. Lifetime turnover through 2022 was roughly $200,000. It was unprofitable in 2024 and burning working capital into 2025. Production runs to a handful of aircraft per month. It does not appear on 2026 lists of Ukraine's significant drone producers. Its bill of materials is 70% imported. Its website is a placeholder and its social media has been dormant since 2022.
+
+**The central tension:** strategically valuable product, structurally fragile business — the exact profile Shymkiv described when predicting that Ukrainian drone companies face "death, migration, or global acquisition."
+
+**Open questions a follow-up should resolve:**
+1. The EDRPOU codes and current filed accounts for both LLCs (requires manual YouControl/Clarity Project/Opendatabot queries; all blocked automated access).
+2. Whether the December 2023 **Thales UK MOU** produced any programme, and its current status.
+3. Whether the **Nevada facility** has been incorporated, sited, or funded — and under what US legal entity.
+4. The value and quantity of the MoD contracts from 2023 onward, and whether any multi-year contract was ever secured.
+5. Whether the E-300 was the aircraft behind Zelensky's March 2025 "3,000 km" claim.
+6. Definitive patent search via Ukrpatent/NIPO, Espacenet and WIPO PATENTSCOPE under Cyrillic applicant names.
+7. Current ownership — whether the 50/50 Pederiy/Shymkiv split persists in 2026, or whether new capital has entered.
+8. Employee headcount and current monthly production rate.
+
+---
+
+## SOURCE INDEX
+
+Company / primary
+- https://aerodrone.ua/ — official site (minimal)
+- https://www.facebook.com/aerodroneukraine/ — official Facebook (dormant since Dec 2022)
+- https://www.linkedin.com/in/dmitryshymkiv — Shymkiv profile
+- https://www.expouav.com/speaker/dmytro-shymkiv/ — Commercial UAV Expo speaker bio
+
+Ukrainian press
+- https://forbes.ua/innovations/dmitro-shimkiv-z-kiivstaru-pridbav-polovinu-aktsiy-ukrainskogo-virobnika-droniv-aerodrone-tse-persha-publichna-investitsiya-v-ukrainskiy-miltech-yak-vona-vlashtovana-26012023-11147
+- https://forbes.ua/news/ukrainskiy-virobnik-bezpilotnikiv-aerodrone-otrimav-dozvil-na-ekspluatatsiyu-v-zsu-ranishe-vin-vigotovlyav-agrarni-droni-08122022-10357
+- https://epravda.com.ua/publications/2024/03/13/711076/
+- https://texty.org.ua/fragments/111989/yak-pererobyty-dvomisnyj-litak-na-bezpilotnyk-dosvid-aerodrone/
+- https://focus.ua/uk/digital/547257-ukrainskiy-proizvoditel-voennyh-dronov-nashel-krupnogo-investora-chto-populyarno
+- https://focus.ua/uk/digital/633195-bezpilotniki-aerodrone-za-sotni-tisyach-dolariv-yaki-zavdannya-zsu-vikonuyut-na-fronti-video
+- https://dev.ua/news/ukrainskyi-aerodrone-ta-pidpryiemets-dmytro-shymkiv-otrymaly-dozvil-na-vykorystannia-droniv-v-zsu-shcho-tse-za-bpla
+- https://www.ukrinform.ua/rubric-ato/3630551-aerodrone-otrimav-dozvil-na-ekspluataciu-v-zsu-dvoh-novih-bezpilotnikiv.html
+- https://interfax.com.ua/news/telecom/877161.html
+- https://borgexpert.com/news/dmytro-shymkiv-kupyv-50-vyrobnyka-droniv-aerodrone
+- https://agroportal.ua/ua/publishing/lichnyi-vzglyad/ukrainskii-startap-aerodrone-brosaet-vyzov-traditsionnomu-opryskivatelyu/
+- https://vctr.media/ua/shymkiv-prydbav-50-aerodrone-shho-vidomo-170332/
+
+Defense / technical
+- https://militarnyi.com/en/news/ukraine-s-military-to-receive-d-80-discovery-and-e-300-enterprise-uavs/
+- https://militarnyi.com/en/news/the-ministry-of-defense-of-ukraine-awards-aerodrone-a-uav-contract/
+- https://militarnyi.com/en/news/uk-government-and-uk-defense-industry-conduct-their-first-trade-mission-to-ukraine/
+- https://militarnyi.com/uk/news/ukrayina-stvoryla-dron-z-dalnistyu-diyi-3000-km/
+- https://www.armedconflicts.com/AeroDrone-E-300-Enterprise-t262580
+- https://www.hisutton.com/Ukraine-OWA-UAVs.html
+- https://united24media.com/latest-news/ukrainian-e-300-drones-carrying-fab-250-bombs-spotted-in-strikes-on-russias-bryansk-5483
+- https://en.defence-ua.com/events/d_80_discovery_and_e_300_enterprise_uavs_platforms_for_carrying_equipment_weapons_and_defeating_enemies-9859.html
+- https://aviation-safety.net/wikibase/572595
+
+International / industry
+- https://www.reuters.com/world/europe/inside-ukraines-scramble-game-changer-drone-fleet-2023-03-24/ (mirror: https://mnews.world/en/news/inside-ukraines-scramble-for-game-changer-drone-fleet)
+- https://kyivindependent.com/global-acquisition-migration-or-death-ukraines-drone-companies-seek-opportunities-abroad-amid-defense-spending-shortfall/
+- https://drone.ua/en/blogs/news/aerodrone-at-the-ukrainian-pavilion-commercial-uav-expo-2025-in-las-vegas
+- https://aeronaut.media/articles-en/en-e-300-enterprise-drone-ukraine/
+- https://gagadget.com/en/uav/222223-aerodrone-in-ukraine-starts-mass-production-of-e-300-enterprise-and-d-80-discovery-drones-with-a-range-of-up-to-3100-/
+- https://www.intelligenceonline.com/americas/2025/07/01/e-300-drone-s-success-in-ukraine-draws-interest-of-us-special-forces,110471283-art
+- https://ukraine-war-analytics.com/technology/ukraine-drone-production-2026.html
+- https://foreignpolicy.com/2024/07/06/ukraine-drone-industry-russia-war-regulation/
+
+Databases (all with data-quality caveats)
+- https://www.cbinsights.com/company/aerodrone
+- https://pitchbook.com/profiles/company/99799-75
+- https://www.tracxn.com/d/companies/aerodrone
+- https://www.crunchbase.com/organization/aerodrone
+
+Contested / adversarial
+- https://ukrleakseng.substack.com/p/birds-from-the-fields-how-aerodrone (Russian-aligned, unverified allegations)
+- Sputnik International, 11 July 2026, strike claim (unverified)
+
+---
+
+Research limitations: the session's WebSearch budget was exhausted early, so the latter two-thirds of this research was conducted via direct WebFetch and Brave Search result pages. Forbes.com, Ekonomichna Pravda, AERONAUT.media, Crunchbase, Tracxn, Opendatabot, Clarity Project, aviation-safety.net and Google Patents all blocked automated retrieval (HTTP 403/503); their content was reconstructed from mirrors, syndication and indexed summaries where available. The Ukrainian corporate registries and patent databases could not be queried directly and remain the largest evidence gap.

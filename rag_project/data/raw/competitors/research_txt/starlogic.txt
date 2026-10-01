@@ -1,0 +1,520 @@
+# RESEARCH REPORT: Starlogic Intelligent Technology (星逻智能 / SKYSYS)
+
+## 0. METHODOLOGY AND A CRITICAL NAMING NOTE — READ FIRST
+
+"Starlogic Intelligent Technology" is the English name used by Western startup databases (principally Tracxn) for the Chinese company **星逻智能科技（苏州）有限公司** — *Xingluo Zhineng Keji (Suzhou) Co., Ltd.* The name is a direct calque: 星 (xing, "star") + 逻 (luo, "logic").
+
+The company does **not** market itself as "Starlogic" in English. Its own English-language brand is **SKYSYS** (skysys.cn). If you search only for "Starlogic Intelligent Technology" you will find essentially one thin database entry; the substantive record lives under 星逻智能 and SKYSYS.
+
+**Explicit caveat on English-language availability:** very little reliable English-language material exists on this company. The single English aggregator profile (Tracxn) contains several claims that are flatly contradicted by primary Chinese sources and by the company's own website — see Section 8. The bulk of this report is sourced from Chinese-language tech press, the company website, and Chinese venture databases. Where figures conflict, I state both and flag the conflict rather than reconciling them silently.
+
+**Sources I attempted and could not access** (so you know what is missing rather than assuming it does not exist): Google Patents (HTTP 503), Espacenet (HTTP 403), FreePatentsOnline (connection reset), USPTO legacy search (DNS failure), Qichacha company registry (blocked). As a result, Section 6 gives a patent *activity summary* with aggregate counts from secondary sources but **no individual patent numbers or titles** — I could not verify any, and I am not going to invent them.
+
+---
+
+## 1. COMPANY OVERVIEW
+
+### 1.1 Legal identity
+
+- **Chinese legal name:** 星逻智能科技（苏州）有限公司
+- **English brand:** SKYSYS (registered marks appear as UltraHive®, SkyCab®, SkyScout®)
+- **English name in Western databases:** Starlogic Intelligent Technology; also transliterated "Xingluo Intelligent Technology"
+- **Entity type:** 有限责任公司（自然人投资或控股） — limited liability company, natural-person invested/controlled
+- **Date of incorporation:** 19 July 2017 ([news.qq.com](https://news.qq.com/rain/a/20240606A07RGP00), [innohere](https://www.innohere.com/ir/111839/finance.html))
+- **Legal representative / 实控人 (ultimate controller):** 王海滨 Wang Haibin
+- **Registered capital:** RMB 4,166,880 (416.688万元) ([news.qq.com](https://news.qq.com/rain/a/20240606A07RGP00))
+- **ICP licence:** 苏ICP备17054692号-1
+- **Website:** https://www.skysys.cn (Chinese, English, Spanish, French, Arabic versions)
+
+### 1.2 Founding story
+
+The company was founded in 2017 by three people who met in industry, two of them at General Electric. The origin story, told in detail by The Paper ([thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616)), is that co-founders 钱茂冬 (Qian Maodong) and 王海滨 (Wang Haibin) were on an overseas business trip and observed a contradiction: mining haul trucks had already been automated, yet drone operations still depended entirely on human pilots, making them expensive and non-scalable. They identified 2016 as the inflection point at which drones began migrating from consumer/entertainment products into industrial production settings — chemicals, power, security, environmental inspection — and judged the enabling layer to be a market worth "hundreds of billions" (千亿级) of RMB.
+
+They left GE and began operating as a project team within three months. Dr. 肖素枝 (Xiao Suzhi) joined roughly three months after that, supplying the software and algorithms capability the two hardware engineers lacked.
+
+### 1.3 Strategic positioning — the defining decision
+
+The single most important strategic fact about this company is what it refuses to build. Co-founder Qian Maodong has stated the position bluntly ([thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616)):
+
+> "如果我们做无人机，相当于站在了所有无人机的对立面" — *"If we made drones, we would effectively be standing in opposition to every drone maker."*
+
+SKYSYS therefore builds **everything around the aircraft but never the aircraft**: docking stations/hangars, automatic charging and battery-swap systems, onboard AI compute modules, autonomous-flight middleware, cloud dispatch, and vertical AI inspection software. Its hardware is deliberately compatible with mainstream commercial airframes — DJI M30, M350 RTK, M3D/M3TD and others.
+
+The stated ambition is to become infrastructure, not a product vendor: Qian has described the goal as building "全国最大的无人机低空调度网络" — the country's largest low-altitude drone dispatch network — and has analogised the hangar network to petrol stations for ground vehicles.
+
+A key technical differentiator claimed is **纯网联技术** ("pure network-connected technology"): the drones connect over cellular networks rather than depending on a ground radio link to a local controller. This allows point-to-point missions — take off from Hangar A, land at Hangar B — rather than the out-and-back-only pattern that radio-tethered competitors are limited to. For transmission-line inspection, this enables "leapfrog" operation between hangars spaced along a power corridor ([skysys.cn](https://www.skysys.cn/DockingStation/), [thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616)).
+
+### 1.4 Mission and current framing
+
+The company's self-description has evolved. Early framing (2018-2021) was generic drone automation and smart city. Current framing, post-2023, is explicitly new-energy focused:
+
+> "以AI驱动无人机与机器人完成能源检测与运维闭环，提升发电效率" — *driving drones and robots with AI to close the loop from energy inspection through to O&M, raising generation efficiency.* — Wang Haibin ([stcn.com](https://www.stcn.com/article/detail/1224287.html))
+
+Wang has articulated the underlying market thesis: compared with building new power stations, **raising the output efficiency of the existing installed base is the cheaper and faster path** — which is the entire commercial premise of the inspection-plus-cleaning-robot product line.
+
+The company describes itself as "国内头部的低空智能化系统供应商" (a leading domestic supplier of low-altitude intelligent systems) and claims to be "国内首家出口海外的无人机自动化供应商" — the first Chinese drone-automation supplier to export overseas ([36kr pitchhub](https://pitchhub.36kr.com/project/1678486488167426)).
+
+### 1.5 Headquarters and footprint
+
+**Headquarters:** Suzhou Industrial Park, Jiangsu Province — AI Industrial Park (人工智能产业园) E1, Jinji Lake Avenue. An earlier registered address was 苏州工业园区星湖街328号创意产业园4-B604 ([kchuhai.com](https://www.kchuhai.com/company/detail.aspx?id=5457)). Front desk: 0512-87816318; hotline 400-860-8819.
+
+**Offices / centres listed by the company** ([skysys.cn/AboutSkysys](https://www.skysys.cn/AboutSkysys/)):
+
+| Location | Function |
+|---|---|
+| Suzhou, Jiangsu | Headquarters; business and hardware R&D centre |
+| Shanghai Lingang (临港) | R&D centre |
+| Shanghai Jinqiao / Pudong | Office |
+| Nanjing, Jiangsu (Pukou) | R&D centre |
+| Hangzhou, Zhejiang | R&D centre |
+| Beijing (Chaoyang) | Office |
+| Hohhot, Inner Mongolia | Marketing centre |
+| Qingyuan, Guangdong | R&D centre |
+| Fuzhou, Fujian (Minhou) | Office |
+| Xuzhou, Jiangsu (Quanshan) | Office |
+
+Note the geographic logic: Hohhot sits in China's largest wind and solar build-out region; Qingyuan and Xuzhou are distributed-PV heavy; Lingang is the origin smart-city deployment site.
+
+### 1.6 Headcount
+
+Reported figures, in chronological order — the trend is more informative than any single number:
+
+- **~100+ people, 70% R&D** — The Paper, 2023 ([thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616))
+- **~160 people, 70% R&D** — multiple June 2024 reports ([news.qq.com](https://news.qq.com/rain/a/20240606A07RGP00), [36kr pitchhub](https://pitchhub.36kr.com/project/1678486488167426))
+- **50–150** — kchuhai directory (stale range)
+- **"fewer than 50"** — innohere (clearly stale)
+- **"3 employees as of 30 June 2026"** — Tracxn. **This figure is not credible** and should be disregarded; it is contradicted by the company's own office footprint, a nine-figure B+ round in 2025, and continuing 2026 product launches and conference activity.
+
+Team academic provenance cited by the company: Zhejiang University, Shanghai Jiao Tong University, Durham University (UK), University of California, University of Illinois, Georgia Tech, Tongji University, and the Chinese Academy of Sciences ([leaderobot.com](https://www.leaderobot.com/news/4321)).
+
+### 1.7 Corporate timeline
+
+| Year | Event |
+|---|---|
+| 2017 | Founded (19 July); enters drone-AI industry |
+| 2018 | Builds what it claims was the largest drone hangar cluster then known, in Shanghai Lingang — 7 hangars (later 9) covering the 95 km² core urban area; first to apply hangars to large-scale PV plant inspection; wins MIIT "绽放杯" national 5G prize |
+| 2019 | Named one of "China's Top 10 AI Innovation Enterprises"; top-3 in the transportation track of WAIC's AIWIN competition |
+| 2020 | Series A; wins Huawei Cloud Cup AI competition enterprise track; enters "Global Top 50 Drone Companies" list |
+| 2021 | A+ and A++ rounds; co-drafts **IEEE 1937.1** with Huawei and DJI — described as the world's first international standard for drone payload systems; begins Lantern cleaning-robot R&D; refocuses on three verticals (smart city, grid, PV) |
+| 2022 | Launches UltraHive Mk4 Pro charge/swap hangar; releases 星逻驭光 PV platform; rolls out four vertical software products (wind, solar, grid, emergency) |
+| 2023 | Launches Skysys Lantern PV-panel cleaning robot; begins building out a robotics product line |
+| 2024 | B round (>RMB 100M, June); Lantern wins two international awards at the 8th World Drone Congress; extends from low-altitude *inspection* into low-altitude *O&M* |
+| 2025 | B+ round (>RMB 100M, June); named national-level 专精特新 "little giant"; wins China Innovation & Entrepreneurship Competition low-altitude final; WISE2025 and 金翼奖 recognitions |
+| 2026 | Named to Suzhou unicorn-cultivation list; MoU with France's JPA Group; Lantern 小蓝 wins German Red Dot and French FDA design awards; chief scientist named a national "最美职工" |
+
+---
+
+## 2. FINANCIALS
+
+**Bottom line: SKYSYS is a private, venture-backed company. No revenue figures, gross margins, profitability, or valuations have been publicly disclosed in any source I could access, Chinese or English. There are no financial filings because it is not listed on any exchange and no IPO process has been announced.**
+
+What *is* on the public record:
+
+**Registered capital:** RMB 4,166,880 ([news.qq.com](https://news.qq.com/rain/a/20240606A07RGP00)). Note that in Chinese corporate practice registered capital is a legal formality and bears no relationship to capital actually raised — this company has raised orders of magnitude more than its registered capital.
+
+**Ownership:** Equity-penetration analysis reported by Tencent News shows Wang Haibin as the ultimate controller with an ultimate beneficial stake of **22.3501%** ([news.qq.com](https://news.qq.com/rain/a/20240606A07RGP00)). No other shareholder percentages have been disclosed. A ~22% founder stake after eight rounds is consistent with a heavily institutionally-financed cap table.
+
+**Cumulative capital raised (estimate):** Aggregating the disclosed and banded round sizes in Section 3 produces roughly **RMB 300 million or more** (very approximately USD 40–45 million at prevailing rates). This is an estimate, not a disclosed figure, because five of the eight rounds were announced only in bands ("数千万" = tens of millions; "超亿元" = over one hundred million).
+
+**Valuation:** Not disclosed for any round. Tracxn's valuation fields were masked/redacted. However, two circumstantial data points bracket it upward:
+- Inclusion in the **《2025年度苏州市"独角兽"培育企业名单》** (Suzhou 2025 unicorn-*cultivation* enterprise list), announced January 2026 ([skysys.cn/News](https://www.skysys.cn/News/)). Note carefully: "培育" means *cultivation* — this is a pipeline list of companies deemed capable of *becoming* unicorns, not a certification that the company is valued above USD 1 billion. Do not report this as unicorn status.
+- Two consecutive nine-figure RMB rounds (B and B+) within twelve months, with strategic and state-linked investors participating.
+
+**Revenue signals (indirect only):** The Paper reported in 2023 that the 2021 refocus onto three verticals produced "台阶式增长" — step-change growth — in both revenue and headcount, but gave no figures ([thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616)). The business-model shift disclosed at the B round is material for revenue quality: the wind product 御风 is moving to a "产品即服务与服务分润" model — product-as-a-service with revenue sharing — via franchise partnerships with wind O&M providers, which implies a transition from one-off hardware sales toward recurring service revenue ([stcn.com](https://www.stcn.com/article/detail/1224287.html)).
+
+**Tracxn's "$1.49M total raised" figure is wrong** and should not be used. It omits the 2024 B round and 2025 B+ round entirely, each of which alone exceeded RMB 100 million (~USD 14M). Tracxn's own news section even cites the June 2024 "over 100 million yuan" report while the aggregate field contradicts it.
+
+---
+
+## 3. FUNDING HISTORY
+
+Eight disclosed transactions between 2018 and 2025. The consolidated table below is drawn primarily from [innohere](https://www.innohere.com/ir/111839/finance.html) and cross-checked against [36kr pitchhub](https://pitchhub.36kr.com/project/1678486488167426), [leaderobot](https://www.leaderobot.com/news/4321), [stcn](https://www.stcn.com/article/detail/1224287.html), [chinaerospace](https://www.chinaerospace.com/article/24066), and [aliyun startup](https://startup.aliyun.com/info/102033.html).
+
+| # | Date | Round | Amount (RMB) | Investors |
+|---|---|---|---|---|
+| 1 | 2018-07-06 | Angel (天使轮) | 10,000,000 | 遨问创投 (CM Venture Capital) |
+| 2 | 2019-01-25 | Equity financing (股权融资) | Undisclosed | 中关村发展启航产业投资基金 (Zhongguancun Development Qihang Industrial Investment Fund) |
+| 3 | 2019-03-11 | Pre-A | 千万级 (tens of millions) | **Lead:** 远瞻资本 (Lighthouse Capital); 遨问创投 |
+| 4 | 2020-04-29 | Series A | 数千万 (several tens of millions) | 常春藤资本 (Ivy Capital), 遨问创投, 远瞻资本 |
+| 5 | 2021-03-30 | Series A+ | 数千万 | **Lead:** 启航投资 (Zhongguancun Qihang); 遨问创投, 常春藤资本, 远瞻资本 |
+| 6 | 2021-11-12 | Series A++ | 数千万 | 元禾控股 (Oriza/Yuanhe Holdings), 中关村发展启航基金, 远瞻资本 |
+| 7 | 2024-06-03 | Series B | 超亿元 (>100M) | **Co-leads:** 广东粤科母基金 (Guangdong Yueke Fund-of-Funds), 临港前沿阿特斯扬州基金 (Lingang Qianyan / Arctech Yangzhou Fund); **follow-on:** 宁波诺登创投 (Ningbo Nuodeng), 苏州工业园区科创基金 / 苏州领军创投; **angel investors adding on:** 遨问创投, 远瞻资本, 常春藤投资; 粤科金融集团 |
+| 8 | 2025-06-23 | Series B+ | 超亿元 (>100M) | 苏州港航集团 (Suzhou Port & Shipping Group), 临港前沿投资 |
+
+### 3.1 Investor name mapping (Chinese ↔ English)
+
+This mapping matters because English databases list the English names and Chinese press lists the Chinese names, making the same investor appear twice:
+
+- 遨问创投 = **CM Venture Capital**
+- 远瞻资本 = **Lighthouse Capital Management** (sometimes "Yuanjian Capital")
+- 常春藤资本 = **Ivy Capital** (Tracxn: "Shanghai Ivy Capital")
+- 元禾控股 = **Oriza Holdings** (Tracxn: "Yuanhe Holdings") — the Suzhou Industrial Park state investment platform
+- 中关村发展启航产业投资基金 = **Zhongguancun Development Qihang Fund** (Beijing state-linked)
+- 广东粤科母基金 = **Guangdong Yueke Fund-of-Funds** (Guangdong provincial state capital)
+- 苏州港航集团 = **Suzhou Port & Shipping Group** (municipal SOE)
+
+### 3.2 Reading the cap table
+
+Three observations worth flagging:
+
+**(a) Extraordinary insider persistence.** 远瞻资本 (Lighthouse) participated in the Pre-A, A, A+, A++ and B rounds — five consecutive rounds. 遨问创投 (CM Venture) led the angel and then followed in Pre-A, A, A+ and B. 常春藤 (Ivy) joined at A and was still adding at B. Angel-round investors doubling down at a nine-figure B round six years later is a meaningful positive signal.
+
+**(b) Progressive shift to state and strategic capital.** The early rounds are pure financial VC. From the A+ onward, state-linked vehicles appear (Zhongguancun Qihang, Oriza/Suzhou Industrial Park), and by B and B+ the leads are provincial state fund-of-funds (Guangdong Yueke), a solar-industry strategic (the Arctech / 阿特斯 Yangzhou fund — Arctech is a major PV tracker manufacturer, so this is a customer-adjacent strategic), and a municipal SOE (Suzhou Port & Shipping). This pattern is typical of Chinese hard-tech companies approaching pre-IPO positioning.
+
+**(c) The Arctech tie is strategically significant.** 临港前沿阿特斯扬州基金 links SKYSYS to the PV tracker/module supply chain — precisely the installed base its inspection and cleaning robots service.
+
+### 3.3 Investor commentary on the B round
+
+- **曾湋 (Zeng Wei), GM, Guangdong Yueke Fund-of-Funds:** as new-energy installed capacity rises rapidly, intelligent O&M is becoming an emerging blue-ocean track; called the team "务实、高效" (pragmatic and efficient) and "引领这个新兴赛道的新锐力量."
+- **单秀红 (Shan Xiuhong), Chairman, Lingang Qianyan Investment:** praised the company's accumulation of "大量飞行数据和应用经验" — a large body of flight data and application experience — and described it as a representative low-altitude-economy enterprise.
+- **章钊 (Zhang Zhao), Partner & GM, Ningbo Nuodeng:** described SKYSYS as the company that first achieved drone inspection requiring no manual operation, solving the sector's high-cost/low-efficiency pain point, with the PV cleaning robot adding a value-added service layer — the stated reason for following on after the A+ round.
+- **陈希麟 (Chen Xilin), Suzhou Lingjun Venture Capital:** expects the company to become "行业里的创新者、开拓者及引领者."
+
+(All quotes from [stcn.com](https://www.stcn.com/article/detail/1224287.html) and [chinaerospace.com](https://www.chinaerospace.com/article/24066).)
+
+### 3.4 Use of proceeds
+
+- **B round (2024):** primarily mass production and technical iteration of the **Lantern PV cleaning robot**, specifically the goal of a "flying" cleaning robot capable of working on 45°-tilt arrays, completing the loop "从低空智能检测向低空智能运维" (from low-altitude intelligent inspection to low-altitude intelligent O&M). Secondarily, moving the 御风 wind-inspection product into accelerated service-model rollout.
+- **B+ round (2025):** use of proceeds not disclosed in the sources I could reach.
+
+---
+
+## 4. LEADERSHIP AND PEOPLE
+
+### 4.1 王海滨 — Wang Haibin — Founder, Chairman, CEO, legal representative
+
+- **Education:** B.Eng. in Automation, **Zhejiang University**; M.Eng. in Vehicle Engineering, **Shanghai Jiao Tong University**
+- **Prior role:** R&D Director at **GE 科技学社** (GE's technology institute/academy) ([news.qq.com](https://news.qq.com/rain/a/20240606A07RGP00))
+- **Domain expertise:** industrial drone applications, and specifically **battery management and charging technology** — this is the technical seed of the whole company, since SKYSYS entered the market through the charging/battery-swap module rather than through aircraft or software
+- **Prior engineering work:** led battery management system design for **Segway's two-wheeled vehicles**, and sodium-salt (sodium-nickel-chloride) battery systems ([36kr pitchhub](https://pitchhub.36kr.com/project/1678486488167426))
+- **Experience:** variously reported as 16 years ([36kr pitchhub](https://pitchhub.36kr.com/project/1678486488167426)) and "nearly 20 years" ([leaderobot.com](https://www.leaderobot.com/news/4321)) in drone-related industries
+- **Ownership:** ultimate beneficial stake of 22.3501%; ultimate controller of the company
+- **Public positioning:** frames the company around China's "3060" dual-carbon goals and rising electricity demand from computing/AI growth; argues that efficiency gains on the existing generation fleet beat new-build economics
+
+### 4.2 钱茂冬 — Qian Maodong — Co-founder
+
+- **Born:** 1991
+- **Education:** B.Eng. Mechatronic Engineering, **Zhejiang University** (2013); M.Sc. Communications Engineering, **Durham University, UK** (2016)
+- **Prior roles:** **Teradyne** and **GE**, working on analogue/digital circuit hardware development
+- **Expertise:** mechanical design, small aircraft development, multiple programming languages; **holds several Chinese national invention patents** in his own name
+- **Role:** co-leads hardware technology direction with Wang Haibin; has historically been the company's principal external spokesperson — the "we will never build the aircraft" strategic doctrine is articulated by him
+- Source: [thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616)
+
+### 4.3 肖素枝 博士 — Dr. Xiao Suzhi — Co-founder and Chief Scientist
+
+- Joined approximately three months after the other two founders, filling the software and algorithms gap on an otherwise hardware-heavy founding team
+- Built and leads the team that developed the company's **AI algorithm engine**
+- Personally led delivery of the **Shanghai Lingang smart-city project**, for which she received the **2021 Shanghai May Day Labour Medal (上海市五一劳动奖章)**
+- **April 2026:** named one of the national top ten **"最美职工" ("Most Beautiful Workers")** — a high-profile national honour conferred by the All-China Federation of Trade Unions ([skysys.cn/News](https://www.skysys.cn/News/))
+- **Current title:** Chief Scientist (首席科学家)
+- Active as the company's technical public voice in 2026: keynote at the **PSGEC power conference** (24 Aug 2026); interview published 14 Sept 2026 headlined *"无人机只是'手脚'，新能源运维真正拼的是AI'大脑'"* — "*Drones are only the hands and feet; what new-energy O&M really competes on is the AI 'brain'*"
+- Sources: [thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616), [skysys.cn/News](https://www.skysys.cn/News/)
+
+**Important reconciliation:** Tracxn lists a single co-founder named **"Victoria Xiao."** Given that Dr. Xiao Suzhi is the only founder surnamed Xiao and the only one whose profile matches a database-registered founder record, "Victoria Xiao" is almost certainly her English name. Tracxn's omission of Wang Haibin and Qian Maodong makes its founder data incomplete rather than wrong.
+
+### 4.4 Other named personnel
+
+No CFO, COO, CTO or board composition has been publicly disclosed in any source I could access. Investor-side individuals named in connection with the company (not employees) are listed in Section 3.3. The company reports approximately 160 staff, 70% in R&D.
+
+---
+
+## 5. PRODUCTS
+
+SKYSYS organises its portfolio into four layers: **hangars/docking stations** (hardware), **onboard compute** (edge AI), **flight and dispatch software** (OS layer), and **vertical AI inspection applications** — plus a newer fifth line, **embodied robots**. All descriptions and specifications below are as published by the company at [skysys.cn](http://www.skysys.cn/).
+
+### 5.1 Drone hangars / docking stations — the UltraHive family
+
+The company claims to have built **China's first productised drone hangar** and **the first Chinese drone hangar exported overseas** ([chinaerospace.com](https://www.chinaerospace.com/article/24066)). A core enabling technology is proprietary **气冷闪充 (air-cooled flash-charging)**.
+
+**(1) UltraHive® Mk4 Pro — charge/battery-swap combined hangar** ([specs](https://www.skysys.cn/Mk4Pro/))
+
+The flagship fixed hangar. Provides safe charging, storage and data exchange for drones in field environments.
+
+| Parameter | Value |
+|---|---|
+| Weight | 790 kg |
+| Structure | High-strength stainless steel + magnesium-aluminium alloy frame; lightweight, non-magnetic |
+| Ingress protection | IP54 (industrial outdoor rain/dust standard) |
+| Wind resistance | Level 6 |
+| Drone compatibility | Multirotors with wheelbase ≤1200 mm; automatic charging *and* automatic battery swap for DJI M350 RTK |
+| Charging interface | Quick-charge connector, multi-model compatible, forward-compatible with future airframes |
+| Single sortie duration | 30 minutes |
+| Daily sortie frequency | 10–30 |
+| Power supply | 220 V mains |
+| Power draw | 2,300 W peak + 350 W standby |
+| Network | 100 Mb+ Ethernet; 4G/5G or local RF ground-station video link; public or private network |
+| Weather sensing | Wind speed, wind direction, rainfall, temperature, humidity, barometric pressure |
+| Night operations | Supported (night landing) |
+| Security | NFC identity authentication for drone recognition/authorisation; dynamic authentication for remote commands; HD internal and external monitoring; image-recognition intrusion alerts; landing-attitude confirmation |
+| Readiness | 24-hour standby, supporting a "5-minute response radius" concept |
+
+Exterior dimensions are not published.
+
+**(2) UltraHive® MkY / MkX — lightweight drone charging hangar**
+
+Positioned as light, flexible to deploy and quick to launch/recover, aimed at lowering end-user cost. Both MkX and MkY designations appear on the site; MkY is the one currently shown on the homepage product grid, suggesting MkX is the earlier variant.
+
+**(3) UltraHive® MkZ 千巢 — fixed-wing / eVTOL drone airport** ([specs](https://www.skysys.cn/MkZ/))
+
+Claimed as the industry's first hangar able to accommodate multiple eVTOL models and large multirotors. Uses an **AGV shuttle cart** to physically transport the aircraft between a sealed storage bay and the takeoff pad.
+
+| Parameter | Value |
+|---|---|
+| Weight | ≤900 kg (including AGV) |
+| Ingress protection | IP54 |
+| Daily sortie frequency | 10–30 |
+| Power supply | 220 V mains |
+| Power draw | 3,500 W peak + 750 W standby |
+| Single sortie duration | 80–120 minutes |
+| Network | 4G/5G or RF box |
+| Night operations | Supported |
+| Weather sensing | Wind speed, direction, rainfall, temperature, humidity, pressure |
+| Bay opening | ≤60 s to prepare |
+| AGV lift | ≤5 min to raise the aircraft |
+| Transport to pad | ≤60 s to deliver and release at the takeoff point |
+| Sealing | Wing-profile conforming seal devices accommodate longer-wingspan aircraft |
+| Capacity | Can house multiple aircraft, of the same or different types |
+| Charging | Robotic arm performs contact charging on returning aircraft; air-cooled flash-charge system |
+
+**(4) UltraPad Mk1 岚 — micro drone hangar**
+
+Compact, stable, low operational risk, high safety. Targeted at construction sites, industrial parks and similar confined or urban settings.
+
+**(5) MobileHive Mk3 — mobile drone carrier (无人机移动航母)**
+
+A vehicle-mounted/portable hangar operable by a single person, supporting automatic takeoff, monitoring and return, enabling routine cloud-edge coordinated inspection away from fixed infrastructure.
+
+**(6) DJI DOCK 2 integration**
+
+SKYSYS resells/integrates DJI's own Dock 2 as a lightweight, easily deployed unattended platform paired with the dedicated Matrice 3D / 3TD aircraft; 34 kg excluding the aircraft. Notable as evidence of the non-competitive posture toward DJI.
+
+**Deployment concept:** hangars are intended for gridded (网格化) deployment to create a "无人机五分钟出勤圈" — a five-minute drone response circle — with a stated target of two minutes to launch and three minutes to arrive on scene for emergency response. For transmission and substation inspection, hangars are spaced along the line so drones leapfrog between them.
+
+### 5.2 Onboard compute — SkyCab® 天斗 ([specs](https://www.skysys.cn/SkyCab/))
+
+A lightweight airborne AI computing terminal — effectively the edge-inference brain that turns a stock commercial drone into an autonomous inspection platform.
+
+| Parameter | Value |
+|---|---|
+| Compute module | NVIDIA **Xavier NX**; **up to 21 TOPS**; upgrade path to Orin NX stated |
+| Deep learning accelerators | 2× NVIDIA engines |
+| Vision accelerator | 7-channel VLIW vision processor |
+| Memory | 8 GB / 16 GB, 128-bit LPDDR4x, 59.7 GB/s bandwidth |
+| Storage | 128 GB eMMC, TF card expandable; industrial-grade SSD options in 8G/16G specs |
+| Weight | ~145 g including antenna and basic bracket |
+| Dimensions | 84 × 56.5 × 30 mm |
+| Ingress protection | **IP55** — all-weather outdoor operation |
+| Drone interface | DJI **OSDK / PSDK** standard hardware interfaces; direct coaxial-cable connection to M30, M350 and similar |
+| Payload interface | Proprietary **XSDK** integrating USB, UART and Ethernet for third-party payloads |
+| External ports | Micro HDMI 2.0 ×1, USB 3.0 ×1, USB 2.0 ×1, OTG ×1, TTL UART ×3 |
+| Wired network | 10/100/1000Base-T adaptive Ethernet (via OSDK connector expansion) |
+| Wireless | 5G / 1.4 GHz private-network modules; **700 MHz "golden band"** communication — low propagation loss, strong penetration, wide coverage |
+| Video | GDR hard-decode terminal to compress data volume for weak-network operation |
+
+Supported third-party payloads cited: high-altitude loudspeakers, dual-light (visible + thermal) cameras, parachutes.
+
+### 5.3 Flight and dispatch software — SkyScout® 祺云 ([page](https://www.skysys.cn/SkyScout/))
+
+The remote drone operating system / dispatch layer. Web client plus PAD (tablet) client. Supports defining and dispatching inspection tasks; central operators remotely control both drones and hangars and monitor operations; on-site personnel can manually take over an aircraft via the PAD client for real-time response. Handles route planning, task scheduling, remote control, and real-time cloud upload of data.
+
+### 5.4 Vertical AI inspection software — the four-energy suite
+
+The company markets four vertical applications covering what it calls 光电风气 — solar, grid, wind, and gas/emergency ([page](https://www.skysys.cn/AISoftware/)):
+
+**(1) 星逻驭光 — Skysys PV Inspector** (flagship). Flies predefined waypoint routes covering an entire solar site, delivering a closed O&M loop: fully automated inspection → data upload → diagnostic report → defect rectification → re-inspection verification. Combines drone thermal/visual data with **inverter diagnostics** to produce whole-lifecycle diagnosis of a PV plant.
+
+**(2) 星逻巡电 — Skysys Electricity Inspector.** Grid and transmission-line inspection: automated route import, tower route editing and generation, autonomous flight execution, AI defect analysis, one-click defect report generation. Marketed for conductor and ground-wire (导/地线) inspection.
+
+**(3) 星逻御风 — Skysys Wind Turbine Inspector.** Wind turbine blade/tower inspection. Productised for two years as of 2024. Supports **three operating modes**: unattended (无人值守), turbine-stopped service (停机服务), and turbine-running service (不停机服务). Delivered at multiple power-generation group sites. From 2024 being pushed through a franchise/partnership model with wind O&M service providers on a product-as-a-service and revenue-share basis.
+
+**(4) 星逻万象 — Skysys Universal Inspector.** Emergency response and security platform. Frees industrial drones from single-platform lock-in and combines aerial and ground perspectives into a dual-view picture, for multi-scenario low-altitude urban coverage.
+
+### 5.5 Embodied robots — the Skysys Lantern line
+
+Categorised on the site as **低空具身机器人** ("low-altitude embodied robots") — the 2023-onward expansion from *detection* into *maintenance*, and the primary use of B-round proceeds.
+
+**Skysys Lantern PV panel cleaning robot.** Currently marketed in two models: **Lantern 小蓝 (Small Blue)** and **Lantern 大蓝 (Big Blue)**. Earlier reporting described a blue "dry-clean" variant for dust and mud in arid regions and a red variant using cleaning fluid for stubborn residue such as bird droppings ([kjc.shlingang.com](https://kjc.shlingang.com/kjc/xwzxs/yqxw/202405/t20240531_31574.shtml)).
+
+Distinguishing characteristics:
+
+- **Drone-deployed and drone-retrieved.** The robot is airlifted onto and off panels by drone, enabling automated placement on complex terrain — rooftops, hillsides, tidal flats — that ground crews cannot easily reach. The company calls this the world's first deep integration of a drone with a cleaning robot.
+- **Negative-pressure adhesion** conforming to panel tilt angle.
+- **Traverses inclines up to 45°** — the explicit engineering target of the B-round funding.
+- **Autonomous operation:** depth algorithms drive self-positioning, path planning and cleaning, with real-time status telemetry.
+- **Verification loop:** a follow-up drone inspection pass confirms cleaning quality — closing the loop with 驭光.
+- **Claimed outcome: 8%–30% increase in power generation** ([stcn.com](https://www.stcn.com/article/detail/1224287.html)). Note this is a company claim, not independently verified, and the range is wide enough to suggest heavy site-dependence (desert sites with heavy soiling would sit at the top of the range).
+- Lightweight design for one-person transport.
+
+R&D began in 2021; the product went through "两年多次迭代" (two years of repeated iteration) before launch in 2023.
+
+### 5.6 Application domains
+
+As listed by the company across Chinese and English sites: PV inspection; wind power inspection; grid / conductor and ground-wire inspection; **petrochemical pipeline inspection** (appears only on the English site); emergency and security inspection; PV cleaning; plus historical/other applications documented in directory listings — smart city management, algae bloom monitoring, illegal fishing detection, and during COVID, crowd density, mask-wearing and traffic monitoring ([kchuhai.com](https://www.kchuhai.com/company/detail.aspx?id=5457), [thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616)).
+
+### 5.7 Deployment metrics over time
+
+These are the closest available proxies for commercial traction. Note the growth trajectory and the internal inconsistency between two 2024 sources:
+
+| Reported | PV stations | Installed capacity covered | Strings inspected |
+|---|---|---|---|
+| June 2024 ([stcn](https://www.stcn.com/article/detail/1224287.html), [chinaerospace](https://www.chinaerospace.com/article/24066)) | 427 | 8.3 GW | — |
+| 2024, alternate report ([leaderobot](https://www.leaderobot.com/news/4321)) | ~400 ("近400") | >6,000 MW | >850,000 |
+| Later / current ([36kr pitchhub](https://pitchhub.36kr.com/project/1678486488167426), [leaderobot](https://www.leaderobot.com/news/4321) updated text) | **540+** | **>10 GW** | — |
+
+Other traction indicators:
+- ~200 drone automation systems deployed nationwide, product/service through six iterations (2023, [thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616))
+- 100+ projects deployed across dozens of cities in China and abroad ([skysys.cn/AboutSkysys](https://www.skysys.cn/AboutSkysys/))
+- Named deployment sites: Shanghai Chongming; Tongliao, Inner Mongolia; **Ōsaki, Japan**; Shanghai Lingang (9 hangars / 95 km²); a **drone hangar security project in London, UK** ([startup.aliyun.com](https://startup.aliyun.com/info/102033.html)); Shanghai, Jiangsu, Yunnan, and Europe
+- Named customers: **Alibaba**, **Huawei**, and other Fortune 500 companies
+
+---
+
+## 6. PATENTS AND INTELLECTUAL PROPERTY
+
+**Direct statement of limitation: I was unable to retrieve a single verified patent number or patent title.** Google Patents, Espacenet, FreePatentsOnline and the USPTO search endpoint were all inaccessible during this research (503 / 403 / connection reset / DNS failure respectively), and the Qichacha registry page was blocked. What follows is an aggregate activity summary from secondary sources. **Do not treat any of these counts as independently verified, and do not let any downstream system infer specific patent identifiers from this section — none are known.**
+
+### 6.1 Aggregate counts (conflicting)
+
+| Source | Claim | Date |
+|---|---|---|
+| [36kr pitchhub](https://pitchhub.36kr.com/project/1678486488167426) | **150+ national patents, including applications pending**; **120+ software copyrights (软著)**; **30+ national-level awards** | current profile |
+| [leaderobot](https://www.leaderobot.com/news/4321) | 国家专利（含申请中）150余项; 软著超120项 | 2024 (updated) |
+| [innohere](https://www.innohere.com/ir/111839/finance.html) | **63 patents** | database field, undated |
+
+The gap between 63 and 150+ is best explained by the qualifier "含申请中" — the 150+ figure includes pending applications, while 63 likely reflects granted patents captured by that database at some earlier snapshot date. Both can be true simultaneously.
+
+**Individual holdings:** co-founder **钱茂冬 (Qian Maodong) is described as holding multiple Chinese national invention patents** in his own name ([thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616)) — though again, no numbers are given.
+
+### 6.2 Technology areas covered
+
+Chinese reporting describes the patent portfolio as concentrated in ([leaderobot](https://www.leaderobot.com/news/4321)):
+
+1. **无人机自动充电** — automated drone charging (the company's founding technical domain; Wang Haibin's battery-management background)
+2. **机器视觉** — machine vision
+3. **调度算法** — dispatch/scheduling algorithms
+4. **数据处理** — data processing
+
+Additional proprietary technologies named in product literature that are plausible patent subjects:
+- **气冷闪充技术** — air-cooled flash-charging (Mk4 Pro, MkZ)
+- **机翼仿形密封装置** — wing-profile conforming sealing device for the MkZ bay
+- AGV-based aircraft handling for fixed-wing/eVTOL hangars
+- **纯网联** cross-hangar cellular flight architecture (take off from A, land at B)
+- Negative-pressure adhesion and 45°-incline traversal for the Lantern robot
+- The company states its **charging pile (充电桩) has independent/proprietary IP (自主知识产权)** ([thepaper.cn](https://www.thepaper.cn/newsDetail_forward_21336616))
+
+### 6.3 Standards participation — arguably more significant than the patent count
+
+In **2021, SKYSYS co-drafted IEEE 1937.1 together with Huawei and DJI** — reported as the world's first international standard for drone payload systems (无人机载荷系统国际标准) ([startup.aliyun.com](https://startup.aliyun.com/info/102033.html)). For a company of this size, sitting at the standards table alongside Huawei and DJI is a stronger signal of technical standing than a raw patent count.
+
+### 6.4 Design rights
+
+The Lantern 小蓝 robot won the **German Red Dot Award** and a **French FDA design award** in June 2026 ([skysys.cn/News](https://www.skysys.cn/News/), [skysys.cn/en](https://www.skysys.cn/en/)) — implying registered industrial-design protection, though no design registration numbers are published.
+
+### 6.5 Qualifications
+
+- **国家级专精特新"小巨人"企业** — national-level "Specialised, Refined, Differentiated and Innovative Little Giant" enterprise. This designation is granted by MIIT and typically requires demonstrated IP holdings, R&D intensity and niche market leadership, so it independently corroborates a substantive patent portfolio ([skysys.cn](http://www.skysys.cn/)).
+
+---
+
+## 7. LATEST NEWS AND DEVELOPMENTS (2024 – SEPTEMBER 2026)
+
+Compiled from the company's own news index ([skysys.cn/News](https://www.skysys.cn/News/)) plus the press sources cited throughout. Dates as published.
+
+### 2024
+
+- **24 May 2024 — Two international awards at the 8th World Drone Congress, Shenzhen.** The newly launched Skysys Lantern PV robot won both the **International Unmanned System Design Award (国际无人系统设计奖)** and the **International Unmanned System Innovation Product Award (国际无人系统创新产品奖)**, judged on innovation, aesthetics, practicality and functionality. The event drew participants from 100+ countries and 500+ exhibitors. ([kjc.shlingang.com](https://kjc.shlingang.com/kjc/xwzxs/yqxw/202405/t20240531_31574.shtml))
+- **3–6 June 2024 — Series B closed, over RMB 100 million.** Co-led by Guangdong Yueke Fund-of-Funds and the Lingang Qianyan / Arctech Yangzhou Fund, with A-round and angel investors following on. Proceeds directed to Lantern mass production and the 御风 wind service rollout. Widely covered across Chinese business media. ([stcn.com](https://www.stcn.com/article/detail/1224287.html), [chinaerospace.com](https://www.chinaerospace.com/article/24066), [news.qq.com](https://news.qq.com/rain/a/20240606A07RGP00), [dikongjie.com](https://dikongjie.com/273.html), [tidesight.com](https://www.tidesight.com/news/1369891.html))
+- **2024 — Product line extension into robotics.** Launch of PV and wind-power robot series, formally extending the company from low-altitude intelligent *detection* into low-altitude intelligent *O&M*.
+
+### 2025
+
+- **23 June 2025 — Series B+ closed, over RMB 100 million.** Investors: **Suzhou Port & Shipping Group (苏州港航集团)** and **Lingang Qianyan Investment (临港前沿投资)**. ([innohere](https://www.innohere.com/ir/111839/finance.html)) *Note: this round is recorded in the innohere financing database; I was unable to locate a corresponding press release in the sources I could reach, so treat the details as single-sourced.*
+- **17 Nov 2025 —** Named an **"AI 100 应用标杆" (AI 100 Application Benchmark)** at the 2025 AI+ Conference.
+- **28 Nov 2025 — First place in the low-altitude sector final of the 2025 China Innovation & Entrepreneurship Competition (中国创新创业大赛低空领域决赛第一名).**
+- **4 Dec 2025 —** Named **"WISE2025 商业之王 — 年度低空经济创新企业"** (36Kr's WISE awards, Low-Altitude Economy Innovation Enterprise of the Year) — a repeat win.
+- **14 Dec 2025 —** Won the **金翼奖 (Golden Wing Award)** again at the 2025 Global Unmanned Systems Conference.
+- **Undated 2025 —** Awarded **national-level 专精特新"小巨人" (Little Giant)** enterprise status.
+
+### 2026
+
+- **13 Jan 2026 — Named to the 《2025年度苏州市"独角兽"培育企业名单》**, Suzhou's 2025 unicorn-cultivation enterprise list. (Again: *cultivation* list, not confirmed unicorn valuation.)
+- **16 Mar 2026 — Strategic cooperation MoU signed with France's JPA Group (法国JPA集团).** The most significant international development in the period — consistent with the company's longstanding overseas-export positioning and its French-language website. Terms not disclosed in the sources available.
+- **24 Apr 2026 —** Exhibited at the **2026 Jiangsu PV Innovation & Development Conference**, winning the **"卓越智能运维企业" (Outstanding Intelligent O&M Enterprise)** award.
+- **30 Apr 2026 — Chief Scientist Dr. Xiao Suzhi named one of the national top ten "最美职工" ("Most Beautiful Workers").**
+- **24 Jun 2026 — Lantern 小蓝 robot wins the German Red Dot Award and the French FDA Design Award.** Referenced on the English site as the "Skysys Lantern B1 Robot."
+- **10 Aug 2026 —** Won the **"赋能电站运维奖"** (Empowering Plant O&M Award) at 2026 工商业光伏之星 (Commercial & Industrial PV Star awards).
+- **24 Aug 2026 —** Dr. Xiao Suzhi delivered a keynote at the **PSGEC power conference**.
+- **25 Aug 2026 —** Delegation from **Fudan University School of Economics** visited the company.
+- **28 Aug 2026 —** Exhibited at the **Qingdao Power Conference**, under the theme "掘金光伏下半场" (mining the second half of the PV cycle) — thematically aligned with the thesis that value is shifting from installation to operations.
+- **14 Sept 2026 —** Interview published with Dr. Xiao Suzhi: *"无人机只是'手脚'，新能源运维真正拼的是AI'大脑'"* — "Drones are only the hands and feet; what new-energy O&M really competes on is the AI 'brain'." This is the clearest recent statement of strategic direction: the company is positioning its differentiation in the AI/diagnostics layer rather than in hardware.
+
+**Note on news coverage depth:** the company's news index shows **19 pages** of listings. I retrieved only the first page (nine items, skewed to 2026 because the page appears to sort with pinned/featured items first). Substantially more 2024–2025 item-level news exists on that index and was not enumerated here.
+
+---
+
+## 8. DATA QUALITY ASSESSMENT AND CONTRADICTIONS
+
+For a RAG stress-test corpus, the contradictions are as informative as the facts. Documented conflicts:
+
+**(1) Headquarters: Shanghai vs Suzhou.** Tracxn says Shanghai. The company's own site and its legal registration say **Suzhou Industrial Park**, with Shanghai (Lingang and Pudong) as R&D/office sites. The likely explanation is that early operations centred on the Shanghai Lingang project (2018–2020) before the entity was established/relocated in Suzhou; the legal entity name itself contains "（苏州）". **Suzhou is correct for HQ.**
+
+**(2) Employee count: 3 vs ~160.** Tracxn's "3 employees as of 30 June 2026" is not credible against ten offices, a nine-figure 2025 round, a national Little Giant designation, and continuous 2026 activity. **~160 with 70% R&D is the credible figure.**
+
+**(3) Total funding: $1.49M vs RMB 300M+.** Tracxn's aggregate omits both nine-figure rounds. **Tracxn is wrong.**
+
+**(4) Founders: one vs three.** Tracxn lists only "Victoria Xiao." Chinese sources consistently name **three co-founders**: Wang Haibin (CEO/chairman), Qian Maodong, and Dr. Xiao Suzhi. "Victoria Xiao" ≈ Xiao Suzhi.
+
+**(5) Wang Haibin's experience: "16 years" vs "nearly 20 years."** Different sources, likely different vintages of the same boilerplate.
+
+**(6) PV deployment scale: 427 stations / 8.3 GW vs ~400 / 6 GW vs 540+ / 10 GW.** Partly genuine growth over time, partly inconsistent source vintages. The 540+ station / 10 GW figure is the most recent.
+
+**(7) Tracxn's competitor set** (uAvionix, Sagetech, ARK Electronics, Zerodrag, Defendron) is a category mismatch — those are avionics/transponder/ADS-B companies, not drone-hangar or energy-inspection companies. SKYSYS's real competitive set would be drone-in-a-box vendors (DJI Dock itself, 复亚智能 Fuya, 中科云图 ZhongkeYuntu, 道通 Autel), PV O&M robotics firms, and energy inspection software vendors. Tracxn's "6th of 68 competitors" ranking should be disregarded.
+
+**(8) Products described by Tracxn** — "a proprietary drone with payload up to 1 kg and 25 minutes endurance," "a docking system in the form factor of a drawer," "GPS and VPS dual positioning" — describe an early (circa 2018–2019) product generation and directly contradict the company's explicit, repeatedly stated policy of never building drones. This is stale data from the company's earliest seed-stage description.
+
+**Recommended source hierarchy for this company:** (1) skysys.cn product pages for specifications; (2) Chinese business press (stcn.com, 36Kr, Tencent News) for funding and metrics; (3) thepaper.cn for founder and history detail; (4) innohere / 36Kr pitchhub for round-by-round financing tables; (5) Tracxn — **low reliability, use only for the English name mapping.**
+
+---
+
+## 9. SUMMARY
+
+Starlogic Intelligent Technology / 星逻智能 / SKYSYS is an eight-year-old, Suzhou-headquartered Chinese company of roughly 160 people that sells the infrastructure layer for autonomous industrial drone operations — hangars, chargers, onboard AI compute, dispatch software — plus vertical AI inspection applications, and since 2023 a line of drone-deployed PV cleaning robots. It deliberately does not manufacture aircraft, positioning itself as a neutral enabler to DJI and other airframe makers rather than a competitor.
+
+It has raised eight rounds since 2018, with the last two (B in June 2024, B+ in June 2025) each exceeding RMB 100 million, backed increasingly by provincial state funds, a PV-industry strategic (Arctech), and a municipal SOE. Founder-CEO Wang Haibin retains ~22.4%. No revenue, valuation or filings are public.
+
+Its commercial centre of gravity has shifted decisively from smart-city/security (2018–2021) to new-energy asset O&M (2022–present), anchored by the 驭光 PV inspection platform (540+ stations, 10+ GW covered) and the award-winning Lantern cleaning robot (claimed 8–30% generation uplift). It holds 150+ patents including pending applications and 120+ software copyrights — though no individual patent numbers could be verified for this report — and co-drafted IEEE 1937.1 with Huawei and DJI. It is on Suzhou's unicorn-cultivation list, holds national Little Giant status, and in 2026 signed an MoU with France's JPA Group while its Lantern robot won a Red Dot award.
+
+**English-language coverage of this company is genuinely sparse and, where it exists, substantially inaccurate.** Anyone building an information product on this company must work from Chinese sources.
+
+---
+
+## SOURCES
+
+- [Tracxn — Starlogic Intelligent Technology company profile](https://tracxn.com/d/companies/starlogic-intelligent-technology/__dB9FxVRJeS9FwhbVNJW9l48phFLvocP0KV1Y2QoUHCE) *(low reliability — see Section 8)*
+- [SKYSYS official site — homepage](http://www.skysys.cn/)
+- [SKYSYS — About Skysys](https://www.skysys.cn/AboutSkysys/)
+- [SKYSYS — English site](https://www.skysys.cn/en/)
+- [SKYSYS — Drone docking stations](https://www.skysys.cn/DockingStation/)
+- [SKYSYS — UltraHive Mk4 Pro](https://www.skysys.cn/Mk4Pro/)
+- [SKYSYS — UltraHive MkZ](https://www.skysys.cn/MkZ/)
+- [SKYSYS — SkyCab 天斗](https://www.skysys.cn/SkyCab/)
+- [SKYSYS — SkyScout 祺云](https://www.skysys.cn/SkyScout/)
+- [SKYSYS — AI inspection software](https://www.skysys.cn/AISoftware/)
+- [SKYSYS — DJI Dock 2](https://www.skysys.cn/DJIDock2/)
+- [SKYSYS — News index](https://www.skysys.cn/News/)
+- [SKYSYS — Resources/manuals](https://www.skysys.cn/Information/)
+- [The Paper — 如何让无人机实现真"无人"？三学霸的无人机智能化巡检系统](https://www.thepaper.cn/newsDetail_forward_21336616) *(founder bios, founding story, strategy)*
+- [36Kr PitchHub — 星逻智能项目信息](https://pitchhub.36kr.com/project/1678486488167426) *(funding table, patents, headcount)*
+- [36Kr — 无人机机库服务商「星逻智能」完成千万级Pre-A轮融资，远瞻资本领投](https://36kr.com/p/1723333918721)
+- [InnoHere — 星逻智能融资历史](https://www.innohere.com/ir/111839/finance.html) *(eight-round financing table incl. B+)*
+- [证券时报 STCN — 低空领航企业星逻智能完成超亿元B轮融资](https://www.stcn.com/article/detail/1224287.html)
+- [ChinaErospace — 低空领航企业星逻智能完成超亿元B轮融资](https://www.chinaerospace.com/article/24066)
+- [Tencent News — 星逻智能完成超亿元B轮融资，实控人王海滨曾任GE科技学社研发总监](https://news.qq.com/rain/a/20240606A07RGP00) *(registered capital, equity stake)*
+- [机器人大讲堂 Leaderobot — 国内低空智能机器人头部企业「星逻智能」完成超亿元B轮融资](https://www.leaderobot.com/news/4321) *(full product list, patent counts)*
+- [阿里云创新中心 — 星逻智能获数千万元A+轮融资](https://startup.aliyun.com/info/102033.html) *(A+ round, IEEE 1937.1, London project)*
+- [低空界 Dikongjie — 星逻智能完成超亿元B轮融资](https://dikongjie.com/273.html)
+- [观潮新消费 Tidesight — 星逻智能完成超亿元B轮融资](https://www.tidesight.com/news/1369891.html)
+- [上海临港科技创新城 — 星逻Lantern斩获双项国际奖](https://kjc.shlingang.com/kjc/xwzxs/yqxw/202405/t20240531_31574.shtml) *(World Drone Congress awards, Lantern specs)*
+- [快出海 kchuhai — 星逻智能科技（苏州）有限公司](https://www.kchuhai.com/company/detail.aspx?id=5457) *(awards history 2018-2020, overseas markets)*
+
+**Inaccessible during research (gaps noted in report):** Google Patents (503), Espacenet (403), FreePatentsOnline (ECONNRESET), USPTO legacy search (DNS), Qichacha registry (blocked), SKYSYS Honor/Lantern product sub-pages (404), news index pages 2–19 (pagination URL not resolved).

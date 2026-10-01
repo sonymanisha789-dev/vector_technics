@@ -1,0 +1,236 @@
+I now have comprehensive material across all 7 sections. Compiling the final report.
+
+# uAvionix Corporation — Research Report
+
+## Disambiguation (Read This First)
+
+There are **at least two distinct companies with similar names** that are easy to confuse. This report is about **uAvionix Corporation** (styled "µAvionix" in some branding), the aviation/UAS avionics company headquartered in Bigfork, Montana. It should **not** be confused with:
+
+- **UVIONIX / Uvionix Aerospace Corporation** — a completely different company, founded in 2014 in Rancho Cordova, California by Boris Iskrev and Yordan Iskrev (with Stanislav Darmonski later involved). UVIONIX builds autonomous *indoor warehouse* drones (its flagship aircraft is called "U-VeE," a compact coaxial drone) for inventory management, paired with "Uvionix.Cloud" software. It has raised roughly $3.54M across 2 rounds from 4 investors — an entirely separate market (warehouse robotics/logistics) from uAvionix's aviation-safety/avionics focus. (Sources: [Crunchbase](https://www.crunchbase.com/organization/uvionix), [Tracxn](https://tracxn.com/d/companies/uvionix-aerospace-corporation/__weRRSuTLZ7_73pwPQRW7JeTXwxqoLaU2tb7r7-tApbQ), [uvionix.com](https://www.uvionix.com/about))
+- Search-index noise: CB Insights lists a separate profile under "Univonix," which appears to simply be a data-entry variant/typo of "Uvionix" rather than a third distinct company — no independent entity by that exact name was found.
+
+Everything below concerns **uAvionix Corporation**, the Bigfork, Montana-based ADS-B/transponder/avionics company.
+
+---
+
+## 1. Company Overview
+
+**Legal name:** uAvionix Corporation
+**Founded:** 2015 (a minority of secondary sources, including some LinkedIn/CB Insights listings, cite 2014, but the company's own press materials and the majority of press coverage — AOPA, AVweb, PitchBook, DC Capital Partners' own release — consistently use 2015 as the founding year)
+**Founder:** Paul Beard, who served as founding CEO and later transitioned to Chief Technology Officer (CTO) while remaining a company co-founder/principal.
+**Headquarters:** Dual-headquartered at 300 Pine Needle Ln, Bigfork, Montana 59911, and 880 Harrison St SE, Leesburg, Virginia 20175. Montana is generally cited as the primary/founding HQ; Leesburg appears to have become more prominent after the 2022 DC Capital Partners acquisition, reflecting closer proximity to Washington, D.C.-area government/defense customers.
+**Mission:** uAvionix describes its mission as "connecting everything that flies" — building small-form-factor communications, navigation, and surveillance (CNS) avionics that enable safe integration of unmanned aircraft systems (UAS/drones) into the National Airspace System (NAS) alongside crewed aircraft, while also serving the general aviation (GA) and defense/government markets.
+**Industry:** Aerospace & Defense — avionics, ADS-B (Automatic Dependent Surveillance–Broadcast), transponders, detect-and-avoid (DAA), command-and-control (C2) infrastructure for BVLOS (Beyond Visual Line of Sight) drone operations, and airport surface surveillance.
+**Size:** Estimated at roughly 40–66 employees depending on the data source and date (Tracxn: 41 employees as of July 2024; LinkedIn: 11–50; LeadIQ: ~66 as of March 2026 across North America and Europe; PitchBook: 57; RocketReach: ~60). It is a private company and does not disclose headcount officially. uAvionix has a secondary/European office presence (uavionix.store / European distribution) supporting UK CAA Electronic Conspicuity requirements.
+**Ownership status:** Formerly venture-backed and founder-led; since March 2022, majority-owned/controlled by private equity firm DC Capital Partners, LLC.
+**Notable positioning:** uAvionix bills itself as providing an "unparalleled engineering and management team" spanning avionics, surveillance, airport services, UAS aircraft development, RF engineering, and semiconductor design backgrounds. It has grown via both organic product development and acquisition (Aero Vonics in 2019, Iris Automation in 2023) into a broader CNS/detect-and-avoid/airport-surface-safety company rather than a single-product ADS-B vendor.
+
+Sources: [uAvionix Press Room](https://uavionix.com/press/), [PitchBook profile](https://pitchbook.com/profiles/company/157321-54), [AOPA — DC Capital acquisition](https://www.aopa.org/news-and-media/all-news/2022/march/14/uavionix-acquired-by-dc-capital-partners), [DC Capital Partners release](https://www.dccp.com/2022/03/09/dc-capital-partners-makes-strategic-investment-in-uavionix/)
+
+---
+
+## 2. Financials
+
+uAvionix is a privately held company and does not publish audited financial statements, so all figures below are third-party estimates and should be treated as directional, not authoritative:
+
+- **Revenue estimates:** Highly inconsistent across data aggregators — Owler: $5.0M–$25M annually; Growjo: ~$20.4M annually; RocketReach: ~$7.7M (cited for 2025). Given the spread, a reasonable working estimate is single-digit to low-tens-of-millions of dollars in annual revenue, consistent with a specialty avionics hardware manufacturer serving GA, UAS, and now government/FAA infrastructure contracts.
+- **Valuation:** PitchBook reported a **$28 million valuation** tied to uAvionix's $5 million Series A financing round (2016) — the only concrete, sourced valuation figure available. No later private valuation has been publicly disclosed; the 2022 DC Capital Partners buyout and the 2023 Iris Automation acquisition were both for **undisclosed sums**.
+- **M&A-driven revenue growth:** The Iris Automation acquisition (October 2023) and prior Aero Vonics acquisition (October 2019) were structured as adding complementary product lines (optical detect-and-avoid; aviation displays) rather than disclosed as revenue-accretive dollar figures.
+- **Government contract revenue (concrete, disclosed figures):** In a 2026 procurement disclosed by the FAA, uAvionix's VTU-20 ADS-B Vehicle Movement Area Transmitter (VMAT) contract was valued at **$16.5 million**, covering deployment across roughly 2,000 FAA Technical Operations vehicles nationwide (installation plus ongoing service). This is one of the few hard dollar figures publicly tied to the company. In addition, a November 2025 FAA Surface Awareness Initiative (SAI) award added 55 more airport tower deployments to an already-operational base of 14 towers, though the dollar value of that specific award was not disclosed in available coverage.
+- **Total disclosed funding raised (equity, pre-buyout):** $10 million across 2 rounds (see Funding History below); some aggregators (e.g., PitchBook) cite $12M when including smaller/undisclosed tranches or grant-like Innovate UK funding.
+
+Sources: [PitchBook — uAvionix valued at $28M with $5M financing](https://pitchbook.com/newsletter/uavionix-valued-at-28m-with-5m-financing), [PitchBook company profile](https://pitchbook.com/profiles/company/157321-54), [FAA VMAT/VTU-20 contract — uAvionix press release](https://uavionix.com/press/faa-to-equip-vehicles-with-uavionix-vehicle-ads-b-systems-to-improve-airport-safety/), [Owler](https://www.owler.com/company/uavionix), [Growjo](https://growjo.com/company/uAvionix), [RocketReach](https://rocketreach.co/uavionix-corporation-profile_b5580c82f6acb7fc)
+
+---
+
+## 3. Funding History
+
+| Round | Date | Amount | Lead / Investors | Notes |
+|---|---|---|---|---|
+| **Series A** | April 2016 | $5,000,000 | Led by **Playground Global** (Silicon Valley VC firm founded by Andy Rubin, Bruce Leak, Matt Hershenson, Peter Barrett) | Reported valuation of **$28M** post-money per PitchBook. |
+| **Series B** | November 2017 | $5,000,000 | Led by new investor **Airbus Ventures**, with continued participation from **Playground Global** and **Redpoint Ventures** | Brought cumulative funding to **$10M**. Airbus Ventures CEO **Thomas d'Halluin** joined uAvionix's Board of Directors as part of the deal. |
+| **Strategic/grant funding** | Various (undated in available sources) | Undisclosed | **Innovate UK** | Cited by PitchBook as an investor/funding source, likely tied to UK-market Electronic Conspicuity (SkyEcho) development and UK CAA compliance work; pushes some aggregate totals to ~$12M. |
+| **Buyout / Majority Acquisition** | March 9, 2022 | Undisclosed | **DC Capital Partners, LLC** | Not a VC round — a private-equity acquisition/strategic investment giving DC Capital Partners control. Houlihan Lokey advised on the transaction. This was DC Capital's second acquisition for its (still-raising) third fund, following its August 2021 acquisition of Sionyx Corp. |
+| **Bolt-on acquisition (by uAvionix, as acquirer)** | October 8, 2019 | Undisclosed | uAvionix acquired **Aero Vonics** (Albuquerque, NM-based aviation display maker, founded 2018) | Product-line acquisition, not a funding round. |
+| **Bolt-on acquisition (by uAvionix, as acquirer)** | October 24, 2023 | Undisclosed | uAvionix acquired **Iris Automation** (Reno/San Francisco-based optical detect-and-avoid company) | Structured as a buyout/LBO under DC Capital Partners ownership; resulted in Iris CEO Jon Damush becoming uAvionix CEO. |
+
+**Total disclosed pre-buyout equity funding: $10 million** (2 priced rounds, 3–4 named investors: Playground Global, Redpoint Ventures, Airbus Ventures, plus Innovate UK).
+
+Sources: [uAvionix Series B press release](https://uavionix.com/press/uavionix-leader-in-drone-communications-navigation-and-surveillance-systems-secures-series-b-funding-from-airbus-ventures-playground-global-and-redpoint-ventures/), [PRNewswire — Series B](https://www.prnewswire.com/news-releases/uavionix-leader-in-drone-communications-navigation-and-surveillance-systems-secures-series-b-funding-from-airbus-ventures-playground-global-and-redpoint-ventures-300562173.html), [VC News Daily — Series A](https://www.vcnewsdaily.com/access/getarticle.php?aid=pfcfrldrcl), [DC Capital Partners release](https://www.dccp.com/2022/03/09/dc-capital-partners-makes-strategic-investment-in-uavionix/), [AVweb — DC Capital purchase](https://avweb.com/aviation-news/dc-capital-partners-purchases-uavionix/), [Crunchbase](https://www.crunchbase.com/organization/uavionix), [CB Insights financials](https://www.cbinsights.com/company/uavionix/financials)
+
+---
+
+## 4. Leadership and People
+
+- **Paul Beard** — Founder; original CEO; currently **Chief Technology Officer (CTO)** and co-founder. Beard has been publicly credited as the technical architect behind uAvionix's core ADS-B/transcoder patents and has been the company's most consistent public spokesperson through its history (including during the Garmin litigation and the DC Capital acquisition, where he was quoted affirming alignment with the new owners).
+- **Jon Damush** — **President and CEO** of uAvionix Corporation, appointed in October 2023 concurrent with uAvionix's acquisition of Iris Automation, where Damush had been CEO. Damush brings 30+ years of aviation technology experience, including background at **Insitu** (Boeing subsidiary, maker of ScanEagle UAS) and **Boeing** itself. His appointment was described by DC Capital Partners' David Page as continuing the company's leadership strength while adding optical-DAA expertise.
+- **Christian Ramsey** — **Chief Commercial Officer**, leading business development and growth across uAvionix's crewed aviation, uncrewed aviation, aviation-networks, and defense market segments.
+- **Ryan Braun** — **Chief Operating Officer**. Braun was also the company spokesperson quoted in 2018 explaining the technical operation of the "Power Transcoder" patent (detecting transponder-induced noise on aircraft power wires rather than over-the-air signals).
+- **John Howard** — **Chief Financial Officer** (per aggregated executive-team listings; not independently confirmed via a primary uAvionix press source in this research pass).
+- **David Page** — Partner at **DC Capital Partners**, publicly engaged with uAvionix as an investor-side representative on strategic announcements (e.g., commenting on Damush's CEO appointment).
+- **Thomas J. Campbell** — Founder and President of **DC Capital Partners**, quoted at the time of the March 2022 acquisition praising uAvionix's "highly skilled and talented workforce."
+- **Thomas d'Halluin** — CEO of **Airbus Ventures**, joined uAvionix's Board of Directors in 2017 as part of the Series B investment.
+- A full, current, independently verified board-of-directors roster could not be located in public sources; DC Capital Partners' control since 2022 implies its representatives (potentially including Page and/or Campbell) hold board seats, but this is inferred rather than directly confirmed by a primary source.
+
+Sources: [uAvionix — Iris Automation acquisition press release](https://uavionix.com/press/a-new-era-for-aviation-safety-and-efficiency-uavionix-acquires-iris-automation/), [Commercial UAV News — interview with Jon Damush](https://www.commercialuavnews.com/regulations/uavionix-acquires-iris-automation-an-interview-with-jon-damush), [DroneLife — uAvionix acquires Iris Aviation](https://dronelife.com/2023/10/24/uavionix-acquires-iris-aviation/), [DC Capital Partners release](https://www.dccp.com/2022/03/09/dc-capital-partners-makes-strategic-investment-in-uavionix/), [FlyingMag — Power Transcoder patent](https://www.flyingmag.com/uavionix-granted-power-transcoder-patent/), [uAvionix Series B release](https://uavionix.com/press/uavionix-leader-in-drone-communications-navigation-and-surveillance-systems-secures-series-b-funding-from-airbus-ventures-playground-global-and-redpoint-ventures/)
+
+---
+
+## 5. Products
+
+uAvionix's catalog spans **three broad market segments**: (A) General Aviation / crewed-aircraft avionics, (B) Uncrewed Aircraft Systems (UAS/drone) avionics and safety systems, and (C) Airport/ATC ground infrastructure. Below is the fullest catalog assembled from company materials and industry coverage.
+
+### A. General Aviation (Crewed Aircraft) Products
+
+- **skyBeacon** — uAvionix's original certified wing-tip-mounted ADS-B Out solution; integrates ADS-B radio, GPS, and antennas into a replacement position/strobe light housing, cutting installation time to minutes versus traditional panel-mount ADS-B installs. This product line was the subject of the Garmin patent lawsuit (see Patents section).
+- **tailBeacon / tailBeaconX** — Tail-mounted counterpart to skyBeacon; tailBeaconX is a certified ADS-B transponder solution leveraging tail-mounted antenna placement for optimal signal performance to both ground-based and space-based (satellite) surveillance infrastructure. Covered by U.S. Patent 11,011,830 ("Wireless Communication System within an External Enclosure for Attachment to a Vehicle," issued June 8, 2021).
+- **echoUAT** — A 978 MHz Universal Access Transceiver (UAT)-based ADS-B solution, also implicated in the Garmin litigation alongside skyBeacon.
+- **ping978EC** — A newly launched (March 2026) 978 MHz UAT ADS-B transceiver, part of a broader Portable Electronic Conspicuity (PEC) push, launched alongside a new "Pilot Awareness Website" educating pilots on PEC devices and aligning with the FAA's proposed Part 108 BVLOS rule.
+- **SkyEcho / SkyEcho 2** — A portable ADS-B In/Out transceiver conforming to the UK CAA's Electronic Conspicuity standard; broadcasts an aircraft's position, altitude, course, and speed to nearby aircraft. Popular in the UK/European general aviation and gliding markets (distributed via uavionix.store, the company's European storefront).
+- **AV-30-C (certified) / AV-30-E (experimental)** — A panel-mounted, 3⅛-inch multifunction electronic flight instrument replacing legacy vacuum-driven gauges. Functions as an Attitude Indicator, Directional Gyro, Slip/Skid indicator, Angle-of-Attack (AoA) indicator, or multifunction display (MFD), with 4 base modes and 14+ functions. Mounts from behind the panel to preserve the classic "round dial" look without panel cutting.
+  - Technical specs: attitude rate limit ±250°/sec; attitude operational range 360° roll / 180° pitch; AV-30-E airspeed range 40–300 knots; altitude range −1,000 to +25,000 ft; AoA reliable up to ±8G, operational range −10° to +30°, valid at 25–300 knots.
+  - **AV-HSI** — Expansion module adding IFR-approved lateral/vertical (glideslope) deviation display for enroute and approach navigation; integrates with Trio and TruTrak/Aerocruze autopilots; connects up to four AV-30-C units and provides an ARINC 429 interface to digital autopilots. Received FAA certification (PMA) around June 2025.
+  - **AV-APA** — Autopilot-integration module, certified alongside AV-HSI, described by the company as a "major step forward in IFR flight capability for general aviation."
+  - **AV-Link** — Wi-Fi bridge module (~$349) enabling live ADS-B traffic display, wireless firmware updates, and (as of February 2026, via software v3.2.1) ForeFlight route-building/transfer and autopilot coupling on certified AV-30-C installs.
+  - **SkyPlay** — A jointly announced uAvionix/ForeFlight product unveiled around AirVenture Oshkosh 2026; further technical details were not available in this research pass.
+- **NanoHead** — Transponder control head/interface product (per company patent/product listings).
+- **truFYX / truFYX EXT** — GPS position-source products supporting ADS-B position integrity requirements.
+
+### B. Uncrewed Aircraft Systems (UAS/Drone) Products
+
+- **ping200X** — FAA TSO-certified Mode S ADS-B Out transponder for UAS, enabling detection by Secondary Surveillance Radar (SSR), Traffic Collision Avoidance Systems (TCAS), and ADS-B In receivers — effectively making drones visible to crewed-aircraft traffic systems.
+- **ping200XR** — Combines the TSO-certified ping200X transponder with an internal TSO-certified aviation-grade GPS receiver in one unit; achieved FAA TSO certification around August 2024.
+- **pingRX / pingRX Pro** — A Detect-and-Avoid (DAA) ADS-B receiver for professional UAS, detecting cooperative aircraft on both 978 MHz (UAT) and 1090 MHz (Mode S/ES) frequencies. Marketed as providing "nearly 100x greater range" than radar, camera, or FMCW-based detect-and-avoid alternatives, giving operators more reaction time. Compatible with ArduPilot, PixHawk, and Auterion Skynode autopilot/flight-controller platforms for rapid integration. Described by the company as the evolution of the skyBeacon/tailBeacon lineage applied to the UAS market.
+- **pingStation** — Ground-based ADS-B receiver station product (per company catalog listings).
+- **pingUSB** — USB-based ADS-B receiver, likely aimed at developers/integrators and ground control station use.
+- **pingEFB** — ADS-B receiver product oriented toward Electronic Flight Bag (EFB) integration.
+- **Legacy ping2020 / ping2020i / ping1090 / ping1090i** — Earlier-generation ADS-B transceiver/receiver products in the "ping" family (predecessors to the current ping200X/pingRX lines).
+- **Casia X** — Airborne, onboard optical Detect-and-Avoid (DAA) system (originating from the Iris Automation acquisition/technology lineage) that senses non-cooperative aircraft (those not broadcasting ADS-B) using patented computer-vision and AI, fused with integrated ADS-B for cooperative-aircraft coverage. Automatically executes collision-avoidance maneuvers via turnkey autopilot integration; reports detected intruders to ground station/pilot-in-command in real time; low Size-Weight-and-Power (SWaP) footprint for small UAS; detects/classifies small single-engine aircraft, single-rotor helicopters, birds, and multirotors; designed/assembled in the USA; FCC Part 15 and Industry Canada compliant.
+- **Casia G** — Ground-based (ground-station-mounted) optical/AI surveillance system providing 360° full-optical-field-of-view detection and classification of GA aircraft and rotorcraft to enable automated drone-in-a-box (DFR — Drone as First Responder) surveillance and BVLOS operations. Fully passive (does not transmit), so it requires no FCC Station License or Special Temporary Authorization; expandable via mesh-networked nodes covering large areas without added FCC approval; integrates with uAvionix's FlightLine Portal and third-party UTM/DFR visualization platforms; mounts on walls/poles, requires 110V power plus Ethernet data and clear sky view. As of March 2025, Casia G gained **nighttime aircraft detection capability**, enabling 24/7 BVLOS operations. (Note: per uAvionix's support site, "Casia G" as a standalone SKU is now listed as discontinued, likely superseded/folded into newer FlightLine-integrated ground-surveillance offerings — exact successor SKU naming was not fully confirmed in this pass.)
+- **SkyLink** — Command-and-Control (C2)/CNPC (Control and Non-Payload Communications) radios for BVLOS drone links.
+- **SkyStation** — Ground-based C2 radio infrastructure counterpart to SkyLink.
+- **Scout** and **Sentry** — Additional named products in uAvionix's catalog/patent listings (specific specs not independently confirmed beyond naming in aggregator/patent-page summaries).
+- **skyLight** and **skySensor** — Additional named UAS avionics products per company patent/product-page listings.
+
+### C. Airport / Air Traffic / Ground Infrastructure Products
+
+- **FlightLine** (Surface Awareness Initiative / SAI system) — uAvionix's surface-surveillance system for airport runway/taxiway situational awareness, sold to and deployed by the FAA. As of the most recent reporting, FlightLine SAI is fully operational at 14 FAA-towered airports, with a November 2025 FAA award expanding deployment to 55 additional towers (12-month rollout target), supporting the FAA's broader goal of equipping all its towers with surface-awareness technology within two years, aligned with the "Brand New Air Traffic Control System" (BNATCS) initiative.
+- **VTU-20** — Vehicle Movement Area Transmitter (VMAT): an ADS-B transponder for airport ground vehicles (e.g., FAA Tech Ops trucks), making them visible on the same controller/pilot displays as aircraft. In May 2026, the FAA procured VTU-20 units for roughly 2,000 Technical Operations vehicles nationwide in a deal valued at **$16.5 million** including installation and ongoing service.
+- **FlightLine Airborne Position Reference Tool** — First installed at Glacier Park International Airport (Kalispell, Montana) around October 2025, per AVweb coverage of the SAI expansion.
+- **FlightLine Portal** — Software/data platform into which Casia G and other ground sensors feed; also the integration point cited in the 2026 Airwise Solutions/Skyway Range partnership, where uAvionix FlightLine surveillance data feeds into Airwise's "Nexus" common operating picture, eliminating the need for BVLOS operators to deploy their own local sensors and instead consuming "FAA-grade" airspace traffic data as a service.
+- **Command-and-Control (C2) network services** — uAvionix has also functioned as an infrastructure/service provider (not just a hardware vendor), e.g., providing the terrestrial C2 infrastructure and cloud-based C2 service for **Vantis**, North Dakota's statewide BVLOS UAS network operated by the Northern Plains UAS Test Site — the network on which uAvionix itself received the FAA's first BVLOS approval in January 2023.
+
+Sources: [uAvionix pingRX Pro announcement](https://uavionix.com/press/introducing-pingrx-pro/), [uAvionix products page](https://uavionix.com/products/), [AV-30-C product page](https://uavionix.com/product/av-30-c-certified/), [AV-30-E product page](https://uavionix.com/product/av-30-exp/), [Casia G support page](https://support.uavionix.com/hc/en-us/sections/47107221806099-Casia-G-Discontinued), [Casia X datasheet PDF](https://uavionix.com/wp-content/uploads/dlm_uploads/2024/12/DATASHEET-Casia-X-8.9MP-GigE-3.4-XACM-0100_HEOC-0009-V1.0.pdf), [AV-HSI/AV-APA FAA certification press release](https://uavionix.com/press/uavionix-announces-faa-certification-for-av-hsi-and-av-apa-major-step-forward-in-ifr-flight-capability-for-general-aviation/), [AVweb — AV-30-C ForeFlight integration](https://avweb.com/avionics/uavionix-adds-foreflight-certified-av-30-c/), [AOPA — AV-30-C ForeFlight/autopilot](https://www.aopa.org/news-and-media/all-news/2026/february/26/av-30-c-gains-foreflight-integration-advanced-autopilot), [AVweb — FAA adds 55 towers to SAI](https://avweb.com/aviation-news/faa-adds-55-towers-to-uavionix-sai-program/), [Airports International — SAI contract](https://www.airportsinternational.com/article/uavionix-wins-large-faa-sai-contract), [FAA VMAT contract release](https://uavionix.com/press/faa-to-equip-vehicles-with-uavionix-vehicle-ads-b-systems-to-improve-airport-safety/), [Airwise Solutions partnership](https://airwisesolutions.com/company/airwise_solutions_uavionix_partner/), [uAvionix/Vantis C2 press release](https://uavionix.com/press/uavionix-to-provide-bvlos-c2-infrastructure-and-service-to-vantis-north-dakotas-uas-network/), [DroneLife — BVLOS Vantis approval](https://dronelife.com/2023/01/09/uavionix-wins-faa-approval-for-bvlos-flights-in-north-dakota-drone-network-a-first-for-vantis/)
+
+---
+
+## 6. Patents
+
+uAvionix has actively built and defended a patent portfolio, and patent strength has been directly relevant to a major legal dispute in its history.
+
+- **U.S. Patent 10,156,627** — "Aircraft Navigation Light ADS-B Radio" (the "Power Transcoder" patent). Application accepted by USPTO announced December 4, 2018; issued December 18, 2018. Covers technology synchronizing squawk code and Mode C altitude data between an aircraft's secondary-surveillance-radar (SSR) transponder replies and its ADS-B transmissions — notably by detecting electrical noise induced on the aircraft's power wiring during transponder transmission, rather than capturing the data over the air. This design underlies the skyBeacon/tailBeacon/echoUAT product family and was central to defending against Garmin's infringement claims (see below).
+- **U.S. Patent 11,011,830** — "Wireless Communication System within an External Enclosure for Attachment to a Vehicle." Issued June 8, 2021. Covers leveraging wing/tail mounting locations on an aircraft to optimize transponder performance for both ground-based and satellite-based surveillance infrastructure; underlies the **tailBeaconX** product.
+- **U.S. Patent 10,991,260** — "Intelligent Non-Disruptive ADS-B Integration for Unmanned Aircraft Systems (UAS)." Granted April 27, 2021. Covers a method allowing UAS to gain ADS-B safety benefits ("inert and alert" capability) while minimizing radio-spectrum utilization — relevant to the UAS/drone ADS-B receiver product line (pingRX, ping200X family).
+- **U.S. Patent 10,890,657** — "ADS-B transponder system and method." Relates to vehicle-control systems incorporating 978 MHz UAT transponders for aircraft that must also carry 1090 MHz Mode A/C transponders, addressing FAA ADS-B dual-frequency compliance.
+- **Patented computer-vision/AI detection technology** underlying the **Casia X/Casia G** optical detect-and-avoid systems (inherited via the Iris Automation acquisition) — used to sense and classify non-cooperative aircraft (those without ADS-B) via camera and machine-learning models; specific patent numbers for this technology were not identified in available public sources during this research pass and would require direct USPTO assignee-name searches under "Iris Automation" for full enumeration.
+
+**The Garmin Litigation (IP Moat Context):** In June 2018, Garmin International sued uAvionix in Montana federal court, alleging that uAvionix's skyBeacon and echoUAT products infringed Garmin's **U.S. Patent 8,102,301**, specifically regarding methods of obtaining transponder Mode 3/A code and altitude data for ADS-B broadcast. uAvionix denied infringement, asserting it used a different, patent-pending method (the Power Transcoder approach later patented as US 10,156,627). The case was closely watched industry-wide as a proxy for how market leader Garmin (dominant in GA panel/remote-mount avionics) would respond to lower-cost new entrants. The dispute settled on confidential terms on **October 17, 2019** — no injunction was issued, no damages were publicly disclosed, and uAvionix retained the right to continue manufacturing and selling skyBeacon, tailBeacon, and echoUAT. uAvionix's own December 2018 patent grant (during the litigation) was publicly framed by the company as evidence the USPTO recognized "distinct and innovative differences" between its solution and Garmin's.
+
+**IP strategy / moat assessment:** uAvionix's patent strategy centers on protecting the specific *engineering methods* that let it build low-cost, minutes-to-install ADS-B hardware (the transcoder/power-line-noise-detection approach, and wing/tail-mount RF engineering) rather than broad platform patents. This is a defensible but narrow moat — it protects specific implementations against direct copying (as demonstrated by successfully surviving the Garmin suit) but does not obviously block competitors from building ADS-B hardware via different engineering approaches. The 2023 Iris Automation acquisition materially broadened the IP moat by adding computer-vision/AI-based non-cooperative-aircraft detection — a different technical approach (optical vs. RF/transponder-based) that diversifies uAvionix's defensible technology base and reduces reliance on any single patent family. Given the company's now-diversified position across (a) certified GA ADS-B/EFIS hardware, (b) UAS-specific ADS-B/DAA hardware, (c) optical DAA (via Iris), and (d) government airport-surface-surveillance contracts (FlightLine/VTU-20), its moat is increasingly a combination of patented hardware techniques, FAA certification/TSO approvals (a significant regulatory barrier to entry in itself), and incumbency in government procurement (e.g., the sole-source-feeling FAA SAI and VMAT contracts), rather than patents alone.
+
+Sources: [AOPA — transcoder patent approved](https://www.aopa.org/news-and-media/all-news/2018/december/06/uavionix-transcoder-patent-approved), [FlyingMag — Power Transcoder patent granted](https://www.flyingmag.com/uavionix-granted-power-transcoder-patent/), [uAvionix — tailBeaconX patent](https://uavionix.com/uavionix-receives-patent-for-tailbeaconx-transponder/), [uAvionix — ADS-B Inert & Alert patent for UAS](https://uavionix.com/uavionix-receives-patent-for-ads-b-inert-alert-capability-for-uas/), [USPTO — Patent 10,890,657 PDF](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10890657), [AOPA — uAvionix sued for patent infringement](https://www.aopa.org/news-and-media/all-news/2018/august/21/uavionix-sued-for-patent-infringement), [FlyingMag — Garmin/uAvionix lawsuit background](https://www.flyingmag.com/garmin-uavionix-patent-lawsuit/), [AOPA — Garmin, uAvionix settle lawsuit](https://www.aopa.org/news-and-media/all-news/2019/october/17/uavionix-garmin-settle-suit), [AVweb — Garmin, uAvionix resolve patent lawsuit](https://avweb.com/avionics/adsb/garmin-uavionix-resolve-patent-lawsuit/), [uAvionix — statement on patent resolution](https://uavionix.com/uavionix-statement-patent/)
+
+---
+
+## 7. Latest News (2024–2026)
+
+- **August 2024 (approx.):** uAvionix achieved **FAA TSO certification for the ping200XR**, its combined Mode S transponder and internal TSO-certified GPS receiver for UAS.
+- **October 2024:** uAvionix's **FlightLine Airborne Position Reference Tool** was first installed at **Glacier Park International Airport** (Kalispell, Montana), an early proof point for its airport-surface-safety expansion.
+- **June 2024:** uAvionix received its **first approvals under the FAA Surface Awareness Initiative (SAI)** program, aimed at improving controller situational awareness and reducing runway-incursion risk.
+- **March 2025:** uAvionix announced that its **Casia G** ground-based optical detect-and-avoid system gained **nighttime aircraft-detection capability**, enabling round-the-clock (24/7) BVLOS drone operations — a significant operational unlock for commercial drone operators previously restricted to daylight BVLOS flights.
+- **June 2025:** uAvionix announced **FAA certification of its AV-HSI and AV-APA** modules for the AV-30-C, described as "a major step forward in IFR flight capability for general aviation," enabling full instrument-approach navigation guidance and digital-autopilot integration on legacy GA aircraft equipped with the AV-30-C.
+- **November 2025:** The **FAA awarded uAvionix a contract to expand FlightLine SAI deployment to 55 additional air-traffic-control towers** (on top of 14 already operational), with a 12-month installation/full-operational-status target, plus deployment of **VTU-20 VMAT units on FAA Technical Operations vehicles** so ground vehicles appear on the same displays as aircraft. This rollout is explicitly tied to the FAA's push to equip all its towers with surface-awareness technology within two years and aligns with the agency's "Brand New Air Traffic Control System" (BNATCS) modernization vision.
+- **January 2026:** *Avionics News* (Aircraft Electronics Association publication) ran a feature headlined "FAA Approves uAvionix," consistent with continued regulatory momentum (specific certification not fully detailed in available excerpts).
+- **February 2026:** uAvionix released **AV-30 software v3.2.1**, bringing **ForeFlight integration and autopilot coupling** to the certified AV-30-C (previously available only on the experimental AV-30-E), letting pilots build/modify flight routes in ForeFlight and wirelessly transfer them via the optional **AV-Link** Wi-Fi bridge module ($349).
+- **March 2026:** uAvionix launched the **ping978EC**, a new 978 MHz UAT ADS-B transceiver, alongside a new **"Pilot Awareness Website"** educating pilots on Portable Electronic Conspicuity (PEC) devices — positioned explicitly around the FAA's proposed **Part 108** rulemaking for BVLOS drone operations.
+- **May 2026:** The **FAA procured uAvionix VTU-20 VMAT units for a $16.5 million contract** (including installation and ongoing service) to equip roughly **2,000 FAA Technical Operations vehicles** nationwide with ADS-B, closing a long-standing surface-visibility gap between ground vehicles and aircraft/controllers.
+- **August 2026:** uAvionix and **Airwise Solutions** announced a strategic partnership to support **Skyway Range**, integrating uAvionix's **FlightLine** surveillance data into Airwise's "Nexus" common operating picture — pitched as letting BVLOS operators avoid deploying their own local sensors in favor of consuming "FAA-grade" airspace-traffic data as a service. Around the same time (AirVenture Oshkosh 2026), uAvionix and **ForeFlight** unveiled a jointly branded product called **"SkyPlay,"** though granular product details were not available in this research pass.
+
+**Overall 2024–2026 narrative:** uAvionix has continued to diversify beyond its original consumer/GA and drone-hobbyist ADS-B hardware roots into being a significant **FAA infrastructure contractor** (airport surface surveillance, vehicle ADS-B) while simultaneously deepening its **general aviation avionics** ecosystem (AV-30 family plus ForeFlight integrations) and its **BVLOS-enabling detect-and-avoid** technology (Casia nighttime capability, Part 108-aligned PEC push). This reflects the strategic logic of the 2022 DC Capital Partners buyout and 2023 Iris Automation acquisition: leveraging private-equity backing and broadened optical/AI DAA capability to win larger, higher-value government and infrastructure contracts rather than relying solely on smaller-ticket avionics hardware sales.
+
+Sources: [uAvionix Press Room](https://uavionix.com/press/), [uAvionix — AV-HSI/AV-APA certification](https://uavionix.com/press/uavionix-announces-faa-certification-for-av-hsi-and-av-apa-major-step-forward-in-ifr-flight-capability-for-general-aviation/), [AVweb — FAA adds 55 towers to SAI program](https://avweb.com/aviation-news/faa-adds-55-towers-to-uavionix-sai-program/), [Airports International — SAI contract win](https://www.airportsinternational.com/article/uavionix-wins-large-faa-sai-contract), [Avionics News — FAA Approves uAvionix (Jan 2026)](https://digital.avionicsnews.net/articles/faa-approves-uavionix), [AVweb — AV-30-C ForeFlight/autopilot](https://avweb.com/avionics/uavionix-adds-foreflight-certified-av-30-c/), [AOPA — AV-30-C ForeFlight coverage](https://www.aopa.org/news-and-media/all-news/2026/february/26/av-30-c-gains-foreflight-integration-advanced-autopilot), [uAvionix — FAA VMAT/VTU-20 contract](https://uavionix.com/press/faa-to-equip-vehicles-with-uavionix-vehicle-ads-b-systems-to-improve-airport-safety/), [Airwise Solutions partnership announcement](https://airwisesolutions.com/company/airwise_solutions_uavionix_partner/)
+
+---
+
+## Full Source List
+
+- [uAvionix official Press Room](https://uavionix.com/press/)
+- [uAvionix Products page](https://uavionix.com/products/)
+- [uAvionix pingRX Pro launch](https://uavionix.com/press/introducing-pingrx-pro/)
+- [uAvionix AV-30-C product page](https://uavionix.com/product/av-30-c-certified/)
+- [uAvionix AV-30-E product page](https://uavionix.com/product/av-30-exp/)
+- [uAvionix Casia G support/discontinuation page](https://support.uavionix.com/hc/en-us/sections/47107221806099-Casia-G-Discontinued)
+- [uAvionix Casia X datasheet (PDF)](https://uavionix.com/wp-content/uploads/dlm_uploads/2024/12/DATASHEET-Casia-X-8.9MP-GigE-3.4-XACM-0100_HEOC-0009-V1.0.pdf)
+- [uAvionix — AV-HSI/AV-APA FAA certification press release](https://uavionix.com/press/uavionix-announces-faa-certification-for-av-hsi-and-av-apa-major-step-forward-in-ifr-flight-capability-for-general-aviation/)
+- [uAvionix — FAA VMAT/VTU-20 procurement press release](https://uavionix.com/press/faa-to-equip-vehicles-with-uavionix-vehicle-ads-b-systems-to-improve-airport-safety/)
+- [uAvionix — Iris Automation acquisition press release](https://uavionix.com/press/a-new-era-for-aviation-safety-and-efficiency-uavionix-acquires-iris-automation/)
+- [uAvionix — Series B funding press release](https://uavionix.com/press/uavionix-leader-in-drone-communications-navigation-and-surveillance-systems-secures-series-b-funding-from-airbus-ventures-playground-global-and-redpoint-ventures/)
+- [uAvionix — Vantis BVLOS C2 infrastructure press release](https://uavionix.com/press/uavionix-to-provide-bvlos-c2-infrastructure-and-service-to-vantis-north-dakotas-uas-network/)
+- [uAvionix — FAA Grants Initial BVLOS Approval press release](https://uavionix.com/press/faa-grants-initial-approval-allowing-bvlos-drone-flights-on-north-dakota-drone-system/)
+- [uAvionix — Statement on Garmin patent lawsuit resolution](https://uavionix.com/uavionix-statement-patent/)
+- [uAvionix — tailBeaconX patent announcement](https://uavionix.com/uavionix-receives-patent-for-tailbeaconx-transponder/)
+- [uAvionix — ADS-B Inert & Alert for UAS patent announcement](https://uavionix.com/uavionix-receives-patent-for-ads-b-inert-alert-capability-for-uas/)
+- [uAvionix Announces Acquisition by DC Capital Partners](https://uavionix.com/press/uavionix-announces-acquisition-by-dc-capital-partners/)
+- [PitchBook — uAvionix company profile](https://pitchbook.com/profiles/company/157321-54)
+- [PitchBook — uAvionix valued at $28M with $5M financing](https://pitchbook.com/newsletter/uavionix-valued-at-28m-with-5m-financing)
+- [PitchBook — AeroVonics company profile](https://pitchbook.com/profiles/company/471853-00)
+- [Crunchbase — uAvionix](https://www.crunchbase.com/organization/uavionix)
+- [Crunchbase — UVIONIX](https://www.crunchbase.com/organization/uvionix)
+- [CB Insights — uAvionix financials](https://www.cbinsights.com/company/uavionix/financials)
+- [Tracxn — uAvionix company profile](https://tracxn.com/d/companies/uavionix/__RBr6QpDot0pvtwyNGdAX6xZ1I30nIlG4meV5mUZQuxw)
+- [Tracxn — Uvionix Aerospace Corporation](https://tracxn.com/d/companies/uvionix-aerospace-corporation/__weRRSuTLZ7_73pwPQRW7JeTXwxqoLaU2tb7r7-tApbQ)
+- [Owler — uAvionix](https://www.owler.com/company/uavionix)
+- [Growjo — uAvionix](https://growjo.com/company/uAvionix)
+- [RocketReach — uAvionix Corporation](https://rocketreach.co/uavionix-corporation-profile_b5580c82f6acb7fc)
+- [LeadIQ — uAvionix Corporation](https://leadiq.com/c/uavionix-corporation/5a1d885d240000240062166d)
+- [ZoomInfo — uAvionix](https://www.zoominfo.com/c/uavionix-corp/374992928)
+- [UVIONIX official site](https://www.uvionix.com/about)
+- [AOPA — uAvionix acquired by DC Capital Partners](https://www.aopa.org/news-and-media/all-news/2022/march/14/uavionix-acquired-by-dc-capital-partners)
+- [AVweb — DC Capital Partners Purchases uAvionix](https://avweb.com/aviation-news/dc-capital-partners-purchases-uavionix/)
+- [GovConWire — DC Capital Partners Buys uAvionix](https://www.govconwire.com/articles/dc-capital-partners-buys-uas-communications-tech-developer-uavionix)
+- [Washington Technology — DC Capital Partners acquires unmanned avionics provider](https://www.washingtontechnology.com/companies/2022/03/dc-capital-partners-acquires-unmanned-avionics-provider/362972/)
+- [PRNewswire — DC Capital Partners Makes Strategic Investment in uAvionix](https://www.prnewswire.com/news-releases/dc-capital-partners-makes-strategic-investment-in-uavionix-301499363.html)
+- [DC Capital Partners — official announcement](https://www.dccp.com/2022/03/09/dc-capital-partners-makes-strategic-investment-in-uavionix/)
+- [sUAS News — uAvionix Announces Acquisition by DC Capital Partners](https://www.suasnews.com/2022/03/uavionix-announces-acquisition-by-dc-capital-partners/)
+- [Aero-News Network — uAvionix Acquires Iris Automation](https://www.aero-news.net/index.cfm?do=main.textpost&id=358874ee-1469-42fd-aee8-1234435a7a66)
+- [Vertical Mag — uAvionix acquires Iris Automation](https://verticalmag.com/press-releases/uavionix-acquires-iris-automation/)
+- [DroneLife — uAvionix Acquires Iris Aviation](https://dronelife.com/2023/10/24/uavionix-acquires-iris-aviation/)
+- [DroneDJ — uAvionix acquires Iris Automation](https://dronedj.com/2023/10/27/uavionix-acquires-iris-automation-reinforcing-drone-integration-tech/)
+- [Iris Onboard — acquisition announcement](https://www.irisonboard.com/a-new-era-for-aviation-safety-and-efficiency-uavionix-acquires-iris-automation/)
+- [Commercial UAV News — interview with Jon Damush](https://www.commercialuavnews.com/regulations/uavionix-acquires-iris-automation-an-interview-with-jon-damush)
+- [DroneLife — uAvionix wins FAA BVLOS approval, Vantis](https://dronelife.com/2023/01/09/uavionix-wins-faa-approval-for-bvlos-flights-in-north-dakota-drone-network-a-first-for-vantis/)
+- [Unmanned Airspace — Reliable Robotics and Vantis partnership](https://www.unmannedairspace.info/latest-news-and-information/reliable-robotics-and-vantis-partner-to-advance-automated-aviation-in-north-dakota/)
+- [Unmanned Airspace — uAvionix BVLOS C2 for Vantis](https://www.unmannedairspace.info/latest-news-and-information/uavionix-to-provide-bvlos-c2-infrastructure-and-service-to-vantis-north-dakotas-uas-network/)
+- [Inside Unmanned Systems — FAA Grants BVLOS Approval in North Dakota](https://insideunmannedsystems.com/faa-grants-approval-allowing-bvlos-drone-flights-in-north-dakota/)
+- [Vantis UAS — News](https://www.vantisuas.com/news/article/faa-grants-initial-approval-allowing-bvlos-drone-flights-on-north-dakota-drone-system)
+- [AOPA — uAvionix transcoder patent approved](https://www.aopa.org/news-and-media/all-news/2018/december/06/uavionix-transcoder-patent-approved)
+- [FlyingMag — uAvionix Granted Power Transcoder Patent](https://www.flyingmag.com/uavionix-granted-power-transcoder-patent/)
+- [USPTO — Patent 10,890,657 (PDF)](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10890657)
+- [Aviation Consumer — Why The Latest uAvionix Patent Is Significant](http://aviationconsumer.com/aircraftreviews/why-the-latest-uavionix-patent-is-significant/)
+- [Sporty's — tailBeacon product listing](https://www.sportys.com/tailbeacon-ads-b-out-transmitter-by-uavionix.html)
+- [AOPA — uAvionix sued for patent infringement](https://www.aopa.org/news-and-media/all-news/2018/august/21/uavionix-sued-for-patent-infringement)
+- [FlyingMag — Garmin and uAvionix Prepare to Tangle in Court](https://www.flyingmag.com/garmin-uavionix-patent-lawsuit/)
+- [Plane & Pilot — Garmin, uAvionix Patent Lawsuit Settled](https://www.planeandpilotmag.com/article/garmin-uavionix-patent-lawsuit-settled/)
+- [KITPLANES — Garmin, uAvionix Resolve Patent Lawsuit](https://www.kitplanes.com/garmin-uavionix-resolve-patent-lawsuit/)
+- [Aviation Week — Garmin, uAvionix Resolve Patent Lawsuit](https://aviationweek.com/business-aviation/garmin-uavionix-resolve-patent-lawsuit)
+- [AOPA — Garmin, uAvionix settle lawsuit](https://www.aopa.org/news-and-media/all-news/2019/october/17/uavionix-garmin-settle-suit)
+- [AVweb — Garmin, uAvionix Resolve Patent Lawsuit](http://avweb.com/avionics/adsb/garmin-uavionix-resolve-patent-lawsuit/)
+- [AVweb — FAA Adds 55 Towers to uAvionix SAI Program](https://avweb.com/aviation-news/faa-adds-55-towers-to-uavionix-sai-program/)
+- [Airports International — uAvionix wins large FAA SAI contract](https://www.airportsinternational.com/article/uavionix-wins-large-faa-sai-contract)
+- [Market Forecast — Innovative Avionics Leader uAvionix Lands Major FAA Certification](https://www.marketforecast.com/industrynews/innovative-avionics-leader-uavionix-lands-major-faa-certification-64341)
+- [Avionics News (AEA) — FAA Approves uAvionix (Jan 2026)](https://digital.avionicsnews.net/articles/faa-approves-uavionix)
+- [AVweb — uAvionix Adds ForeFlight Integration, Autopilot Coupling To AV-30-C](https://avweb.com/avionics/uavionix-adds-foreflight-certified-av-30-c/)
+- [AOPA — AV-30-C gains ForeFlight integration, advanced autopilot](https://www.aopa.org/news-and-media/all-news/2026/february/26/av-30-c-gains-foreflight-integration-advanced-autopilot)
+- [Airwise Solutions — uAvionix partnership announcement](https://airwisesolutions.com/company/airwise_solutions_uavionix_partner/)
+- [AUVSI — uAvionix Aims to "Connect Everything That Flies"](https://www.auvsi.org/uavionix-aims-connect-everything-flies)
+- [Unmanned Systems Technology — uAvionix Corporation profile](https://www.unmannedsystemstechnology.com/company/uavionix-corporation/)

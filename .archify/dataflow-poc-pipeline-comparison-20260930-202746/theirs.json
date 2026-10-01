@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Kunal/Rithish POC Pipeline",
+    "output": ".archify/dataflow-poc-pipeline-comparison-20260930-202746/pipeline-theirs.html",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1080,
+      560
+    ]
+  },
+  "stages": [
+    {
+      "label": "Source"
+    },
+    {
+      "label": "Parse"
+    },
+    {
+      "label": "Chunk"
+    },
+    {
+      "label": "Embed"
+    },
+    {
+      "label": "Evaluate"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pdf",
+      "type": "external",
+      "label": "PDF Document",
+      "stage": 0,
+      "row": 1
+    },
+    {
+      "id": "parse",
+      "type": "backend",
+      "label": "partition_pdf()",
+      "stage": 1,
+      "row": 1
+    },
+    {
+      "id": "chunk",
+      "type": "backend",
+      "label": "Rule-based chunker",
+      "stage": 2,
+      "row": 1
+    },
+    {
+      "id": "hybrid",
+      "type": "backend",
+      "label": "Modular Hybrid",
+      "sublabel": "complete results",
+      "stage": 3,
+      "row": 0
+    },
+    {
+      "id": "colbert",
+      "type": "backend",
+      "label": "ColBERT v2",
+      "sublabel": "unfinished",
+      "stage": 3,
+      "row": 1
+    },
+    {
+      "id": "jina",
+      "type": "backend",
+      "label": "Jina v3",
+      "sublabel": "unfinished",
+      "stage": 3,
+      "row": 2
+    },
+    {
+      "id": "eval",
+      "type": "database",
+      "label": "Recall@5, MRR",
+      "stage": 4,
+      "row": 1
+    }
+  ],
+  "flows": [
+    {
+      "id": "f1",
+      "from": "pdf",
+      "to": "parse",
+      "label": "raw PDF"
+    },
+    {
+      "id": "f2",
+      "from": "parse",
+      "to": "chunk",
+      "label": "elements"
+    },
+    {
+      "id": "f3",
+      "from": "chunk",
+      "to": "hybrid",
+      "label": "chunks",
+      "labelDy": -22
+    },
+    {
+      "id": "f4",
+      "from": "chunk",
+      "to": "colbert",
+      "label": "chunks",
+      "route": "straight",
+      "labelDy": 28
+    },
+    {
+      "id": "f5",
+      "from": "chunk",
+      "to": "jina",
+      "label": "chunks",
+      "route": "straight",
+      "labelDy": 48
+    },
+    {
+      "id": "f6",
+      "from": "hybrid",
+      "to": "eval",
+      "label": "scores",
+      "labelDy": -22
+    },
+    {
+      "id": "f7",
+      "from": "colbert",
+      "to": "eval",
+      "label": "scores",
+      "variant": "dashed",
+      "route": "straight",
+      "labelDy": 28
+    },
+    {
+      "id": "f8",
+      "from": "jina",
+      "to": "eval",
+      "label": "scores",
+      "variant": "dashed",
+      "route": "straight",
+      "labelDy": 48
+    }
+  ]
+}

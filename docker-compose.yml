@@ -1,0 +1,14 @@
+services:
+  pgvector:
+    image: pgvector/pgvector:pg17   # official image, Postgres 17 + pgvector extension prebuilt
+    environment:
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag
+      POSTGRES_DB: rag
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data   # survives `docker compose down`; use `down -v` to wipe
+
+volumes:
+  pgvector_data:
